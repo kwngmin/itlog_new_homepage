@@ -1,0 +1,897 @@
+main {
+    width: 100%;
+    height: 40vh;
+    max-height: 43.2rem;
+    position: relative;
+    background: url('../../img/company1.jpg') no-repeat;
+    background-size: cover;
+    background-position: right 60%;
+}
+
+.main-text {
+    width: calc(100% - 8rem);
+    max-width: 1200px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-text h2 {
+    opacity: 0;
+    color: #fff;
+    animation: maintextH2 0.6s 0.3s ease forwards;
+}
+
+@keyframes maintextH2 {
+    0% {
+        opacity: 0;
+        transform: translate(0, 8rem) rotate(10deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+
+
+section {
+    padding: 10rem 4rem;
+    position: relative;
+}
+
+section article {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+
+/* 인사말 */
+.introduce-container {
+    position: relative;
+}
+
+.introduce-container * {
+    padding-bottom: 1rem;
+}
+
+.introduce-container h5 {
+    padding-top: 4rem;
+}
+
+.introduce-container p {
+    line-height: 2rem;
+}
+
+.introduce-svg {
+    position: absolute;
+    right: 0;
+    width: clamp(30rem, 30%, 40rem);
+    bottom: 8rem;
+}
+
+.introduceSVG-container {
+    position: relative;
+    width: 100%;
+}
+
+.company-svg {
+    position: absolute;
+    -webkit-animation: croquis 4s ease-in-out 2s 1 forwards;
+    animation: croquis 4s ease-in-out 2s 1 forwards;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+@-webkit-keyframes croquis {
+    0% {}
+
+    100% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+}
+
+@keyframes croquis {
+    0% {}
+
+    100% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+}
+
+.drawing-svg {
+    position: absolute;
+    z-index: 1;
+    top: -20px;
+    left: -5px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-animation: vector 3s ease-in-out 2s 1 forwards;
+    animation: vector 3s ease-in-out 2s 1 forwards;
+}
+
+@-webkit-keyframes vector {
+    0% {}
+
+    100% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+}
+
+@keyframes vector {
+    0% {}
+
+    100% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+}
+
+
+#big1-bat-contour-grif .st0 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-animation: grifonnage-interieur 3s ease-in-out 0s 1 forwards;
+    animation: grifonnage-interieur 3s ease-in-out 0s 1 forwards;
+}
+
+@-webkit-keyframes grifonnage-interieur {
+    0% {}
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes grifonnage-interieur {
+    0% {}
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#big1-bat-contour-grif .st1 {
+    stroke: #939fb2;
+    fill: none;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-animation: grifonnage-exterieur 3s ease-in-out 0s 1 forwards;
+    animation: grifonnage-exterieur 3s ease-in-out 0s 1 forwards;
+}
+
+@-webkit-keyframes grifonnage-exterieur {
+    0% {}
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes grifonnage-exterieur {
+    0% {}
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#big2-bat-contour-grif .st0 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-animation: grifonnage-interieur 3s ease-in-out 0s 1 forwards;
+    animation: grifonnage-interieur 3s ease-in-out 0s 1 forwards;
+}
+
+@keyframes grifonnage-interieur {
+    0% {}
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#big2-bat-contour-grif .st1 {
+    stroke: #939fb2;
+    fill: none;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-animation: grifonnage-exterieur 3s ease-in-out 0s 1 forwards;
+    animation: grifonnage-exterieur 3s ease-in-out 0s 1 forwards;
+}
+
+@keyframes grifonnage-exterieur {
+    0% {}
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#big3-bat-contour-grif .st2 {
+    stroke: #31456a;
+    fill: none;
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+    -webkit-animation: grifonnage-interieur 3s ease-in-out 0s 1 forwards;
+    animation: grifonnage-interieur 3s ease-in-out 0s 1 forwards;
+}
+
+@keyframes grifonnage-interieur {
+    0% {}
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#big3-bat-contour-grif .st3 {
+    stroke: #939fb2;
+    fill: none;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-animation: grifonnage-exterieur 3s ease-in-out 0s 1 forwards;
+    animation: grifonnage-exterieur 3s ease-in-out 0s 1 forwards;
+}
+
+@keyframes grifonnage-exterieur {
+    0% {}
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#big-bat-contour .st1 {
+    stroke: #939fb2;
+    fill: none;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-animation: grifonnage-exterieur 3s ease-in-out 0s 1 forwards;
+    animation: grifonnage-exterieur 3s ease-in-out 0s 1 forwards;
+}
+
+@keyframes grifonnage-exterieur {
+    0% {}
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#small-bat-grif .st2 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-animation: grifonnage-interieur 3s ease-in-out 0s 1 forwards;
+    animation: grifonnage-interieur 3s ease-in-out 0s 1 forwards;
+}
+
+@keyframes grifonnage-interieur {
+    0% {}
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#small-bat-contour .st1 {
+    stroke: #939fb2;
+    fill: none;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-animation: grifonnage-exterieur 3s ease-in-out 0s 1 forwards;
+    animation: grifonnage-exterieur 3s ease-in-out 0s 1 forwards;
+}
+
+@keyframes grifonnage-exterieur {
+    0% {}
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#medium-bat-grif .st4 {
+    stroke: #31456a;
+    fill: none;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-animation: grifonnage-exterieur 3s ease-in-out 0s 1 forwards;
+    animation: grifonnage-exterieur 3s ease-in-out 0s 1 forwards;
+}
+
+@keyframes grifonnage-exterieur {
+    0% {}
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#medium-bat-contour .st1 {
+    stroke: #939fb2;
+    fill: none;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-animation: grifonnage-exterieur 3s ease-in-out 0s 1 forwards;
+    animation: grifonnage-exterieur 3s ease-in-out 0s 1 forwards;
+}
+
+@keyframes grifonnage-exterieur {
+    0% {}
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#courbe-croquis .st3 {
+    stroke: #939fb2;
+    fill: none;
+    stroke-width: 0;
+    stroke-dashoffset: 0;
+    -webkit-animation: courbe 3s ease-in-out 0s 1 forwards;
+    animation: courbe 3s ease-in-out 0s 1 forwards;
+}
+
+@-webkit-keyframes courbe {
+    0% {}
+
+    100% {
+        stroke-miterlimit: 10;
+        stroke-width: 1;
+    }
+}
+
+@keyframes courbe {
+    0% {}
+
+    100% {
+        stroke-miterlimit: 10;
+        stroke-width: 1;
+    }
+}
+
+.management-container {
+    padding-top: 20rem;
+}
+
+.management-box {
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.management-box h4 {
+    width: 25%;
+}
+
+.management-box h6 {
+    padding-bottom: 2rem;
+}
+
+.management-box>div {
+    width: 70%;
+}
+
+.management-box p {
+    /* line-height: 2.2rem; */
+    padding-bottom: 0.5rem;
+}
+
+
+
+/* 기업연혁 */
+.history-list {
+    position: relative;
+    padding: 50px 0;
+}
+
+.history-list:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+
+}
+
+.history-list:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.history-box {
+    clear: both;
+    width: 50%;
+    padding-right: 5rem;
+    padding-left: 0;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.history-box.right-box {
+    float: right;
+    padding-left: 5rem;
+    padding-right: 0;
+}
+
+.history-box.left-box {
+    float: left;
+}
+
+.history-box.left-box * {
+    text-align: right;
+}
+
+.history-box.right-box * {
+    text-align: left;
+}
+
+.history-line {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: -0.5rem;
+    width: 1rem;
+    background-color: #ee3a3d;
+    border-radius: 1rem;
+}
+
+.right-box .history-line {
+    right: auto;
+    left: -0.5rem;
+}
+
+.history-year h3 {
+    color: #ee3a3d;
+}
+
+.history-bar {
+    width: 70%;
+    height: 2px;
+    margin: 1rem 0 2rem 0;
+    border-bottom: 2px dashed #ee3a3d;
+}
+
+.left-box .history-bar {
+    margin: 1rem 0 2rem 30%;
+}
+
+.history-group {
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.left-box .history-group {
+    justify-content: flex-end;
+}
+
+.history-mon {
+    color: #939fb2;
+    width: 4rem;
+    font-size: clamp(1.3rem, 1.3vw, 1.4rem);
+    padding-bottom: 0.6rem;
+}
+
+.history-text {
+    width: calc(100% - 4rem);
+}
+
+.history-text p {
+    font-size: clamp(1.3rem, 1.3vw, 1.4rem);
+    padding-bottom: 0.6rem;
+}
+
+
+
+/* 기업이념 */
+.vision-container {
+    position: relative;
+}
+
+.vision-title {
+    padding-bottom: 8rem;
+    text-align: center;
+}
+
+.vision-bar {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ee3a3d;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.vision-svg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.vision-svg svg {
+    width: 100%;
+}
+
+.visionSVG-path {
+    stroke-dasharray: 1880.7003173828125;
+    stroke-dashoffset: 1880.7003173828125;
+    animation: dash 2s linear forwards;
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1880.7003173828125;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.vision-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.CardContainer {
+    width: 100%;
+    position: relative;
+}
+
+.CardContainer::after {
+    display: block;
+    content: "";
+    padding-bottom: 100%;
+}
+
+.CardBox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.card-img {
+    height: 20%;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card-img img {
+    height: 100%;
+}
+
+.card-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ee3a3d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.card-circle>div {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.card-text {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%);
+}
+
+.card-text>div {
+    width: 100%;
+    text-align: center;
+}
+
+.card-text h6 {
+    font-size: clamp(1.6rem, 1.6vw, 1.8rem);
+    padding-bottom: clamp(0.5rem, 0.5vw, 1rem);
+}
+
+.card-text p {
+    font-size: clamp(1.4rem, 1.4vw, 1.6rem);
+}
+
+.vision-br {
+    display: none;
+}
+
+
+
+/* 기업이념-조직도 */
+.chart-container {
+    padding-top: 14rem;
+}
+
+.chart-container h2 {
+    padding-bottom: 8rem;
+    text-align: center;
+}
+
+.chart-grid {
+    display: grid;
+    grid-template-columns: 1fr 6rem 1fr 6rem 1fr 6rem 1fr 6rem 1fr;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.chart-container>div>:nth-child(1),
+.chart-container>div>:nth-child(2) {
+    margin-bottom: 4rem;
+}
+
+.chart-text {
+    width: 100%;
+    height: 5rem;
+    position: relative;
+}
+
+.chart-text h6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #939fb2;
+}
+
+.chart-container>div>:nth-child(1) h6 {
+    color: #fff;
+    border: 1px solid #ee3a3d;
+    background-color: rgba(238, 58, 61, 1);
+}
+
+.chart-container>div>:nth-child(2) h6 {
+    color: #fff;
+    border: 1px solid #5bc3ed;
+    background-color: #5bc3ed;
+}
+
+.chart-container>div>:nth-child(4) h6 {
+    border: 1px solid #011936;
+}
+
+.bar-row {
+    position: absolute;
+    top: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 1px solid #ced6e0;
+    z-index: -1;
+}
+
+.bar-col {
+    position: absolute;
+    top: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-right: 1px solid #ced6e0;
+    z-index: -1;
+}
+
+.bar-right {
+    width: 8rem;
+    position: absolute;
+    top: 50%;
+    right: -8rem;
+    transform: translateY(-50%);
+    border-bottom: 1px solid #ced6e0;
+}
+
+
+
+/* 인증 */
+.certification-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8rem;
+}
+
+.certification-box img {
+    width: 100%;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    /* border:1px solid #ced6e0; */
+}
+
+.certification-box h6 {
+    padding: 2rem 0 0.4rem 0;
+    font-weight: 800;
+}
+
+
+
+/* 오시는길 */
+
+.way-container img {
+    width: 100%;
+}
+
+.way-text {
+    padding-top: 3rem;
+}
+
+.way-text .flex-basic {
+    padding-bottom: 1rem;
+}
+
+.way-text .icon {
+    margin-right: 2rem;
+    color: #5bc3ed;
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 1px solid #5bc3ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.way-text h6 {
+    width: calc(100% - 7rem);
+}
+
+
+
+/* 1024px 미만 적용 */
+@media screen and (max-width: 1023px) {
+
+    /* 인사말 */
+    .introduce-svg {
+        bottom:-2rem;
+        width:clamp(25rem, 25%, 40rem);
+    }
+
+    /* 기업이념 */
+    .vision-title {
+        padding-bottom: 4rem;
+    }
+
+    .vision-svg {
+        display: none;
+    }
+
+    .card-text p {
+        font-size: clamp(1.3rem, 1.3vw, 1.4rem);
+    }
+
+    .card-img {
+        height: 25%;
+    }
+
+    .chart-grid {
+        grid-template-columns: 1fr 3rem 1fr 3rem 1fr 3rem 1fr 3rem 1fr;
+    }
+}
+
+/* 768px 미만 적용 */
+@media screen and (max-width: 767px) {
+    section {
+        padding: 6rem 2rem;
+    }
+
+    .main-text {
+        width: calc(100% - 4rem);
+    }
+
+    /* 인사말 */
+    .introduce-svg {
+        bottom:-4rem;
+        width:clamp(25rem, 25%, 40rem);
+    }
+
+    .management-container {
+        padding-top: 15rem;
+    }
+
+    .management-box {
+        display: none;
+    }
+
+    .management-box h4 {
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    .management-box>div {
+        width: 100%;
+    }
+
+    /* 기업연혁 */
+    .history-box {
+        width: 100%;
+    }
+
+    /* 기업이념 */
+    .vision-card {
+        grid-template-columns: repeat(1, 3fr);
+    }
+
+    .vision-bar {
+        display: none;
+    }
+
+    .CardContainer {
+        width: 80%;
+        min-width: 260px;
+        max-width: 300px;
+        margin: 0 auto;
+        background: #ee3a3d;
+        border-radius: 50%;
+        margin-bottom: 4rem;
+    }
+
+    .card-circle {
+        display: none;
+    }
+
+    .card-img {
+        height: 32%;
+        top: 12%;
+    }
+
+    .card-text {
+        top: 50%;
+    }
+
+    .card-text * {
+        color: #fff;
+    }
+
+    .chart-container {
+        padding-top: 10rem;
+    }
+
+    .chart-container h2 {
+        padding-bottom: 4rem;
+    }
+}
+
+/* 500px 미만 적용 */
+@media screen and (max-width: 499px) {
+    /* 기업연혁 */
+    .history-box.right-box {
+        padding-left: 3rem;
+    }
+
+    /* 기업이념 */
+    .vision-br {
+        display: block;
+    }
+
+    .chart-grid {
+        grid-template-columns: 1fr 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr;
+    }
+
+}

@@ -1,0 +1,537 @@
+main {
+    width: 100%;
+    height: 75vh;
+    max-height: 81rem;
+    position: relative;
+}
+
+#gate main {
+    background: url('../../img/gate1.jpg') no-repeat;
+    background-size: cover;
+    background-position: right 60%;
+}
+
+#cctv main {
+    background: url('../../img/cctv1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center 80%;
+}
+
+#towercrane main {
+    background: url('../../img/crane1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center 44%;
+}
+
+#sensor main {
+    background: url('../../img/sensor1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center 25%;
+}
+
+#broadcast main {
+    background: url('../../img/cast1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center 10%;
+}
+
+.main-text {
+    width: calc(100% - 8rem);
+    max-width: 1366px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-text h1 {
+    opacity: 0;
+    color: #fff;
+    animation: maintextH1 0.6s 0.3s ease forwards;
+}
+
+@keyframes maintextH1 {
+    0% {
+        opacity: 0;
+        transform: translate(0, 8rem) rotate(10deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.main-text h5 {
+    color: #fff;
+    padding: 3rem 0;
+    line-height: clamp(2rem, 2vw, 3rem);
+    opacity: 0;
+    transform: translateY(3rem);
+    transition: opacity 0.7s, transform 1s;
+    animation: maintextH4 0.6s 0.5s ease forwards;
+}
+
+@keyframes maintextH4 {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* 키포인트 */
+#keyPoint {
+    width: 100%;
+    padding: 14rem 4rem 7rem;
+    position: relative;
+}
+
+.keyPoint-title {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 6rem;
+}
+
+.keyPoint-contents {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 6rem;
+}
+
+#cctv .keyPoint-contents {
+    max-width: 1000px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.keyPoint-box {
+    text-align: center;
+}
+
+.keyPoint-img img {
+    height: 8rem;
+}
+
+.keyPoint-box h5 {
+    padding: 2rem 0;
+}
+
+.keyPoint-box p {
+    height: 6rem;
+    margin: 0 auto;
+}
+
+
+/* 제품상세소개 */
+#subProduct {
+    width: 100%;
+    padding: 7rem 4rem;
+    overflow-x: hidden;
+}
+
+.subProduct-title {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1366px;
+    padding-bottom: 10rem;
+}
+
+.subProduct-title h2 {
+    padding-bottom: 0.4rem;
+}
+
+.subProduct-title p {
+    padding-top: 3.4rem;
+    font-size: 2.2rem;
+    line-height: 3rem;
+}
+
+.subProduct-contents {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1366px;
+}
+
+.subProduct-box {
+    display: flex;
+    align-items: center;
+}
+
+.subProduct-box>div {
+    width: 50%;
+    height: 42rem;
+}
+
+.subProduct-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.subProduct-text {
+    padding: 6rem 2rem 6rem 6rem;
+}
+
+.subProduct-text.text-right {
+    padding: 6rem 6rem 6rem 2rem;
+}
+
+.subProduct-text .subProduct-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.subProduct-text .subProduct-right {
+    display: flex;
+    align-items: center;
+}
+
+.subProduct-text small {
+    text-transform: capitalize;
+    color: #939fb2;
+}
+
+.subProduct-text .subProduct-bar {
+    width: 10rem;
+    height: 2px;
+    background-color: #ced6e0;
+    margin: 0 1rem;
+}
+
+.subProduct-text h1 {
+    color: #ee3a3d;
+    color: #011936;
+}
+
+.subProduct-text h4 {
+    padding: 2rem 0;
+}
+
+.subProduct-contents>:first-child .subProduct-text>div {
+    align-items: flex-start;
+}
+
+.subProduct-contents>:first-child .subProduct-text>div .subProduct-bar {
+    margin: 1.2rem 1rem 0;
+}
+
+.subProduct-contents>:first-child .subProduct-text>div small {
+    padding-top: 0.8rem;
+}
+
+.subProduct-contents>:last-child .subProduct-text>div {
+    align-items: flex-end;
+}
+
+.subProduct-contents>:last-child .subProduct-text>div .subProduct-bar {
+    margin: 0 1rem 0.6rem;
+}
+
+
+/* effect */
+#effect {
+    width: 100%;
+    padding: 7rem 4rem 14rem;
+    position: relative;
+}
+
+.effect-container {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.effect-title {
+    width: 30%;
+}
+
+.effect-title h2 {
+    padding-bottom: 1rem;
+}
+
+.effect-contents {
+    width: 65%;
+}
+
+.effect-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.effect-box {
+    border-radius: 1rem;
+    width: 100%;
+    position: relative;
+    background-color: #ee3a3d;
+    opacity: 0;
+    transition-property: transform, opacity !important;
+}
+
+.effect-box::after {
+    display: block;
+    content: "";
+    padding-bottom: 100%;
+}
+
+.effect-box.aos-animate {
+    opacity: 1;
+}
+
+.effect-box>div {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    position: absolute;
+}
+
+.effect-box hr {
+    border: 1px solid #f1f2f6;
+    margin: 1rem 0;
+}
+
+.effect-box svg {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.effect-box h6 {
+    font-weight: 600;
+    padding-top: 1.5rem;
+}
+
+.effect-box>div * {
+    color: #f1f2f6;
+}
+
+.effect-box.white-box {
+    background-color: #fff;
+    border: 4px solid #ee3a3d;
+}
+
+.effect-box.white-box * {
+    color: #ee3a3d;
+}
+
+.effect-box.white-box hr {
+    border: 1px solid #ee3a3d;
+}
+
+.effect-box.img-box>div {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 1rem;
+}
+
+
+/* 진행순서 */
+#procedure {
+    width: 100%;
+    padding: 10rem 4rem;
+    background: url('../../img/network1.jpg') no-repeat;
+    background-size: cover;
+    background-position: right 27%;
+    position: relative;
+}
+
+#procedure .light-filter {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.procedure-contents {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 10rem 1fr 10rem 1fr;
+    align-items: center;
+    gap: 4rem;
+}
+
+.procedure-arrow {
+    filter: invert(1);
+    width: 14rem;
+    transform: rotate(3deg) translateX(-2.5rem);
+}
+
+.procedure-box {
+    text-align: center;
+}
+
+.procedure-box img {
+    width: 6rem;
+}
+
+.procedure-box h5 {
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.procedure-box p {
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 1365px) {
+    .keyPoint-box p {
+        max-width: 20rem;
+    }
+
+    .subProduct-title {
+        padding-bottom: 5rem;
+    }
+
+    .subProduct-title p {
+        padding-top: 2rem;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    .subProduct-box>div {
+        height: 32rem;
+    }
+
+    .subProduct-text {
+        padding: 4rem 2rem 4rem 4rem;
+    }
+
+    .subProduct-text.text-right {
+        padding: 4rem 4rem 4rem 2rem;
+    }
+
+    .effect-box svg {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .effect-box h6 {
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    main {
+        height: 60vh;
+    }
+
+    .main-text h1 {
+        font-size: 3rem;
+    }
+
+    .main-text h5 {
+        padding-top: 1rem;
+    }
+
+    #keyPoint {
+        padding: 10rem 2rem 5rem;
+    }
+
+    .keyPoint-contents {
+        gap: 1rem;
+    }
+
+    .effect-container {
+        display: block;
+    }
+
+    .effect-title {
+        width: 100%;
+        max-width: 410px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 4rem;
+    }
+
+    .effect-contents {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .procedure-contents {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .procedure-arrow {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+        .main-text {
+        width: calc(100% - 4rem);
+    }
+
+    .keyPoint-contents,
+    #cctv .keyPoint-contents {
+        max-width: 400px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .subProduct-title h2 {
+        font-size: clamp(2.5rem, 2.5vw, 2.5rem);
+    }
+
+    .subProduct-box {
+        display: block;
+    }
+
+    .subProduct-box>div {
+        width: 100%;
+    }
+
+    .subProduct-text {
+        height: auto !important;
+        padding: 2rem 0 6rem !important;
+    }
+
+    .subProduct-text p {
+        display: none;
+    }
+
+        #subProduct {
+        padding: 5rem 2rem;
+    }
+
+    #effect {
+        padding: 5rem 2rem 10rem;
+    }
+
+    .effect-contents {
+        max-width: 500px;
+    }
+
+    .effect-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    #procedure {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .effect-box svg {
+        display: none;
+    }
+
+    .effect-box>div {
+        padding: 1.5rem;
+    }
+}

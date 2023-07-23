@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-LOG</title>
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+    <!-- [슬라이드 라이브러리 CSS] -->
+    <link rel="stylesheet" href="./aos-master/dist/aos.css">
+    <!-- [텍스트 애니메이션 라이브러리 CSS] -->
+    <link rel="stylesheet" href="./simplelineicons/css/simple-line-icons.css">
+    <!-- [아이콘 라이브러리 CSS] -->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <!-- [기본 CSS] -->
+    <link rel="stylesheet" href="./src/css/IoT.css">
+    <!-- [통합IoT솔루션 CSS] -->
+    <script src="./src/js/prefixfree.min.js"></script>
+    <!-- [벤더프리픽스] -->
+</head>
+
+<body>
+
+    <div id="sideNav" class="show1024">
+        <div class="sideNav-container">
+            <div id="sideNavClose" onclick="closeNav()">&times;</div>
+            <ul class="sideNav-menu">
+                <li class="accordion">회사소개<span class="icon icon-arrow-right"></span></li>
+                <ul class="accordion-menu">
+                    <li><a href="./introduce.html">인사말</a></li>
+                    <li><a href="./history.html">기업연혁</a></li>
+                    <li><a href="./vision.html">기업이념</a></li>
+                    <!-- <li><a href="./certification.html">인증</a></li> -->
+                    <li><a href="./way.html">오시는길</a></li>
+                </ul>
+                <li class="accordion">통합IoT솔루션<span class="icon icon-arrow-right"></span></li>
+                <ul class="accordion-menu">
+                    <li><a href="./IoT.html">통합IoT솔루션</a></li>
+                </ul>
+                <li class="accordion">제품소개<span class="icon icon-arrow-right"></span></li>
+                <ul class="accordion-menu">
+                    <li><a href="./gate.html">출입통제시스템</a></li>
+                    <li><a href="./cctv.html">안전관리CCTV</a></li>
+                    <li><a href="./towercrane.html">T/C통합안전</a></li>
+                    <li><a href="./sensor.html">환경센서</a></li>
+                    <li><a href="./broadcast.html">방송시스템</a></li>
+                </ul>
+                <li class="accordion">고객서비스<span class="icon icon-arrow-right"></span></li>
+                <ul class="accordion-menu">
+                    <li><a href="./consulting.html">견적의뢰</a></li>
+                    <li class="hide1024"><a href="http://helpu.kr/itlog/" target="_blank">원격지원</a></li>
+                </ul>
+            </ul>
+            <!-- <div class="sideNav-footer">
+                <a><img src="./img/logo/blog.png" alt=""></a>
+                <a><img src="./img/logo/kakao.png" alt=""></a>
+            </div> -->
+        </div>
+    </div>
+
+    <div id="IoT" class="wrapper">
+        <div id="sideNavOpenFilter" class="light-filter"></div>
+        <header id="header">
+            <div class="header-container">
+                <div id="headerLogo"><a href="./index.html"></a></div>
+                <div id="headerNav">
+                    <div class="header-title">
+                        <a>회사소개</a> 
+                    </div>
+                    <div class="header-title">
+                        <a>통합IoT솔루션</a> 
+                    </div>
+                    <div class="header-title">
+                        <a>제품소개</a> 
+                    </div>
+                    <div class="header-title">
+                        <a>고객서비스</a> 
+                    </div>
+                </div>
+                <div id="sideNavOpen" class="show1024" onclick="openNav()"><span class="icon icon-menu"></span></div>
+                <div id="language">
+                    <!-- <p class="red">KOR</p>
+                    <p>ENG</p> -->
+                </div>
+            </div>
+            <div class="header-sub">
+                <div class="no-list"></div>
+                <div class="header-subList">
+                    <div class="header-subTitle">
+                        <div>
+                            <a href="./introduce.html">인사말</a>
+                            <a href="./history.html">기업연혁</a>
+                            <a href="./vision.html">기업이념</a>
+                            <!-- <a href="./certification.html">인증</a> -->
+                            <a href="./way.html">오시는길</a>
+                        </div>
+                    </div>
+                    <div class="header-subTitle">
+                        <div>
+                            <a href="./IoT.html">통합IoT솔루션</a>
+                        </div>
+                    </div>
+                    <div class="header-subTitle">
+                        <div>
+                            <a href="./gate.html">출입통제시스템</a>
+                            <a href="./cctv.html">안전관리CCTV</a>
+                            <a href="./towercrane.html">T/C통합안전</a>
+                            <a href="./sensor.html">환경센서</a>
+                            <a href="./broadcast.html">방송시스템</a>
+                        </div>
+                    </div>
+                    <div class="header-subTitle">
+                        <div>
+                            <a href="./consulting.html">견적의뢰</a>
+                            <a href="http://helpu.kr/itlog/" target="_blank">원격지원</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="no-list"></div>
+            </div>
+        </header>
+
+        <main>
+            <div class="dark-filter"></div>
+            <div class="main-text">
+                <h1>통합 IoT 안전 관리 시스템</h1>
+                <h5>아이티로그는 고객 맞춤 솔루션 PMS를 제공하여 효율적인 관리를 지원합니다.<br>
+                    고객의 요구사항과 목표를 이해하고, 이를 기반으로 맞춤형 솔루션을 개발합니다.
+                </h5>
+            </div>
+        </main>
+
+        <section>
+
+            <article class="key-point">
+                <div class="keyPoint-container">
+                    <div class="keyPoint-title" >
+                        <h2><span class="red">Key</span> Point</h2>
+                        <h6>통합 IoT 시스템은 건설 현장에서 <br class="show768">
+                            다양한 시스템 및 기기와의 통합을 지원합니다.<br>
+                            관련 시스템과의 데이터 공유 및 협업이 가능해지며, <br class="show1024">
+                            생성되는 데이터를 수집하고 분석하여 <br class="show768">의사결정에 활용할 수 있습니다.<br>
+                            또한 건설 현장 원격 모니터링을 통해 <br class="show1024">
+                            안전 관리, 작업의 품질, 생산성, 비용 등 <br class="show768">다양한 측면을 평가하고 개선할 수 있습니다.
+                        </h6>
+                    </div>
+                    <div class="keyPoint-contents">
+                        <div class="keyPoint-box"  data-aos-delay="100">
+                            <div class="keyPoint-icon"><img src="./img/icon/iot-keypoint1.png" alt=""></div>
+                            <div class="keyPoint-text">
+                                <h5>실시간 CCTV</h5>
+                                <P>현장의 전반적인 영상을 실시간으로 모니터링하고 관리합니다</P>
+                            </div>
+                        </div>
+                        <div class="keyPoint-box"  data-aos-delay="150">
+
+                            <div class="keyPoint-icon"><img src="./img/icon/iot-keypoint2.png" alt=""></div>
+                            <div class="keyPoint-text">
+                                <h5>완벽한 견고함</h5>
+                                <P>강력한 보안 시스템으로 <br class="hide1024"> 외부 침입이나 데이터 유출로부터 안정성을 보장합니다</P>
+                            </div>
+                        </div>
+                        <div class="keyPoint-box"  data-aos-delay="200">
+                            <div class="keyPoint-icon"><img src="./img/icon/iot-keypoint3.png" alt=""></div>
+                            <div class="keyPoint-text">
+                                <h5>편리한 UI</h5>
+                                <P>직관적이고 쉽게 사용할 수 있는 <br class="hide1024">사용자 인터페이스를 제공합니다</P>
+                            </div>
+                        </div>
+                        <div class="keyPoint-box"  data-aos-delay="250">
+                            <div class="keyPoint-icon"><img src="./img/icon/iot-keypoint4.png" alt=""></div>
+                            <div class="keyPoint-text">
+                                <h5>언제 어디에서나</h5>
+                                <P>어떤 장소에서든 손쉽게 시스템에 접근이 가능한 <br class="hide1024">플랫폼을 제공합니다</P>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+
+            <article class="square">
+                <div class="square-container">
+                    <div class="square-contents">
+                        <div class="filter1"></div>
+                        <h4>출입 통제 시스템</h4>
+                        <div class="square-line"></div>
+                        <div class="square-text">
+                            <h6>99% 이상의 정확도</h6>
+                            <h6>0.2초 미만의 인식 속도</h6>
+                            <p class="hide1024">
+                                저조도 환경은 물론 완전히 어두운 곳에서도 <br>
+                                빠른 인식을 자랑하는 출입통제 시스템은 <br>
+                                PMS 시스템과도 연동되어 언제 어디서든 <br>
+                                근로자 관리에 편리함을 제공합니다
+                            </p>
+                        </div>
+                        <button type="button"><a href="./gate.html">view more</a></button>
+
+                    </div>
+                    <div class="square-contents">
+                        <div class="filter2"></div>
+                        <h4>안전 관리 CCTV</h4>
+                        <div class="square-line"></div>
+                        <div class="square-text">
+                            <h6>안전한 건설 현장 관리</h6>
+                            <h6>신뢰할 수 있는 솔루션</h6>
+                            <p class="hide1024">
+                                네트워크 기반으로 건설 현장의 모니터링과 <br>
+                                PMS 시스템을 연동하여<br> 
+                                언제 어디서든 실시간으로 상황을 확인하고 <br>
+                                필요한 조치를 취할 수 있도록 도와줍니다
+                            </p>
+                        </div>
+                        <button type="button"><a href="./cctv.html">view more</a></button>
+                    </div>
+                    <div class="square-contents">
+                        <div class="filter3"></div>
+                        <h4>T/C 통합안전</h4>
+                        <div class="square-line"></div>
+                        <div class="square-text">
+                            <h6>최첨단 기술 활용</h6>
+                            <h6>안전 효율성 극대화</h6>
+                            <p class="hide1024">
+                                작업자의 안전뿐만 아니라 <br>
+                                건설 현장에서 발생될 수 있는 사고를 사전에 방지하여 <br>
+                                극심한 피해를 예방하도록 도와줍니다
+                            </p>
+                        </div>
+                        <button type="button"><a href="./towercrane.html">view more</a></button>
+                    </div>
+                    <div class="square-contents">
+                        <div class="filter4"></div>
+                        <h4>환경센서</h4>
+                        <div class="square-line"></div>
+                        <div class="square-text">
+                            <h6>건강하고 안전한 현장 조성</h6>
+                            <h6>선도적인 환경센서 솔루션</h6>
+                            <p class="hide1024">
+                                실시간 데이터 수집과 분석을 통해 <br>
+                                다양한 환경 요소를 정확하게 감지하여<br>
+                                개선에 필요한 조치를 취할 수 있도록 도와줍니다
+                            </p>
+                        </div>
+                        <button type="button"><a href="./sensor.html">view more</a></button>
+                    </div>
+                    <div class="square-contents">
+                        <div class="filter5"></div>
+                        <h4>방송 시스템</h4>
+                        <div class="square-line"></div>
+                        <div class="square-text">
+                            <h6>고품질, 안정적인 방송 전달</h6>
+                            <p class="hide1024">
+                                방송 시스템 구축을 통해 신속한 정보 전달이 이루어져 <br> 
+                                건설 현장의 운영 관리를 원활하게 수행할 수 있도록 도와줍니다
+                            </p>
+                        </div>
+                        <button type="button"><a href="./broadcast.html">view more</a></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="pms-solution">
+                <div class="pms-background">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="pms-container">
+                    <div class="pms-text">
+                        <div>
+                        <h2>Integrated IoT <span class="red">PMS</span> Solution</h2>
+                        <small>건설사업 관리를 위한 다양한 모듈시스템인 Project Management SyStem으로 구성</small>
+                        </div>
+                        <div class="pms-title">
+                            <div class="title-box title-active">
+                                <div class="bar">―</div>
+                                <h6 class="thin">
+                                    유해 물질 반입 시스템<br class="pms-br"> (Material Safety Data Sheet System)
+                                </h6>
+                            </div>
+                            <div class="title-box">
+                                <div class="bar">―</div>
+                                <h6 class="thin">
+                                    스마트 안전교육 시스템<br class="pms-br"> (Smart Safety Education System)</h6>
+                            </div>
+                            <div class="title-box">
+                                <div class="bar">―</div>
+                                <h6 class="thin">
+                                    통합 CCTV 시스템<br class="pms-br"> (Integrated CCTV system)
+                                </h6>
+                            </div>
+                            <div class="title-box">
+                                <div class="bar">―</div>
+                                <h6 class="thin">
+                                    모니터링 시스템<br class="pms-br"> (Monitering System)</h6>
+                            </div>
+                            <div class="flex-basic">
+                                <i id="pms-prev" class="icon icon-arrow-left" style="margin-right:0.6rem"></i>
+                                <i id="pms-next" class="icon icon-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pmsSwiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="./img/icon/pms1.png" alt="">
+                                    <h4>유해 물질 반입 시스템</h4>
+                                    <small>Material Safety Data Sheet System</small>
+                                    <p>
+                                        건설 현장에서 다루는 모든 유해 물질에 대한 <br>
+                                        데이터를 수집, 저장 및 분석하여 <br>
+                                        국내의 규정과 규제를 준수하며 <br>
+                                        법적인 요구 사항을 효과적으로 관리합니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="./img/icon/pms2.png" alt="">
+                                    <h4>스마트 안전교육 시스템</h4>
+                                    <small>Smart Safety Education System</small>
+                                    <p>
+                                        근로자들의 참여도를 높이고 상호작용을 <br>
+                                        촉진하여 효과적인 교육 경험을 제공합니다. <br>
+                                        이를 통해 비용과 시간을 절약하고 개별화된 <br>교육 계획을 수립할 수 있어 안전 의식을 <br>향상시키고 사고 예방을 극대화할 수 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="./img/icon/pms3.png" alt="">
+                                    <h4>통합 CCTV 시스템</h4>
+                                    <small>Integrated CCTV system</small>
+                                    <p>
+                                        본사 통합관제 센터 구축은 중앙 관리 체계로 <br>
+                                        유지 보수 비용, 인력, 시간 등 여러 현장을 <br>
+                                        효율적으로 관리, 활용할 수 있는 것이 <br>장점이 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="./img/icon/pms4.png" alt="">
+                                    <h4>모니터링 시스템</h4>
+                                    <small>Monitering System</small>
+                                    <p>
+                                        무선통신, 네트워크의 기술을 활용하여 통합 <br>
+                                        모니터링이 가능하며 안전재해 사전 예방, 업무<br>
+                                        효율성, 사후 처리, 안전 관리 작업자 모니터링,<br>
+                                        비대면 현장 지원 및 데이터 수집 등 다양한 <br>기능을 제공합니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="./img/icon/pms1.png" alt="">
+                                    <h4>유해물질 반입 시스템</h4>
+                                    <small>Material Safety Data Sheet System</small>
+                                    <p>
+                                        건설 현장에서 다루는 모든 유해 물질에 대한 <br>
+                                        데이터를 수집, 저장 및 분석하여 <br>
+                                        국내의 규정과 규제를 준수하며 <br>
+                                        법적인 요구 사항을 효과적으로 관리합니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="./img/icon/pms2.png" alt="">
+                                    <h4>스마트 안전교육 시스템</h4>
+                                    <small>Smart Safety Education System</small>
+                                    <p>
+                                        근로자들의 참여도를 높이고 상호작용을 <br>
+                                        촉진하여 효과적인 교육 경험을 제공합니다. <br>
+                                        이를 통해 비용과 시간을 절약하고 개별화된 <br>교육 계획을 수립할 수 있어 안전 의식을 <br>향상시키고 사고 예방을 극대화할 수 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="./img/icon/pms3.png" alt="">
+                                    <h4>통합 CCTV 시스템</h4>
+                                    <small>Integrated CCTV system</small>
+                                    <p>
+                                        본사 통합관제 센터 구축은 중앙 관리 체계로 <br>
+                                        유지 보수 비용, 인력, 시간 등 여러 현장을 <br>
+                                        효율적으로 관리, 활용할 수 있는 것이 <br>장점이 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <img src="./img/icon/pms4.png" alt="">
+                                    <h4>모니터링 시스템</h4>
+                                    <small>Monitering System</small>
+                                    <p>
+                                        무선통신, 네트워크의 기술을 활용하여 통합 <br>
+                                        모니터링이 가능하며 안전재해 사전 예방, 업무<br>
+                                        효율성, 사후 처리, 안전 관리 작업자 모니터링,<br>
+                                        비대면 현장 지원 및 데이터 수집 등 다양한 <br>기능을 제공합니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="swiper-button-next" class="swiper-button-next"></div>
+                        <div id="swiper-button-prev" class="swiper-button-prev"></div>
+                        <div id="swiper-pagination" class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="QnA">
+                <div class="qna-container">
+                    <div class="qna-title">
+                        <h2>자주묻는질문</h2>
+                    </div>
+                    <div class="qna-contents">
+                        <div class="accordionQ">모든 제품이 통합 IoT 솔루션에 들어가나요?<span class="icon icon-arrow-right"></span>
+                        </div>
+                        <div class="accordionA">
+                            <p>아이티로그가 제공하는 모든 제품은 통합 IoT 솔루션으로 관리가 가능합니다.</p>
+                        </div>
+                        <div class="accordionQ">녹화된 CCTV 영상을 보고 싶어요<span class="icon icon-arrow-right"></span>
+                        </div>
+                        <div class="accordionA">
+                            <p>모든 CCTV는 '개인정보'에 포함되는 부분으로 유선상으로 문의하시면 매뉴얼 또는 사용방법을 설명드리겠습니다.</p>
+                        </div>
+                        <div class="accordionQ">타워 크레인 후크 하방 카메라 영상을 사무실에서 모니터링이 가능한가요?<span
+                                class="icon icon-arrow-right"></span></div>
+                        <div class="accordionA">
+                            <p>가능합니다. 옵션인 사항이므로 상담을 통해 안내해 드리겠습니다.</p>
+                        </div>
+                        <div class="accordionQ">이동형 CCTV의 구동 시간을 알고 싶어요!<span class="icon icon-arrow-right"></span>
+                        </div>
+                        <div class="accordionA">
+                            <p>현장 별 납품되는 사양이 상이 할 수 있으며, 현장 조건에 따라 설계를 해드리고 있습니다.<br> 대표번호 02-859-2064로 연락 주시면 친절히
+                                답변드리도록 하겠습니다.</p>
+                        </div>
+                        <div class="accordionQ">갑자기 연결이 되지 않아요!<span class="icon icon-arrow-right"></span></div>
+                        <div class="accordionA">
+                            <p>정확한 증상 파악을 위해 A/S팀 번호 02-859-2064(내선번호 2번)으로 연결해 주시면 <br>원활한 A/S 지원을 통해 해결해 드리겠습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-text">
+                    <h5>(주)아이티로그</h5>
+                    <!-- <img src="./img/logo/itlog.svg" alt=""> -->
+                    <div>
+                        <p>ADDRESS : 서울특별시 구로구 디지털로33길 28  <br class="show768">우림이비즈센터1차 308호 (우:08377)</p>
+                        <p>TEL : 02-859-2064 <span class="hide768">|</span><br class="show768"> FAX : 02-859-2065 <span class="hide768">|</span><br class="show768"> EMAIL : ok@it-log.co.kr</p>
+                        <p>Copyright ⓒ2023 ITLOG CO., LTD. All Rights Reserved.</p>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <!-- <div class="flex-flex">
+                        <a><img src="./img/logo/blog.png" alt=""></a>
+                        <a><img src="./img/logo/kakao.png" alt=""></a>
+                    </div> -->
+                    <button type="button"><a href="./consulting.html">견적의뢰</a></button>
+                </div>
+            </div>
+        </footer>
+
+        <div id="topButton">
+            <span class="icon icon-arrow-up"></span>
+        </div>
+    </div>
+
+</body>
+
+<script src="./swiper/swiper-bundle.min.js"></script>
+<!-- [슬라이드 라이브러리 JS] -->
+<script src="./aos-master/dist/aos.js"></script>
+<!-- [텍스트 애니메이션 라이브러리 JS] -->
+<script type="text/javascript" src="./src/js/index.js"></script>
+<!-- [기본 JS] -->
+<script type="text/javascript" src="./src/js/IoT.js"></script>
+<!-- [통합IoT솔루션 JS] -->
+<script>
+    // AOS 사용전 초기화 선언
+    AOS.init({
+        duration: 1000,
+    });
+</script>
+
+</html>

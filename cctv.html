@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-LOG</title>
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+    <!-- [슬라이드 라이브러리 CSS] -->
+    <link rel="stylesheet" href="./aos-master/dist/aos.css">
+    <!-- [텍스트 애니메이션 라이브러리 CSS] -->
+    <link rel="stylesheet" href="./simplelineicons/css/simple-line-icons.css">
+    <!-- [아이콘 라이브러리 CSS] -->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <!-- [기본 CSS] -->
+    <link rel="stylesheet" href="./src/css/sub.css">
+    <!-- [제품소개 통합 CSS] -->
+    <script src="./src/js/prefixfree.min.js"></script>
+    <!-- [벤더프리픽스] -->
+</head>
+
+<body>
+
+    <div id="sideNav" class="show1024">
+        <div class="sideNav-container">
+            <div id="sideNavClose" onclick="closeNav()">&times;</div>
+            <ul class="sideNav-menu">
+                <li class="accordion">회사소개<span class="icon icon-arrow-right"></span></li>
+                <ul class="accordion-menu">
+                    <li><a href="./introduce.html">인사말</a></li>
+                    <li><a href="./history.html">기업연혁</a></li>
+                    <li><a href="./vision.html">기업이념</a></li>
+                    <!-- <li><a href="./certification.html">인증</a></li> -->
+                    <li><a href="./way.html">오시는길</a></li>
+                </ul>
+                <li class="accordion">통합IoT솔루션<span class="icon icon-arrow-right"></span></li>
+                <ul class="accordion-menu">
+                    <li><a href="./IoT.html">통합IoT솔루션</a></li>
+                </ul>
+                <li class="accordion">제품소개<span class="icon icon-arrow-right"></span></li>
+                <ul class="accordion-menu">
+                    <li><a href="./gate.html">출입통제시스템</a></li>
+                    <li><a href="./cctv.html">안전관리CCTV</a></li>
+                    <li><a href="./towercrane.html">T/C통합안전</a></li>
+                    <li><a href="./sensor.html">환경센서</a></li>
+                    <li><a href="./broadcast.html">방송시스템</a></li>
+                </ul>
+                <li class="accordion">고객서비스<span class="icon icon-arrow-right"></span></li>
+                <ul class="accordion-menu">
+                    <li><a href="./consulting.html">견적의뢰</a></li>
+                    <li class="hide1024"><a href="http://helpu.kr/itlog/" target="_blank">원격지원</a></li>
+                </ul>
+            </ul>
+            <!-- <div class="sideNav-footer">
+                <a><img src="./img/logo/blog.png" alt=""></a>
+                <a><img src="./img/logo/kakao.png" alt=""></a>
+            </div> -->
+        </div>
+    </div>
+
+    <div id="cctv" class="wrapper">
+        <div id="sideNavOpenFilter" class="light-filter"></div>
+        <header id="header">
+            <div class="header-container">
+                <div id="headerLogo"><a href="./index.html"></a></div>
+                <div id="headerNav">
+                    <div class="header-title">
+                        <a>회사소개</a> 
+                    </div>
+                    <div class="header-title">
+                        <a>통합IoT솔루션</a> 
+                    </div>
+                    <div class="header-title">
+                        <a>제품소개</a> 
+                    </div>
+                    <div class="header-title">
+                        <a>고객서비스</a> 
+                    </div>
+                </div>
+                <div id="sideNavOpen" class="show1024" onclick="openNav()"><span class="icon icon-menu"></span></div>
+                <div id="language">
+                    <!-- <p class="red">KOR</p>
+                    <p>ENG</p> -->
+                </div>
+            </div>
+            <div class="header-sub">
+                <div class="no-list"></div>
+                <div class="header-subList">
+                    <div class="header-subTitle">
+                        <div>
+                            <a href="./introduce.html">인사말</a>
+                            <a href="./history.html">기업연혁</a>
+                            <a href="./vision.html">기업이념</a>
+                            <!-- <a href="./certification.html">인증</a> -->
+                            <a href="./way.html">오시는길</a>
+                        </div>
+                    </div>
+                    <div class="header-subTitle">
+                        <div>
+                            <a href="./IoT.html">통합IoT솔루션</a>
+                        </div>
+                    </div>
+                    <div class="header-subTitle">
+                        <div>
+                            <a href="./gate.html">출입통제시스템</a>
+                            <a href="./cctv.html">안전관리CCTV</a>
+                            <a href="./towercrane.html">T/C통합안전</a>
+                            <a href="./sensor.html">환경센서</a>
+                            <a href="./broadcast.html">방송시스템</a>
+                        </div>
+                    </div>
+                    <div class="header-subTitle">
+                        <div>
+                            <a href="./consulting.html">견적의뢰</a>
+                            <a href="http://helpu.kr/itlog/" target="_blank">원격지원</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="no-list"></div>
+            </div>
+        </header>
+
+        <main>
+            <div class="dark-filter"></div>
+            <div class="main-text">
+                <h1>안전 관리 CCTV</h1>
+                <h5>안전 관리 CCTV를 설치하여 현장의 넓은 범위, 위험지역, 각종 장비 등으로부터 <br>잠재적인 위험 요소를 모니터링하여 작업자들의 안전을 보호합니다.</h5>
+            </div>
+        </main>
+
+        <section>
+            <article id="keyPoint">
+                <div class="keyPoint-title">
+                    <h2 data-aos="fade-up" data-aos-delay="100"><span class="red">Key</span> Point</h2>
+                </div>
+                <div class="keyPoint-contents">
+                    <div class="keyPoint-box" data-aos="fade-up" data-aos-delay="100">
+                        <div class="keyPoint-img"><img src="./img/icon/cctv1.png" alt=""></div>
+                        <h5>고정형 카메라</h5>
+                        <p>안정적인 영상 품질 제공</p>
+                    </div>
+                    <div class="keyPoint-box" data-aos="fade-up" data-aos-delay="200">
+                        <div class="keyPoint-img"><img src="./img/icon/cctv2.png" alt=""></div>
+                        <h5>돔 카메라</h5>
+                        <p>다양한 각도와 방향으로 <br>넓은 시야 제공</p>
+                    </div>
+                    <div class="keyPoint-box" data-aos="fade-up" data-aos-delay="300">
+                        <div class="keyPoint-img"><img src="./img/icon/cctv3.png" alt=""></div>
+                        <h5>이동형 CCTV</h5>
+                        <p>작업시간, 장소에 제약 없이 구축 <br>(고위험 작업 구간, 밀폐공간 등)</p>
+                    </div>
+                </div>
+            </article>
+
+            <article id="subProduct">
+                <div class="subProduct-title" data-aos="fade-up">
+                    <h2>Smart Safety CCTV</h2>
+                    <h4 class="s-color">현장 상황에 최적화된 제품을 설치하여 Smart 한 CCTV 구현</h4>
+                    <p class="t-color">
+                        유/무선 통신 방식으로 고효율/고품질 영상 데이터를 수집하여 현장 사무실은 물론,<br class="hide768">
+                        현장을 벗어난 어떠한 장소에서도 PC 또는 모바일을 이용하여 원격 모니터링할 수 있습니다
+                    </p>
+                </div>
+                <div class="subProduct-contents">
+                    <div class="subProduct-box">
+                        <div class="subProduct-img" data-aos="zoom-out">
+                            <img src="./img/cctv2.jpg" alt="">
+                        </div>
+                        <div class="subProduct-text" data-aos="fade-right">
+                            <div class="subProduct-right">
+                                <h1 class="oswald">01</h1>
+                                <div class="subProduct-bar"></div>
+                                <small>High Quality Screen</small>
+                            </div>
+                            <h4>고정형 카메라</h4>
+                            <p class="sub-text">
+                                펜스, 게이트, 사무실 등에 설치하여 흔들림이나 움직임이 없어 <br class="hide1024">
+                                안정감 있는 영상의 화질로 원활하게 작동됩니다.<br>
+                                또한 통제가 필요한 지역이나 출입구 등에 설치하여 <br class="hide1024">
+                                특정 영역 침입, 자재 도난 등 사전에 감시하고 예방할 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="subProduct-box">
+                        <div class="subProduct-img show768" data-aos="zoom-out">
+                            <img src="./img/cctv3.jpg" alt="">
+                        </div>
+                        <div class="subProduct-text text-right" data-aos="fade-left">
+                            <div class="subProduct-left">
+                                <small>Camera Technological Innovation</small>
+                                <div class="subProduct-bar"></div>
+                                <h1 class="oswald">02</h1>
+                            </div>
+                            <h4>돔 카메라</h4>
+                            <p class="sub-text">
+                                건물 옥상, 골조물, 타워크레인 등 높은 위치에 설치하여 <br class="hide1024">
+                                현장의 넓은 범위를 효과적으로 모니터링을 할 수 있으며 <br class="hide1024">
+                                풍력발전, 태양광을 이용하여 전기를 이용할 수 없는 <br class="hide1024">
+                                다양한 환경에도 유연하게 사용할 수 있어 범용성이 높습니다.
+                            </p>
+                        </div>
+                        <div class="subProduct-img hide768" data-aos="zoom-out">
+                            <img src="./img/cctv3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="subProduct-box">
+                        <div class="subProduct-img" data-aos="zoom-out">
+                            <img src="./img/cctv4.jpg" alt="" style="object-position:top;">
+                        </div>
+                        <div class="subProduct-text" data-aos="fade-right">
+                            <div class="subProduct-right">
+                                <h1 class="oswald">03</h1>
+                                <div class="subProduct-bar"></div>
+                                <small>Moving Camera</small>
+                            </div>
+                            <h4>이동형 CCTV</h4>
+                            <p class="sub-text">
+                                현장에 맞게 설계, 제작이 가능하며 전기가 없는 구간에서도 <br class="hide1024">
+                                구동할 수 있도록 설계되어 있습니다.<br>
+                                360도 회전이 가능한 카메라를 사용하여 사각지대를 최소화했으며, <br class="hide1024">
+                                기존 CCTV와 연동을 통해 실시간 영상뿐 아니라 <br class="hide1024">
+                                녹화된 영상도 확인할 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article id="effect">
+                <div class="effect-container">
+                    <div class="effect-title" data-aos="fade-up">
+                        <h2>Expectation <span class="red">Effect</span></h2>
+                        <p>
+                            2022년도 01월 27일부터 시행 중인 <br class="hide1024">
+                            '중대재해법'으로 인해 <br class="show1024"> 모든 현장에서는 <br class="hide1024">
+                            안전 조직을 확대, 강화하고 <br class="show1024"> CSO를 새로 임명하는 <br class="hide1024">
+                            대비책을 마련해야 합니다
+                        </p>
+                    </div>
+                    <div class="effect-contents">
+                        <div class="effect-grid">
+                            <div class="effect-box" data-aos="flip-left" data-aos-delay="100">
+                                <div>
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <rect x="0" y="0" width="24" height="24" />
+                                            <path
+                                                d="M4,4 L11.6314229,2.5691082 C11.8750185,2.52343403 12.1249815,2.52343403 12.3685771,2.5691082 L20,4 L20,13.2830094 C20,16.2173861 18.4883464,18.9447835 16,20.5 L12.5299989,22.6687507 C12.2057287,22.8714196 11.7942713,22.8714196 11.4700011,22.6687507 L8,20.5 C5.51165358,18.9447835 4,16.2173861 4,13.2830094 L4,4 Z"
+                                                fill="#ffffff" opacity="0.3" />
+                                            <path
+                                                d="M14.5,11 C15.0522847,11 15.5,11.4477153 15.5,12 L15.5,15 C15.5,15.5522847 15.0522847,16 14.5,16 L9.5,16 C8.94771525,16 8.5,15.5522847 8.5,15 L8.5,12 C8.5,11.4477153 8.94771525,11 9.5,11 L9.5,10.5 C9.5,9.11928813 10.6192881,8 12,8 C13.3807119,8 14.5,9.11928813 14.5,10.5 L14.5,11 Z M12,9 C11.1715729,9 10.5,9.67157288 10.5,10.5 L10.5,11 L13.5,11 L13.5,10.5 C13.5,9.67157288 12.8284271,9 12,9 Z"
+                                                fill="#ffffff" />
+                                        </g>
+                                    </svg>
+                                    <h6>보안 강화</h6>
+                                    <hr />
+                                    <p>실시간 모니터링으로 상황 감시</p>
+                                </div>
+                            </div>
+                            <div class="effect-box" data-aos="flip-left" data-aos-delay="200">
+                                <div>
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <rect x="0" y="0" width="24" height="24" />
+                                            <path
+                                                d="M4,4 L11.6314229,2.5691082 C11.8750185,2.52343403 12.1249815,2.52343403 12.3685771,2.5691082 L20,4 L20,13.2830094 C20,16.2173861 18.4883464,18.9447835 16,20.5 L12.5299989,22.6687507 C12.2057287,22.8714196 11.7942713,22.8714196 11.4700011,22.6687507 L8,20.5 C5.51165358,18.9447835 4,16.2173861 4,13.2830094 L4,4 Z"
+                                                fill="#ffffff" opacity="0.3" />
+                                            <path
+                                                d="M11.1750002,14.75 C10.9354169,14.75 10.6958335,14.6541667 10.5041669,14.4625 L8.58750019,12.5458333 C8.20416686,12.1625 8.20416686,11.5875 8.58750019,11.2041667 C8.97083352,10.8208333 9.59375019,10.8208333 9.92916686,11.2041667 L11.1750002,12.45 L14.3375002,9.2875 C14.7208335,8.90416667 15.2958335,8.90416667 15.6791669,9.2875 C16.0625002,9.67083333 16.0625002,10.2458333 15.6791669,10.6291667 L11.8458335,14.4625 C11.6541669,14.6541667 11.4145835,14.75 11.1750002,14.75 Z"
+                                                fill="#ffffff" />
+                                        </g>
+                                    </svg>
+                                    <h6>안전 강화</h6>
+                                    <hr />
+                                    <p>안전 보호구 미착용자 파악 및<br class="hide1366"> 위험 상황 감지</p>
+                                </div>
+                            </div>
+                            <div class="effect-box white-box" data-aos="flip-left" data-aos-delay="300">
+                                <div>
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <rect x="0" y="0" width="24" height="24" />
+                                            <path
+                                                d="M5,19 L20,19 C20.5522847,19 21,19.4477153 21,20 C21,20.5522847 20.5522847,21 20,21 L4,21 C3.44771525,21 3,20.5522847 3,20 L3,4 C3,3.44771525 3.44771525,3 4,3 C4.55228475,3 5,3.44771525 5,4 L5,19 Z"
+                                                fill="#ee3a3d" fill-rule="nonzero" opacity="0.3" />
+                                            <path
+                                                d="M8.7295372,14.6839411 C8.35180695,15.0868534 7.71897114,15.1072675 7.31605887,14.7295372 C6.9131466,14.3518069 6.89273254,13.7189711 7.2704628,13.3160589 L11.0204628,9.31605887 C11.3857725,8.92639521 11.9928179,8.89260288 12.3991193,9.23931335 L15.358855,11.7649545 L19.2151172,6.88035571 C19.5573373,6.44687693 20.1861655,6.37289714 20.6196443,6.71511723 C21.0531231,7.05733733 21.1271029,7.68616551 20.7848828,8.11964429 L16.2848828,13.8196443 C15.9333973,14.2648593 15.2823707,14.3288915 14.8508807,13.9606866 L11.8268294,11.3801628 L8.7295372,14.6839411 Z"
+                                                fill="#ee3a3d" fill-rule="nonzero"
+                                                transform="translate(14.000019, 10.749981) scale(1, -1) translate(-14.000019, -10.749981) " />
+                                        </g>
+                                    </svg>
+                                    <h6>경비 절감</h6>
+                                    <hr />
+                                    <p>감독 인력 감소</p>
+                                </div>
+                            </div>
+                            <div class="effect-box white-box" data-aos="flip-left" data-aos-delay="100">
+                                <div>
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <rect x="0" y="0" width="24" height="24" />
+                                            <path
+                                                d="M5,19 L20,19 C20.5522847,19 21,19.4477153 21,20 C21,20.5522847 20.5522847,21 20,21 L4,21 C3.44771525,21 3,20.5522847 3,20 L3,4 C3,3.44771525 3.44771525,3 4,3 C4.55228475,3 5,3.44771525 5,4 L5,19 Z"
+                                                fill="#ee3a3d" fill-rule="nonzero" opacity="0.3" />
+                                            <path
+                                                d="M8.7295372,14.6839411 C8.35180695,15.0868534 7.71897114,15.1072675 7.31605887,14.7295372 C6.9131466,14.3518069 6.89273254,13.7189711 7.2704628,13.3160589 L11.0204628,9.31605887 C11.3857725,8.92639521 11.9928179,8.89260288 12.3991193,9.23931335 L15.358855,11.7649545 L19.2151172,6.88035571 C19.5573373,6.44687693 20.1861655,6.37289714 20.6196443,6.71511723 C21.0531231,7.05733733 21.1271029,7.68616551 20.7848828,8.11964429 L16.2848828,13.8196443 C15.9333973,14.2648593 15.2823707,14.3288915 14.8508807,13.9606866 L11.8268294,11.3801628 L8.7295372,14.6839411 Z"
+                                                fill="#ee3a3d" fill-rule="nonzero" />
+                                        </g>
+                                    </svg>
+                                    <h6>효율성 향상</h6>
+                                    <hr />
+                                    <p>효율적인 <br class="hide1366"> 인력 배분 / 작업 수행률 상승</p>
+                                </div>
+                            </div>
+                            <div class="effect-box white-box" data-aos="flip-left" data-aos-delay="200">
+                                <div>
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <rect x="0" y="0" width="24" height="24" />
+                                            <path
+                                                d="M5,5 C5,4.44771525 5.44771525,4 6,4 L15.75,4 C15.9073787,4 16.0555728,4.07409708 16.15,4.2 L18.9,7.86666667 C18.9649111,7.95321475 19,8.05848156 19,8.16666667 L19,19 C19,19.5522847 18.5522847,20 18,20 L6,20 C5.44771525,20 5,19.5522847 5,19 L5,5 Z M7,6 L7,9 L9,9 L9,6 L7,6 Z M10,6 L10,9 L12,9 L12,6 L10,6 Z M13,6 L13,9 L15,9 L15,6 L13,6 Z"
+                                                fill="#ee3a3d" />
+                                        </g>
+                                    </svg>
+                                    <h6>데이터화</h6>
+                                    <hr />
+                                    <p>녹화기를 이용한 데이터 수집</p>
+                                </div>
+                            </div>
+                            <div class="effect-box" data-aos="flip-left" data-aos-delay="300">
+                                <div>
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <rect x="0" y="0" width="24" height="24" />
+                                            <path
+                                                d="M6,9 L6,15 C6,16.6568542 7.34314575,18 9,18 L15,18 L15,18.8181818 C15,20.2324881 14.2324881,21 12.8181818,21 L5.18181818,21 C3.76751186,21 3,20.2324881 3,18.8181818 L3,11.1818182 C3,9.76751186 3.76751186,9 5.18181818,9 L6,9 Z M17,16 L17,10 C17,8.34314575 15.6568542,7 14,7 L8,7 L8,6.18181818 C8,4.76751186 8.76751186,4 10.1818182,4 L17.8181818,4 C19.2324881,4 20,4.76751186 20,6.18181818 L20,13.8181818 C20,15.2324881 19.2324881,16 17.8181818,16 L17,16 Z"
+                                                fill="#ffffff" fill-rule="nonzero" />
+                                            <path
+                                                d="M9.27272727,9 L13.7272727,9 C14.5522847,9 15,9.44771525 15,10.2727273 L15,14.7272727 C15,15.5522847 14.5522847,16 13.7272727,16 L9.27272727,16 C8.44771525,16 8,15.5522847 8,14.7272727 L8,10.2727273 C8,9.44771525 8.44771525,9 9.27272727,9 Z"
+                                                fill="#ffffff" opacity="0.3" />
+                                        </g>
+                                    </svg>
+                                    <h6>범용성</h6>
+                                    <hr />
+                                    <p>현장 상황에 맞는 <br>CCTV / 솔루션 제공</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article id="procedure">
+                <div class="light-filter"></div>
+                <div class="procedure-contents">
+                    <div class="procedure-box" data-aos="fade-up" data-aos-delay="100">
+                        <img src="./img/icon/procedure1.png" alt="">
+                        <h5>견적의뢰</h5>
+                        <p>프로젝트에 대한 자세한 정보와 <br>요구사항을 의뢰주시면,<br> 최상의 솔루션을 <br>제공해 드리겠습니다.</p>
+                    </div>
+                    <img class="procedure-arrow" src="./img/icon/arrow2.png" alt="" data-aos="fade-up"
+                        data-aos-delay="200">
+                    <div class="procedure-box" data-aos="fade-up" data-aos-delay="300">
+                        <img src="./img/icon/procedure2.png" alt="">
+                        <h5>설계&견적</h5>
+                        <p>전문 설계팀이<br> 고객의 요구사항을 고려하여 <br>최적의 설계를 제시하고, <br>경제적인 견적을 제공해 드립니다.</p>
+                    </div>
+                    <img class="procedure-arrow" src="./img/icon/arrow2.png" alt="" data-aos="fade-up"
+                        data-aos-delay="400">
+                    <div class="procedure-box" data-aos="fade-up" data-aos-delay="500">
+                        <img src="./img/icon/procedure3.png" alt="">
+                        <h5>현장 구축</h5>
+                        <p>고객의 요구에 맞게<br>안전하고 정확하게<br>현장 구축을 진행하며,<br> 최고의 품질을 보장합니다.</p>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-text">
+                    <h5>(주)아이티로그</h5>
+                    <!-- <img src="./img/logo/itlog.svg" alt=""> -->
+                    <div>
+                        <p>ADDRESS : 서울특별시 구로구 디지털로33길 28  <br class="show768">우림이비즈센터1차 308호 (우:08377)</p>
+                        <p>TEL : 02-859-2064 <span class="hide768">|</span><br class="show768"> FAX : 02-859-2065 <span class="hide768">|</span><br class="show768"> EMAIL : ok@it-log.co.kr</p>
+                        <p>Copyright ⓒ2023 ITLOG CO., LTD. All Rights Reserved.</p>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <!-- <div class="flex-flex">
+                        <a><img src="./img/logo/blog.png" alt=""></a>
+                        <a><img src="./img/logo/kakao.png" alt=""></a>
+                    </div> -->
+                    <button type="button"><a href="./consulting.html">견적의뢰</a></button>
+                </div>
+            </div>
+        </footer>
+
+        <div id="topButton">
+            <span class="icon icon-arrow-up"></span>
+        </div>
+    </div>
+
+</body>
+
+<script src="./swiper/swiper-bundle.min.js"></script>
+<!-- [슬라이드 라이브러리 JS] -->
+<script src="./aos-master/dist/aos.js"></script>
+<!-- [텍스트 애니메이션 라이브러리 JS] -->
+<script type="text/javascript" src="./src/js/index.js"></script>
+<!-- [기본 JS] -->
+<script type="text/javascript" src="./src/js/sub.js"></script>
+<!-- [제품소개 통합 JS] -->
+<script>
+    // AOS 사용전 초기화 선언
+    AOS.init({
+        duration: 1000,
+    });
+</script>
+
+</html>
