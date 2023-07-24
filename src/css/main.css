@@ -94,7 +94,7 @@ main .text-box .sub-title strong {
 @media screen and (max-width: 767px) {
   main {
     /* background-color: yellow; */
-    padding: 5rem 2rem 10rem;
+    padding: 5rem 1rem 10rem;
   }
   main .text-box h1.twoline {
     font-size: 4.5rem;
@@ -402,19 +402,45 @@ main .text-box .sub-title strong {
   background-color: #011936;
 }
 
+/* 솔루션 */
+
+.solution {
+  width: 100%;
+  padding: 0 4rem;
+  margin: 12rem 0;
+}
+
+.solution-container {
+  display: flex;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.solution-left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.solution-sub-title {
+  color: red;
+  display: block;
+  margin-bottom: 4rem;
+}
+.solution-title {
+}
+
 /* 시공사례 */
 
 .instance {
   width: 100%;
   padding: 0 4rem;
   margin: 12rem 0;
-  /* background-color: antiquewhite; */
 }
 
 .instance-container {
   display: flex;
   flex-direction: column;
-  /* background-color: cadetblue; */
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -465,6 +491,7 @@ main .text-box .sub-title strong {
 .instance-box .instance-text-box .instance-text {
   display: flex;
   align-items: center;
+  margin-top: 0.25rem;
 }
 
 .instance-box .instance-text-box .instance-client {
@@ -504,7 +531,7 @@ main .text-box .sub-title strong {
 
 @media screen and (max-width: 767px) {
   .instance {
-    padding: 0 2rem;
+    padding: 0 1rem;
     margin: 8rem 0;
   }
 }
@@ -514,7 +541,7 @@ main .text-box .sub-title strong {
 .help-center {
   width: 100%;
   padding: 0 4rem;
-  margin: 12rem 0;
+  margin: 4rem 0;
   /* background-color: antiquewhite; */
 }
 
@@ -588,7 +615,7 @@ main .text-box .sub-title strong {
 
 .help-center-buttons {
   display: flex;
-  max-width: 1000px;
+  /* max-width: 1000px; */
   gap: 1rem;
   margin: 2rem 0;
   font-size: 1.5rem;
@@ -631,7 +658,7 @@ main .text-box .sub-title strong {
 
 @media screen and (max-width: 767px) {
   .help-center {
-    padding: 0 2rem;
+    padding: 0 1rem;
     margin: 8rem 0;
   }
   .help-center-label {
@@ -664,8 +691,8 @@ main .text-box .sub-title strong {
   height: 24rem;
   position: relative;
   overflow: hidden;
-  padding-top: 6rem;
-  /* padding: 12rem 4rem; */
+  /* padding-top: 6rem; */
+  padding: 6rem 4rem 0;
 }
 
 .partnership-container::before {
@@ -686,7 +713,7 @@ main .text-box .sub-title strong {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  text-align: center;
+  /* text-align: center; */
   z-index: 100;
   position: relative;
 }
@@ -740,10 +767,11 @@ main .text-box .sub-title strong {
 @media screen and (max-width: 767px) {
   .partnership-container {
     height: 20rem;
-    padding-top: 4rem;
+    padding: 4rem 1rem 0;
   }
   .partnership-title h3 {
     font-size: 1.5rem;
+    /* text-align: left; */
   }
 }
 
