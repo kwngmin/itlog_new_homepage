@@ -111,7 +111,7 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  font-size: clamp(1.4rem, 1.4vw, 1.6rem);
+  /* font-size: clamp(1.4rem, 1.4vw, 1.6rem); */
   text-decoration: none;
   color: #011936;
 }
@@ -1085,7 +1085,7 @@ footer {
   input,
   select,
   textarea {
-    font-size: clamp(1.3rem, 1.3vw, 1.4rem);
+    /* font-size: clamp(1.3rem, 1.3vw, 1.4rem); */
   }
 
   .show1366 {

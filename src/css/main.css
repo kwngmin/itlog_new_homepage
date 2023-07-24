@@ -20,7 +20,7 @@ main .object-cover {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 4rem;
+  top: 2rem;
 }
 
 main .white-gradation {
@@ -406,7 +406,7 @@ main .text-box .sub-title strong {
 
 .instance {
   width: 100%;
-  padding: 7rem 4rem 14rem;
+  padding: 0 4rem;
   /* background-color: antiquewhite; */
 }
 
@@ -417,12 +417,6 @@ main .text-box .sub-title strong {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.instance-title {
-  /* background-color: #a9d0ff; */
-  /* height: 100%; */
-  /* padding-bottom: 4rem; */
 }
 
 .instance-contents {
@@ -440,7 +434,6 @@ main .text-box .sub-title strong {
 .instance-contents .instance-grid {
   width: 100%;
   margin: 0 auto;
-  /* position: relative; */
 }
 
 .instance-grid .instance-box {
@@ -449,7 +442,7 @@ main .text-box .sub-title strong {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  /* filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15)); */
 }
 
 .instance-box .instance-img {
@@ -510,10 +503,99 @@ main .text-box .sub-title strong {
 
 @media screen and (max-width: 767px) {
   .instance {
-    padding: 5rem 2rem 10rem;
+    padding: 0 2rem;
+    margin: 8rem 0;
   }
 }
 
+/* 고객센터 */
+.help-center {
+  width: 100%;
+  padding: 0 4rem;
+  margin: 12rem 0;
+  /* background-color: antiquewhite; */
+}
+
+.help-center-container {
+  display: flex;
+  flex-direction: column;
+  /* background-color: cadetblue; */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.help-center-container .help-center-time {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.help-center-time .help-center-regular {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+  letter-spacing: -0.05rem;
+  margin-bottom: 0.25rem;
+}
+
+.help-center-container .help-center-time .help-center-pause {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.05rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.help-center-lists {
+  display: flex;
+  gap: 2rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.help-center-list {
+  display: flex;
+  align-items: center;
+}
+
+.help-center-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  padding-bottom: 0.125rem;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.help-center-label {
+  font-weight: 500;
+  margin: 0.5rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.help-center-link {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.25rem;
+  margin-bottom: 1px;
+}
+
+@media screen and (max-width: 1023px) {
+  .help-center-lists {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .help-center {
+    padding: 0 2rem;
+    margin: 8rem 0;
+  }
+}
 /* 건설사 */
 
 .partnership {
