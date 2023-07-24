@@ -640,6 +640,7 @@ main .text-box .sub-title strong {
 
 .partnership {
   width: 100%;
+  position: relative;
 }
 
 .partnership-container {
@@ -678,6 +679,16 @@ main .text-box .sub-title strong {
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.7);
   word-break: keep-all;
+}
+
+.light-gradation-filter {
+  height: 60%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 50;
+  background-image: linear-gradient(to top, transparent, white);
+  /* background-color: #ee3a3d; */
 }
 
 .partnership-container .light-filter {
@@ -724,7 +735,7 @@ main .text-box .sub-title strong {
 @media screen and (max-width: 767px) {
   .partnership-container {
     height: 20rem;
-    padding-top: 3rem;
+    padding-top: 4rem;
   }
 
   .partnership-image {
