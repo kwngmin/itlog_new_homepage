@@ -20,7 +20,7 @@
 		c1.764,12.983,11.008,17.863,27.523,17.863c24.712,0,29.078-13.297,29.078-25.445V0.5H169.224z"/>
 	<path fill="#EF3B3D" d="M78.274,12.032c0,1.623-1.229,2.939-2.742,2.939c-1.511,0-2.738-1.316-2.738-2.939v-25.925
 		c0-1.623,1.228-2.938,2.738-2.938c1.514,0,2.742,1.315,2.742,2.938V12.032z"/>
-	<text transform="matrix(1 0 0 1 -53.9985 77.9189)" fill="#6E6D6E" font-family="'ArialMT'" font-size="13.2705">For</text>
+	<!-- <text transform="matrix(1 0 0 1 -53.9985 77.9189)" fill="#6E6D6E" font-family="'ArialMT'" font-size="13.2705">For</text>
 	<text transform="matrix(1 0 0 1 -35.9121 77.9189)" fill="#6E6D6E" font-family="'ArialMT'" font-size="13.2705"> </text>
 	<text transform="matrix(1 0 0 1 -33.1768 77.9189)" fill="#6E6D6E" font-family="'ArialMT'" font-size="13.2705">the</text>
 	<text transform="matrix(1 0 0 1 -14.772 77.9189)" fill="#6E6D6E" font-family="'ArialMT'" font-size="13.2705"> </text>
@@ -28,6 +28,6 @@
 	<text transform="matrix(1 0 0 1 44.6636 77.9189)" fill="#6E6D6E" font-family="'ArialMT'" font-size="13.2705"> </text>
 	<text transform="matrix(1 0 0 1 47.3989 77.9189)" fill="#6E6D6E" font-family="'ArialMT'" font-size="13.2705">IT</text>
 	<text transform="matrix(1 0 0 1 57.165 77.9189)" fill="#6E6D6E" font-family="'ArialMT'" font-size="13.2705"> </text>
-	<text transform="matrix(1 0 0 1 59.9004 77.9189)" fill="#6E6D6E" font-family="'ArialMT'" font-size="13.2705">world!</text>
+	<text transform="matrix(1 0 0 1 59.9004 77.9189)" fill="#6E6D6E" font-family="'ArialMT'" font-size="13.2705">world!</text> -->
 </g>
 </svg>

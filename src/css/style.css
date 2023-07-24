@@ -746,7 +746,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  transition: top 0.5s ease, height 0.5s ease;
+  /* transition: top 0.5s ease, height 0.5s ease; */
   z-index: 350;
 }
 
@@ -820,7 +820,7 @@ header {
 }
 
 header.mega-active {
-  height: 9rem;
+  /* height: 9rem; */
   background-color: #fff;
 }
 
