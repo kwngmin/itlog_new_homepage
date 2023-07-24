@@ -479,7 +479,7 @@ main .text-box .sub-title strong {
   border-left: 2px solid lightgray;
   height: 1rem;
   margin: 0 0.5rem;
-  margin-top: 0.125rem;
+  margin-top: 1px;
 }
 
 .instance-box .instance-text {
@@ -574,7 +574,7 @@ main .text-box .sub-title strong {
 
 .help-center-label {
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   margin: 0.5rem;
   color: rgba(0, 0, 0, 0.4);
 }
@@ -582,7 +582,7 @@ main .text-box .sub-title strong {
 .help-center-link {
   font-weight: 500;
   color: rgba(0, 0, 0, 0.8);
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   margin-bottom: 1px;
 }
 
@@ -635,11 +635,11 @@ main .text-box .sub-title strong {
     margin: 8rem 0;
   }
   .help-center-label {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 
   .help-center-link {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 }
 
