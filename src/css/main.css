@@ -9,9 +9,10 @@ main {
   justify-content: center;
   align-items: center;
   background-color: white;
+  padding: 7rem 4rem 14rem;
+  overflow: hidden;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
 }
 
 main .object-cover {
@@ -25,22 +26,27 @@ main .object-cover {
 main .white-gradation {
   position: absolute;
   width: 100%;
-  height: 50%;
+  height: 30%;
   bottom: -0.25rem;
   z-index: 30;
   background-image: linear-gradient(to bottom, transparent, white);
 }
 
 /* z-10 px-4 sm:px-6 md:px-10 xl:px-0 w-[1024px] pb-20 sm:pb-28 md:pb-8 */
-
-main .text-box {
+/* main .main-wrapper {
   padding: 7rem 4rem 14rem;
   width: 100%;
-  max-width: 1366px;
+  background-color: indigo;
+} */
+
+main .text-box {
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   z-index: 10;
   word-break: keep-all;
   letter-spacing: -0.05rem;
+  /* background-color: skyblue; */
 }
 
 main .text-box .title {
@@ -65,13 +71,13 @@ main .text-box .sub-title strong {
 }
 
 @media screen and (max-width: 1365px) {
-  .main {
+  main {
     background-color: blue;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  .main {
+  main {
     background-color: green;
   }
   main .text-box .twoline {
@@ -86,10 +92,8 @@ main .text-box .sub-title strong {
 }
 
 @media screen and (max-width: 767px) {
-  .main {
+  main {
     background-color: yellow;
-  }
-  main .text-box {
     padding: 5rem 2rem 10rem;
   }
   main .text-box h1.twoline {
@@ -403,46 +407,55 @@ main .text-box .sub-title strong {
 .instance {
   width: 100%;
   padding: 7rem 4rem 14rem;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
 }
 
 .instance-container {
-  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  /* background-color: cadetblue; */
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .instance-title {
-  background-color: #a9d0ff;
-  padding-bottom: 4rem;
+  /* background-color: #a9d0ff; */
+  /* height: 100%; */
+  /* padding-bottom: 4rem; */
 }
 
 .instance-contents {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 4rem;
+  gap: 1rem;
 }
 
+.instance-logo {
+  height: 4rem;
+  display: flex;
+  align-items: end;
+}
 .instance-contents .instance-grid {
   width: 100%;
-  height: 30rem;
   margin: 0 auto;
-  position: relative;
+  /* position: relative; */
 }
 
 .instance-grid .instance-box {
   width: 100%;
   height: 100%;
-  /* box-shadow: 3px 3px 5px #31456a66; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .instance-box .instance-img {
   width: 100%;
-  height: 64%;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
-  border-radius: 1rem;
+  border-radius: 0.75rem;
 }
 
 .instance-box .instance-img img {
@@ -450,32 +463,59 @@ main .text-box .sub-title strong {
   height: 100%;
 }
 
-.instance-box h4 {
-  padding: 2rem 0 1rem;
-  font-weight: bold;
+.instance-box .instance-text {
+  display: flex;
 }
 
-.instance-box h6 {
-  font-weight: bold;
-  /* display: flex; */
-  width: 100%;
+.instance-box .instance-title {
+  font-weight: 500;
 }
 
-.instance-box h6 div {
-  border-left: 1px;
-  border-color: #011936;
-  height: 20px;
-  width: 1px;
-  margin: 0 9rem;
+.instance-box .instance-text-box .instance-text {
+  display: flex;
+  align-items: center;
 }
 
-.instance-box p {
-  margin: 1rem 0 2rem 0;
+.instance-box .instance-text-box .instance-client {
+  font-weight: 500;
+}
+
+.instance-box .instance-text-box .instance-location {
+  color: rgb(0 0 0 / 0.7);
+}
+
+.instance-box .instance-text-box .instance-text .instance-seperator {
+  border-left: 2px solid lightgray;
+  /* border-color: lightgray; */
+  height: 1rem;
+  margin: 0 0.5rem;
+  margin-top: 0.125rem;
+}
+
+.instance-box .instance-text {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   text-overflow: ellipsis;
   overflow-y: hidden;
+}
+
+@media screen and (max-width: 1023px) {
+  .instance-contents {
+    grid-template-columns: repeat(1, 3fr);
+  }
+
+  .instance-container .show768 button {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .instance {
+    padding: 5rem 2rem 10rem;
+  }
 }
 
 /* 건설사 */
@@ -630,10 +670,6 @@ main .text-box .sub-title strong {
   .merit {
     padding: 14rem 4rem 20rem;
   }
-
-  .instance-contents {
-    gap: 2rem;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -698,18 +734,6 @@ main .text-box .sub-title strong {
 
   .productSwiper-container .swiper-slide {
     width: 90%;
-  }
-
-  .instance {
-    padding: 5rem 2rem 10rem;
-  }
-
-  .instance-contents {
-    grid-template-columns: repeat(1, 3fr);
-  }
-
-  .instance-container .show768 button {
-    margin: 0 auto;
   }
 
   .partnership-container {
