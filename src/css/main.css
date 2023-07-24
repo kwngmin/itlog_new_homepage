@@ -104,6 +104,7 @@ main .text-box .sub-title strong {
   }
   main .text-box h1.twoline {
     font-size: 4rem;
+    line-height: 1.5;
   }
   /* main .text-box h1.twoline {
     display: block;
