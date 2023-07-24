@@ -48,20 +48,19 @@ main .text-box .title {
   word-break: keep-all;
 }
 
-main .text-box h1.twoline {
+main .text-box .twoline {
   display: none;
 }
 /* sub-title */
 /* lg:leading-normal xl:leading-normal w-full sm:w-4/5 md:w-3/5 text-xl sm:text-2xl leading-normal sm:leadeing-normal md:leading-normal tracking-tight lg:tracking-tighter text-black/70 break-keep */
 
 main .text-box .sub-title {
-  /* font-weight: 700; */
   margin-top: 1rem;
   word-break: keep-all;
+  line-height: 1.5;
 }
 
 main .text-box .sub-title strong {
-  /* font-weight: 700; */
   color: red;
 }
 
@@ -69,30 +68,21 @@ main .text-box .sub-title strong {
   .main {
     background-color: blue;
   }
-  /* main .text-box h1.twoline {
-    display: block;
-  }
-  main .text-box h1.oneline {
-    display: none;
-  } */
 }
 
 @media screen and (max-width: 1023px) {
   .main {
     background-color: green;
   }
-  main .text-box h1.twoline {
+  main .text-box .twoline {
     display: block;
   }
-  main .text-box h1.oneline {
+  main .text-box .oneline {
     display: none;
   }
   main .text-box .sub-title {
-    width: 90%;
+    width: 60%;
   }
-  /* .text-box {
-    width: 100%;
-  } */
 }
 
 @media screen and (max-width: 767px) {
@@ -105,12 +95,9 @@ main .text-box .sub-title strong {
   main .text-box h1.twoline {
     font-size: 4.5rem;
   }
-  /* main .text-box h1.twoline {
-    display: block;
+  main .text-box .sub-title {
+    width: 90%;
   }
-  main .text-box h1.oneline {
-    display: none;
-  } */
 }
 
 /* merit(카운트) */
