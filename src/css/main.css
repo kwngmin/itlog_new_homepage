@@ -677,6 +677,7 @@ main .text-box .sub-title strong {
 .partnership-title h3 {
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.7);
+  word-break: keep-all;
 }
 
 .partnership-container .light-filter {
@@ -723,7 +724,7 @@ main .text-box .sub-title strong {
 @media screen and (max-width: 767px) {
   .partnership-container {
     height: 20rem;
-    padding-top: 4rem;
+    padding-top: 3rem;
   }
 
   .partnership-image {
