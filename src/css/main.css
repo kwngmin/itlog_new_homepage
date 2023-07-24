@@ -407,6 +407,7 @@ main .text-box .sub-title strong {
 .instance {
   width: 100%;
   padding: 0 4rem;
+  margin: 12rem 0;
   /* background-color: antiquewhite; */
 }
 
@@ -509,6 +510,7 @@ main .text-box .sub-title strong {
 }
 
 /* 고객센터 */
+
 .help-center {
   width: 100%;
   padding: 0 4rem;
@@ -633,6 +635,7 @@ main .text-box .sub-title strong {
     margin: 8rem 0;
   }
 }
+
 /* 건설사 */
 
 .partnership {
@@ -641,10 +644,11 @@ main .text-box .sub-title strong {
 
 .partnership-container {
   width: 100%;
-  height: 50rem;
+  height: 24rem;
   position: relative;
   overflow: hidden;
-  padding: 12rem 4rem;
+  padding-top: 6rem;
+  /* padding: 12rem 4rem; */
 }
 
 .partnership-container::before {
@@ -665,14 +669,19 @@ main .text-box .sub-title strong {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
+  z-index: 100;
+  position: relative;
 }
 
-.partnership-title h2 {
-  padding-top: 1rem;
+.partnership-title h3 {
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .partnership-container .light-filter {
-  height: 20rem;
+  /* height: 12rem; */
+  height: 100%;
   top: initial;
   bottom: 0;
 }
@@ -681,7 +690,7 @@ main .text-box .sub-title strong {
   display: flex;
   position: absolute;
   bottom: 0;
-  height: 20rem;
+  height: 12rem;
 }
 
 .partnership-container .partnership-slide {
@@ -696,7 +705,7 @@ main .text-box .sub-title strong {
 }
 
 .partnership-slide .slide-image {
-  width: 25rem;
+  width: 12rem;
   margin: 2rem;
   transition: transform 0.3s ease;
 }
@@ -709,6 +718,21 @@ main .text-box .sub-title strong {
   width: 100%;
   height: 100%;
   /* filter: contrast(0.5); */
+}
+
+@media screen and (max-width: 767px) {
+  .partnership-container {
+    height: 20rem;
+    padding-top: 4rem;
+  }
+
+  .partnership-image {
+    height: 10rem;
+  }
+
+  .partnership-title h3 {
+    font-size: 1.75rem;
+  }
 }
 
 @keyframes loop {
@@ -851,20 +875,6 @@ main .text-box .sub-title strong {
     width: 90%;
   }
 
-  .partnership-container {
-    height: 46rem;
-    padding: 10rem 2rem;
-  }
-
-  .partnership-image,
-  .partnership-container .light-filter {
-    height: 16rem;
-  }
-
-  .partnership-slide .slide-image {
-    width: 20rem;
-  }
-
   footer {
     padding: 10rem 2rem 4rem;
   }
@@ -876,10 +886,10 @@ main .text-box .sub-title strong {
 
 @media screen and (max-width: 501px) {
   .partnership-container {
-    padding: 7rem 2rem;
+    /* padding: 7rem 2rem; */
   }
 
   .partnership-br {
-    display: block;
+    /* display: block; */
   }
 }
