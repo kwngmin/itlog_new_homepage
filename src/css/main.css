@@ -493,7 +493,7 @@ main .text-box .sub-title strong {
 }
 
 .instance-box .instance-text {
-  margin-top: 0.5rem;
+  margin-top: 0.125rem;
   margin-bottom: 1rem;
   display: -webkit-box;
   -webkit-box-orient: vertical;
