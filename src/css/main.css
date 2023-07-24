@@ -548,7 +548,7 @@ main .text-box .sub-title strong {
 
 .help-center-lists {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   color: rgba(0, 0, 0, 0.7);
 }
 
@@ -586,7 +586,7 @@ main .text-box .sub-title strong {
 
 .help-center-buttons {
   display: flex;
-  max-width: 800px;
+  max-width: 1000px;
   gap: 1rem;
   margin: 2rem 0;
   font-size: 1.5rem;
