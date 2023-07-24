@@ -412,15 +412,16 @@ main .text-box .sub-title strong {
 
 .solution-container {
   display: flex;
-  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 1.5rem; */
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
-.solution-left {
+.solution-text-box {
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 .solution-sub-title {
   color: red;
@@ -428,6 +429,45 @@ main .text-box .sub-title strong {
   margin-bottom: 4rem;
 }
 .solution-title {
+  margin-bottom: 1rem;
+}
+.solution-content {
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 4rem;
+  line-height: 1.65;
+}
+.solution-btn {
+  width: fit-content;
+  background-color: #ee3a3d;
+  color: white;
+  border-radius: 9999px;
+  padding: 0 2rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+.solution-graphic {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  z-index: 20;
+  /* padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem; */
+  aspect-ratio: 1 / 1;
+}
+.solution-gate {
+  background-color: rgb(240 253 244);
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 /* 시공사례 */
