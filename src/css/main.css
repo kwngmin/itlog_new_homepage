@@ -71,15 +71,15 @@ main .text-box .sub-title strong {
 }
 
 @media screen and (max-width: 1365px) {
-  main {
+  /* main {
     background-color: blue;
-  }
+  } */
 }
 
 @media screen and (max-width: 1023px) {
-  main {
+  /* main {
     background-color: green;
-  }
+  } */
   main .text-box .twoline {
     display: block;
   }
@@ -93,7 +93,7 @@ main .text-box .sub-title strong {
 
 @media screen and (max-width: 767px) {
   main {
-    background-color: yellow;
+    /* background-color: yellow; */
     padding: 5rem 2rem 10rem;
   }
   main .text-box h1.twoline {
@@ -633,6 +633,13 @@ main .text-box .sub-title strong {
   .help-center {
     padding: 0 2rem;
     margin: 8rem 0;
+  }
+  .help-center-label {
+    font-size: 1.125rem;
+  }
+
+  .help-center-link {
+    font-size: 1.125rem;
   }
 }
 
