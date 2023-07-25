@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "NanumSquareNeo";
-  src: url("/src/fonts/NanumSquareNeo-Variable.woff2");
+  src: url("/src/fonts/NanumSquareNeo-Variable.woff");
 }
 html {
   width: 100%;
