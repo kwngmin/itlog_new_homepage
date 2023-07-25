@@ -410,7 +410,7 @@ main .text-box .sub-title strong {
 .solution {
   width: 100%;
   padding: 0 4rem;
-  margin: 12rem 0;
+  margin: 16rem 0;
 }
 
 .solution-container {
@@ -530,8 +530,11 @@ main .text-box .sub-title strong {
 }
 .solution-icon {
   display: flex;
-  width: 6rem;
+  /* width: 6rem;
   padding: 1.25rem;
+  border-radius: 2rem; */
+  width: 7rem;
+  padding: 1.5rem;
   border-radius: 2rem;
   overflow: hidden;
   background-color: white;
@@ -557,8 +560,8 @@ main .text-box .sub-title strong {
     width: 90%;
   }
   .solution-icon {
-    width: 5rem;
-    padding: 1rem;
+    width: 6rem;
+    padding: 1.25rem;
     border-radius: 1.75rem;
   }
   h5.solution-sub-title {
@@ -597,8 +600,8 @@ main .text-box .sub-title strong {
     aspect-ratio: 3 /4;
   }
   .solution-icon {
-    width: 6rem;
-    padding: 1.5rem;
+    width: 5rem;
+    padding: 1.125rem;
     border-radius: 1.5rem;
   }
 }
