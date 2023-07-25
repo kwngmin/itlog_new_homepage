@@ -482,7 +482,6 @@ main .text-box .sub-title strong {
 .solution-background-crane {
   position: absolute;
   width: 104%;
-  /* bottom: 0; */
   left: -2%;
 }
 .solution-background-sensor {
@@ -493,9 +492,6 @@ main .text-box .sub-title strong {
   position: absolute;
   width: 70%;
 }
-/* .solution-background img {
-  width: 100%;
-} */
 .solution-gate {
   background-color: rgb(240, 253, 244);
   border-radius: 1rem;
@@ -512,7 +508,6 @@ main .text-box .sub-title strong {
   display: flex;
   gap: 1rem;
   z-index: 20;
-  /* margin-top: 2rem; */
 }
 .solution-crane {
   background-color: rgb(255, 247, 237);
@@ -566,16 +561,13 @@ main .text-box .sub-title strong {
   .solution-graphic {
     aspect-ratio: 1 / 1;
   }
-  /* .solution-sensor {
-    display: grid;
-    grid-row: ;
-  } */
   .solution-background-sensor {
     width: 90%;
   }
   .solution-icon {
     width: 5rem;
     padding: 1rem;
+    border-radius: 1.75rem;
   }
   h5.solution-sub-title {
     font-size: 1.25rem;
@@ -612,6 +604,11 @@ main .text-box .sub-title strong {
   .solution-graphic {
     aspect-ratio: 3 /4;
   }
+  .solution-icon {
+    width: 6rem;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+  }
 }
 @media screen and (max-width: 640px) {
   .solution-container {
@@ -642,8 +639,9 @@ main .text-box .sub-title strong {
   }
 
   .solution-icon {
-    width: 6rem;
-    padding: 1.5rem;
+    width: 5rem;
+    padding: 1.25rem;
+    border-radius: 1.5rem;
   }
   .solution-background-gate {
     width: 70%;
@@ -660,25 +658,6 @@ main .text-box .sub-title strong {
   .solution-background-broadcast {
     width: 70%;
   }
-  /* h5.solution-sub-title {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-  }
-  h3.solution-title {
-    font-size: 1.875rem;
-  }
-  .solution-content {
-    margin-bottom: 2rem;
-  }
-  p.text-xl {
-    font-size: 1.125rem;
-  }
-  .solution-btn {
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 0 1.5rem;
-    height: 2.5rem;
-  } */
 }
 
 /* 시공사례 */
