@@ -504,7 +504,9 @@ main .text-box .sub-title strong {
   flex-direction: column;
   padding-top: 2rem;
 }
-.solution-cctv div {
+.solution-cctv div,
+.solution-crane div,
+.solution-sensor div {
   display: flex;
   gap: 1rem;
   z-index: 20;
@@ -515,21 +517,11 @@ main .text-box .sub-title strong {
   overflow: hidden;
   flex-direction: column;
 }
-.solution-crane div {
-  display: flex;
-  gap: 1rem;
-  z-index: 20;
-}
 .solution-sensor {
   background-color: rgb(240, 249, 255);
   border-radius: 1rem;
   overflow: hidden;
   flex-direction: column;
-}
-.solution-sensor div {
-  display: flex;
-  gap: 1rem;
-  z-index: 20;
 }
 .solution-broadcast {
   background-color: rgb(245, 243, 255);
@@ -628,6 +620,12 @@ main .text-box .sub-title strong {
     width: 100%;
     aspect-ratio: 2 / 1;
     margin-bottom: 2rem;
+    gap: 0.5rem;
+  }
+  .solution-cctv div,
+  .solution-crane div,
+  .solution-sensor div {
+    gap: 0.5rem;
   }
   .solution-cctv {
     flex-direction: row;
