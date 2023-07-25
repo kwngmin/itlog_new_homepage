@@ -505,9 +505,14 @@ main .text-box .sub-title strong {
     padding: 0 1rem;
     margin: 8rem 0;
   }
+  .solution-text-box-left {
+    width: 50%;
+    margin-right: 2rem;
+  }
+}
 @media screen and (max-width: 640px) {
   .solution-container {
-flex-direction: column;
+    flex-direction: column;
   }
   .solution-text-box-left {
     width: 100%;
@@ -517,7 +522,7 @@ flex-direction: column;
   .solution-graphic {
     width: 100%;
     aspect-ratio: 2 / 1;
-margin-bottom: 2rem;
+    margin-bottom: 2rem;
   }
   .solution-icon {
     width: 6rem;
