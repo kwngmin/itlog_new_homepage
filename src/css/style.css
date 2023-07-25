@@ -12,7 +12,7 @@
 html {
   width: 100%;
   /* font-size: 68%; */
-  scrollbar-width: thin;
+  /* scrollbar-width: thin; */
 }
 
 /* @media (max-width: 767px) {
@@ -39,7 +39,10 @@ html {
 
 body {
   width: 100%;
+  height: 100vh;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
   /* font-size: clamp(1.4rem, 1.4vw, 1.6rem); */
   /* letter-spacing: 0.1px; */
 }
@@ -73,7 +76,7 @@ h2 {
 
 h3 {
   font-family: "NanumSquare", sans-serif;
-  font-weight: 800;
+  font-weight: 900;
 
   /* font-family: "NanumSquareNeo"; */
   font-size: 2.25rem;
@@ -125,10 +128,6 @@ h6 {
 ul,
 li {
   list-style: none;
-}
-
-p {
-  /* font-size: clamp(1.4rem, 1.4vw, 1.6rem); */
 }
 
 small {
@@ -791,7 +790,8 @@ label {
 
 .wrapper {
   width: 100%;
-  transition: margin-left 0.5s;
+  /* background-color: #31456a; */
+  /* transition: margin-left 0.5s; */
 }
 
 #sideNavOpenFilter {

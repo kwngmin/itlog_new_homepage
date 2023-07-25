@@ -1,14 +1,17 @@
 .header-active .header-container {
   border-bottom: 1px solid transparent;
 }
-
+body {
+  display: flex;
+  flex-direction: column;
+}
 /* 메인 */
 main {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  /* background-color: white; */
   padding: 7rem 4rem 14rem;
   overflow: hidden;
   width: 100%;
@@ -54,15 +57,9 @@ main .text-box .sub-title strong {
 }
 
 @media screen and (max-width: 1365px) {
-  /* main {
-    background-color: blue;
-  } */
 }
 
 @media screen and (max-width: 1023px) {
-  /* main {
-    background-color: green;
-  } */
   main .text-box h1.title {
     font-size: 3rem;
   }
@@ -73,12 +70,9 @@ main .text-box .sub-title strong {
 
 @media screen and (max-width: 767px) {
   main {
-    /* background-color: yellow; */
     padding: 5rem 1rem 10rem;
   }
-  /* main .text-box .title {
-    font-weight: 800;
-  } */
+
   main .text-box h1.title {
     font-size: 2.5rem;
   }
@@ -88,8 +82,148 @@ main .text-box .sub-title strong {
   }
 }
 
-/* merit(카운트) */
+/* 노하우 */
 
+.knowhow {
+  width: 100%;
+  padding: 0 4rem;
+  margin: 12rem 0;
+}
+.knowhow-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 1rem;
+  /* background-color: #a9d0ff; */
+}
+h3.knowhow-description {
+  line-height: 1.25;
+  color: rgba(0, 0, 0, 0.5);
+}
+h3.knowhow-description * {
+  word-break: keep-all;
+}
+.knowhow-description-red {
+  color: red;
+}
+.knowhow-groups {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.knowhow-img {
+  overflow: hidden;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+  border-radius: 0.75rem;
+}
+.knowhow-img img {
+  height: 100%;
+  width: 100%;
+  /* width: 100%;
+  height: auto; */
+}
+.knowhow-num {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ee3a3d;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+.knowhow-num img {
+  margin-bottom: 0.5rem;
+}
+.knowhow-num img.knowhow-hammer,
+.knowhow-num img.knowhow-idea {
+  height: 6rem;
+  padding: 0.5rem;
+}
+.knowhow-num img.knowhow-hand {
+  height: 6.5rem;
+}
+.knowhow-num h2 {
+  color: white;
+  margin-left: 0.5rem;
+}
+.knowhow-num h2 span {
+  color: #7e0a0c;
+}
+.knowhow-num p {
+  color: white;
+}
+.knowhow-show {
+  display: none;
+}
+.knowhow-hide {
+  display: flex;
+}
+@media screen and (max-width: 1365px) {
+  .knowhow-num img.knowhow-hammer,
+  .knowhow-num img.knowhow-idea {
+    height: 5rem;
+    padding: 0.5rem;
+  }
+  .knowhow-num img.knowhow-hand {
+    height: 5.5rem;
+  }
+  .knowhow-num h2 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .knowhow-num img.knowhow-hammer,
+  .knowhow-num img.knowhow-idea {
+    height: 4.5rem;
+    padding: 0.5rem;
+  }
+  .knowhow-num img.knowhow-hand {
+    height: 5rem;
+  }
+  .knowhow-num h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .knowhow {
+    padding: 0 1rem;
+    margin: 8rem 0;
+  }
+  .knowhow-groups {
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .knowhow-num h2 {
+    font-size: 2.5rem;
+  }
+  .knowhow-show {
+    display: flex;
+  }
+  .knowhow-hide {
+    display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  .knowhow-num h2 {
+    font-size: 2rem;
+  }
+  .knowhow-num img {
+    margin-bottom: 0;
+  }
+}
+/* 
+.knowhow-contents {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+} */
+
+/* merit(카운트) */
 .merit {
   width: 100%;
   padding: 20rem 4rem 26rem;
@@ -422,7 +556,7 @@ main .text-box .sub-title strong {
   margin-bottom: 1rem;
 }
 .solution-content {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.8);
   margin-bottom: 3rem;
   line-height: 1.65;
 }
@@ -733,7 +867,7 @@ main .text-box .sub-title strong {
 
 @media screen and (max-width: 1023px) {
   .instance-contents {
-    grid-template-columns: repeat(1, 3fr);
+    grid-template-columns: repeat(2, 3fr);
   }
 
   .instance-container .show768 button {
@@ -748,6 +882,11 @@ main .text-box .sub-title strong {
   }
   .instance-box .instance-img {
     aspect-ratio: 2 / 1;
+  }
+}
+@media screen and (max-width: 640px) {
+  .instance-contents {
+    grid-template-columns: repeat(1, 3fr);
   }
 }
 
@@ -1067,14 +1206,6 @@ main .text-box .sub-title strong {
 }
 
 @media screen and (max-width: 767px) {
-  header.header-active {
-    height: 8rem;
-  }
-
-  .header-active #headerLogo {
-    width: 8rem;
-  }
-
   .merit {
     padding: 10rem 2rem 16rem;
   }
@@ -1140,11 +1271,4 @@ main .text-box .sub-title strong {
 }
 
 @media screen and (max-width: 501px) {
-  .partnership-container {
-    /* padding: 7rem 2rem; */
-  }
-
-  .partnership-br {
-    /* display: block; */
-  }
 }
