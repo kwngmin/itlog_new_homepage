@@ -531,6 +531,24 @@ main .text-box .sub-title strong {
   .solution-background-gate {
     width: 60%;
   }
+  .solution-sub-title {
+    color: red;
+    display: block;
+    margin-bottom: 4rem;
+  }
+  .solution-title {
+    margin-bottom: 1rem;
+  }
+  .solution-content {
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 4rem;
+    line-height: 1.65;
+  }
+  .solution-btn {
+    font-size: 0.875rem;
+    padding: 0 1.5rem;
+    height: 2.5rem;
+  }
 }
 
 /* 시공사례 */
@@ -636,6 +654,9 @@ main .text-box .sub-title strong {
   .instance {
     padding: 0 1rem;
     margin: 8rem 0;
+  }
+  .instance-box .instance-img {
+    aspect-ratio: 2 / 1;
   }
 }
 
