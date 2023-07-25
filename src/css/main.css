@@ -423,13 +423,13 @@ main .text-box .sub-title strong {
 .solution-text-box-left {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 50%;
   margin-right: 4rem;
 }
 .solution-text-box-right {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 50%;
   margin-left: 4rem;
 }
 .solution-sub-title {
@@ -495,8 +495,7 @@ main .text-box .sub-title strong {
 .solution-icon img {
   width: 100%;
 }
-@media screen and (max-width: 1279px) {
-  /* @media screen and (max-width: 1023px) { */
+@media screen and (max-width: 1023px) {
   .solution-text-box-left {
     width: 60%;
     margin-right: 2rem;
@@ -506,7 +505,7 @@ main .text-box .sub-title strong {
     margin-left: 2rem;
   }
   .solution-graphic {
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 3 / 4;
   }
   .solution-icon {
     width: 5rem;
@@ -529,6 +528,25 @@ main .text-box .sub-title strong {
   .solution-graphic {
     aspect-ratio: 3 / 4;
   }
+  h5.solution-sub-title {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  h3.solution-title {
+    font-size: 1.875rem;
+  }
+  .solution-content {
+    margin-bottom: 2rem;
+  }
+  p.text-xl {
+    font-size: 1.125rem;
+  }
+  .solution-btn {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 1.5rem;
+    height: 2.5rem;
+  }
 }
 @media screen and (max-width: 640px) {
   .solution-container {
@@ -537,6 +555,11 @@ main .text-box .sub-title strong {
   .solution-text-box-left {
     width: 100%;
     margin-right: 0;
+    order: 9999;
+  }
+  .solution-text-box-right {
+    width: 100%;
+    margin-left: 0;
     order: 9999;
   }
   .solution-graphic {
@@ -551,13 +574,12 @@ main .text-box .sub-title strong {
   .solution-background-gate {
     width: 70%;
   }
-  h5.solution-sub-title {
+  /* h5.solution-sub-title {
     font-size: 1.25rem;
     margin-bottom: 2rem;
   }
   h3.solution-title {
     font-size: 1.875rem;
-    /* margin-bottom: 1rem; */
   }
   .solution-content {
     margin-bottom: 2rem;
@@ -570,7 +592,7 @@ main .text-box .sub-title strong {
     font-weight: 500;
     padding: 0 1.5rem;
     height: 2.5rem;
-  }
+  } */
 }
 
 /* 시공사례 */
