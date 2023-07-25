@@ -429,6 +429,8 @@ main .text-box .sub-title strong {
 .solution-text-box-right {
   display: flex;
   flex-direction: column;
+  width: 60%;
+  margin-left: 4rem;
 }
 .solution-sub-title {
   color: red;
@@ -498,6 +500,10 @@ main .text-box .sub-title strong {
     width: 60%;
     margin-right: 2rem;
   }
+  .solution-text-box-right {
+    width: 60%;
+    margin-left: 2rem;
+  }
   .solution-graphic {
     aspect-ratio: 1 / 1;
   }
@@ -514,6 +520,10 @@ main .text-box .sub-title strong {
   .solution-text-box-left {
     width: 50%;
     margin-right: 2rem;
+  }
+  .solution-text-box-right {
+    width: 50%;
+    margin-left: 2rem;
   }
   .solution-graphic {
     aspect-ratio: 3 / 4;
@@ -556,6 +566,7 @@ main .text-box .sub-title strong {
   }
   .solution-btn {
     font-size: 1rem;
+    font-weight: 500;
     padding: 0 1.5rem;
     height: 2.5rem;
   }
