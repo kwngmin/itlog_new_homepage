@@ -529,20 +529,21 @@ main .text-box .sub-title strong {
     padding: 1.5rem;
   }
   .solution-background-gate {
-    width: 60%;
+    width: 70%;
   }
-  .solution-sub-title {
-    color: red;
-    display: block;
-    margin-bottom: 4rem;
+  h5.solution-sub-title {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
   }
-  .solution-title {
-    margin-bottom: 1rem;
+  h3.solution-title {
+    font-size: 1.875rem;
+    /* margin-bottom: 1rem; */
   }
   .solution-content {
-    color: rgba(0, 0, 0, 0.7);
-    margin-bottom: 4rem;
-    line-height: 1.65;
+    margin-bottom: 2rem;
+  }
+  p.text-xl {
+    font-size: 1.125rem;
   }
   .solution-btn {
     font-size: 0.875rem;
