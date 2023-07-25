@@ -1,8 +1,13 @@
 @import url("spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css");
 @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-@import url("https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css");
-/* @import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css"); */
+/* @import url("https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css"); */
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+
+@font-face {
+  font-family: "NanumSquareNeo";
+  src: url("/src/fonts/NanumSquareNeo-Variable.woff2");
+}
 
 html {
   width: 100%;
@@ -40,7 +45,7 @@ body {
 }
 
 h1 {
-  font-family: "NanumSquare";
+  font-family: "NanumSquare", sans-serif;
   /* font-family: "NanumSquareNeo"; */
   font-size: 3.75rem;
   /* line-height: 1; */
@@ -51,7 +56,7 @@ h1 {
 }
 
 h2 {
-  font-family: "NanumSquare";
+  font-family: "NanumSquare", sans-serif;
   /* font-family: "NanumSquareNeo"; */
   font-size: 3rem;
   /* line-height: 1rem; */
@@ -62,7 +67,7 @@ h2 {
 }
 
 h3 {
-  font-family: "NanumSquare";
+  font-family: "NanumSquare", sans-serif;
   /* font-family: "NanumSquareNeo"; */
   font-size: 2.25rem;
   line-height: 2.5rem;
