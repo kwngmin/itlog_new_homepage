@@ -809,6 +809,7 @@ h3.knowhow-description * {
 .instance-contents .instance-grid {
   width: 100%;
   margin: 0 auto;
+  height: fit-content;
 }
 
 .instance-grid .instance-box {
