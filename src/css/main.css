@@ -495,7 +495,8 @@ main .text-box .sub-title strong {
 .solution-icon img {
   width: 100%;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1279px) {
+  /* @media screen and (max-width: 1023px) { */
   .solution-text-box-left {
     width: 60%;
     margin-right: 2rem;
