@@ -96,9 +96,9 @@ main .text-box .sub-title strong {
     /* background-color: yellow; */
     padding: 5rem 1rem 10rem;
   }
-  main .text-box .title {
+  /* main .text-box .title {
     font-weight: 800;
-  }
+  } */
   main .text-box h1.twoline {
     font-size: 2.5rem;
   }
@@ -423,7 +423,7 @@ main .text-box .sub-title strong {
 .solution-text-box-left {
   display: flex;
   flex-direction: column;
-  width: 64%;
+  width: 60%;
   margin-right: 4rem;
 }
 .solution-text-box-right {
@@ -466,17 +466,17 @@ main .text-box .sub-title strong {
   gap: 1rem;
   z-index: 20;
   flex-grow: 1;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 3;
 }
 .solution-background-gate {
   position: absolute;
-  width: 80%;
+  width: 70%;
 }
 .solution-background img {
   width: 100%;
 }
 .solution-gate {
-  background-color: rgb(240 253 244);
+  background-color: rgb(240, 253, 244);
   border-radius: 1rem;
   overflow: hidden;
 }
@@ -498,6 +498,9 @@ main .text-box .sub-title strong {
     width: 60%;
     margin-right: 2rem;
   }
+  .solution-graphic {
+    aspect-ratio: 1 / 1;
+  }
   .solution-icon {
     width: 5rem;
     padding: 1rem;
@@ -511,6 +514,9 @@ main .text-box .sub-title strong {
   .solution-text-box-left {
     width: 50%;
     margin-right: 2rem;
+  }
+  .solution-graphic {
+    aspect-ratio: 3 / 4;
   }
 }
 @media screen and (max-width: 640px) {
@@ -549,7 +555,7 @@ main .text-box .sub-title strong {
     font-size: 1.125rem;
   }
   .solution-btn {
-    font-size: 0.875rem;
+    font-size: 1rem;
     padding: 0 1.5rem;
     height: 2.5rem;
   }
