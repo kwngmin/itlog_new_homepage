@@ -872,7 +872,6 @@ h3.knowhow-description * {
   .instance-contents {
     grid-template-columns: repeat(2, 3fr);
   }
-
   .instance-container .show768 button {
     margin: 0 auto;
   }
