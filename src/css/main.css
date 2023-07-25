@@ -14,7 +14,6 @@ main {
   width: 100%;
   height: 100vh;
 }
-
 main .object-cover {
   object-fit: cover;
   position: absolute;
@@ -22,7 +21,6 @@ main .object-cover {
   height: 100%;
   top: 2rem;
 }
-
 main .white-gradation {
   position: absolute;
   width: 100%;
@@ -31,14 +29,6 @@ main .white-gradation {
   z-index: 30;
   background-image: linear-gradient(to bottom, transparent, white);
 }
-
-/* z-10 px-4 sm:px-6 md:px-10 xl:px-0 w-[1024px] pb-20 sm:pb-28 md:pb-8 */
-/* main .main-wrapper {
-  padding: 7rem 4rem 14rem;
-  width: 100%;
-  background-color: indigo;
-} */
-
 main .text-box {
   width: 100%;
   max-width: 1200px;
@@ -48,18 +38,11 @@ main .text-box {
   letter-spacing: -0.05rem;
   /* background-color: skyblue; */
 }
-
 main .text-box .title {
   font-weight: 800;
   word-break: keep-all;
+  line-height: 1.25;
 }
-
-main .text-box .twoline {
-  display: none;
-}
-/* sub-title */
-/* lg:leading-normal xl:leading-normal w-full sm:w-4/5 md:w-3/5 text-xl sm:text-2xl leading-normal sm:leadeing-normal md:leading-normal tracking-tight lg:tracking-tighter text-black/70 break-keep */
-
 main .text-box .sub-title {
   margin-top: 1rem;
   word-break: keep-all;
@@ -80,14 +63,11 @@ main .text-box .sub-title strong {
   /* main {
     background-color: green;
   } */
-  main .text-box .twoline {
-    display: block;
-  }
-  main .text-box .oneline {
-    display: none;
+  main .text-box h1.title {
+    font-size: 3rem;
   }
   main .text-box .sub-title {
-    width: 60%;
+    width: 80%;
   }
 }
 
@@ -99,10 +79,11 @@ main .text-box .sub-title strong {
   /* main .text-box .title {
     font-weight: 800;
   } */
-  main .text-box h1.twoline {
+  main .text-box h1.title {
     font-size: 2.5rem;
   }
   main .text-box .sub-title {
+    font-size: 1.25rem;
     width: 90%;
   }
 }
