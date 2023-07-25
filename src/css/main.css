@@ -632,7 +632,10 @@ main .text-box .sub-title strong {
     aspect-ratio: 2 / 1;
     margin-bottom: 2rem;
   }
-  .solution-cctv,
+  .solution-cctv {
+    flex-direction: row;
+    padding-top: 0;
+  }
   .solution-crane,
   .solution-sensor {
     flex-direction: row;
