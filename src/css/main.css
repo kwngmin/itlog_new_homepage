@@ -882,9 +882,9 @@ h3.knowhow-description * {
     padding: 0 1rem;
     margin: 8rem 0;
   }
-  .instance-box .instance-img {
+  /* .instance-box .instance-img {
     aspect-ratio: 2 / 1;
-  }
+  } */
 }
 @media screen and (max-width: 640px) {
   .instance-contents {
