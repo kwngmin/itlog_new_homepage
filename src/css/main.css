@@ -575,7 +575,7 @@ h3.knowhow-description * {
     right: -24%;
   }
   .productSwiper-container .swiper-slide .swiper-graphic-face {
-    right: -24%;
+    right: -28%;
     height: 160%;
   }
 }
@@ -636,12 +636,9 @@ h3.knowhow-description * {
     top: 30%;
     height: 100%;
   }
-  /* .productSwiper-container .swiper-slide .swiper-graphic-face {
-    right: 45%;
-    transform: translateX(50%);
-    height: 140%;
-    top: -45%;
-  } */
+  .productSwiper-container .swiper-slide .swiper-graphic-face {
+    top: 30%;
+  }
 }
 @media screen and (max-width: 640px) {
   .productSwiper-container .swiper-slide {
@@ -655,7 +652,6 @@ h3.knowhow-description * {
     height: 100%;
   }
   .productSwiper-container .swiper-slide .swiper-graphic-face {
-    top: 30%;
     right: -50%;
   }
   /* .productSwiper-container .swiper-slide .swiper-graphic-face {
