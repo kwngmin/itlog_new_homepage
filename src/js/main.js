@@ -189,7 +189,13 @@ const swiper = new Swiper(".productSwiper-container", {
     clickable: true,
     renderBullet: function (index, swiperBtn) {
       const list = ["BigData", "Deep Learning", "Ai", "Smart Safety"];
-      return '<span class="' + swiperBtn + '">' + list[index] + "</span>";
+      return (
+        '<span class="' +
+        swiperBtn +
+        '"><span class="pagination-btn">' +
+        list[index] +
+        "</span></span>"
+      );
     },
   },
   breakpoints: {
