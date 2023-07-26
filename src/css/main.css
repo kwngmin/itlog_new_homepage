@@ -220,7 +220,7 @@ h3.knowhow-description * {
     font-size: 2rem;
   }
   h3.knowhow-description {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     width: 90%;
   }
   .knowhow-img,
@@ -622,6 +622,7 @@ h3.knowhow-description * {
     padding: 6rem 0;
   }
   .productSwiper-container .swiper-slide {
+    border-radius: 1rem;
     width: 90%;
   }
   .productSwiper-container .slide-text {
