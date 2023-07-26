@@ -448,10 +448,10 @@ h3.knowhow-description * {
 .productSwiper-container .swiper-slide .swiper-graphic-face {
   position: absolute;
   mix-blend-mode: lighten;
-  right: -10%;
-  top: 52%;
+  right: -16%;
+  top: 50%;
   transform: translateY(-50%);
-  height: 130%;
+  height: 200%;
 }
 .productSwiper-container .swiper-slide .swiper-graphic-business {
   position: absolute;
@@ -556,6 +556,10 @@ h3.knowhow-description * {
   .productSwiper-container {
     width: 100%;
   }
+  .productSwiper-container .swiper-slide .swiper-graphic-face {
+    right: -20%;
+    height: 180%;
+  }
 }
 @media screen and (max-width: 1023px) {
   .product-title h6 {
@@ -568,10 +572,11 @@ h3.knowhow-description * {
     right: -40%;
   }
   .productSwiper-container .swiper-slide .swiper-graphic-deep {
-    right: -30%;
+    right: -24%;
   }
   .productSwiper-container .swiper-slide .swiper-graphic-face {
     right: -24%;
+    height: 160%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -631,14 +636,35 @@ h3.knowhow-description * {
     top: 30%;
     height: 100%;
   }
+  /* .productSwiper-container .swiper-slide .swiper-graphic-face {
+    right: 45%;
+    transform: translateX(50%);
+    height: 140%;
+    top: -45%;
+  } */
+}
+@media screen and (max-width: 640px) {
+  .productSwiper-container .swiper-slide {
+    height: 24rem;
+  }
+  .productSwiper-container .swiper-slide .swiper-graphic-data {
+    height: 160%;
+  }
+  .productSwiper-container .swiper-slide .swiper-graphic-deep {
+    top: 30%;
+    height: 100%;
+  }
   .productSwiper-container .swiper-slide .swiper-graphic-face {
-    right: -24%;
+    top: 30%;
+    right: -50%;
+  }
+  /* .productSwiper-container .swiper-slide .swiper-graphic-face {
+    right: -50%;
     top: 30%;
     height: 90%;
     mix-blend-mode: lighten;
-  }
+  } */
 }
-
 /* 솔루션 */
 
 .solution {
