@@ -209,7 +209,7 @@ const swiper = new Swiper(".productSwiper-container", {
   },
   speed: 400,
   autoplay: {
-    delay: 4000,
+    delay: 6000,
     disableOnInteraction: false,
   },
 });

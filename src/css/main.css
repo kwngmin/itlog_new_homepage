@@ -373,13 +373,18 @@ h3.knowhow-description * {
   padding: 0;
 }
 .productSwiper-container {
-  background-color: rgb(245, 245, 245);
+  /* background-color: rgb(245, 245, 245); */
+  background-image: linear-gradient(
+    145deg,
+    rgb(241, 245, 249),
+    rgb(247, 237, 237)
+  );
   width: 100%;
   max-width: 1200px;
   /* height: 63rem; */
   overflow: hidden;
-  border-radius: 1rem;
-  padding: 3rem 0;
+  border-radius: 2rem;
+  padding: 4rem 0;
   margin: 0 auto;
 
   /* margin-top: 3rem; */
@@ -401,9 +406,11 @@ h3.knowhow-description * {
 .product-title h6 span {
   color: #ee3a3d;
   font-weight: 700;
+  word-break: keep-all;
 }
 .product-title h6 strong {
   font-weight: 500;
+  word-break: keep-all;
 }
 .product-title h6 {
   width: 80%;
@@ -422,11 +429,38 @@ h3.knowhow-description * {
   height: 20rem;
   border-radius: 2rem;
   overflow: hidden;
-  background-color: lightblue;
+  background-color: black;
 }
-.productSwiper-container .swiper-slide img {
+.productSwiper-container .swiper-slide .swiper-graphic-data {
+  position: absolute;
+  right: -10%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 200%;
+}
+.productSwiper-container .swiper-slide .swiper-graphic-deep {
+  position: absolute;
+  right: -14%;
+  top: 56%;
+  transform: translateY(-50%);
+  height: 120%;
+}
+.productSwiper-container .swiper-slide .swiper-graphic-face {
+  position: absolute;
+  mix-blend-mode: lighten;
+  right: -10%;
+  top: 52%;
+  transform: translateY(-50%);
+  height: 130%;
+}
+.productSwiper-container .swiper-slide .swiper-graphic-business {
+  position: absolute;
+  mix-blend-mode: lighten;
   width: 100%;
   height: 100%;
+  opacity: 0.5;
+  object-fit: cover;
+  object-position: top;
 }
 .productSwiper-container .slide-text {
   position: absolute;
@@ -436,20 +470,26 @@ h3.knowhow-description * {
   width: 100%;
   display: flex;
   flex-direction: column;
+  z-index: 100;
 }
 .productSwiper-container .slide-text h6 {
-  font-weight: bold;
+  font-weight: 600;
+  letter-spacing: -0.05rem;
   margin-bottom: 2rem;
   font-size: 36px;
-  /* padding: 0.2rem 0 1.5rem; */
+  color: #ee3a3d;
+  word-break: keep-all;
 }
 .productSwiper-container .slide-text p {
-  font-weight: 500;
+  font-weight: 400;
+  letter-spacing: -0.025rem;
   /* margin-bottom: 2rem; */
   font-size: 1.125rem;
-  width: 70%;
+  width: 60%;
   word-break: keep-all;
-  line-height: 1.5;
+  line-height: 1.65;
+  color: white;
+  opacity: 0.9;
   /* line-height: 1.65; */
 }
 .productSwiper-container .swiper-pagination {
@@ -477,7 +517,6 @@ h3.knowhow-description * {
   padding-right: 1.5rem;
   padding-bottom: 1px;
   background-color: rgb(254, 226, 226);
-  /* color: #ee3a3d; */
   border-radius: 2rem;
   display: flex;
   align-items: center;
@@ -501,14 +540,11 @@ h3.knowhow-description * {
   color: white;
 }
 @media screen and (max-width: 1365px) {
-  .product-back {
-    height: 38rem;
-  }
-  .productSwiper-container .swiper-slide {
-    width: 80%;
-  }
   .product {
     padding: 6rem 4rem;
+  }
+  .product-title h6 {
+    width: 90%;
   }
   .product-container {
     display: block;
@@ -522,8 +558,20 @@ h3.knowhow-description * {
   }
 }
 @media screen and (max-width: 1023px) {
+  .product-title h6 {
+    width: 100%;
+  }
   .productSwiper-container .slide-text {
     left: 3rem;
+  }
+  .productSwiper-container .swiper-slide .swiper-graphic-data {
+    right: -40%;
+  }
+  .productSwiper-container .swiper-slide .swiper-graphic-deep {
+    right: -30%;
+  }
+  .productSwiper-container .swiper-slide .swiper-graphic-face {
+    right: -24%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -565,7 +613,7 @@ h3.knowhow-description * {
     position: absolute;
     left: 2rem;
     bottom: 0;
-    transform: translateY(-16%);
+    transform: translateY(-20%);
     width: 84%;
   }
   .productSwiper-container .swiper-slide h6 {
@@ -575,6 +623,19 @@ h3.knowhow-description * {
   .productSwiper-container .swiper-slide p {
     font-size: 1rem;
     width: 100%;
+  }
+  .productSwiper-container .swiper-slide .swiper-graphic-data {
+    top: -10%;
+  }
+  .productSwiper-container .swiper-slide .swiper-graphic-deep {
+    top: 30%;
+    height: 100%;
+  }
+  .productSwiper-container .swiper-slide .swiper-graphic-face {
+    right: -24%;
+    top: 30%;
+    height: 90%;
+    mix-blend-mode: lighten;
   }
 }
 
