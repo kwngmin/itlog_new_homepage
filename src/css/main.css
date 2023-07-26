@@ -408,7 +408,7 @@ h3.knowhow-description * {
 .product-title h6 {
   width: 80%;
   line-height: 1.5;
-  color: rgb(0 0 0 / 0.7);
+  color: rgb(0 0 0 / 0.6);
   word-break: keep-all;
 }
 .productSwiper-container .swiper-wrapper {
@@ -565,7 +565,7 @@ h3.knowhow-description * {
     position: absolute;
     left: 2rem;
     bottom: 0;
-    transform: translateY(-10%);
+    transform: translateY(-16%);
     width: 84%;
   }
   .productSwiper-container .swiper-slide h6 {
