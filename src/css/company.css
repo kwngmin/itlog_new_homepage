@@ -482,16 +482,12 @@ section article {
   }
   .history-line {
     width: 0.5rem;
+    margin-left: 0.5rem;
   }
   .history-box.right-box {
-    /* float: right; */
-    padding-left: 1.5rem;
+    padding-left: 2rem;
     padding-right: 0;
   }
-  /* .history-box.left-box {
-    padding-right: 2rem;
-    padding-left: 0;
-  } */
   .history-text li {
     font-size: 1rem;
   }
