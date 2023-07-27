@@ -1,5 +1,6 @@
 .header-active .header-container {
   border-bottom: 1px solid transparent;
+  /* border-bottom: 100px solid red; */
 }
 body {
   display: flex;
@@ -149,11 +150,11 @@ h3.knowhow-description * {
   height: 6.5rem;
 }
 .knowhow-num h2 {
-  color: white;
-  margin-left: 0.5rem;
+  color: #ad2224;
 }
 .knowhow-num h2 span {
-  color: #7e0a0c;
+  color: white;
+  margin-right: 0.125rem;
 }
 .knowhow-num p {
   color: white;

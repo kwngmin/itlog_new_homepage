@@ -14,16 +14,16 @@ window.addEventListener("resize", () => {
 window.addEventListener("scroll", () => {});
 
 // 헤더 스크롤 이벤트
-// let prevScrollpos = window.pageYOffset;
-// const scrollHeader = () => {
-//     let currentScrollPos = window.pageYOffset;
-//     if (prevScrollpos > currentScrollPos) {
-//         document.getElementById("header").style.top = "0";
-//     } else {
-//         document.getElementById("header").style.top = "-8rem";
-//     }
-//     prevScrollpos = currentScrollPos;
-// }
+let prevScrollpos = window.pageYOffset;
+const scrollHeader = () => {
+  let currentScrollPos = window.pageYOffset;
+  // if (prevScrollpos > currentScrollPos) {
+  //   document.getElementById("header").style.top = "0";
+  // } else {
+  //   document.getElementById("header").style.top = "-8rem";
+  // }
+  prevScrollpos = currentScrollPos;
+};
 
 let scrollPosition = 0;
 // 모바일에서 네브 열기

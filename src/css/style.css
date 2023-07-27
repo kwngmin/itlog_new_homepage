@@ -30,88 +30,107 @@ body {
   flex-direction: column;
   /* font-size: clamp(1.4rem, 1.4vw, 1.6rem); */
 }
-
 h1 {
   font-family: "NanumSquare", sans-serif;
   font-weight: 800;
   font-size: 3.75rem;
+  line-height: 1.25;
   /* line-height: 1; */
   /* font-size: clamp(5.6rem, 5.6vw, 6rem); */
   /* line-height: clamp(6.2rem, 6.2vw, 6.6rem); */
   text-transform: capitalize;
+  word-break: keep-all;
 }
-
 h2 {
   font-family: "NanumSquare", sans-serif;
   font-weight: 800;
   font-size: 3rem;
+  line-height: 1.25;
+  word-break: keep-all;
   /* line-height: 1rem; */
   /* line-height: 2.5rem; */
   /* font-size: clamp(3.6rem, 3.6vw, 4rem); */
   text-transform: capitalize;
 }
-
 h3 {
   font-family: "NanumSquare", sans-serif;
   font-weight: 800;
   font-size: 2.25rem;
-  line-height: 2.5rem;
+  line-height: 1.25;
+  word-break: keep-all;
 }
-
 h4 {
   /* font-family: "NanumSquareNeo"; */
   font-size: 1.875rem;
-  line-height: 2.25rem;
+  line-height: 1.25;
   font-weight: 500;
+  word-break: keep-all;
 }
-
 h5 {
   font-size: 1.5rem;
-  line-height: 2rem;
+  /* line-height: 2rem; */
   font-weight: 500;
+  word-break: keep-all;
 }
-
 h6 {
   font-size: 1.25rem;
-  line-height: 1.75rem;
+  line-height: 1.5;
   letter-spacing: -0.025rem;
   font-weight: 500;
+  word-break: keep-all;
 }
-
 .text-xl {
   font-size: 1.25rem;
-  line-height: 1.75rem;
+  line-height: 1.65;
   letter-spacing: -0.025rem;
   word-break: keep-all;
 }
-
 .text-lg {
   font-size: 1.125rem;
-  line-height: 1.75rem;
+  line-height: 1.65;
   letter-spacing: -0.025rem;
   word-break: keep-all;
 }
-
 .text-sm {
   font-size: 0.875rem;
-  line-height: 1.25rem;
+  line-height: 1.25;
+  word-break: keep-all;
 }
-
+@media screen and (max-width: 1023px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.25rem;
+  }
+  h6 {
+    font-size: 1.125rem;
+  }
+  .text-xl {
+    font-size: 1.125rem;
+  }
+}
 ul,
 li {
   list-style: none;
 }
-
 small {
   font-size: clamp(1.2rem, 1.2vw, 1.3rem);
   line-height: clamp(1.2rem, 1.2vw, 1.3rem);
 }
-
 .sub-text {
   font-size: clamp(1.4rem, 1.4vw, 1.6rem);
   color: #31456a;
 }
-
 a,
 a:link,
 a:visited,
@@ -121,11 +140,9 @@ a:active {
   text-decoration: none;
   /* color: #011936; */
 }
-
 img {
   object-fit: cover;
 }
-
 button {
   text-transform: uppercase;
   padding: 0 2rem;
@@ -145,14 +162,12 @@ button {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 @media (hover: hover) {
   button:hover {
     background: #31456a;
     color: #f1f2f6;
   }
 }
-
 .btn-small {
   height: auto;
   padding: 0.3rem 0.7rem;

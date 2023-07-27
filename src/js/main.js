@@ -9,22 +9,6 @@ window.addEventListener("DOMContentLoaded", () => {
   } else {
     document.getElementById("header").classList.add("header-active");
   }
-
-  // 언어변경 이벤트
-  let lan = document.querySelectorAll("#language p");
-  lan.forEach((el, idx) => {
-    el.addEventListener("click", function () {
-      if (!this.classList.contains("red")) {
-        if (idx === 0) {
-          lan[1].className = "";
-          lan[0].className = "red";
-        } else {
-          lan[0].className = "";
-          lan[1].className = "red";
-        }
-      }
-    });
-  });
 });
 
 // 사이즈 변경 되면 실행
@@ -44,11 +28,27 @@ window.addEventListener("scroll", () => {
   }
 
   // 메리트 카운트 시작
-  const hexList = document.querySelectorAll(".hex");
+  // const hexList = document.querySelectorAll(".hex");
+  // if (count) {
+  //   hexList.forEach((el, idx) => {
+  //     if (el.classList.contains("aos-animate")) {
+  //       const countList = document.querySelectorAll(".merit-count h1 span");
+  //       countList[idx] &&
+  //         counter(
+  //           countList[idx],
+  //           countList[idx].getAttribute("data-count"),
+  //           idx,
+  //           countList[idx].getAttribute("data-time")
+  //         );
+  //     }
+  //   });
+  // }
+  // 메리트 카운트 시작
+  const numList = document.querySelectorAll(".knowhow-num");
   if (count) {
-    hexList.forEach((el, idx) => {
+    numList.forEach((el, idx) => {
       if (el.classList.contains("aos-animate")) {
-        const countList = document.querySelectorAll(".merit-count h1 span");
+        const countList = document.querySelectorAll("h2 span");
         countList[idx] &&
           counter(
             countList[idx],
@@ -156,7 +156,7 @@ const responsiveBullet = () => {
 // 메리트 숫자 카운팅
 let count = true;
 const counter = (el, data, idx, time) => {
-  console.log(idx);
+  // console.log(idx);
   let num = 0;
   let counting = setInterval(function () {
     if (num == data) {
@@ -207,11 +207,11 @@ const swiper = new Swiper(".productSwiper-container", {
       spaceBetween: 24,
     },
   },
-  //   speed: 400,
-  //   autoplay: {
-  //     delay: 6000,
-  //     disableOnInteraction: false,
-  //   },
+  speed: 400,
+  autoplay: {
+    delay: 6000,
+    disableOnInteraction: false,
+  },
 });
 
 // 건설사 이미지 셋팅
