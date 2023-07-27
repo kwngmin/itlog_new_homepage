@@ -770,7 +770,7 @@ section article {
     grid-template-columns: 1fr 0.75rem 1fr 0.75rem 1fr 0.75rem 1fr 0.75rem 1fr;
   }
   .chart-text {
-    height: 4rem;
+    height: 5rem;
   }
   .chart-container {
     padding-top: 10rem;
