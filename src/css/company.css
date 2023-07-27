@@ -657,7 +657,7 @@ section article {
   .CardContainer {
     padding: 4rem 0;
     /* max-width: 420px; */
-    width: 80%;
+    width: 90%;
     min-width: 320px;
     margin: 0 auto;
     background: #ee3a3d;
@@ -771,6 +771,9 @@ section article {
   }
   .chart-container h2 {
     padding-bottom: 4rem;
+  }
+  .chart-text h6 {
+    font-size: 1rem;
   }
 }
 /* 500px 미만 적용 */
