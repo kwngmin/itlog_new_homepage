@@ -485,14 +485,13 @@ section article {
   }
   .history-box.right-box {
     /* float: right; */
-    padding-left: 2rem;
+    padding-left: 1.5rem;
     padding-right: 0;
   }
-  .history-box.left-box {
-    /* float: left; */
+  /* .history-box.left-box {
     padding-right: 2rem;
     padding-left: 0;
-  }
+  } */
   .history-text li {
     font-size: 1rem;
   }
@@ -796,7 +795,7 @@ section article {
 /* 768px 미만 적용 */
 @media screen and (max-width: 767px) {
   section {
-    padding: 6rem 2rem;
+    padding: 6rem 1rem;
   }
 
   .main-text {
