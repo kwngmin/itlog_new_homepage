@@ -685,10 +685,10 @@ section article {
 }
 /* 기업이념-조직도 */
 .chart-container {
-  padding-top: 14rem;
+  padding-top: 8rem;
 }
 .chart-container h2 {
-  padding-bottom: 8rem;
+  padding-bottom: 4rem;
   text-align: center;
 }
 .chart-grid {
