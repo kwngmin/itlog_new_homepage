@@ -766,6 +766,12 @@ section article {
 }
 /* 768px 미만 적용 */
 @media screen and (max-width: 767px) {
+  .chart-grid {
+    grid-template-columns: 1fr 0.75rem 1fr 0.75rem 1fr 0.75rem 1fr 0.75rem 1fr;
+  }
+  .chart-text {
+    height: 4rem;
+  }
   .chart-container {
     padding-top: 10rem;
   }
@@ -773,13 +779,13 @@ section article {
     padding-bottom: 4rem;
   }
   .chart-text h6 {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
 }
 /* 500px 미만 적용 */
 @media screen and (max-width: 499px) {
   .chart-grid {
-    grid-template-columns: 1fr 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr;
+    grid-template-columns: 1fr 0.25rem 1fr 0.25rem 1fr 0.25rem 1fr 0.25rem 1fr;
   }
 }
 
