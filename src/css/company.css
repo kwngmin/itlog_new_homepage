@@ -374,7 +374,7 @@ section article {
 .history-box {
   clear: both;
   width: 50%;
-  padding-right: 5rem;
+  padding-right: 4rem;
   padding-left: 0;
   position: relative;
   margin-bottom: 4rem;
@@ -382,7 +382,7 @@ section article {
 
 .history-box.right-box {
   float: right;
-  padding-left: 5rem;
+  padding-left: 4rem;
   padding-right: 0;
 }
 
