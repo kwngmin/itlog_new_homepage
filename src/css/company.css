@@ -50,7 +50,6 @@ section article {
     padding: 6rem 1rem;
   }
 }
-
 /* 인사말 */
 .introduce-container {
   position: relative;
@@ -383,7 +382,6 @@ section article {
     width: 100%;
   }
 }
-
 /* 기업연혁 */
 .history-list {
   position: relative;
@@ -426,7 +424,7 @@ section article {
   height: 100%;
   top: 0;
   right: -0.5rem;
-  width: 1rem;
+  width: 0.5rem;
   background-color: #ee3a3d;
   border-radius: 1rem;
 }
@@ -446,9 +444,15 @@ section article {
 .left-box .history-bar {
   margin: 1rem 0 2rem 30%;
 }
+.history-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
 .history-group {
   display: flex;
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem; */
 }
 .left-box .history-group {
   /* justify-content: flex-end; */
@@ -493,15 +497,31 @@ section article {
     width: 100%;
   }
   .history-line {
-    width: 0.5rem;
+    width: 0.25rem;
     margin-left: 0.5rem;
   }
   .history-box.right-box {
     padding-left: 2rem;
     padding-right: 0;
   }
+  .history-contents {
+    gap: 1.5rem;
+  }
+  .history-group {
+    flex-direction: column;
+  }
+  .history-text {
+    width: 100%;
+  }
+  .history-mon {
+    padding: 0;
+  }
   .history-text li {
     font-size: 1rem;
+    padding-left: 1.5rem;
+  }
+  .history-text li::before {
+    padding-left: 1rem;
   }
 }
 
