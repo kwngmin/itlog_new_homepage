@@ -383,7 +383,8 @@ main {
     opacity: 1;
   }
   .square-contents button {
-    height: 3rem;
+    height: 6rem;
+    border: 0;
   }
   .square-contents:hover {
     width: 100%;
@@ -447,12 +448,10 @@ main {
   background: url("../../img/pmsBackground.jpg") no-repeat;
   background-size: cover;
 }
-
 .pms-background > :last-child {
   width: 45%;
   background-color: #011936;
 }
-
 .pms-container {
   height: 100vh;
   max-height: 1080px;
@@ -460,51 +459,64 @@ main {
   justify-content: flex-end;
   align-items: center;
 }
-
 .pms-text {
   width: 40%;
   margin: 0;
   padding: 0 4rem;
 }
-
-.pms-text h2 {
+.pms-text h2,
+.pms-text h2 span {
+  letter-spacing: -0.1rem;
   padding-bottom: 1rem;
+  word-break: keep-all;
 }
-
+.pms-solution small {
+  word-break: keep-all;
+  line-height: 1.5;
+}
 .pms-title {
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
-
 .pms-title .title-box {
   display: flex;
   align-items: center;
   margin: 1.6rem 0;
 }
-
-.title-box h6 {
+.title-box p,
+.title-box p span {
   transition: color 0.5s ease;
   cursor: pointer;
 }
-
 .title-box .bar {
   padding-right: 1rem;
   opacity: 0;
 }
-
-.title-box.title-active h6 {
+.title-box.title-active p,
+.title-box.title-active p span {
   color: #ee3a3d;
-  font-weight: bold;
+  /* font-weight: 500; */
 }
-
 .title-box.title-active .bar {
   color: #ee3a3d;
   opacity: 1;
 }
-
 .pms-title .flex-basic {
-  padding-top: 4rem;
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 2rem;
 }
-
+.pms-title .flex-basic i {
+  width: 4rem;
+  height: 4rem;
+}
+.icon-arrow-left::before {
+  font-size: 1.5rem;
+  margin-right: 0.25rem;
+}
+.icon-arrow-right::before {
+  font-size: 1.5rem;
+  margin-left: 0.25rem;
+}
 .pms-title .icon {
   width: 6rem;
   height: 6rem;
@@ -515,256 +527,130 @@ main {
   justify-content: center;
   font-size: 2rem;
 }
-
 .pmsSwiper-container {
   width: 60%;
   height: 60%;
   overflow: hidden;
   position: relative;
 }
-
 .pmsSwiper-container .swiper-wrapper {
   align-items: end;
 }
-
 .pmsSwiper-container .swiper-slide {
   background-color: #fff;
-  padding: 4rem;
+  padding: 4rem 2rem;
   height: 80%;
   transition: height 0.8s ease, background-color 1s ease;
   display: flex;
   align-items: flex-end;
   cursor: grab;
 }
-
 .pmsSwiper-container .swiper-slide img {
   width: 5rem;
   height: 5rem;
   filter: contrast(0.3);
   transition: all 0.5s ease;
 }
-
 .pmsSwiper-container .swiper-slide h4 {
   color: #939fb2;
   font-size: 1.8rem;
-  padding: 1rem 0 0.6rem 0;
+  padding: 1rem 0 0.5rem 0;
 }
-
 .pmsSwiper-container .swiper-slide small {
   color: #939fb2;
 }
-
 .pmsSwiper-container .swiper-slide p {
   color: #fff;
   opacity: 0;
   height: 3rem;
   max-width: 40rem;
-  font-size: clamp(1.4rem, 0.9vw, 1.5rem);
+  font-size: 1.125rem;
 }
-
 .pmsSwiper-container .swiper-slide-active {
   height: 100%;
   background-color: #ee3a3d;
   align-items: center;
 }
-
 .pmsSwiper-container .swiper-slide-active img {
   width: 6rem;
   height: 6rem;
   filter: invert();
 }
-
 .pmsSwiper-container .swiper-slide-active h4 {
   color: #fff;
   font-size: 2.3rem;
-  padding: 3rem 0 0.6rem 0;
+  padding: 3rem 0 0.5rem 0;
 }
-
 .pmsSwiper-container .swiper-slide-active small {
   color: #fff;
 }
-
 .pmsSwiper-container .swiper-slide-active p {
   padding-top: 2rem;
   opacity: 1;
   height: auto;
 }
-
 .pmsSwiper-container .swiper-pagination,
 .swiper-button-next,
 .swiper-button-prev {
   display: none;
 }
-
 .pms-br {
   display: none;
 }
-
-/* 자주묻는질문 */
-.QnA {
-  width: 100%;
-  padding: 14rem 4rem;
-}
-
-.qna-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  /* justify-content: space-between; */
-}
-
-.qna-title {
-  /* width: calc(30% - 6rem); */
-  width: 30%;
-  margin-right: 4rem;
-  text-align: left;
-}
-
-.qna-contents {
-  width: 70%;
-  height: 100%;
-  /* overflow-y: auto; */
-}
-
-.qna-contents > :first-child {
-  border-top: 1px solid #ced6e0;
-}
-
-.accordionQ {
-  padding: 1rem 0;
-  border-bottom: 1px solid #ced6e0;
-  transition: all 0.5s ease;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-}
-
-.accordionQ.active {
-  color: #ee3a3d;
-}
-
-.accordionQ .icon {
-  font-size: 1.4rem;
-  padding: 1rem;
-  transition: all 0.3s ease;
-  margin: 0 1rem;
-}
-
-.accordionQ.active .icon {
-  transform: rotate(90deg);
-  padding: 1rem;
-  color: #ee3a3d;
-  font-weight: bold;
-}
-
-.accordionA {
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.4s ease;
-}
-
-.accordionA > p {
-  padding: 2rem 1.5rem;
-  background-color: #f5f5f5;
-  color: rgba(0, 0, 0, 0.7);
-  font-weight: 500;
-}
-
 /* 1640px 미만 적용 */
 @media screen and (max-width: 1635px) {
   .pms-title {
     padding-top: 2rem;
   }
-
-  .pms-title .flex-basic {
-    padding-top: 2rem;
-  }
-
   .pms-br {
     display: block;
   }
 }
-
 /* 1366px 미만 적용 */
 @media screen and (max-width: 1365px) {
   .pmsSwiper-container .swiper-slide {
     padding: 3rem;
   }
-
-  .accordionQ {
-    /* font-size: 1.6rem; */
-  }
 }
 
 /* 1024px 미만 적용 */
 @media screen and (max-width: 1023px) {
-  /* pms솔루션 */
   .pms-solution {
     height: initial;
     max-height: initial;
   }
-
   .pms-background > :first-child {
     width: 100%;
   }
-
   .pms-background > :last-child {
     display: none;
   }
-
   .pms-container {
     height: initial;
     max-height: initial;
     display: block;
     padding: 10rem 0;
   }
-
   .pms-text {
     width: 100%;
     max-width: initial;
     padding: 0 4rem 2rem;
   }
-
   .pms-title {
     padding: 0;
   }
-
   .pms-title .title-box {
     display: none;
   }
-
   .pms-title .icon {
     width: 4rem;
     height: 4rem;
     font-size: 1.6rem;
   }
-
   .pmsSwiper-container {
     width: 100%;
     height: 38rem;
     padding-left: 4rem;
-  }
-
-  /* 자주묻는질문 */
-
-  .qna-container {
-    display: block;
-  }
-
-  .qna-title {
-    text-align: left;
-    width: 100%;
-    padding-bottom: 4rem;
-  }
-
-  .qna-contents {
-    width: 100%;
-  }
-
-  .accordionQ {
-    padding: 1rem 0;
   }
 }
 /* 768px 미만 적용 */
@@ -775,6 +661,84 @@ main {
   .pmsSwiper-container {
     padding: 0 2rem;
   }
+}
+/* 자주묻는질문 */
+.QnA {
+  width: 100%;
+  padding: 14rem 4rem;
+}
+.qna-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+.qna-title {
+  width: 30%;
+  margin-right: 4rem;
+  text-align: left;
+}
+.qna-contents {
+  width: 70%;
+  height: 100%;
+}
+.qna-contents > :first-child {
+  border-top: 1px solid #ced6e0;
+}
+.accordionQ {
+  padding: 1rem 0;
+  border-bottom: 1px solid #ced6e0;
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.accordionQ.active {
+  color: #ee3a3d;
+}
+.accordionQ .icon {
+  font-size: 1.4rem;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  margin: 0 1rem;
+}
+.accordionQ.active .icon {
+  transform: rotate(90deg);
+  padding: 1rem;
+  color: #ee3a3d;
+  font-weight: bold;
+}
+.accordionA {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+}
+.accordionA > p {
+  padding: 2rem 1.5rem;
+  background-color: #f5f5f5;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+}
+/* 1024px 미만 적용 */
+@media screen and (max-width: 1023px) {
+  .qna-container {
+    display: block;
+  }
+  .qna-title {
+    text-align: left;
+    width: 100%;
+    padding-bottom: 4rem;
+  }
+  .qna-contents {
+    width: 100%;
+  }
+  .accordionQ {
+    padding: 1rem 0;
+  }
+}
+/* 768px 미만 적용 */
+@media screen and (max-width: 767px) {
   .QnA {
     padding: 10rem 2rem;
   }
