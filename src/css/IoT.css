@@ -553,7 +553,7 @@ main {
 }
 .pmsSwiper-container .swiper-slide h4 {
   color: #939fb2;
-  font-size: 1.8rem;
+  /* font-size: 1.8rem; */
   padding: 1rem 0 0.5rem 0;
 }
 .pmsSwiper-container .swiper-slide small {
@@ -578,7 +578,7 @@ main {
 }
 .pmsSwiper-container .swiper-slide-active h4 {
   color: #fff;
-  font-size: 2.3rem;
+  /* font-size: 2.3rem; */
   padding: 3rem 0 0.5rem 0;
 }
 .pmsSwiper-container .swiper-slide-active small {
