@@ -166,7 +166,7 @@ main {
 /* 제품소개 */
 .square {
   width: 100%;
-  height: 80vh;
+  height: 40rem;
   max-height: 1080px;
   position: relative;
 }
@@ -429,8 +429,8 @@ main {
 /* PMS 솔루션 */
 .pms-solution {
   width: 100%;
-  height: 100vh;
-  max-height: 1080px;
+  height: 60rem;
+  max-height: 1200px;
   position: relative;
 }
 .pms-background {
@@ -453,8 +453,8 @@ main {
   background-color: #011936;
 }
 .pms-container {
-  height: 100vh;
-  max-height: 1080px;
+  height: 60rem;
+  max-height: 1200px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -529,7 +529,7 @@ main {
 }
 .pmsSwiper-container {
   width: 60%;
-  height: 60%;
+  height: 36rem;
   overflow: hidden;
   position: relative;
 }
