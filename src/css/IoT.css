@@ -423,7 +423,7 @@ main {
 @media screen and (max-width: 767px) {
   .square-contents {
     height: 16rem;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
   }
 }
 /* PMS 솔루션 */
