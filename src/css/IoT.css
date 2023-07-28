@@ -51,9 +51,9 @@ main {
 }
 /* 1024px 미만 적용 */
 @media screen and (max-width: 1023px) {
-  main {
+  /* main {
     height: 60vh;
-  }
+  } */
   .main-text h1 {
     font-size: 3rem;
   }
