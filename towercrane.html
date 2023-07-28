@@ -1,438 +1,624 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IT-LOG</title>
-    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
     <!-- [슬라이드 라이브러리 CSS] -->
-    <link rel="stylesheet" href="./aos-master/dist/aos.css">
+    <link rel="stylesheet" href="./aos-master/dist/aos.css" />
     <!-- [텍스트 애니메이션 라이브러리 CSS] -->
-    <link rel="stylesheet" href="./simplelineicons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="./simplelineicons/css/simple-line-icons.css" />
     <!-- [아이콘 라이브러리 CSS] -->
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/style.css" />
     <!-- [기본 CSS] -->
-    <link rel="stylesheet" href="./src/css/sub.css">
+    <link rel="stylesheet" href="./src/css/sub.css" />
     <!-- [제품소개 통합 CSS] -->
     <script src="./src/js/prefixfree.min.js"></script>
     <!-- [벤더프리픽스] -->
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div id="sideNav" class="show1024">
-        <div class="sideNav-container">
-            <div id="sideNavClose" onclick="closeNav()">&times;</div>
-            <ul class="sideNav-menu">
-                <li class="accordion">회사소개<span class="icon icon-arrow-right"></span></li>
-                <ul class="accordion-menu">
-                    <li><a href="./introduce.html">인사말</a></li>
-                    <li><a href="./history.html">기업연혁</a></li>
-                    <li><a href="./vision.html">기업이념</a></li>
-                    <!-- <li><a href="./certification.html">인증</a></li> -->
-                    <li><a href="./way.html">오시는길</a></li>
-                </ul>
-                <li class="accordion">통합IoT솔루션<span class="icon icon-arrow-right"></span></li>
-                <ul class="accordion-menu">
-                    <li><a href="./IoT.html">통합IoT솔루션</a></li>
-                </ul>
-                <li class="accordion">제품소개<span class="icon icon-arrow-right"></span></li>
-                <ul class="accordion-menu">
-                    <li><a href="./gate.html">출입통제시스템</a></li>
-                    <li><a href="./cctv.html">안전관리CCTV</a></li>
-                    <li><a href="./towercrane.html">T/C통합안전</a></li>
-                    <li><a href="./sensor.html">환경센서</a></li>
-                    <li><a href="./broadcast.html">방송시스템</a></li>
-                </ul>
-                <li class="accordion">고객서비스<span class="icon icon-arrow-right"></span></li>
-                <ul class="accordion-menu">
-                    <li><a href="./consulting.html">견적의뢰</a></li>
-                    <li class="hide1024"><a href="http://helpu.kr/itlog/" target="_blank">원격지원</a></li>
-                </ul>
-            </ul>
-            <!-- <div class="sideNav-footer">
+      <div class="sideNav-container">
+        <div id="sideNavClose" onclick="closeNav()">&times;</div>
+        <ul class="sideNav-menu">
+          <li class="accordion">
+            회사소개<span class="icon icon-arrow-right"></span>
+          </li>
+          <ul class="accordion-menu">
+            <li><a href="./introduce.html">인사말</a></li>
+            <li><a href="./history.html">기업연혁</a></li>
+            <li><a href="./vision.html">기업이념</a></li>
+            <!-- <li><a href="./certification.html">인증</a></li> -->
+            <li><a href="./way.html">오시는길</a></li>
+          </ul>
+          <li class="accordion">
+            통합IoT솔루션<span class="icon icon-arrow-right"></span>
+          </li>
+          <ul class="accordion-menu">
+            <li><a href="./IoT.html">통합IoT솔루션</a></li>
+          </ul>
+          <li class="accordion">
+            제품소개<span class="icon icon-arrow-right"></span>
+          </li>
+          <ul class="accordion-menu">
+            <li><a href="./gate.html">출입통제시스템</a></li>
+            <li><a href="./cctv.html">안전관리CCTV</a></li>
+            <li><a href="./towercrane.html">T/C통합안전</a></li>
+            <li><a href="./sensor.html">환경센서</a></li>
+            <li><a href="./broadcast.html">방송시스템</a></li>
+          </ul>
+          <li class="accordion">
+            고객서비스<span class="icon icon-arrow-right"></span>
+          </li>
+          <ul class="accordion-menu">
+            <li><a href="./consulting.html">견적의뢰</a></li>
+            <li class="hide1024">
+              <a href="http://helpu.kr/itlog/" target="_blank">원격지원</a>
+            </li>
+          </ul>
+        </ul>
+        <!-- <div class="sideNav-footer">
                 <a><img src="./img/logo/blog.png" alt=""></a>
                 <a><img src="./img/logo/kakao.png" alt=""></a>
             </div> -->
-        </div>
+      </div>
     </div>
 
     <div id="towercrane" class="wrapper">
-        <div id="sideNavOpenFilter" class="light-filter"></div>
-        <header id="header">
-            <div class="header-container">
-                <div id="headerLogo"><a href="./index.html"></a></div>
-                <div id="headerNav">
-                    <div class="header-title">
-                        <a>회사소개</a> 
-                    </div>
-                    <div class="header-title">
-                        <a>통합IoT솔루션</a> 
-                    </div>
-                    <div class="header-title">
-                        <a>제품소개</a> 
-                    </div>
-                    <div class="header-title">
-                        <a>고객서비스</a> 
-                    </div>
-                </div>
-                <div id="sideNavOpen" class="show1024" onclick="openNav()"><span class="icon icon-menu"></span></div>
-                <div id="language">
-                    <!-- <p class="red">KOR</p>
+      <div id="sideNavOpenFilter" class="light-filter"></div>
+      <header id="header">
+        <div class="header-container">
+          <div id="headerLogo"><a href="./index.html"></a></div>
+          <div id="headerNav">
+            <div class="header-title">
+              <a>회사소개</a>
+            </div>
+            <div class="header-title">
+              <a>통합IoT솔루션</a>
+            </div>
+            <div class="header-title">
+              <a>제품소개</a>
+            </div>
+            <div class="header-title">
+              <a>고객서비스</a>
+            </div>
+          </div>
+          <div id="sideNavOpen" class="show1024" onclick="openNav()">
+            <span class="icon icon-menu"></span>
+          </div>
+          <div id="language">
+            <!-- <p class="red">KOR</p>
                     <p>ENG</p> -->
-                </div>
+          </div>
+        </div>
+        <div class="header-sub">
+          <div class="no-list"></div>
+          <div class="header-subList">
+            <div class="header-subTitle">
+              <div>
+                <a href="./introduce.html">인사말</a>
+                <a href="./history.html">기업연혁</a>
+                <a href="./vision.html">기업이념</a>
+                <!-- <a href="./certification.html">인증</a> -->
+                <a href="./way.html">오시는길</a>
+              </div>
             </div>
-            <div class="header-sub">
-                <div class="no-list"></div>
-                <div class="header-subList">
-                    <div class="header-subTitle">
-                        <div>
-                            <a href="./introduce.html">인사말</a>
-                            <a href="./history.html">기업연혁</a>
-                            <a href="./vision.html">기업이념</a>
-                            <!-- <a href="./certification.html">인증</a> -->
-                            <a href="./way.html">오시는길</a>
-                        </div>
-                    </div>
-                    <div class="header-subTitle">
-                        <div>
-                            <a href="./IoT.html">통합IoT솔루션</a>
-                        </div>
-                    </div>
-                    <div class="header-subTitle">
-                        <div>
-                            <a href="./gate.html">출입통제시스템</a>
-                            <a href="./cctv.html">안전관리CCTV</a>
-                            <a href="./towercrane.html">T/C통합안전</a>
-                            <a href="./sensor.html">환경센서</a>
-                            <a href="./broadcast.html">방송시스템</a>
-                        </div>
-                    </div>
-                    <div class="header-subTitle">
-                        <div>
-                            <a href="./consulting.html">견적의뢰</a>
-                            <a href="http://helpu.kr/itlog/" target="_blank">원격지원</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="no-list"></div>
+            <div class="header-subTitle">
+              <div>
+                <a href="./IoT.html">통합IoT솔루션</a>
+              </div>
             </div>
-        </header>
+            <div class="header-subTitle">
+              <div>
+                <a href="./gate.html">출입통제시스템</a>
+                <a href="./cctv.html">안전관리CCTV</a>
+                <a href="./towercrane.html">T/C통합안전</a>
+                <a href="./sensor.html">환경센서</a>
+                <a href="./broadcast.html">방송시스템</a>
+              </div>
+            </div>
+            <div class="header-subTitle">
+              <div>
+                <a href="./consulting.html">견적의뢰</a>
+                <a href="http://helpu.kr/itlog/" target="_blank">원격지원</a>
+              </div>
+            </div>
+          </div>
+          <div class="no-list"></div>
+        </div>
+      </header>
 
-        <main>
-            <div class="dark-filter"></div>
-            <div class="main-text">
-                <h1>T/C 통합안전</h1>
-                <h5>
+      <main>
+        <div class="dark-filter"></div>
+        <div class="main-text">
+          <h2>T/C 통합안전</h2>
+          <!-- <h5>
                     T/C 통합안전 시스템을 통해 충돌, 협착, 전도 사고를 사전에 예방하며,<br>
                     실시간으로 위험 요소를 화면 및 음성으로 안내하여 지속적인 안전 작업 환경을 조성합니다.
-                </h5>
+                </h5> -->
+        </div>
+      </main>
+
+      <section>
+        <article id="keyPoint">
+          <div class="keyPoint-title">
+            <h2 data-aos="fade-up" data-aos-delay="100">
+              <span class="red">Key</span> Point
+            </h2>
+          </div>
+          <div class="keyPoint-contents">
+            <div class="keyPoint-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="keyPoint-img">
+                <img src="./img/icon/crane1.png" alt="" />
+              </div>
+              <h5>후크 하방 카메라</h5>
+              <p>타워 기사의 사각지대를 <br />제거하여 작업 능률 향상</p>
             </div>
-        </main>
+            <div class="keyPoint-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="keyPoint-img">
+                <img src="./img/icon/crane2.png" alt="" />
+              </div>
+              <h5>후크 하방 경보기</h5>
+              <p>후크 및 자재 인양물과 <br />근로자 협착 사고 예방</p>
+            </div>
+            <div class="keyPoint-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="keyPoint-img">
+                <img src="./img/icon/crane3.png" alt="" />
+              </div>
+              <h5>충돌 방지 시스템</h5>
+              <p>지브 간 충돌 사고 예방</p>
+            </div>
+            <div class="keyPoint-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="keyPoint-img">
+                <img src="./img/icon/crane4.png" alt="" />
+              </div>
+              <h5>투광등 제어 시스템</h5>
+              <p>
+                원격 제어를 통한 <br />현장 관리자의 <br />업무 편리성과 안전성
+                향상
+              </p>
+            </div>
+            <div class="keyPoint-box"></div>
+          </div>
+        </article>
 
-        <section>
-            <article id="keyPoint">
-                <div class="keyPoint-title">
-                    <h2 data-aos="fade-up" data-aos-delay="100"><span class="red">Key</span> Point</h2>
+        <article id="subProduct">
+          <div class="subProduct-title" data-aos="fade-up">
+            <h2>Integrated Safety Measures for T/C</h2>
+            <h4 class="s-color">타워크레인 안전 관리 체계로 위험을 최소화</h4>
+            <h5 class="t-color">
+              타워크레인에 후크 하방 카메라, 후크 하방 경보기, 충돌 방지 시스템,
+              투광등 제어 시스템들을 구축/운영하여, <br class="hide768" />
+              타워크레인의 원활한 작동과 위험 요소 및 현장 근로자의 사고를
+              사전에 방지할 수 있습니다.
+            </h5>
+          </div>
+          <div class="subProduct-contents">
+            <div class="subProduct-box">
+              <div class="subProduct-img">
+                <img src="./img/crane2.jpg" alt="" />
+              </div>
+              <div class="subProduct-text">
+                <div class="subProduct-right">
+                  <h1 class="oswald">01</h1>
+                  <small>Trolley Downside Camera</small>
                 </div>
-                <div class="keyPoint-contents">
-                    <div class="keyPoint-box" data-aos="fade-up" data-aos-delay="100">
-                        <div class="keyPoint-img"><img src="./img/icon/crane1.png" alt=""></div>
-                        <h5>후크 하방 카메라</h5>
-                        <p>타워 기사의 사각지대를 <br>제거하여 작업 능률 향상</p>
-                    </div>
-                    <div class="keyPoint-box" data-aos="fade-up" data-aos-delay="200">
-                        <div class="keyPoint-img"><img src="./img/icon/crane2.png" alt=""></div>
-                        <h5>후크 하방 경보기</h5>
-                        <p>후크 및 자재 인양물과 <br>근로자 협착 사고 예방</p>
-                    </div>
-                    <div class="keyPoint-box" data-aos="fade-up" data-aos-delay="300">
-                        <div class="keyPoint-img"><img src="./img/icon/crane3.png" alt=""></div>
-                        <h5>충돌 방지 시스템</h5>
-                        <p>지브 간 충돌 사고 예방</p>
-                    </div>
-                    <div class="keyPoint-box" data-aos="fade-up" data-aos-delay="400">
-                        <div class="keyPoint-img"><img src="./img/icon/crane4.png" alt=""></div>
-                        <h5>투광등 제어 시스템</h5>
-                        <p>원격 제어를 통한 <br>현장 관리자의 <br>업무 편리성과 안전성 향상</p>
-                    </div>
-                    <div class="keyPoint-box"></div>
+                <h4>후크 하방 카메라</h4>
+                <p class="text-xl">
+                  건물 상승 등 공정 진행에 따라 좁아진 시야와 다양하게 변하는
+                  주변 상황들로 인해 신호수와 무전에만 의존하여 작업하지 않고
+                  타워 기사가 모니터링을 통해 조작하여 사고를 방지할 수
+                  있습니다.
+                </p>
+              </div>
+            </div>
+            <div class="subProduct-box">
+              <div class="subProduct-img show768">
+                <img
+                  src="./img/crane3.jpg"
+                  alt=""
+                  style="object-position: 0 32%"
+                />
+              </div>
+              <div class="subProduct-text text-right">
+                <div class="subProduct-left">
+                  <h1 class="oswald">02</h1>
+                  <small>Hook Downside Alarm</small>
                 </div>
-            </article>
+                <h4>후크 하방 경보기</h4>
+                <p class="text-xl">
+                  후크에 설치되고 낙하물 위험 경고음을 통해 지상에서 작업하는
+                  근로자가 인지하여 안전사고를 예방합니다.
+                </p>
+              </div>
+              <div class="subProduct-img hide768">
+                <img
+                  src="./img/crane3.jpg"
+                  alt=""
+                  style="object-position: 0 32%"
+                />
+              </div>
+            </div>
+            <div class="subProduct-box">
+              <div class="subProduct-img">
+                <img src="./img/crane4.jpg" alt="" />
+              </div>
+              <div class="subProduct-text">
+                <div class="subProduct-right">
+                  <h1 class="oswald">03</h1>
+                  <small>Anti-Collision System</small>
+                </div>
+                <h4>충돌 방지 시스템</h4>
+                <p class="text-xl">
+                  타워 기사실 내부에 설치하여 주변 지브 위치 및 위험 상황을
+                  인지할 수 있으며, 위험 상황 발생 시 시스템 화면에 표시 및 비상
+                  알림이 울리게 됩니다. 타워 기사는 항시 경각심을 갖게 되어
+                  안전을 더욱 보장합니다.
+                </p>
+              </div>
+            </div>
+            <div class="subProduct-box">
+              <div class="subProduct-img show768">
+                <img src="./img/crane5.jpg" alt="" />
+              </div>
+              <div class="subProduct-text text-right">
+                <div class="subProduct-left">
+                  <h1 class="oswald">04</h1>
+                  <small>Floodlight Control System</small>
+                </div>
+                <h4>투광등 제어 시스템</h4>
+                <p class="text-xl">
+                  원격으로 제어하여 필요에 따라 조작이 이루어지고 특정 구역에만
+                  조명을 활성화할 수 있습니다. 기존 투광등을 제어하던 현장
+                  관리자의 업무 간편화와 야간에 조명 필요로 제어 장소로 이동하여
+                  생기는 야간 안전 사고를 예방할 수 있습니다.
+                </p>
+              </div>
+              <div class="subProduct-img hide768">
+                <img src="./img/crane5.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </article>
 
-
-            <article id="subProduct">
-                <div class="subProduct-title" data-aos="fade-up">
-                    <h2>Integrated Safety Measures for T/C</h2>
-                    <h4 class="s-color">타워크레인 안전 관리 체계로 위험을 최소화</h4>
-                    <p class="t-color">
-                        타워크레인에 후크 하방 카메라, 후크 하방 경보기, 충돌 방지 시스템, 투광등 제어 시스템들을 구축/운영하여, <br class="hide768">
-                        타워크레인의 원활한 작동과 위험 요소 및 현장 근로자의 사고를 사전에 방지할 수 있습니다.
+        <article id="effect">
+          <div class="effect-container">
+            <div class="effect-title" data-aos="fade-up">
+              <h2>Expectation <span class="red">Effect</span></h2>
+              <p class="text-lg">
+                후크 하방 카메라, 후크 하방 경보기, 충돌 방지 시스템, 투광등
+                제어 시스템 등이 통합되어 즉각적인 경보와 조치를 취할 수
+                있습니다. 이는 사고 예방과 대응 능력을 향상시킵니다.
+              </p>
+            </div>
+            <div class="effect-contents">
+              <div class="effect-grid">
+                <div
+                  class="effect-box white-box"
+                  data-aos="flip-left"
+                  data-aos-delay="200"
+                >
+                  <div>
+                    <svg
+                      width="24px"
+                      height="24px"
+                      viewBox="0 0 24 24"
+                      version="1.1"
+                    >
+                      <g
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <rect x="0" y="0" width="24" height="24" />
+                        <path
+                          d="M4,4 L11.6314229,2.5691082 C11.8750185,2.52343403 12.1249815,2.52343403 12.3685771,2.5691082 L20,4 L20,13.2830094 C20,16.2173861 18.4883464,18.9447835 16,20.5 L12.5299989,22.6687507 C12.2057287,22.8714196 11.7942713,22.8714196 11.4700011,22.6687507 L8,20.5 C5.51165358,18.9447835 4,16.2173861 4,13.2830094 L4,4 Z"
+                          fill="#ee3a3d"
+                          opacity="0.3"
+                        />
+                        <path
+                          d="M11.1750002,14.75 C10.9354169,14.75 10.6958335,14.6541667 10.5041669,14.4625 L8.58750019,12.5458333 C8.20416686,12.1625 8.20416686,11.5875 8.58750019,11.2041667 C8.97083352,10.8208333 9.59375019,10.8208333 9.92916686,11.2041667 L11.1750002,12.45 L14.3375002,9.2875 C14.7208335,8.90416667 15.2958335,8.90416667 15.6791669,9.2875 C16.0625002,9.67083333 16.0625002,10.2458333 15.6791669,10.6291667 L11.8458335,14.4625 C11.6541669,14.6541667 11.4145835,14.75 11.1750002,14.75 Z"
+                          fill="#ee3a3d"
+                        />
+                      </g>
+                    </svg>
+                    <h6>안전 강화</h6>
+                    <hr />
+                    <p>위험 상황을 자동 감지하여 즉각적인 경고 발생</p>
+                  </div>
+                </div>
+                <div
+                  class="effect-box"
+                  data-aos="flip-left"
+                  data-aos-delay="100"
+                >
+                  <div>
+                    <svg
+                      width="24px"
+                      height="24px"
+                      viewBox="0 0 24 24"
+                      version="1.1"
+                    >
+                      <g
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <rect x="0" y="0" width="24" height="24" />
+                        <polygon
+                          fill="#ffffff"
+                          opacity="0.3"
+                          points="5 7 5 15 19 15 19 7"
+                        />
+                        <path
+                          d="M11,19 L11,16 C11,15.4477153 11.4477153,15 12,15 C12.5522847,15 13,15.4477153 13,16 L13,19 L14.5,19 C14.7761424,19 15,19.2238576 15,19.5 C15,19.7761424 14.7761424,20 14.5,20 L9.5,20 C9.22385763,20 9,19.7761424 9,19.5 C9,19.2238576 9.22385763,19 9.5,19 L11,19 Z"
+                          fill="#ffffff"
+                          opacity="0.3"
+                        />
+                        <path
+                          d="M5,7 L5,15 L19,15 L19,7 L5,7 Z M5.25,5 L18.75,5 C19.9926407,5 21,5.8954305 21,7 L21,15 C21,16.1045695 19.9926407,17 18.75,17 L5.25,17 C4.00735931,17 3,16.1045695 3,15 L3,7 C3,5.8954305 4.00735931,5 5.25,5 Z"
+                          fill="#ffffff"
+                          fill-rule="nonzero"
+                        />
+                      </g>
+                    </svg>
+                    <h6>실시간 모니터링</h6>
+                    <hr />
+                    <p>
+                      후크 하방 카메라 영상을 현장 사무실에서 실시간
+                      감시(Option)
                     </p>
+                  </div>
                 </div>
-                <div class="subProduct-contents">
-                    <div class="subProduct-box">
-                        <div class="subProduct-img" >
-                            <img src="./img/crane2.jpg" alt="">
-                        </div>
-                        <div class="subProduct-text" >
-                            <div class="subProduct-right">
-                                <h1 class="oswald">01</h1>
-                                <div class="subProduct-bar"></div>
-                                <small>Trolley Downside Camera</small>
-                            </div>
-                            <h4>후크 하방 카메라</h4>
-                            <p class="sub-text">
-                                건물 상승 등 공정 진행에 따라 좁아진 시야와 다양하게 변하는 <br class="hide1024">
-                                주변 상황들로 인해 신호수와 무전에만 의존하여 작업하지 않고 <br class="hide1024">
-                                타워 기사가 모니터링을 통해 조작하여 사고를 방지할 수 있습니다.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="subProduct-box">
-                        <div class="subProduct-img show768" >
-                            <img src="./img/crane3.jpg" alt="" style="object-position: 0 32%;">
-                        </div>
-                        <div class="subProduct-text text-right" >
-                            <div class="subProduct-left">
-                                <small>Hook Downside Alarm</small>
-                                <div class="subProduct-bar"></div>
-                                <h1 class="oswald">02</h1>
-                            </div>
-                            <h4>후크 하방 경보기</h4>
-                            <p class="sub-text">
-                                후크에 설치되고 낙하물 위험 경고음을 통해 <br>지상에서 작업하는 근로자가 인지하여 안전사고를 예방합니다.
-                            </p>
-                        </div>
-                        <div class="subProduct-img hide768" >
-                            <img src="./img/crane3.jpg" alt="" style="object-position: 0 32%;">
-                        </div>
-                    </div>
-                    <div class="subProduct-box">
-                        <div class="subProduct-img" >
-                            <img src="./img/crane4.jpg" alt="">
-                        </div>
-                        <div class="subProduct-text" >
-                            <div class="subProduct-right">
-                                <h1 class="oswald">03</h1>
-                                <div class="subProduct-bar"></div>
-                                <small>Anti-Collision System</small>
-                            </div>
-                            <h4>충돌 방지 시스템</h4>
-                            <p class="sub-text">
-                                타워 기사실 내부에 설치하여 <br class="hide1024">
-                                주변 지브 위치 및 위험 상황을 인지할 수 있으며, <br class="hide1024">
-                                위험 상황 발생 시 시스템 화면에 표시 및 비상 알림이 울리게 됩니다.<br>
-                                타워 기사는 항시 경각심을 갖게 되어 안전을 더욱 보장합니다.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="subProduct-box">
-                        <div class="subProduct-img show768" >
-                            <img src="./img/crane5.jpg" alt="">
-                        </div>
-                        <div class="subProduct-text text-right" >
-                            <div class="subProduct-left">
-                                <small>Floodlight Control System</small>
-                                <div class="subProduct-bar"></div>
-                                <h1 class="oswald">04</h1>
-                            </div>
-                            <h4>투광등 제어 시스템</h4>
-                            <p class="sub-text">
-                                원격으로 제어하여 필요에 따라 조작이 이루어지고 <br class="hide1024">
-                                특정 구역에만 조명을 활성화할 수 있습니다.<br>
-                                기존 투광등을 제어하던 현장 관리자의 업무 간편화와<br class="hide1024"> 
-                                야간에 조명 필요로 제어 장소로 이동하여 생기는<br class="hide1024"> 
-                                야간 안전 사고를 예방할 수 있습니다.
-                            </p>
-                        </div>
-                        <div class="subProduct-img hide768" >
-                            <img src="./img/crane5.jpg" alt="">
-                        </div>
-                    </div>
+                <div
+                  class="effect-box"
+                  data-aos="flip-left"
+                  data-aos-delay="300"
+                >
+                  <div>
+                    <svg
+                      width="24px"
+                      height="24px"
+                      viewBox="0 0 24 24"
+                      version="1.1"
+                    >
+                      <g
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <rect x="0" y="0" width="24" height="24" />
+                        <path
+                          d="M15.9497475,3.80761184 L13.0246125,6.73274681 C12.2435639,7.51379539 12.2435639,8.78012535 13.0246125,9.56117394 L14.4388261,10.9753875 C15.2198746,11.7564361 16.4862046,11.7564361 17.2672532,10.9753875 L20.1923882,8.05025253 C20.7341101,10.0447871 20.2295941,12.2556873 18.674559,13.8107223 C16.8453326,15.6399488 14.1085592,16.0155296 11.8839934,14.9444337 L6.75735931,20.0710678 C5.97631073,20.8521164 4.70998077,20.8521164 3.92893219,20.0710678 C3.1478836,19.2900192 3.1478836,18.0236893 3.92893219,17.2426407 L9.05556629,12.1160066 C7.98447038,9.89144078 8.36005124,7.15466739 10.1892777,5.32544095 C11.7443127,3.77040588 13.9552129,3.26588995 15.9497475,3.80761184 Z"
+                          fill="#ffffff"
+                        />
+                        <path
+                          d="M16.6568542,5.92893219 L18.0710678,7.34314575 C18.4615921,7.73367004 18.4615921,8.36683502 18.0710678,8.75735931 L16.6913928,10.1370344 C16.3008685,10.5275587 15.6677035,10.5275587 15.2771792,10.1370344 L13.8629656,8.7228208 C13.4724413,8.33229651 13.4724413,7.69913153 13.8629656,7.30860724 L15.2426407,5.92893219 C15.633165,5.5384079 16.26633,5.5384079 16.6568542,5.92893219 Z"
+                          fill="#ffffff"
+                          opacity="0.3"
+                        />
+                      </g>
+                    </svg>
+                    <h6>기술력</h6>
+                    <hr />
+                    <p>현장에 따른 타워 기종에 맞는 설치 기술력 보유</p>
+                  </div>
                 </div>
-            </article>
+                <div
+                  class="effect-box white-box"
+                  data-aos="flip-left"
+                  data-aos-delay="100"
+                  s
+                >
+                  <div>
+                    <svg
+                      width="24px"
+                      height="24px"
+                      viewBox="0 0 24 24"
+                      version="1.1"
+                    >
+                      <g
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <rect x="0" y="0" width="24" height="24" />
+                        <path
+                          d="M6,9 L6,15 C6,16.6568542 7.34314575,18 9,18 L15,18 L15,18.8181818 C15,20.2324881 14.2324881,21 12.8181818,21 L5.18181818,21 C3.76751186,21 3,20.2324881 3,18.8181818 L3,11.1818182 C3,9.76751186 3.76751186,9 5.18181818,9 L6,9 Z M17,16 L17,10 C17,8.34314575 15.6568542,7 14,7 L8,7 L8,6.18181818 C8,4.76751186 8.76751186,4 10.1818182,4 L17.8181818,4 C19.2324881,4 20,4.76751186 20,6.18181818 L20,13.8181818 C20,15.2324881 19.2324881,16 17.8181818,16 L17,16 Z"
+                          fill="#ee3a3d"
+                          fill-rule="nonzero"
+                        />
+                        <path
+                          d="M9.27272727,9 L13.7272727,9 C14.5522847,9 15,9.44771525 15,10.2727273 L15,14.7272727 C15,15.5522847 14.5522847,16 13.7272727,16 L9.27272727,16 C8.44771525,16 8,15.5522847 8,14.7272727 L8,10.2727273 C8,9.44771525 8.44771525,9 9.27272727,9 Z"
+                          fill="#ee3a3d"
+                          opacity="0.3"
+                        />
+                      </g>
+                    </svg>
+                    <h6>범용성</h6>
+                    <hr />
+                    <p>유/무인 타워, 이동식 크레인 등 구축</p>
+                  </div>
+                </div>
+                <div
+                  class="effect-box white-box"
+                  data-aos="flip-left"
+                  data-aos-delay="200"
+                >
+                  <div>
+                    <svg
+                      width="24px"
+                      height="24px"
+                      viewBox="0 0 24 24"
+                      version="1.1"
+                    >
+                      <g
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <rect x="0" y="0" width="24" height="24" />
+                        <path
+                          d="M19,11 L20,11 C21.6568542,11 23,12.3431458 23,14 C23,15.6568542 21.6568542,17 20,17 L19,17 L19,20 C19,21.1045695 18.1045695,22 17,22 L5,22 C3.8954305,22 3,21.1045695 3,20 L3,17 L5,17 C6.65685425,17 8,15.6568542 8,14 C8,12.3431458 6.65685425,11 5,11 L3,11 L3,8 C3,6.8954305 3.8954305,6 5,6 L8,6 L8,5 C8,3.34314575 9.34314575,2 11,2 C12.6568542,2 14,3.34314575 14,5 L14,6 L17,6 C18.1045695,6 19,6.8954305 19,8 L19,11 Z"
+                          fill="#ee3a3d"
+                          opacity="0.3"
+                        />
+                      </g>
+                    </svg>
+                    <h6>간편성</h6>
+                    <hr />
+                    <p>타워 통합 제어 시스템으로 모든 작업을 관리</p>
+                  </div>
+                </div>
+                <div
+                  class="effect-box"
+                  data-aos="flip-left"
+                  data-aos-delay="300"
+                >
+                  <div>
+                    <svg
+                      width="24px"
+                      height="24px"
+                      viewBox="0 0 24 24"
+                      version="1.1"
+                    >
+                      <g
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <rect x="0" y="0" width="24" height="24" />
+                        <rect
+                          fill="#ffffff"
+                          opacity="0.3"
+                          x="2"
+                          y="2"
+                          width="20"
+                          height="20"
+                          rx="10"
+                        />
+                        <path
+                          d="M6.16794971,14.5547002 C5.86159725,14.0951715 5.98577112,13.4743022 6.4452998,13.1679497 C6.90482849,12.8615972 7.52569784,12.9857711 7.83205029,13.4452998 C8.9890854,15.1808525 10.3543313,16 12,16 C13.6456687,16 15.0109146,15.1808525 16.1679497,13.4452998 C16.4743022,12.9857711 17.0951715,12.8615972 17.5547002,13.1679497 C18.0142289,13.4743022 18.1384028,14.0951715 17.8320503,14.5547002 C16.3224187,16.8191475 14.3543313,18 12,18 C9.64566871,18 7.67758127,16.8191475 6.16794971,14.5547002 Z"
+                          fill="#ffffff"
+                        />
+                      </g>
+                    </svg>
+                    <h6>품질</h6>
+                    <hr />
+                    <p>FHD급 화질 및 원활한 작동</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
 
-            <article id="effect">
-                <div class="effect-container">
-                    <div class="effect-title" data-aos="fade-up">
-                        <h2>Expectation <span class="red">Effect</span></h2>
-                        <p>
-                            후크 하방 카메라, 후크 하방 경보기, 충돌 방지 시스템, <br class="hide1366"><br class="show1024">
-                            투광등 제어 시스템 등이 통합되어 <br class="hide1366"><br class="show1024">
-                            즉각적인 경보와 조치를 취할 수 있습니다. <br>
-                            이는 사고 예방과 대응 능력을 향상시킵니다.
-                        </p>
-                    </div>
-                    <div class="effect-contents">
-                        <div class="effect-grid">
-                            <div class="effect-box white-box" data-aos="flip-left" data-aos-delay="200">
-                                <div>
-                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <rect x="0" y="0" width="24" height="24" />
-                                            <path
-                                                d="M4,4 L11.6314229,2.5691082 C11.8750185,2.52343403 12.1249815,2.52343403 12.3685771,2.5691082 L20,4 L20,13.2830094 C20,16.2173861 18.4883464,18.9447835 16,20.5 L12.5299989,22.6687507 C12.2057287,22.8714196 11.7942713,22.8714196 11.4700011,22.6687507 L8,20.5 C5.51165358,18.9447835 4,16.2173861 4,13.2830094 L4,4 Z"
-                                                fill="#ee3a3d" opacity="0.3" />
-                                            <path
-                                                d="M11.1750002,14.75 C10.9354169,14.75 10.6958335,14.6541667 10.5041669,14.4625 L8.58750019,12.5458333 C8.20416686,12.1625 8.20416686,11.5875 8.58750019,11.2041667 C8.97083352,10.8208333 9.59375019,10.8208333 9.92916686,11.2041667 L11.1750002,12.45 L14.3375002,9.2875 C14.7208335,8.90416667 15.2958335,8.90416667 15.6791669,9.2875 C16.0625002,9.67083333 16.0625002,10.2458333 15.6791669,10.6291667 L11.8458335,14.4625 C11.6541669,14.6541667 11.4145835,14.75 11.1750002,14.75 Z"
-                                                fill="#ee3a3d" />
-                                        </g>
-                                    </svg>
-                                    <h6>안전 강화</h6>
-                                    <hr />
-                                    <p>위험 상황을 자동 감지하여 <br class="hide1366">즉각적인 경고 발생</p>
-                                </div>
-                            </div>
-                            <div class="effect-box" data-aos="flip-left" data-aos-delay="100">
-                                <div>
-                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <rect x="0" y="0" width="24" height="24"/>
-                                            <polygon fill="#ffffff" opacity="0.3" points="5 7 5 15 19 15 19 7"/>
-                                            <path d="M11,19 L11,16 C11,15.4477153 11.4477153,15 12,15 C12.5522847,15 13,15.4477153 13,16 L13,19 L14.5,19 C14.7761424,19 15,19.2238576 15,19.5 C15,19.7761424 14.7761424,20 14.5,20 L9.5,20 C9.22385763,20 9,19.7761424 9,19.5 C9,19.2238576 9.22385763,19 9.5,19 L11,19 Z" fill="#ffffff" opacity="0.3"/>
-                                            <path d="M5,7 L5,15 L19,15 L19,7 L5,7 Z M5.25,5 L18.75,5 C19.9926407,5 21,5.8954305 21,7 L21,15 C21,16.1045695 19.9926407,17 18.75,17 L5.25,17 C4.00735931,17 3,16.1045695 3,15 L3,7 C3,5.8954305 4.00735931,5 5.25,5 Z" fill="#ffffff" fill-rule="nonzero"/>
-                                        </g>
-                                    </svg>
-                                    <h6>실시간 모니터링</h6>
-                                    <hr />
-                                    <p>후크 하방 카메라 영상을 <br class="hide1366">현장 사무실에서 실시간 감시(Option)</p>
-                                </div>
-                            </div>
-                            <div class="effect-box" data-aos="flip-left" data-aos-delay="300">
-                                <div>
-                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <rect x="0" y="0" width="24" height="24"/>
-                                            <path d="M15.9497475,3.80761184 L13.0246125,6.73274681 C12.2435639,7.51379539 12.2435639,8.78012535 13.0246125,9.56117394 L14.4388261,10.9753875 C15.2198746,11.7564361 16.4862046,11.7564361 17.2672532,10.9753875 L20.1923882,8.05025253 C20.7341101,10.0447871 20.2295941,12.2556873 18.674559,13.8107223 C16.8453326,15.6399488 14.1085592,16.0155296 11.8839934,14.9444337 L6.75735931,20.0710678 C5.97631073,20.8521164 4.70998077,20.8521164 3.92893219,20.0710678 C3.1478836,19.2900192 3.1478836,18.0236893 3.92893219,17.2426407 L9.05556629,12.1160066 C7.98447038,9.89144078 8.36005124,7.15466739 10.1892777,5.32544095 C11.7443127,3.77040588 13.9552129,3.26588995 15.9497475,3.80761184 Z" fill="#ffffff"/>
-                                            <path d="M16.6568542,5.92893219 L18.0710678,7.34314575 C18.4615921,7.73367004 18.4615921,8.36683502 18.0710678,8.75735931 L16.6913928,10.1370344 C16.3008685,10.5275587 15.6677035,10.5275587 15.2771792,10.1370344 L13.8629656,8.7228208 C13.4724413,8.33229651 13.4724413,7.69913153 13.8629656,7.30860724 L15.2426407,5.92893219 C15.633165,5.5384079 16.26633,5.5384079 16.6568542,5.92893219 Z" fill="#ffffff" opacity="0.3"/>
-                                        </g>
-                                    </svg>
-                                    <h6>기술력</h6>
-                                    <hr />
-                                    <p>현장에 따른 타워 기종에 맞는<br class="hide1366"> 설치 기술력 보유</p>
-                                </div>
-                            </div>
-                            <div class="effect-box white-box" data-aos="flip-left" data-aos-delay="100" s>
-                                <div>
-                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <rect x="0" y="0" width="24" height="24" />
-                                            <path
-                                                d="M6,9 L6,15 C6,16.6568542 7.34314575,18 9,18 L15,18 L15,18.8181818 C15,20.2324881 14.2324881,21 12.8181818,21 L5.18181818,21 C3.76751186,21 3,20.2324881 3,18.8181818 L3,11.1818182 C3,9.76751186 3.76751186,9 5.18181818,9 L6,9 Z M17,16 L17,10 C17,8.34314575 15.6568542,7 14,7 L8,7 L8,6.18181818 C8,4.76751186 8.76751186,4 10.1818182,4 L17.8181818,4 C19.2324881,4 20,4.76751186 20,6.18181818 L20,13.8181818 C20,15.2324881 19.2324881,16 17.8181818,16 L17,16 Z"
-                                                fill="#ee3a3d" fill-rule="nonzero" />
-                                            <path
-                                                d="M9.27272727,9 L13.7272727,9 C14.5522847,9 15,9.44771525 15,10.2727273 L15,14.7272727 C15,15.5522847 14.5522847,16 13.7272727,16 L9.27272727,16 C8.44771525,16 8,15.5522847 8,14.7272727 L8,10.2727273 C8,9.44771525 8.44771525,9 9.27272727,9 Z"
-                                                fill="#ee3a3d" opacity="0.3" />
-                                        </g>
-                                    </svg>
-                                    <h6>범용성</h6>
-                                    <hr />
-                                    <p>유/무인 타워, <br>이동식 크레인 등 구축</p>
-                                </div>
-                            </div>
-                            <div class="effect-box white-box" data-aos="flip-left" data-aos-delay="200">
-                                <div>
-                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <rect x="0" y="0" width="24" height="24"/>
-                                            <path d="M19,11 L20,11 C21.6568542,11 23,12.3431458 23,14 C23,15.6568542 21.6568542,17 20,17 L19,17 L19,20 C19,21.1045695 18.1045695,22 17,22 L5,22 C3.8954305,22 3,21.1045695 3,20 L3,17 L5,17 C6.65685425,17 8,15.6568542 8,14 C8,12.3431458 6.65685425,11 5,11 L3,11 L3,8 C3,6.8954305 3.8954305,6 5,6 L8,6 L8,5 C8,3.34314575 9.34314575,2 11,2 C12.6568542,2 14,3.34314575 14,5 L14,6 L17,6 C18.1045695,6 19,6.8954305 19,8 L19,11 Z" fill="#ee3a3d" opacity="0.3"/>
-                                        </g>
-                                    </svg>
-                                    <h6>간편성</h6>
-                                    <hr />
-                                    <p>타워 통합 제어 시스템으로 <br class="hide1366">모든 작업을 관리</p>
-                                </div>
-                            </div>
-                            <div class="effect-box" data-aos="flip-left" data-aos-delay="300">
-                                <div>
-                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <rect x="0" y="0" width="24" height="24"/>
-                                            <rect fill="#ffffff" opacity="0.3" x="2" y="2" width="20" height="20" rx="10"/>
-                                            <path d="M6.16794971,14.5547002 C5.86159725,14.0951715 5.98577112,13.4743022 6.4452998,13.1679497 C6.90482849,12.8615972 7.52569784,12.9857711 7.83205029,13.4452998 C8.9890854,15.1808525 10.3543313,16 12,16 C13.6456687,16 15.0109146,15.1808525 16.1679497,13.4452998 C16.4743022,12.9857711 17.0951715,12.8615972 17.5547002,13.1679497 C18.0142289,13.4743022 18.1384028,14.0951715 17.8320503,14.5547002 C16.3224187,16.8191475 14.3543313,18 12,18 C9.64566871,18 7.67758127,16.8191475 6.16794971,14.5547002 Z" fill="#ffffff"/>
-                                        </g>
-                                    </svg>
-                                    <h6>품질</h6>
-                                    <hr />
-                                    <p>FHD급 화질 및 원활한 작동</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
+        <article id="procedure">
+          <div class="light-filter"></div>
+          <div class="procedure-contents">
+            <div class="procedure-box" data-aos="fade-up" data-aos-delay="100">
+              <img src="./img/icon/procedure1.png" alt="" />
+              <h5>견적의뢰</h5>
+              <p>
+                프로젝트에 대한 자세한 정보와 <br />요구사항을 의뢰주시면,<br />
+                최상의 솔루션을 <br />제공해 드리겠습니다.
+              </p>
+            </div>
+            <img
+              class="procedure-arrow"
+              src="./img/icon/arrow2.png"
+              alt=""
+              data-aos="fade-up"
+              data-aos-delay="200"
+            />
+            <div class="procedure-box" data-aos="fade-up" data-aos-delay="300">
+              <img src="./img/icon/procedure2.png" alt="" />
+              <h5>설계&견적</h5>
+              <p>
+                전문 설계팀이<br />
+                고객의 요구사항을 고려하여 <br />최적의 설계를 제시하고,
+                <br />경제적인 견적을 제공해 드립니다.
+              </p>
+            </div>
+            <img
+              class="procedure-arrow"
+              src="./img/icon/arrow2.png"
+              alt=""
+              data-aos="fade-up"
+              data-aos-delay="400"
+            />
+            <div class="procedure-box" data-aos="fade-up" data-aos-delay="500">
+              <img src="./img/icon/procedure3.png" alt="" />
+              <h5>현장 구축</h5>
+              <p>
+                고객의 요구에 맞게<br />안전하고 정확하게<br />현장 구축을
+                진행하며,<br />
+                최고의 품질을 보장합니다.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
 
-            <article id="procedure">
-                <div class="light-filter"></div>
-                <div class="procedure-contents">
-                    <div class="procedure-box" data-aos="fade-up" data-aos-delay="100">
-                        <img src="./img/icon/procedure1.png" alt="">
-                        <h5>견적의뢰</h5>
-                        <p>프로젝트에 대한 자세한 정보와 <br>요구사항을 의뢰주시면,<br> 최상의 솔루션을 <br>제공해 드리겠습니다.</p>
-                    </div>
-                    <img class="procedure-arrow" src="./img/icon/arrow2.png" alt="" data-aos="fade-up"
-                        data-aos-delay="200">
-                    <div class="procedure-box" data-aos="fade-up" data-aos-delay="300">
-                        <img src="./img/icon/procedure2.png" alt="">
-                        <h5>설계&견적</h5>
-                        <p>전문 설계팀이<br> 고객의 요구사항을 고려하여 <br>최적의 설계를 제시하고, <br>경제적인 견적을 제공해 드립니다.</p>
-                    </div>
-                    <img class="procedure-arrow" src="./img/icon/arrow2.png" alt="" data-aos="fade-up"
-                        data-aos-delay="400">
-                    <div class="procedure-box" data-aos="fade-up" data-aos-delay="500">
-                        <img src="./img/icon/procedure3.png" alt="">
-                        <h5>현장 구축</h5>
-                        <p>고객의 요구에 맞게<br>안전하고 정확하게<br>현장 구축을 진행하며,<br> 최고의 품질을 보장합니다.</p>
-                    </div>
-                </div>
-            </article>
-
-        </section>
-
-        <footer>
-            <div class="footer-container">
-                <div class="footer-text">
-                    <h5>(주)아이티로그</h5>
-                    <!-- <img src="./img/logo/itlog.svg" alt=""> -->
-                    <div>
-                        <p>ADDRESS : 서울특별시 구로구 디지털로33길 28  <br class="show768">우림이비즈센터1차 308호 (우:08377)</p>
-                        <p>TEL : 02-859-2064 <span class="hide768">|</span><br class="show768"> FAX : 02-859-2065 <span class="hide768">|</span><br class="show768"> EMAIL : ok@it-log.co.kr</p>
-                        <p>Copyright ⓒ2023 ITLOG CO., LTD. All Rights Reserved.</p>
-                    </div>
-                </div>
-                <div class="footer-contact">
-                    <!-- <div class="flex-flex">
+      <footer>
+        <div class="footer-container">
+          <div class="footer-text">
+            <h5>(주)아이티로그</h5>
+            <!-- <img src="./img/logo/itlog.svg" alt=""> -->
+            <div>
+              <p>
+                ADDRESS : 서울특별시 구로구 디지털로33길 28
+                <br class="show768" />우림이비즈센터1차 308호 (우:08377)
+              </p>
+              <p>
+                TEL : 02-859-2064 <span class="hide768">|</span
+                ><br class="show768" />
+                FAX : 02-859-2065 <span class="hide768">|</span
+                ><br class="show768" />
+                EMAIL : ok@it-log.co.kr
+              </p>
+              <p>Copyright ⓒ2023 ITLOG CO., LTD. All Rights Reserved.</p>
+            </div>
+          </div>
+          <div class="footer-contact">
+            <!-- <div class="flex-flex">
                         <a><img src="./img/logo/blog.png" alt=""></a>
                         <a><img src="./img/logo/kakao.png" alt=""></a>
                     </div> -->
-                    <button type="button"><a href="./consulting.html">견적의뢰</a></button>
-                </div>
-            </div>
-        </footer>
-
-        <div id="topButton">
-            <span class="icon icon-arrow-up"></span>
+            <button type="button">
+              <a href="./consulting.html">견적의뢰</a>
+            </button>
+          </div>
         </div>
+      </footer>
+
+      <div id="topButton">
+        <span class="icon icon-arrow-up"></span>
+      </div>
     </div>
+  </body>
 
-</body>
-
-<script src="./swiper/swiper-bundle.min.js"></script>
-<!-- [슬라이드 라이브러리 JS] -->
-<script src="./aos-master/dist/aos.js"></script>
-<!-- [텍스트 애니메이션 라이브러리 JS] -->
-<script type="text/javascript" src="./src/js/index.js"></script>
-<!-- [기본 JS] -->
-<script type="text/javascript" src="./src/js/sub.js"></script>
-<!-- [제품소개 통합 JS] -->
-<script>
+  <script src="./swiper/swiper-bundle.min.js"></script>
+  <!-- [슬라이드 라이브러리 JS] -->
+  <script src="./aos-master/dist/aos.js"></script>
+  <!-- [텍스트 애니메이션 라이브러리 JS] -->
+  <script type="text/javascript" src="./src/js/index.js"></script>
+  <!-- [기본 JS] -->
+  <script type="text/javascript" src="./src/js/sub.js"></script>
+  <!-- [제품소개 통합 JS] -->
+  <script>
     // AOS 사용전 초기화 선언
     AOS.init({
-        duration: 1000,
+      duration: 1000,
     });
-</script>
-
+  </script>
 </html>

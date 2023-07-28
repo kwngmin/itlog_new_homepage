@@ -1,392 +1,552 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IT-LOG</title>
-    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
     <!-- [슬라이드 라이브러리 CSS] -->
-    <link rel="stylesheet" href="./aos-master/dist/aos.css">
+    <link rel="stylesheet" href="./aos-master/dist/aos.css" />
     <!-- [텍스트 애니메이션 라이브러리 CSS] -->
-    <link rel="stylesheet" href="./simplelineicons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="./simplelineicons/css/simple-line-icons.css" />
     <!-- [아이콘 라이브러리 CSS] -->
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/style.css" />
     <!-- [기본 CSS] -->
-    <link rel="stylesheet" href="./src/css/sub.css">
+    <link rel="stylesheet" href="./src/css/sub.css" />
     <!-- [제품소개 통합 CSS] -->
     <script src="./src/js/prefixfree.min.js"></script>
     <!-- [벤더프리픽스] -->
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div id="sideNav" class="show1024">
-        <div class="sideNav-container">
-            <div id="sideNavClose" onclick="closeNav()">&times;</div>
-            <ul class="sideNav-menu">
-                <li class="accordion">회사소개<span class="icon icon-arrow-right"></span></li>
-                <ul class="accordion-menu">
-                    <li><a href="./introduce.html">인사말</a></li>
-                    <li><a href="./history.html">기업연혁</a></li>
-                    <li><a href="./vision.html">기업이념</a></li>
-                    <!-- <li><a href="./certification.html">인증</a></li> -->
-                    <li><a href="./way.html">오시는길</a></li>
-                </ul>
-                <li class="accordion">통합IoT솔루션<span class="icon icon-arrow-right"></span></li>
-                <ul class="accordion-menu">
-                    <li><a href="./IoT.html">통합IoT솔루션</a></li>
-                </ul>
-                <li class="accordion">제품소개<span class="icon icon-arrow-right"></span></li>
-                <ul class="accordion-menu">
-                    <li><a href="./gate.html">출입통제시스템</a></li>
-                    <li><a href="./cctv.html">안전관리CCTV</a></li>
-                    <li><a href="./towercrane.html">T/C통합안전</a></li>
-                    <li><a href="./sensor.html">환경센서</a></li>
-                    <li><a href="./broadcast.html">방송시스템</a></li>
-                </ul>
-                <li class="accordion">고객서비스<span class="icon icon-arrow-right"></span></li>
-                <ul class="accordion-menu">
-                    <li><a href="./consulting.html">견적의뢰</a></li>
-                    <li class="hide1024"><a href="http://helpu.kr/itlog/" target="_blank">원격지원</a></li>
-                </ul>
-            </ul>
-            <!-- <div class="sideNav-footer">
+      <div class="sideNav-container">
+        <div id="sideNavClose" onclick="closeNav()">&times;</div>
+        <ul class="sideNav-menu">
+          <li class="accordion">
+            회사소개<span class="icon icon-arrow-right"></span>
+          </li>
+          <ul class="accordion-menu">
+            <li><a href="./introduce.html">인사말</a></li>
+            <li><a href="./history.html">기업연혁</a></li>
+            <li><a href="./vision.html">기업이념</a></li>
+            <!-- <li><a href="./certification.html">인증</a></li> -->
+            <li><a href="./way.html">오시는길</a></li>
+          </ul>
+          <li class="accordion">
+            통합IoT솔루션<span class="icon icon-arrow-right"></span>
+          </li>
+          <ul class="accordion-menu">
+            <li><a href="./IoT.html">통합IoT솔루션</a></li>
+          </ul>
+          <li class="accordion">
+            제품소개<span class="icon icon-arrow-right"></span>
+          </li>
+          <ul class="accordion-menu">
+            <li><a href="./gate.html">출입통제시스템</a></li>
+            <li><a href="./cctv.html">안전관리CCTV</a></li>
+            <li><a href="./towercrane.html">T/C통합안전</a></li>
+            <li><a href="./sensor.html">환경센서</a></li>
+            <li><a href="./broadcast.html">방송시스템</a></li>
+          </ul>
+          <li class="accordion">
+            고객서비스<span class="icon icon-arrow-right"></span>
+          </li>
+          <ul class="accordion-menu">
+            <li><a href="./consulting.html">견적의뢰</a></li>
+            <li class="hide1024">
+              <a href="http://helpu.kr/itlog/" target="_blank">원격지원</a>
+            </li>
+          </ul>
+        </ul>
+        <!-- <div class="sideNav-footer">
                 <a><img src="./img/logo/blog.png" alt=""></a>
                 <a><img src="./img/logo/kakao.png" alt=""></a>
             </div> -->
-        </div>
+      </div>
     </div>
 
     <div id="broadcast" class="wrapper">
-        <div id="sideNavOpenFilter" class="light-filter"></div>
-        <header id="header">
-            <div class="header-container">
-                <div id="headerLogo"><a href="./index.html"></a></div>
-                <div id="headerNav">
-                    <div class="header-title">
-                        <a>회사소개</a> 
-                    </div>
-                    <div class="header-title">
-                        <a>통합IoT솔루션</a> 
-                    </div>
-                    <div class="header-title">
-                        <a>제품소개</a> 
-                    </div>
-                    <div class="header-title">
-                        <a>고객서비스</a> 
-                    </div>
-                </div>
-                <div id="sideNavOpen" class="show1024" onclick="openNav()"><span class="icon icon-menu"></span></div>
-                <div id="language">
-                    <!-- <p class="red">KOR</p>
+      <div id="sideNavOpenFilter" class="light-filter"></div>
+      <header id="header">
+        <div class="header-container">
+          <div id="headerLogo"><a href="./index.html"></a></div>
+          <div id="headerNav">
+            <div class="header-title">
+              <a>회사소개</a>
+            </div>
+            <div class="header-title">
+              <a>통합IoT솔루션</a>
+            </div>
+            <div class="header-title">
+              <a>제품소개</a>
+            </div>
+            <div class="header-title">
+              <a>고객서비스</a>
+            </div>
+          </div>
+          <div id="sideNavOpen" class="show1024" onclick="openNav()">
+            <span class="icon icon-menu"></span>
+          </div>
+          <div id="language">
+            <!-- <p class="red">KOR</p>
                     <p>ENG</p> -->
-                </div>
+          </div>
+        </div>
+        <div class="header-sub">
+          <div class="no-list"></div>
+          <div class="header-subList">
+            <div class="header-subTitle">
+              <div>
+                <a href="./introduce.html">인사말</a>
+                <a href="./history.html">기업연혁</a>
+                <a href="./vision.html">기업이념</a>
+                <!-- <a href="./certification.html">인증</a> -->
+                <a href="./way.html">오시는길</a>
+              </div>
             </div>
-            <div class="header-sub">
-                <div class="no-list"></div>
-                <div class="header-subList">
-                    <div class="header-subTitle">
-                        <div>
-                            <a href="./introduce.html">인사말</a>
-                            <a href="./history.html">기업연혁</a>
-                            <a href="./vision.html">기업이념</a>
-                            <!-- <a href="./certification.html">인증</a> -->
-                            <a href="./way.html">오시는길</a>
-                        </div>
-                    </div>
-                    <div class="header-subTitle">
-                        <div>
-                            <a href="./IoT.html">통합IoT솔루션</a>
-                        </div>
-                    </div>
-                    <div class="header-subTitle">
-                        <div>
-                            <a href="./gate.html">출입통제시스템</a>
-                            <a href="./cctv.html">안전관리CCTV</a>
-                            <a href="./towercrane.html">T/C통합안전</a>
-                            <a href="./sensor.html">환경센서</a>
-                            <a href="./broadcast.html">방송시스템</a>
-                        </div>
-                    </div>
-                    <div class="header-subTitle">
-                        <div>
-                            <a href="./consulting.html">견적의뢰</a>
-                            <a href="http://helpu.kr/itlog/" target="_blank">원격지원</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="no-list"></div>
+            <div class="header-subTitle">
+              <div>
+                <a href="./IoT.html">통합IoT솔루션</a>
+              </div>
             </div>
-        </header>
-
-        <main>
-            <div class="dark-filter"></div>
-            <div class="main-text">
-                <h1>방송 시스템</h1>
-                <h5>방송 시스템을 구축하여 근로자가 있는 어느 곳이든 <br>
-                    현장 사무실에서 전체, 구역별, 지정 구간 등을 설정하여 경고 방송 및 안내 방송을 송출할 수 있습니다.</h5>
+            <div class="header-subTitle">
+              <div>
+                <a href="./gate.html">출입통제시스템</a>
+                <a href="./cctv.html">안전관리CCTV</a>
+                <a href="./towercrane.html">T/C통합안전</a>
+                <a href="./sensor.html">환경센서</a>
+                <a href="./broadcast.html">방송시스템</a>
+              </div>
             </div>
-        </main>
+            <div class="header-subTitle">
+              <div>
+                <a href="./consulting.html">견적의뢰</a>
+                <a href="http://helpu.kr/itlog/" target="_blank">원격지원</a>
+              </div>
+            </div>
+          </div>
+          <div class="no-list"></div>
+        </div>
+      </header>
 
-        <section>
-            <article id="keyPoint">
-                <div class="keyPoint-title">
-                    <h2 data-aos="fade-up" data-aos-delay="100"><span class="red">Key</span> Point</h2>
-                </div>
-                <div class="keyPoint-contents">
-                    <div class="keyPoint-box hide768"></div>
-                    <div class="keyPoint-box" data-aos="fade-up" data-aos-delay="100">
-                        <div class="keyPoint-img"><img src="./img/icon/cast1.png" alt=""></div>
-                        <h5>스피커</h5>
-                        <p>현장에 설치하여 효율적인 방송</p>
-                    </div>
-                    <div class="keyPoint-box" data-aos="fade-up" data-aos-delay="200">
-                        <div class="keyPoint-img"><img src="./img/icon/cast2.png" alt=""></div>
-                        <h5>마이크</h5>
-                        <p>현장 사무실에 구축하여 <br>방송 시스템 관리</p>
-                    </div>
-                    <div class="keyPoint-box hide768"></div>
-                </div>
-            </article>
+      <main>
+        <div class="dark-filter"></div>
+        <div class="main-text">
+          <h2>방송 시스템</h2>
+          <!-- <h5>방송 시스템을 구축하여 근로자가 있는 어느 곳이든 <br>
+                    현장 사무실에서 전체, 구역별, 지정 구간 등을 설정하여 경고 방송 및 안내 방송을 송출할 수 있습니다.</h5> -->
+        </div>
+      </main>
 
-            <article id="subProduct">
-                <div class="subProduct-title" data-aos="fade-up">
-                    <h2>Broadcast System</h2>
-                    <h4 class="s-color">넒은 범위로의 전달</h4>
-                    <p class="t-color">
-                        네트워크 기반을 통해 장소와 거리의 제약을 최소화하여 경보 방송 및 일반 방송을 송출하는 시스템입니다.
+      <section>
+        <article id="keyPoint">
+          <div class="keyPoint-title">
+            <h2 data-aos="fade-up" data-aos-delay="100">
+              <span class="red">Key</span> Point
+            </h2>
+          </div>
+          <div class="keyPoint-contents">
+            <div class="keyPoint-box hide768"></div>
+            <div class="keyPoint-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="keyPoint-img">
+                <img src="./img/icon/cast1.png" alt="" />
+              </div>
+              <h5>스피커</h5>
+              <p>현장에 설치하여 효율적인 방송</p>
+            </div>
+            <div class="keyPoint-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="keyPoint-img">
+                <img src="./img/icon/cast2.png" alt="" />
+              </div>
+              <h5>마이크</h5>
+              <p>현장 사무실에 구축하여 <br />방송 시스템 관리</p>
+            </div>
+            <div class="keyPoint-box hide768"></div>
+          </div>
+        </article>
+
+        <article id="subProduct">
+          <div class="subProduct-title" data-aos="fade-up">
+            <h2>Broadcast System</h2>
+            <h4 class="s-color">넒은 범위로의 전달</h4>
+            <h5 class="t-color">
+              네트워크 기반을 통해 장소와 거리의 제약을 최소화하여 경보 방송 및
+              일반 방송을 송출하는 시스템입니다.
+            </h5>
+          </div>
+          <div class="subProduct-contents">
+            <div class="subProduct-box">
+              <div class="subProduct-img" data-aos="zoom-out">
+                <img
+                  src="./img/cast2.jpg"
+                  alt=""
+                  style="object-position: top"
+                />
+              </div>
+              <div class="subProduct-text" data-aos="fade-right">
+                <div class="subProduct-right">
+                  <h1 class="oswald">01</h1>
+                  <small>Speaker</small>
+                </div>
+                <h4>스피커</h4>
+                <p class="text-xl">
+                  CCTV와 동시 구축을 통하여 근로자 식별 및 송출할 위치에 맞춰
+                  방송할 수 있습니다.
+                </p>
+              </div>
+            </div>
+            <div class="subProduct-box">
+              <div class="subProduct-img show768" data-aos="zoom-out">
+                <img src="./img/cast3.jpg" alt="" />
+              </div>
+              <div class="subProduct-text text-right" data-aos="fade-left">
+                <div class="subProduct-left">
+                  <h1 class="oswald">02</h1>
+                  <small>Microphone</small>
+                </div>
+                <h4>마이크</h4>
+                <p class="text-xl">
+                  Web, C/S프로그램으로 관리자가 접근성 및 관리가 편리한 방송이
+                  가능합니다.
+                </p>
+              </div>
+              <div class="subProduct-img hide768" data-aos="zoom-out">
+                <img src="./img/cast3.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article id="effect">
+          <div class="effect-container">
+            <div class="effect-title" data-aos="fade-up">
+              <h2>Expectation <span class="red">Effect</span></h2>
+              <p class="text-lg">
+                방송 시스템을 통해 실시간으로 안전 지침, 작업 일정, 변경 사항
+                등을 전달할 수 있습니다. 이는 작업자들 사이의 의사소통을
+                원활하게 하고 협업을 강화하여 작업 효율성을 향상시킵니다.
+              </p>
+            </div>
+            <div class="effect-contents">
+              <div class="effect-grid">
+                <div
+                  class="effect-box"
+                  data-aos="flip-left"
+                  data-aos-delay="100"
+                >
+                  <div>
+                    <svg
+                      width="24px"
+                      height="24px"
+                      viewBox="0 0 24 24"
+                      version="1.1"
+                    >
+                      <g
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <rect x="0" y="0" width="24" height="24" />
+                        <path
+                          d="M16.3155516,16.1481997 C15.9540268,16.3503696 15.4970619,16.2211868 15.294892,15.859662 C15.0927222,15.4981371 15.2219049,15.0411723 15.5834298,14.8390024 C16.6045379,14.2679841 17.25,13.1909329 17.25,12 C17.25,10.8178416 16.614096,9.74756859 15.6048775,9.17309861 C15.2448979,8.96819005 15.1191879,8.51025767 15.3240965,8.15027801 C15.529005,7.79029835 15.9869374,7.66458838 16.3469171,7.86949694 C17.8200934,8.70806221 18.75,10.2731632 18.75,12 C18.75,13.7396897 17.8061594,15.3146305 16.3155516,16.1481997 Z M16.788778,19.8892305 C16.4155074,20.068791 15.9673493,19.9117581 15.7877887,19.5384876 C15.6082282,19.165217 15.7652611,18.7170589 16.1385317,18.5374983 C18.6312327,17.3383928 20.25,14.815239 20.25,12 C20.25,9.21171818 18.6622363,6.70862302 16.2061077,5.49544344 C15.8347279,5.31200421 15.682372,4.86223455 15.8658113,4.49085479 C16.0492505,4.11947504 16.4990201,3.96711914 16.8703999,4.15055837 C19.8335314,5.61416684 21.75,8.63546229 21.75,12 C21.75,15.3971108 19.7961591,18.4425397 16.788778,19.8892305 Z"
+                          fill="#ffffff"
+                          fill-rule="nonzero"
+                          opacity="0.3"
+                        />
+                        <path
+                          d="M7,16 L3.60776773,15.3215535 C2.67291934,15.1345839 2,14.3137542 2,13.3603922 L2,10.6396078 C2,9.68624577 2.67291934,8.86541613 3.60776773,8.67844645 L7,8 L10.2928932,4.70710678 C10.6834175,4.31658249 11.3165825,4.31658249 11.7071068,4.70710678 C11.8946432,4.89464316 12,5.14899707 12,5.41421356 L12,18.5857864 C12,19.1380712 11.5522847,19.5857864 11,19.5857864 C10.7347835,19.5857864 10.4804296,19.4804296 10.2928932,19.2928932 L7,16 Z"
+                          fill="#ffffff"
+                        />
+                      </g>
+                    </svg>
+                    <h6>기본 옵션</h6>
+                    <hr />
+                    <p>육성 및 파임/사이렌 방송</p>
+                  </div>
+                </div>
+                <div
+                  class="effect-box white-box"
+                  data-aos="flip-left"
+                  data-aos-delay="200"
+                >
+                  <div>
+                    <svg
+                      width="24px"
+                      height="24px"
+                      viewBox="0 0 24 24"
+                      version="1.1"
+                    >
+                      <g
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <rect x="0" y="0" width="24" height="24" />
+                        <path
+                          d="M4,4 L11.6314229,2.5691082 C11.8750185,2.52343403 12.1249815,2.52343403 12.3685771,2.5691082 L20,4 L20,13.2830094 C20,16.2173861 18.4883464,18.9447835 16,20.5 L12.5299989,22.6687507 C12.2057287,22.8714196 11.7942713,22.8714196 11.4700011,22.6687507 L8,20.5 C5.51165358,18.9447835 4,16.2173861 4,13.2830094 L4,4 Z"
+                          fill="#ee3a3d"
+                          opacity="0.3"
+                        />
+                        <path
+                          d="M11.1750002,14.75 C10.9354169,14.75 10.6958335,14.6541667 10.5041669,14.4625 L8.58750019,12.5458333 C8.20416686,12.1625 8.20416686,11.5875 8.58750019,11.2041667 C8.97083352,10.8208333 9.59375019,10.8208333 9.92916686,11.2041667 L11.1750002,12.45 L14.3375002,9.2875 C14.7208335,8.90416667 15.2958335,8.90416667 15.6791669,9.2875 C16.0625002,9.67083333 16.0625002,10.2458333 15.6791669,10.6291667 L11.8458335,14.4625 C11.6541669,14.6541667 11.4145835,14.75 11.1750002,14.75 Z"
+                          fill="#ee3a3d"
+                        />
+                      </g>
+                    </svg>
+                    <h6>안전 강화</h6>
+                    <hr />
+                    <p>비인가 인원 출입 시 경고 알림</p>
+                  </div>
+                </div>
+                <div
+                  class="effect-box white-box"
+                  data-aos="flip-left"
+                  data-aos-delay="300"
+                >
+                  <div>
+                    <svg
+                      width="24px"
+                      height="24px"
+                      viewBox="0 0 24 24"
+                      version="1.1"
+                    >
+                      <g
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <rect x="0" y="0" width="24" height="24" />
+                        <path
+                          d="M12,8 L8,8 C5.790861,8 4,9.790861 4,12 L4,13 C4,14.6568542 5.34314575,16 7,16 L7,18 C4.23857625,18 2,15.7614237 2,13 L2,12 C2,8.6862915 4.6862915,6 8,6 L12,6 L12,4.72799742 C12,4.62015048 12.0348702,4.51519416 12.0994077,4.42878885 C12.264656,4.2075478 12.5779675,4.16215674 12.7992086,4.32740507 L15.656242,6.46136716 C15.6951359,6.49041758 15.7295917,6.52497737 15.7585249,6.56395854 C15.9231063,6.78569617 15.876772,7.09886961 15.6550344,7.263451 L12.798001,9.3840407 C12.7118152,9.44801079 12.607332,9.48254921 12.5,9.48254921 C12.2238576,9.48254921 12,9.25869158 12,8.98254921 L12,8 Z"
+                          fill="#ee3a3d"
+                        />
+                        <path
+                          d="M12.0583175,16 L16,16 C18.209139,16 20,14.209139 20,12 L20,11 C20,9.34314575 18.6568542,8 17,8 L17,6 C19.7614237,6 22,8.23857625 22,11 L22,12 C22,15.3137085 19.3137085,18 16,18 L12.0583175,18 L12.0583175,18.9825492 C12.0583175,19.2586916 11.8344599,19.4825492 11.5583175,19.4825492 C11.4509855,19.4825492 11.3465023,19.4480108 11.2603165,19.3840407 L8.40328311,17.263451 C8.18154548,17.0988696 8.13521119,16.7856962 8.29979258,16.5639585 C8.32872576,16.5249774 8.36318164,16.4904176 8.40207551,16.4613672 L11.2591089,14.3274051 C11.48035,14.1621567 11.7936615,14.2075478 11.9589099,14.4287888 C12.0234473,14.5151942 12.0583175,14.6201505 12.0583175,14.7279974 L12.0583175,16 Z"
+                          fill="#ee3a3d"
+                          opacity="0.3"
+                        />
+                      </g>
+                    </svg>
+                    <h6>자동화</h6>
+                    <hr />
+                    <p>시간 예약에 의한 자동 방송</p>
+                  </div>
+                </div>
+                <div
+                  class="effect-box white-box"
+                  data-aos="flip-left"
+                  data-aos-delay="100"
+                >
+                  <div>
+                    <svg
+                      width="24px"
+                      height="24px"
+                      viewBox="0 0 24 24"
+                      version="1.1"
+                    >
+                      <g
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <rect x="0" y="0" width="24" height="24" />
+                        <path
+                          d="M12,10.9996338 C12.8356605,10.3719448 13.8743941,10 15,10 C17.7614237,10 20,12.2385763 20,15 C20,17.7614237 17.7614237,20 15,20 C13.8743941,20 12.8356605,19.6280552 12,19.0003662 C11.1643395,19.6280552 10.1256059,20 9,20 C6.23857625,20 4,17.7614237 4,15 C4,12.2385763 6.23857625,10 9,10 C10.1256059,10 11.1643395,10.3719448 12,10.9996338 Z M13.3336047,12.504354 C13.757474,13.2388026 14,14.0910788 14,15 C14,15.9088933 13.7574889,16.761145 13.3336438,17.4955783 C13.8188886,17.8206693 14.3938466,18 15,18 C16.6568542,18 18,16.6568542 18,15 C18,13.3431458 16.6568542,12 15,12 C14.3930587,12 13.8175971,12.18044 13.3336047,12.504354 Z"
+                          fill="#ee3a3d"
+                          fill-rule="nonzero"
+                          opacity="0.3"
+                        />
+                        <circle fill="#ee3a3d" cx="12" cy="9" r="5" />
+                      </g>
+                    </svg>
+                    <h6>활용성</h6>
+                    <hr />
+                    <p>건설 현장의 다양한 시스템과 통합하여 조작</p>
+                  </div>
+                </div>
+                <div
+                  class="effect-box white-box"
+                  data-aos="flip-left"
+                  data-aos-delay="200"
+                >
+                  <div>
+                    <svg
+                      width="24px"
+                      height="24px"
+                      viewBox="0 0 24 24"
+                      version="1.1"
+                    >
+                      <g
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <rect x="0" y="0" width="24" height="24" />
+                        <path
+                          d="M5,19 L20,19 C20.5522847,19 21,19.4477153 21,20 C21,20.5522847 20.5522847,21 20,21 L4,21 C3.44771525,21 3,20.5522847 3,20 L3,4 C3,3.44771525 3.44771525,3 4,3 C4.55228475,3 5,3.44771525 5,4 L5,19 Z"
+                          fill="#ee3a3d"
+                          fill-rule="nonzero"
+                        />
+                        <path
+                          d="M8.7295372,14.6839411 C8.35180695,15.0868534 7.71897114,15.1072675 7.31605887,14.7295372 C6.9131466,14.3518069 6.89273254,13.7189711 7.2704628,13.3160589 L11.0204628,9.31605887 C11.3857725,8.92639521 11.9928179,8.89260288 12.3991193,9.23931335 L15.358855,11.7649545 L19.2151172,6.88035571 C19.5573373,6.44687693 20.1861655,6.37289714 20.6196443,6.71511723 C21.0531231,7.05733733 21.1271029,7.68616551 20.7848828,8.11964429 L16.2848828,13.8196443 C15.9333973,14.2648593 15.2823707,14.3288915 14.8508807,13.9606866 L11.8268294,11.3801628 L8.7295372,14.6839411 Z"
+                          fill="#ee3a3d"
+                          fill-rule="nonzero"
+                          opacity="0.3"
+                          transform="translate(14.000019, 10.749981) scale(1, -1) translate(-14.000019, -10.749981) "
+                        />
+                      </g>
+                    </svg>
+                    <h6>경비 절감</h6>
+                    <hr />
+                    <p>
+                      통신 불가능 지역에서의 통신 장비 추가 비용 및 인력 감소
                     </p>
+                  </div>
                 </div>
-                <div class="subProduct-contents">
-                    <div class="subProduct-box">
-                        <div class="subProduct-img" data-aos="zoom-out">
-                            <img src="./img/cast2.jpg" alt="" style="object-position:top;">
-                        </div>
-                        <div class="subProduct-text" data-aos="fade-right">
-                            <div class="subProduct-right">
-                                <h1 class="oswald">01</h1>
-                                <div class="subProduct-bar"></div>
-                                <small>Speaker</small>
-                            </div>
-                            <h4>스피커</h4>
-                            <p class="sub-text">
-                                CCTV와 동시 구축을 통하여 <br>근로자 식별 및 송출할 위치에 맞춰 방송할 수 있습니다.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="subProduct-box">
-                        <div class="subProduct-img show768" data-aos="zoom-out">
-                            <img src="./img/cast3.jpg" alt="">
-                        </div>
-                        <div class="subProduct-text text-right" data-aos="fade-left">
-                            <div class="subProduct-left">
-                                <small>Microphone</small>
-                                <div class="subProduct-bar"></div>
-                                <h1 class="oswald">02</h1>
-                            </div>
-                            <h4>마이크</h4>
-                            <p class="sub-text">
-                                Web, C/S프로그램으로 <br>관리자가 접근성 및 관리가 편리한 방송이 가능합니다.
-                            </p>
-                        </div>
-                        <div class="subProduct-img hide768" data-aos="zoom-out">
-                            <img src="./img/cast3.jpg" alt="">
-                        </div>
-                    </div>
+                <div
+                  class="effect-box"
+                  data-aos="flip-left"
+                  data-aos-delay="300"
+                >
+                  <div>
+                    <svg
+                      width="24px"
+                      height="24px"
+                      viewBox="0 0 24 24"
+                      version="1.1"
+                    >
+                      <g
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <polygon points="0 0 24 0 24 24 0 24" />
+                        <path
+                          d="M12,4.25932872 C12.1488635,4.25921584 12.3000368,4.29247316 12.4425657,4.36281539 C12.6397783,4.46014562 12.7994058,4.61977315 12.8967361,4.81698575 L14.9389263,8.95491503 L19.5054023,9.61846284 C20.0519472,9.69788046 20.4306287,10.2053233 20.351211,10.7518682 C20.3195865,10.9695052 20.2170993,11.1706476 20.0596157,11.3241562 L16.7552826,14.545085 L17.5353298,19.0931094 C17.6286908,19.6374458 17.263103,20.1544017 16.7187666,20.2477627 C16.5020089,20.2849396 16.2790408,20.2496249 16.0843804,20.1472858 L12,18 L12,4.25932872 Z"
+                          fill="#ffffff"
+                          opacity="0.3"
+                        />
+                        <path
+                          d="M12,4.25932872 L12,18 L7.91561963,20.1472858 C7.42677504,20.4042866 6.82214789,20.2163401 6.56514708,19.7274955 C6.46280801,19.5328351 6.42749334,19.309867 6.46467018,19.0931094 L7.24471742,14.545085 L3.94038429,11.3241562 C3.54490071,10.938655 3.5368084,10.3055417 3.92230962,9.91005817 C4.07581822,9.75257453 4.27696063,9.65008735 4.49459766,9.61846284 L9.06107374,8.95491503 L11.1032639,4.81698575 C11.277344,4.464261 11.6315987,4.25960807 12,4.25932872 Z"
+                          fill="#ffffff"
+                        />
+                      </g>
+                    </svg>
+                    <h6>편의성</h6>
+                    <hr />
+                    <p>녹음 음성, 번역된 음성 등 파일 적용/방송</p>
+                  </div>
                 </div>
-            </article>
+              </div>
+            </div>
+          </div>
+        </article>
 
-            <article id="effect">
-                <div class="effect-container">
-                    <div class="effect-title" data-aos="fade-up">
-                        <h2>Expectation <span class="red">Effect</span></h2>
-                        <p>방송 시스템을 통해 실시간으로 안전 지침, <br>작업 일정, 변경 사항 등을 전달할 수 있습니다.<br>
-                            이는 작업자들 사이의 의사소통을 원활하게 하고 <br>협업을 강화하여 작업 효율성을 향상시킵니다.</p>
-                    </div>
-                    <div class="effect-contents">
-                        <div class="effect-grid">
-                            <div class="effect-box" data-aos="flip-left" data-aos-delay="100">
-                                <div>
-                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <rect x="0" y="0" width="24" height="24" />
-                                            <path
-                                                d="M16.3155516,16.1481997 C15.9540268,16.3503696 15.4970619,16.2211868 15.294892,15.859662 C15.0927222,15.4981371 15.2219049,15.0411723 15.5834298,14.8390024 C16.6045379,14.2679841 17.25,13.1909329 17.25,12 C17.25,10.8178416 16.614096,9.74756859 15.6048775,9.17309861 C15.2448979,8.96819005 15.1191879,8.51025767 15.3240965,8.15027801 C15.529005,7.79029835 15.9869374,7.66458838 16.3469171,7.86949694 C17.8200934,8.70806221 18.75,10.2731632 18.75,12 C18.75,13.7396897 17.8061594,15.3146305 16.3155516,16.1481997 Z M16.788778,19.8892305 C16.4155074,20.068791 15.9673493,19.9117581 15.7877887,19.5384876 C15.6082282,19.165217 15.7652611,18.7170589 16.1385317,18.5374983 C18.6312327,17.3383928 20.25,14.815239 20.25,12 C20.25,9.21171818 18.6622363,6.70862302 16.2061077,5.49544344 C15.8347279,5.31200421 15.682372,4.86223455 15.8658113,4.49085479 C16.0492505,4.11947504 16.4990201,3.96711914 16.8703999,4.15055837 C19.8335314,5.61416684 21.75,8.63546229 21.75,12 C21.75,15.3971108 19.7961591,18.4425397 16.788778,19.8892305 Z"
-                                                fill="#ffffff" fill-rule="nonzero" opacity="0.3" />
-                                            <path
-                                                d="M7,16 L3.60776773,15.3215535 C2.67291934,15.1345839 2,14.3137542 2,13.3603922 L2,10.6396078 C2,9.68624577 2.67291934,8.86541613 3.60776773,8.67844645 L7,8 L10.2928932,4.70710678 C10.6834175,4.31658249 11.3165825,4.31658249 11.7071068,4.70710678 C11.8946432,4.89464316 12,5.14899707 12,5.41421356 L12,18.5857864 C12,19.1380712 11.5522847,19.5857864 11,19.5857864 C10.7347835,19.5857864 10.4804296,19.4804296 10.2928932,19.2928932 L7,16 Z"
-                                                fill="#ffffff" />
-                                        </g>
-                                    </svg>
-                                    <h6>기본 옵션</h6>
-                                    <hr />
-                                    <p>육성 및 파임/사이렌 방송</p>
-                                </div>
-                            </div>
-                            <div class="effect-box white-box" data-aos="flip-left" data-aos-delay="200">
-                                <div>
-                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <rect x="0" y="0" width="24" height="24" />
-                                            <path
-                                                d="M4,4 L11.6314229,2.5691082 C11.8750185,2.52343403 12.1249815,2.52343403 12.3685771,2.5691082 L20,4 L20,13.2830094 C20,16.2173861 18.4883464,18.9447835 16,20.5 L12.5299989,22.6687507 C12.2057287,22.8714196 11.7942713,22.8714196 11.4700011,22.6687507 L8,20.5 C5.51165358,18.9447835 4,16.2173861 4,13.2830094 L4,4 Z"
-                                                fill="#ee3a3d" opacity="0.3" />
-                                            <path
-                                                d="M11.1750002,14.75 C10.9354169,14.75 10.6958335,14.6541667 10.5041669,14.4625 L8.58750019,12.5458333 C8.20416686,12.1625 8.20416686,11.5875 8.58750019,11.2041667 C8.97083352,10.8208333 9.59375019,10.8208333 9.92916686,11.2041667 L11.1750002,12.45 L14.3375002,9.2875 C14.7208335,8.90416667 15.2958335,8.90416667 15.6791669,9.2875 C16.0625002,9.67083333 16.0625002,10.2458333 15.6791669,10.6291667 L11.8458335,14.4625 C11.6541669,14.6541667 11.4145835,14.75 11.1750002,14.75 Z"
-                                                fill="#ee3a3d" />
-                                        </g>
-                                    </svg>
-                                    <h6>안전 강화</h6>
-                                    <hr />
-                                    <p>비인가 인원 출입 시 <br>경고 알림</p>
-                                </div>
-                            </div>
-                            <div class="effect-box white-box" data-aos="flip-left" data-aos-delay="300">
-                                <div>
-                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <rect x="0" y="0" width="24" height="24" />
-                                            <path
-                                                d="M12,8 L8,8 C5.790861,8 4,9.790861 4,12 L4,13 C4,14.6568542 5.34314575,16 7,16 L7,18 C4.23857625,18 2,15.7614237 2,13 L2,12 C2,8.6862915 4.6862915,6 8,6 L12,6 L12,4.72799742 C12,4.62015048 12.0348702,4.51519416 12.0994077,4.42878885 C12.264656,4.2075478 12.5779675,4.16215674 12.7992086,4.32740507 L15.656242,6.46136716 C15.6951359,6.49041758 15.7295917,6.52497737 15.7585249,6.56395854 C15.9231063,6.78569617 15.876772,7.09886961 15.6550344,7.263451 L12.798001,9.3840407 C12.7118152,9.44801079 12.607332,9.48254921 12.5,9.48254921 C12.2238576,9.48254921 12,9.25869158 12,8.98254921 L12,8 Z"
-                                                fill="#ee3a3d" />
-                                            <path
-                                                d="M12.0583175,16 L16,16 C18.209139,16 20,14.209139 20,12 L20,11 C20,9.34314575 18.6568542,8 17,8 L17,6 C19.7614237,6 22,8.23857625 22,11 L22,12 C22,15.3137085 19.3137085,18 16,18 L12.0583175,18 L12.0583175,18.9825492 C12.0583175,19.2586916 11.8344599,19.4825492 11.5583175,19.4825492 C11.4509855,19.4825492 11.3465023,19.4480108 11.2603165,19.3840407 L8.40328311,17.263451 C8.18154548,17.0988696 8.13521119,16.7856962 8.29979258,16.5639585 C8.32872576,16.5249774 8.36318164,16.4904176 8.40207551,16.4613672 L11.2591089,14.3274051 C11.48035,14.1621567 11.7936615,14.2075478 11.9589099,14.4287888 C12.0234473,14.5151942 12.0583175,14.6201505 12.0583175,14.7279974 L12.0583175,16 Z"
-                                                fill="#ee3a3d" opacity="0.3" />
-                                        </g>
-                                    </svg>
-                                    <h6>자동화</h6>
-                                    <hr />
-                                    <p>시간 예약에 의한 자동 방송</p>
-                                </div>
-                            </div>
-                            <div class="effect-box white-box" data-aos="flip-left" data-aos-delay="100">
-                                <div>
-                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <rect x="0" y="0" width="24" height="24" />
-                                            <path
-                                                d="M12,10.9996338 C12.8356605,10.3719448 13.8743941,10 15,10 C17.7614237,10 20,12.2385763 20,15 C20,17.7614237 17.7614237,20 15,20 C13.8743941,20 12.8356605,19.6280552 12,19.0003662 C11.1643395,19.6280552 10.1256059,20 9,20 C6.23857625,20 4,17.7614237 4,15 C4,12.2385763 6.23857625,10 9,10 C10.1256059,10 11.1643395,10.3719448 12,10.9996338 Z M13.3336047,12.504354 C13.757474,13.2388026 14,14.0910788 14,15 C14,15.9088933 13.7574889,16.761145 13.3336438,17.4955783 C13.8188886,17.8206693 14.3938466,18 15,18 C16.6568542,18 18,16.6568542 18,15 C18,13.3431458 16.6568542,12 15,12 C14.3930587,12 13.8175971,12.18044 13.3336047,12.504354 Z"
-                                                fill="#ee3a3d" fill-rule="nonzero" opacity="0.3" />
-                                            <circle fill="#ee3a3d" cx="12" cy="9" r="5" />
-                                        </g>
-                                    </svg>
-                                    <h6>활용성</h6>
-                                    <hr />
-                                    <p>건설 현장의 다양한 시스템과<br class="hide1366"> 통합하여 조작</p>
-                                </div>
-                            </div>
-                            <div class="effect-box white-box" data-aos="flip-left" data-aos-delay="200">
-                                <div>
-                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <rect x="0" y="0" width="24" height="24" />
-                                            <path
-                                                d="M5,19 L20,19 C20.5522847,19 21,19.4477153 21,20 C21,20.5522847 20.5522847,21 20,21 L4,21 C3.44771525,21 3,20.5522847 3,20 L3,4 C3,3.44771525 3.44771525,3 4,3 C4.55228475,3 5,3.44771525 5,4 L5,19 Z"
-                                                fill="#ee3a3d" fill-rule="nonzero" />
-                                            <path
-                                                d="M8.7295372,14.6839411 C8.35180695,15.0868534 7.71897114,15.1072675 7.31605887,14.7295372 C6.9131466,14.3518069 6.89273254,13.7189711 7.2704628,13.3160589 L11.0204628,9.31605887 C11.3857725,8.92639521 11.9928179,8.89260288 12.3991193,9.23931335 L15.358855,11.7649545 L19.2151172,6.88035571 C19.5573373,6.44687693 20.1861655,6.37289714 20.6196443,6.71511723 C21.0531231,7.05733733 21.1271029,7.68616551 20.7848828,8.11964429 L16.2848828,13.8196443 C15.9333973,14.2648593 15.2823707,14.3288915 14.8508807,13.9606866 L11.8268294,11.3801628 L8.7295372,14.6839411 Z"
-                                                fill="#ee3a3d" fill-rule="nonzero" opacity="0.3"
-                                                transform="translate(14.000019, 10.749981) scale(1, -1) translate(-14.000019, -10.749981) " />
-                                        </g>
-                                    </svg>
-                                    <h6>경비 절감</h6>
-                                    <hr />
-                                    <p>통신 불가능 지역에서의 <br class="hide1366">통신 장비 추가 비용 및 <br class="hide1366">인력 감소</p>
-                                </div>
-                            </div>
-                            <div class="effect-box" data-aos="flip-left" data-aos-delay="300">
-                                <div>
-                                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <polygon points="0 0 24 0 24 24 0 24" />
-                                            <path
-                                                d="M12,4.25932872 C12.1488635,4.25921584 12.3000368,4.29247316 12.4425657,4.36281539 C12.6397783,4.46014562 12.7994058,4.61977315 12.8967361,4.81698575 L14.9389263,8.95491503 L19.5054023,9.61846284 C20.0519472,9.69788046 20.4306287,10.2053233 20.351211,10.7518682 C20.3195865,10.9695052 20.2170993,11.1706476 20.0596157,11.3241562 L16.7552826,14.545085 L17.5353298,19.0931094 C17.6286908,19.6374458 17.263103,20.1544017 16.7187666,20.2477627 C16.5020089,20.2849396 16.2790408,20.2496249 16.0843804,20.1472858 L12,18 L12,4.25932872 Z"
-                                                fill="#ffffff" opacity="0.3" />
-                                            <path
-                                                d="M12,4.25932872 L12,18 L7.91561963,20.1472858 C7.42677504,20.4042866 6.82214789,20.2163401 6.56514708,19.7274955 C6.46280801,19.5328351 6.42749334,19.309867 6.46467018,19.0931094 L7.24471742,14.545085 L3.94038429,11.3241562 C3.54490071,10.938655 3.5368084,10.3055417 3.92230962,9.91005817 C4.07581822,9.75257453 4.27696063,9.65008735 4.49459766,9.61846284 L9.06107374,8.95491503 L11.1032639,4.81698575 C11.277344,4.464261 11.6315987,4.25960807 12,4.25932872 Z"
-                                                fill="#ffffff" />
-                                        </g>
-                                    </svg>
-                                    <h6>편의성</h6>
-                                    <hr />
-                                    <p>녹음 음성, 번역된 음성 등 <br class="hide1366">파일 적용/방송</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
+        <article id="procedure">
+          <div class="light-filter"></div>
+          <div class="procedure-contents">
+            <div class="procedure-box" data-aos="fade-up" data-aos-delay="100">
+              <img src="./img/icon/procedure1.png" alt="" />
+              <h5>견적의뢰</h5>
+              <p>
+                프로젝트에 대한 자세한 정보와 <br />요구사항을 의뢰주시면,<br />
+                최상의 솔루션을 <br />제공해 드리겠습니다.
+              </p>
+            </div>
+            <img
+              class="procedure-arrow"
+              src="./img/icon/arrow2.png"
+              alt=""
+              data-aos="fade-up"
+              data-aos-delay="200"
+            />
+            <div class="procedure-box" data-aos="fade-up" data-aos-delay="300">
+              <img src="./img/icon/procedure2.png" alt="" />
+              <h5>설계&견적</h5>
+              <p>
+                전문 설계팀이<br />
+                고객의 요구사항을 고려하여 <br />최적의 설계를 제시하고,
+                <br />경제적인 견적을 제공해 드립니다.
+              </p>
+            </div>
+            <img
+              class="procedure-arrow"
+              src="./img/icon/arrow2.png"
+              alt=""
+              data-aos="fade-up"
+              data-aos-delay="400"
+            />
+            <div class="procedure-box" data-aos="fade-up" data-aos-delay="500">
+              <img src="./img/icon/procedure3.png" alt="" />
+              <h5>현장 구축</h5>
+              <p>
+                고객의 요구에 맞게<br />안전하고 정확하게<br />현장 구축을
+                진행하며,<br />
+                최고의 품질을 보장합니다.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
 
-            <article id="procedure">
-                <div class="light-filter"></div>
-                <div class="procedure-contents">
-                    <div class="procedure-box" data-aos="fade-up" data-aos-delay="100">
-                        <img src="./img/icon/procedure1.png" alt="">
-                        <h5>견적의뢰</h5>
-                        <p>프로젝트에 대한 자세한 정보와 <br>요구사항을 의뢰주시면,<br> 최상의 솔루션을 <br>제공해 드리겠습니다.</p>
-                    </div>
-                    <img class="procedure-arrow" src="./img/icon/arrow2.png" alt="" data-aos="fade-up"
-                        data-aos-delay="200">
-                    <div class="procedure-box" data-aos="fade-up" data-aos-delay="300">
-                        <img src="./img/icon/procedure2.png" alt="">
-                        <h5>설계&견적</h5>
-                        <p>전문 설계팀이<br> 고객의 요구사항을 고려하여 <br>최적의 설계를 제시하고, <br>경제적인 견적을 제공해 드립니다.</p>
-                    </div>
-                    <img class="procedure-arrow" src="./img/icon/arrow2.png" alt="" data-aos="fade-up"
-                        data-aos-delay="400">
-                    <div class="procedure-box" data-aos="fade-up" data-aos-delay="500">
-                        <img src="./img/icon/procedure3.png" alt="">
-                        <h5>현장 구축</h5>
-                        <p>고객의 요구에 맞게<br>안전하고 정확하게<br>현장 구축을 진행하며,<br> 최고의 품질을 보장합니다.</p>
-                    </div>
-                </div>
-            </article>
-
-        </section>
-
-        <footer>
-            <div class="footer-container">
-                <div class="footer-text">
-                    <h5>(주)아이티로그</h5>
-                    <!-- <img src="./img/logo/itlog.svg" alt=""> -->
-                    <div>
-                        <p>ADDRESS : 서울특별시 구로구 디지털로33길 28  <br class="show768">우림이비즈센터1차 308호 (우:08377)</p>
-                        <p>TEL : 02-859-2064 <span class="hide768">|</span><br class="show768"> FAX : 02-859-2065 <span class="hide768">|</span><br class="show768"> EMAIL : ok@it-log.co.kr</p>
-                        <p>Copyright ⓒ2023 ITLOG CO., LTD. All Rights Reserved.</p>
-                    </div>
-                </div>
-                <div class="footer-contact">
-                    <!-- <div class="flex-flex">
+      <footer>
+        <div class="footer-container">
+          <div class="footer-text">
+            <h5>(주)아이티로그</h5>
+            <!-- <img src="./img/logo/itlog.svg" alt=""> -->
+            <div>
+              <p>
+                ADDRESS : 서울특별시 구로구 디지털로33길 28
+                <br class="show768" />우림이비즈센터1차 308호 (우:08377)
+              </p>
+              <p>
+                TEL : 02-859-2064 <span class="hide768">|</span
+                ><br class="show768" />
+                FAX : 02-859-2065 <span class="hide768">|</span
+                ><br class="show768" />
+                EMAIL : ok@it-log.co.kr
+              </p>
+              <p>Copyright ⓒ2023 ITLOG CO., LTD. All Rights Reserved.</p>
+            </div>
+          </div>
+          <div class="footer-contact">
+            <!-- <div class="flex-flex">
                         <a><img src="./img/logo/blog.png" alt=""></a>
                         <a><img src="./img/logo/kakao.png" alt=""></a>
                     </div> -->
-                    <button type="button"><a href="./consulting.html">견적의뢰</a></button>
-                </div>
-            </div>
-        </footer>
-
-        <div id="topButton">
-            <span class="icon icon-arrow-up"></span>
+            <button type="button">
+              <a href="./consulting.html">견적의뢰</a>
+            </button>
+          </div>
         </div>
+      </footer>
+
+      <div id="topButton">
+        <span class="icon icon-arrow-up"></span>
+      </div>
     </div>
+  </body>
 
-</body>
-
-<script src="./swiper/swiper-bundle.min.js"></script>
-<!-- [슬라이드 라이브러리 JS] -->
-<script src="./aos-master/dist/aos.js"></script>
-<!-- [텍스트 애니메이션 라이브러리 JS] -->
-<script type="text/javascript" src="./src/js/index.js"></script>
-<!-- [기본 JS] -->
-<script type="text/javascript" src="./src/js/sub.js"></script>
-<!-- [제품소개 통합 JS] -->
-<script>
+  <script src="./swiper/swiper-bundle.min.js"></script>
+  <!-- [슬라이드 라이브러리 JS] -->
+  <script src="./aos-master/dist/aos.js"></script>
+  <!-- [텍스트 애니메이션 라이브러리 JS] -->
+  <script type="text/javascript" src="./src/js/index.js"></script>
+  <!-- [기본 JS] -->
+  <script type="text/javascript" src="./src/js/sub.js"></script>
+  <!-- [제품소개 통합 JS] -->
+  <script>
     // AOS 사용전 초기화 선언
     AOS.init({
-        duration: 1000,
+      duration: 1000,
     });
-</script>
-
+  </script>
 </html>

@@ -1,7 +1,6 @@
 main {
   width: 100%;
   height: 20rem;
-  /* max-height: 81rem; */
   background: url("../../img/IoT.jpg") no-repeat;
   background-size: cover;
   background-position: center 70%;
@@ -51,9 +50,6 @@ main {
 }
 /* 1024px 미만 적용 */
 @media screen and (max-width: 1023px) {
-  /* main {
-    height: 60vh;
-  } */
   .main-text h1 {
     font-size: 3rem;
   }
@@ -70,8 +66,8 @@ main {
 /* 키포인트 */
 .key-point {
   width: 100%;
-  padding: 8rem 4rem;
-  position: relative;
+  padding: 0 4rem;
+  margin: 8rem 0;
 }
 .keyPoint-container {
   width: 100%;
