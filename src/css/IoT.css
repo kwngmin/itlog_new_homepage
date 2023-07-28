@@ -166,7 +166,7 @@ main {
 /* 제품소개 */
 .square {
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   max-height: 1080px;
   position: relative;
 }
@@ -183,6 +183,11 @@ main {
   height: 100%;
   position: relative;
   transition: width 0.5s ease;
+  /* background-color: #12336e; */
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .square-container > :nth-child(1) {
   background: url("../../img/square1.jpg") no-repeat;
@@ -216,104 +221,122 @@ main {
   transition: background-color 0.3s ease;
 }
 .square-contents .filter1 {
-  background-color: cornflowerblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(10, 43, 104);
 }
 .square-contents .filter2 {
-  background-color: steelblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(16, 66, 107);
+  z-index: 10;
 }
 .square-contents .filter3 {
-  background-color: #1976d2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #012d58;
+  z-index: 10;
 }
 .square-contents .filter4 {
-  background-color: #64b5f6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0f4674;
+  z-index: 10;
 }
 .square-contents .filter5 {
-  background-color: cornflowerblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(13, 44, 102);
+  z-index: 10;
 }
 .square-contents h4 {
-  width: 80%;
-  color: #fff;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
-  transition: opacity 0.3s ease;
-}
-.square-line {
-  width: 80%;
-  height: 1px;
-  background-color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.3s ease;
-}
-.square-text {
-  width: 80%;
-  height: 14rem;
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.3s ease;
-}
-.square-text h6 {
-  color: #fff;
-  line-height: clamp(2.2rem, 2.2vw, 2.8rem);
-}
-.square-text p {
   width: 100%;
   color: #fff;
-  padding-top: 3rem;
-  line-height: 2rem;
+  transition: opacity 0.3s ease;
+  position: relative;
+  z-index: 400;
+}
+.square-line {
+  width: 100%;
+  height: 1px;
+  margin: 2rem 0;
+  background-color: #fff;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+  position: relative;
+  z-index: 400;
+}
+.square-text {
+  width: 100%;
+  height: 14rem;
+  flex-grow: 1;
+  transition: opacity 0.3s ease;
+  position: relative;
+  z-index: 400;
+}
+.square-text .text-lg {
+  color: #fff;
+  line-height: 1.65;
+}
+.square-text p {
+  line-height: 1.65;
+  font-size: 1.125rem;
+  font-weight: 300;
+  word-break: keep-all;
+  letter-spacing: -0.025rem;
+  width: 100%;
+  color: #fff;
+  padding-top: 1.25rem;
   opacity: 0;
-  transform: translateY(3rem);
+  transition-delay: 100ms;
   transition: opacity 0.2s 0.5s ease, transform 0.5s 0.5s ease;
+  position: relative;
+  z-index: 400;
 }
 .square-contents button {
   width: 80%;
   max-width: 200px;
-  position: absolute;
-  bottom: 4rem;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border: 1px solid #fff;
   color: #fff;
   padding: 0;
+  position: relative;
+  z-index: 400;
 }
 .square-contents a {
   width: 100%;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #fff;
   transition: color 0.3s ease;
-  padding: 1.1rem 0;
+  /* padding: 1rem 0; */
 }
 .square-contents:hover {
   width: 50%;
 }
-.square-contents:hover > :first-child {
-  background-color: #011936;
-}
-.square-contents button:hover {
-  background-color: #fff;
-}
-.square-contents button:hover a {
-  color: #011936;
-}
-.square-contents:hover > :first-child {
-  background-color: #011936;
-  filter: opacity(0.8);
-}
 .square-contents:hover > .square-text p {
   opacity: 1;
-  transform: translateY(0);
 }
 .square-container:hover .square-contents:not(:hover) button,
 .square-container:hover .square-contents:not(:hover) .square-line,
 .square-container:hover .square-contents:not(:hover) .square-text {
   opacity: 0;
+}
+/* 1024 이상 적용 */
+@media (min-width: 1024px) {
+  .square-contents:hover > :first-child {
+    background-color: #011936;
+    filter: opacity(1);
+  }
+  .square-contents button:hover {
+    background-color: #fff;
+  }
+  .square-contents button:hover a {
+    color: #011936;
+  }
 }
 /* 1024px 미만 적용 */
 @media screen and (max-width: 1023px) {
@@ -322,7 +345,8 @@ main {
     max-height: initial;
   }
   .square-container {
-    display: block;
+    flex-direction: column;
+    /* display: block; */
   }
   .square-container > :nth-child(1) {
     background-position: center 26%;
@@ -343,7 +367,8 @@ main {
   }
   .square-contents {
     width: 100%;
-    height: 25rem;
+    height: 20rem;
+    align-items: flex-start;
   }
   .square-contents > :first-child {
     filter: opacity(0.8);
@@ -352,37 +377,21 @@ main {
     display: none;
   }
   .square-contents h4 {
-    width: initial;
-    top: 26%;
-    left: 4rem;
-    transform: translate(0, -50%);
-  }
-  .square-text {
-    width: initial;
-    top: 70%;
-    left: 4rem;
-    transform: translate(0, -50%);
+    margin-bottom: 1rem;
   }
   .square-text p {
     opacity: 1;
-    transform: initial;
-    transition: initial;
   }
   .square-contents button {
-    height: 3.6rem;
-    left: 4rem;
-    bottom: 2rem;
-    transform: translate(0, -50%);
+    height: 3rem;
   }
   .square-contents:hover {
-    width: initial;
+    width: 100%;
   }
   .square-contents:hover > .square-text p {
     opacity: 1;
-    transform: translateY(0);
   }
   .square-container:hover .square-contents:not(:hover) button,
-  .square-container:hover .square-contents:not(:hover) .square-line,
   .square-container:hover .square-contents:not(:hover) .square-text {
     opacity: 1;
   }
@@ -401,14 +410,19 @@ main {
   .square-contents .filter5 {
     background-color: #4f7fb6;
   }
+  .square-contents button {
+    background-color: white;
+  }
+  .square-contents button a {
+    color: #011936;
+    font-weight: 500;
+  }
 }
 /* 768px 미만 적용 */
 @media screen and (max-width: 767px) {
-  .square-contents h4,
-  .square-text,
-  .square-contents button {
-    width: calc(100% - 4rem);
-    left: 2rem;
+  .square-contents {
+    height: 16rem;
+    padding: 2rem 1rem;
   }
 }
 /* PMS 솔루션 */

@@ -399,6 +399,9 @@ label {
   align-items: center;
 }
 .thin {
+  font-weight: 300;
+}
+.normal {
   font-weight: 400;
 }
 .medium {
