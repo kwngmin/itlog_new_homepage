@@ -1,828 +1,762 @@
 main {
-    width: 100%;
-    height: 75vh;
-    max-height: 81rem;
-    background: url('../../img/IoT.jpg') no-repeat;
-    background-size: cover;
-    background-position: center 70%;
-    position: relative;
+  width: 100%;
+  height: 20rem;
+  /* max-height: 81rem; */
+  background: url("../../img/IoT.jpg") no-repeat;
+  background-size: cover;
+  background-position: center 70%;
+  position: relative;
 }
-
 .main-text {
-    width: calc(100% - 8rem);
-    max-width: 1366px;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  width: calc(100% - 8rem);
+  max-width: 1200px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-.main-text h1 {
-    opacity: 0;
-    color: #fff;
-    animation: maintextH1 0.6s 0.3s ease forwards;
+.main-text h2 {
+  opacity: 0;
+  color: #fff;
+  animation: maintextH1 0.6s 0.3s ease forwards;
 }
-
 @keyframes maintextH1 {
-    0% {
-        opacity: 0;
-        transform: translate(0, 8rem) rotate(10deg);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0, 0);
-    }
+  0% {
+    opacity: 0;
+    transform: translate(0, 8rem) rotate(10deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
-
-.main-text h5 {
-    color: #fff;
-    padding: 3rem 0;
-    line-height: clamp(2rem, 2vw, 3rem);
+.main-text h6 {
+  color: #fff;
+  font-weight: 300;
+  padding-top: 0.5rem;
+  opacity: 0;
+  transform: translateY(3rem);
+  transition: opacity 0.5s, transform 0.5s;
+  animation: maintextH5 0.6s 0.5s ease forwards;
+}
+@keyframes maintextH5 {
+  0% {
     opacity: 0;
     transform: translateY(3rem);
-    transition: opacity 0.7s, transform 1s;
-    animation: maintextH5 0.6s 0.5s ease forwards;
+  }
+  100% {
+    opacity: 0.8;
+    transform: translateY(0);
+  }
 }
-
-@keyframes maintextH5 {
-    0% {
-        opacity: 0;
-        transform: translateY(3rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* 1024px 미만 적용 */
+@media screen and (max-width: 1023px) {
+  main {
+    height: 60vh;
+  }
+  .main-text h1 {
+    font-size: 3rem;
+  }
+  .main-text h5 {
+    padding-top: 1rem;
+  }
 }
-
-
-
+/* 768px 미만 적용 */
+@media screen and (max-width: 767px) {
+  .main-text {
+    width: calc(100% - 4rem);
+  }
+}
 /* 키포인트 */
 .key-point {
-    width: 100%;
-    padding: 14rem 4rem;
-    position: relative;
+  width: 100%;
+  padding: 8rem 4rem;
+  position: relative;
 }
-
 .keyPoint-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  align-items: center;
 }
-
-.keyPoint-title,
+.keyPoint-title {
+  width: 80%;
+  text-align: center;
+}
 .keyPoint-contents {
-    width: 48%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4rem;
+  row-gap: 4rem;
 }
-
 .keyPoint-title h2 {
-    padding-bottom: 2rem;
+  padding-bottom: 2rem;
+  letter-spacing: -0.1rem;
 }
-
-.keyPoint-title h6 {
-    line-height: clamp(2rem, 2vw, 2.4rem);
-}
-
 .keyPoint-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
 }
-
 .keyPoint-icon {
-    width: 8rem;
-    height: 8rem;
-    background-color: #ee3a3d;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 6rem;
+  padding: 1.25rem;
+  background-color: #ee3a3d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
 }
-
 .keyPoint-icon img {
-    width: 5rem;
-    height: 5rem;
-    object-fit: contain;
+  width: 100%;
 }
-
 .keyPoint-text {
-    width: calc(100% - 11rem);
+  flex-grow: 1;
 }
-
 .keyPoint-text h5 {
-    padding-bottom: 0.6rem;
+  padding-bottom: 0.25rem;
+  font-weight: 700;
 }
-
-
-
+.keyPoint-text .text-xl {
+  line-height: 1.25;
+  color: rgba(0, 0, 0, 0.7);
+}
+/* 1024px 미만 적용 */
+@media screen and (max-width: 1023px) {
+  .keyPoint-title {
+    width: 90%;
+  }
+  .keyPoint-contents {
+    grid-template-columns: repeat(1, 5fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+  .keyPoint-box {
+    padding-bottom: 0;
+  }
+  .keyPoint-icon {
+    width: 6rem;
+  }
+}
+/* 768px 미만 적용 */
+@media screen and (max-width: 767px) {
+  .key-point {
+    padding: 4rem 2rem;
+  }
+  .keyPoint-container {
+    gap: 6rem;
+  }
+  .keyPoint-title {
+    width: 100%;
+  }
+}
 /* 제품소개 */
 .square {
-    width: 100%;
-    height: 100vh;
-    max-height: 1080px;
-    position: relative;
+  width: 100%;
+  height: 100vh;
+  max-height: 1080px;
+  position: relative;
 }
-
 .square-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
-
 .square-contents {
-    width: 25%;
-    height: 100%;
-    position: relative;
-    transition: width 0.5s ease;
+  width: 25%;
+  height: 100%;
+  position: relative;
+  transition: width 0.5s ease;
 }
-
-.square-container>:nth-child(1) {
-    background: url('../../img/square1.jpg') no-repeat;
-    background-size: cover;
-    background-position: 20% center;
+.square-container > :nth-child(1) {
+  background: url("../../img/square1.jpg") no-repeat;
+  background-size: cover;
+  background-position: 20% center;
 }
-
-.square-container>:nth-child(2) {
-    background: url('../../img/square2.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
+.square-container > :nth-child(2) {
+  background: url("../../img/square2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-
-.square-container>:nth-child(3) {
-    background: url('../../img/square3.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
+.square-container > :nth-child(3) {
+  background: url("../../img/square3.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-
-.square-container>:nth-child(4) {
-    background: url('../../img/square4.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
+.square-container > :nth-child(4) {
+  background: url("../../img/square4.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-
-.square-container>:nth-child(5) {
-    background: url('../../img/square5.jpg') no-repeat;
-    background-size: cover;
-    background-position: 30% center;
+.square-container > :nth-child(5) {
+  background: url("../../img/square5.jpg") no-repeat;
+  background-size: cover;
+  background-position: 30% center;
 }
-
-.square-contents>:first-child {
-    width: 100%;
-    height: 100%;
-    filter: opacity(0.6);
-    transition: background-color 0.3s ease;
+.square-contents > :first-child {
+  width: 100%;
+  height: 100%;
+  filter: opacity(0.6);
+  transition: background-color 0.3s ease;
 }
-
 .square-contents .filter1 {
-    background-color: cornflowerblue;
+  background-color: cornflowerblue;
 }
-
 .square-contents .filter2 {
-    background-color: steelblue;
+  background-color: steelblue;
 }
-
 .square-contents .filter3 {
-    background-color: #1976D2;
+  background-color: #1976d2;
 }
-
 .square-contents .filter4 {
-    background-color: #64B5F6;
+  background-color: #64b5f6;
 }
-
 .square-contents .filter5 {
-    background-color: cornflowerblue;
+  background-color: cornflowerblue;
 }
-
 .square-contents h4 {
-    width: 80%;
-    color: #fff;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-    transition: opacity 0.3s ease;
+  width: 80%;
+  color: #fff;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
 }
-
 .square-line {
-    width: 80%;
-    height: 1px;
-    background-color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.3s ease;
+  width: 80%;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
 }
-
 .square-text {
-    width: 80%;
-    height: 14rem;
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.3s ease;
+  width: 80%;
+  height: 14rem;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
 }
-
 .square-text h6 {
-    color: #fff;
-    line-height: clamp(2.2rem, 2.2vw, 2.8rem);
+  color: #fff;
+  line-height: clamp(2.2rem, 2.2vw, 2.8rem);
 }
-
 .square-text p {
-    width: 100%;
-    color: #fff;
-    padding-top: 3rem;
-    line-height: 2rem;
-    opacity: 0;
-    transform: translateY(3rem);
-    transition: opacity 0.2s 0.5s ease, transform 0.5s 0.5s ease;
+  width: 100%;
+  color: #fff;
+  padding-top: 3rem;
+  line-height: 2rem;
+  opacity: 0;
+  transform: translateY(3rem);
+  transition: opacity 0.2s 0.5s ease, transform 0.5s 0.5s ease;
 }
-
 .square-contents button {
-    width: 80%;
-    max-width: 200px;
-    position: absolute;
-    bottom: 4rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid #fff;
-    color: #fff;
-    padding: 0;
+  width: 80%;
+  max-width: 200px;
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0;
 }
-
 .square-contents a {
-    width: 100%;
-    font-size: 1.1rem;
-    color: #fff;
-    transition: color 0.3s ease;
-    padding: 1.1rem 0;
+  width: 100%;
+  font-size: 1.1rem;
+  color: #fff;
+  transition: color 0.3s ease;
+  padding: 1.1rem 0;
 }
-
 .square-contents:hover {
-    width: 50%;
+  width: 50%;
 }
-
-.square-contents:hover>:first-child {
-    background-color: #011936;
+.square-contents:hover > :first-child {
+  background-color: #011936;
 }
-
 .square-contents button:hover {
-    background-color: #fff;
+  background-color: #fff;
 }
-
 .square-contents button:hover a {
-    color: #011936;
+  color: #011936;
 }
-
-.square-contents:hover>:first-child {
-    background-color: #011936;
-    filter: opacity(0.8);
+.square-contents:hover > :first-child {
+  background-color: #011936;
+  filter: opacity(0.8);
 }
-
-.square-contents:hover>.square-text p {
-    opacity: 1;
-    transform: translateY(0);
+.square-contents:hover > .square-text p {
+  opacity: 1;
+  transform: translateY(0);
 }
-
 .square-container:hover .square-contents:not(:hover) button,
 .square-container:hover .square-contents:not(:hover) .square-line,
 .square-container:hover .square-contents:not(:hover) .square-text {
-    opacity: 0;
+  opacity: 0;
 }
-
-
-
+/* 1024px 미만 적용 */
+@media screen and (max-width: 1023px) {
+  .square {
+    height: initial;
+    max-height: initial;
+  }
+  .square-container {
+    display: block;
+  }
+  .square-container > :nth-child(1) {
+    background-position: center 26%;
+  }
+  .square-container > :nth-child(2) {
+    background-position: center 85%;
+  }
+  .square-container > :nth-child(3) {
+    background-position: center 25%;
+  }
+  .square-container > :nth-child(4) {
+    background-position: center 42%;
+  }
+  .square-container > :nth-child(5) {
+    background: url("../../img/square5-2.jpg") no-repeat;
+    background-size: cover;
+    background-position: center 40%;
+  }
+  .square-contents {
+    width: 100%;
+    height: 25rem;
+  }
+  .square-contents > :first-child {
+    filter: opacity(0.8);
+  }
+  .square-line {
+    display: none;
+  }
+  .square-contents h4 {
+    width: initial;
+    top: 26%;
+    left: 4rem;
+    transform: translate(0, -50%);
+  }
+  .square-text {
+    width: initial;
+    top: 70%;
+    left: 4rem;
+    transform: translate(0, -50%);
+  }
+  .square-text p {
+    opacity: 1;
+    transform: initial;
+    transition: initial;
+  }
+  .square-contents button {
+    height: 3.6rem;
+    left: 4rem;
+    bottom: 2rem;
+    transform: translate(0, -50%);
+  }
+  .square-contents:hover {
+    width: initial;
+  }
+  .square-contents:hover > .square-text p {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .square-container:hover .square-contents:not(:hover) button,
+  .square-container:hover .square-contents:not(:hover) .square-line,
+  .square-container:hover .square-contents:not(:hover) .square-text {
+    opacity: 1;
+  }
+  .square-contents .filter1 {
+    background-color: #12336e;
+  }
+  .square-contents .filter2 {
+    background-color: #6091c5;
+  }
+  .square-contents .filter3 {
+    background-color: #2e4c7b;
+  }
+  .square-contents .filter4 {
+    background-color: #183e78;
+  }
+  .square-contents .filter5 {
+    background-color: #4f7fb6;
+  }
+}
+/* 768px 미만 적용 */
+@media screen and (max-width: 767px) {
+  .square-contents h4,
+  .square-text,
+  .square-contents button {
+    width: calc(100% - 4rem);
+    left: 2rem;
+  }
+}
 /* PMS 솔루션 */
 .pms-solution {
-    width: 100%;
-    height: 100vh;
-    max-height: 1080px;
-    position: relative;
+  width: 100%;
+  height: 100vh;
+  max-height: 1080px;
+  position: relative;
 }
-
 .pms-background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    pointer-events: none;
-    z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  pointer-events: none;
+  z-index: -1;
+}
+.pms-background > :first-child {
+  width: 55%;
+  background: url("../../img/pmsBackground.jpg") no-repeat;
+  background-size: cover;
 }
 
-.pms-background>:first-child {
-    width: 55%;
-    background: url('../../img/pmsBackground.jpg') no-repeat;
-    background-size: cover;
-}
-
-.pms-background>:last-child {
-    width: 45%;
-    background-color: #011936;
+.pms-background > :last-child {
+  width: 45%;
+  background-color: #011936;
 }
 
 .pms-container {
-    height: 100vh;
-    max-height: 1080px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  height: 100vh;
+  max-height: 1080px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .pms-text {
-    width: 40%;
-    margin: 0;
-    padding: 0 4rem;
+  width: 40%;
+  margin: 0;
+  padding: 0 4rem;
 }
 
 .pms-text h2 {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pms-title {
-    padding-top: 4rem;
+  padding-top: 4rem;
 }
 
 .pms-title .title-box {
-    display: flex;
-    align-items: center;
-    margin: 1.6rem 0;
+  display: flex;
+  align-items: center;
+  margin: 1.6rem 0;
 }
 
 .title-box h6 {
-    transition: color 0.5s ease;
-    cursor: pointer;
+  transition: color 0.5s ease;
+  cursor: pointer;
 }
 
 .title-box .bar {
-    padding-right: 1rem;
-    opacity: 0;
+  padding-right: 1rem;
+  opacity: 0;
 }
 
 .title-box.title-active h6 {
-    color: #ee3a3d;
-    font-weight: bold;
+  color: #ee3a3d;
+  font-weight: bold;
 }
 
 .title-box.title-active .bar {
-    color: #ee3a3d;
-    opacity: 1;
+  color: #ee3a3d;
+  opacity: 1;
 }
 
 .pms-title .flex-basic {
-    padding-top: 4rem;
+  padding-top: 4rem;
 }
 
 .pms-title .icon {
-    width: 6rem;
-    height: 6rem;
-    border: 1px solid #011936;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
+  width: 6rem;
+  height: 6rem;
+  border: 1px solid #011936;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
 }
 
 .pmsSwiper-container {
-    width: 60%;
-    height: 60%;
-    overflow: hidden;
-    position: relative;
+  width: 60%;
+  height: 60%;
+  overflow: hidden;
+  position: relative;
 }
 
 .pmsSwiper-container .swiper-wrapper {
-    align-items: end;
+  align-items: end;
 }
 
 .pmsSwiper-container .swiper-slide {
-    background-color: #fff;
-    padding: 4rem;
-    height: 80%;
-    transition: height 0.8s ease, background-color 1s ease;
-    display: flex;
-    align-items: flex-end;
-    cursor: grab;
+  background-color: #fff;
+  padding: 4rem;
+  height: 80%;
+  transition: height 0.8s ease, background-color 1s ease;
+  display: flex;
+  align-items: flex-end;
+  cursor: grab;
 }
 
 .pmsSwiper-container .swiper-slide img {
-    width: 5rem;
-    height: 5rem;
-    filter: contrast(0.3);
-    transition: all 0.5s ease;
+  width: 5rem;
+  height: 5rem;
+  filter: contrast(0.3);
+  transition: all 0.5s ease;
 }
 
 .pmsSwiper-container .swiper-slide h4 {
-    color: #939fb2;
-    font-size: 1.8rem;
-    padding: 1rem 0 0.6rem 0;
+  color: #939fb2;
+  font-size: 1.8rem;
+  padding: 1rem 0 0.6rem 0;
 }
 
 .pmsSwiper-container .swiper-slide small {
-    color: #939fb2;
+  color: #939fb2;
 }
 
 .pmsSwiper-container .swiper-slide p {
-    color: #fff;
-    opacity: 0;
-    height: 3rem;
-    max-width: 40rem;
-    font-size: clamp(1.4rem, 0.9vw, 1.5rem);
+  color: #fff;
+  opacity: 0;
+  height: 3rem;
+  max-width: 40rem;
+  font-size: clamp(1.4rem, 0.9vw, 1.5rem);
 }
 
-
 .pmsSwiper-container .swiper-slide-active {
-    height: 100%;
-    background-color: #ee3a3d;
-    align-items: center;
+  height: 100%;
+  background-color: #ee3a3d;
+  align-items: center;
 }
 
 .pmsSwiper-container .swiper-slide-active img {
-    width: 6rem;
-    height: 6rem;
-    filter: invert();
+  width: 6rem;
+  height: 6rem;
+  filter: invert();
 }
 
 .pmsSwiper-container .swiper-slide-active h4 {
-    color: #fff;
-    font-size: 2.3rem;
-    padding: 3rem 0 0.6rem 0;
+  color: #fff;
+  font-size: 2.3rem;
+  padding: 3rem 0 0.6rem 0;
 }
 
 .pmsSwiper-container .swiper-slide-active small {
-    color: #fff;
+  color: #fff;
 }
 
 .pmsSwiper-container .swiper-slide-active p {
-    padding-top: 2rem;
-    opacity: 1;
-    height: auto;
+  padding-top: 2rem;
+  opacity: 1;
+  height: auto;
 }
 
 .pmsSwiper-container .swiper-pagination,
 .swiper-button-next,
 .swiper-button-prev {
-    display: none;
+  display: none;
 }
 
 .pms-br {
-    display: none;
+  display: none;
 }
-
-
 
 /* 자주묻는질문 */
 .QnA {
-    width: 100%;
-    padding: 14rem 4rem;
+  width: 100%;
+  padding: 14rem 4rem;
 }
 
 .qna-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  /* justify-content: space-between; */
 }
 
 .qna-title {
-    width: calc(30% - 6rem);
-    text-align: right;
+  /* width: calc(30% - 6rem); */
+  width: 30%;
+  margin-right: 4rem;
+  text-align: left;
 }
 
 .qna-contents {
-    width: 70%;
-    height: 100%;
-    overflow-y: auto;
+  width: 70%;
+  height: 100%;
+  /* overflow-y: auto; */
 }
 
-.qna-contents>:first-child {
-    border-top: 1px solid #ced6e0;
+.qna-contents > :first-child {
+  border-top: 1px solid #ced6e0;
 }
 
 .accordionQ {
-    padding: 3rem 1.5rem;
-    font-size: 1.8rem;
-    border-bottom: 1px solid #ced6e0;
-    transition: all 0.5s ease;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ced6e0;
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
 .accordionQ.active {
-    color: #ee3a3d;
+  color: #ee3a3d;
 }
 
 .accordionQ .icon {
-    font-size: 1.4rem;
-    padding: 0 0.4rem 0 0;
-    transition: all 0.3s ease;
-    margin-left: 2rem;
+  font-size: 1.4rem;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  margin: 0 1rem;
 }
 
 .accordionQ.active .icon {
-    transform: rotate(90deg);
-    padding: 0.4rem 0 0;
-    color: #ee3a3d;
-    font-weight: bold;
+  transform: rotate(90deg);
+  padding: 1rem;
+  color: #ee3a3d;
+  font-weight: bold;
 }
 
 .accordionA {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.4s ease;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
 }
 
-.accordionA>p {
-    padding: 3rem 1.5rem;
+.accordionA > p {
+  padding: 2rem 1.5rem;
+  background-color: #f5f5f5;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
 }
-
-
 
 /* 1640px 미만 적용 */
 @media screen and (max-width: 1635px) {
-    .pms-title {
-        padding-top: 2rem;
-    }
+  .pms-title {
+    padding-top: 2rem;
+  }
 
-    .pms-title .flex-basic {
-        padding-top: 2rem;
-    }
+  .pms-title .flex-basic {
+    padding-top: 2rem;
+  }
 
-    .pms-br {
-        display: block;
-    }
+  .pms-br {
+    display: block;
+  }
 }
 
 /* 1366px 미만 적용 */
 @media screen and (max-width: 1365px) {
-    .pmsSwiper-container .swiper-slide {
-        padding: 3rem;
-    }
+  .pmsSwiper-container .swiper-slide {
+    padding: 3rem;
+  }
 
-    .accordionQ {
-        font-size: 1.6rem;
-    }
+  .accordionQ {
+    /* font-size: 1.6rem; */
+  }
 }
 
 /* 1024px 미만 적용 */
 @media screen and (max-width: 1023px) {
-    main {
-        height: 60vh;
-    }
+  /* pms솔루션 */
+  .pms-solution {
+    height: initial;
+    max-height: initial;
+  }
 
-    .main-text h1 {
-        font-size: 3rem;
-    }
+  .pms-background > :first-child {
+    width: 100%;
+  }
 
-    .main-text h5 {
-        padding-top: 1rem;
-    }
+  .pms-background > :last-child {
+    display: none;
+  }
 
-    /* 키포인트 */
-    .keyPoint-container {
-        display: block;
-    }
+  .pms-container {
+    height: initial;
+    max-height: initial;
+    display: block;
+    padding: 10rem 0;
+  }
 
-    .keyPoint-title {
-        width: 100%;
-        text-align: center;
-        padding-bottom: 4rem;
-    }
+  .pms-text {
+    width: 100%;
+    max-width: initial;
+    padding: 0 4rem 2rem;
+  }
 
-    .keyPoint-contents {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 5rem;
-        row-gap: 3rem;
-    }
+  .pms-title {
+    padding: 0;
+  }
 
-    .keyPoint-box {
-        padding-bottom: 0;
-    }
+  .pms-title .title-box {
+    display: none;
+  }
 
-    /* 제품소개 */
-    .square {
-        height: initial;
-        max-height: initial;
-    }
+  .pms-title .icon {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.6rem;
+  }
 
-    .square-container {
-        display: block;
-    }
+  .pmsSwiper-container {
+    width: 100%;
+    height: 38rem;
+    padding-left: 4rem;
+  }
 
-    .square-container>:nth-child(1) {
-        background-position: center 26%;
-    }
+  /* 자주묻는질문 */
 
-    .square-container>:nth-child(2) {
-        background-position: center 85%;
-    }
+  .qna-container {
+    display: block;
+  }
 
-    .square-container>:nth-child(3) {
-        background-position: center 25%;
-    }
+  .qna-title {
+    text-align: left;
+    width: 100%;
+    padding-bottom: 4rem;
+  }
 
-    .square-container>:nth-child(4) {
-        background-position: center 42%;
-    }
+  .qna-contents {
+    width: 100%;
+  }
 
-    .square-container>:nth-child(5) {
-        background: url('../../img/square5-2.jpg') no-repeat;
-        background-size: cover;
-        background-position: center 40%;
-    }
-
-    .square-contents {
-        width: 100%;
-        height: 25rem;
-    }
-
-    .square-contents>:first-child {
-        filter: opacity(0.8);
-    }
-
-    .square-line {
-        display: none;
-    }
-
-    .square-contents h4 {
-        width: initial;
-        top: 26%;
-        left: 4rem;
-        transform: translate(0, -50%);
-    }
-
-    .square-text {
-        width: initial;
-        top: 70%;
-        left: 4rem;
-        transform: translate(0, -50%);
-    }
-
-    .square-text p {
-        opacity: 1;
-        transform: initial;
-        transition: initial;
-    }
-
-    .square-contents button {
-        height: 3.6rem;
-        left: 4rem;
-        bottom: 2rem;
-        transform: translate(0, -50%);
-    }
-
-    .square-contents:hover {
-        width: initial;
-    }
-
-    .square-contents:hover>.square-text p {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    .square-container:hover .square-contents:not(:hover) button,
-    .square-container:hover .square-contents:not(:hover) .square-line,
-    .square-container:hover .square-contents:not(:hover) .square-text {
-        opacity: 1;
-    }
-
-    .square-contents .filter1 {
-        background-color: #12336e;
-    }
-
-    .square-contents .filter2 {
-        background-color: #6091c5;
-    }
-
-    .square-contents .filter3 {
-        background-color: #2e4c7b;
-    }
-
-    .square-contents .filter4 {
-        background-color: #183e78;
-    }
-
-    .square-contents .filter5 {
-        background-color: #4f7fb6;
-    }
-
-    /* pms솔루션 */
-    .pms-solution {
-        height: initial;
-        max-height: initial;
-    }
-
-    .pms-background>:first-child {
-        width: 100%;
-    }
-
-    .pms-background>:last-child {
-        display: none;
-    }
-
-    .pms-container {
-        height: initial;
-        max-height: initial;
-        display: block;
-        padding: 10rem 0;
-    }
-
-    .pms-text {
-        width: 100%;
-        max-width: initial;
-        padding: 0 4rem 2rem;
-    }
-
-    .pms-title {
-        padding: 0;
-    }
-
-    .pms-title .title-box {
-        display: none;
-    }
-
-    .pms-title .icon {
-        width: 4rem;
-        height: 4rem;
-        font-size: 1.6rem;
-    }
-
-    .pmsSwiper-container {
-        width: 100%;
-        height: 38rem;
-        padding-left: 4rem;
-    }
-
-    /* 자주묻는질문 */
-
-    .qna-container {
-        display: block;
-    }
-
-    .qna-title {
-        text-align: left;
-        width: 100%;
-        padding-bottom: 4rem;
-    }
-
-    .qna-contents {
-        width: 100%;
-    }
-
-    .accordionQ {
-        padding: 2rem 1.5rem;
-    }
+  .accordionQ {
+    padding: 1rem 0;
+  }
 }
-
 /* 768px 미만 적용 */
 @media screen and (max-width: 767px) {
-        .main-text {
-        width: calc(100% - 4rem);
-    }
-
-    .key-point {
-        padding: 10rem 2rem;
-    }
-
-    .keyPoint-contents {
-        grid-template-columns: repeat(1, 5fr);
-        column-gap: 5rem;
-        row-gap: 3rem;
-    }
-
-    .square-contents h4,
-    .square-text,
-    .square-contents button {
-        width: calc(100% - 4rem);
-        left: 2rem;
-    }
-
-    .pms-text {
-        padding: 0 2rem 2rem;
-    }
-
-    .pmsSwiper-container {
-        padding: 0 2rem;
-    }
-
-    .QnA {
-        padding: 10rem 2rem;
-    }
-
+  .pms-text {
+    padding: 0 2rem 2rem;
+  }
+  .pmsSwiper-container {
+    padding: 0 2rem;
+  }
+  .QnA {
+    padding: 10rem 2rem;
+  }
+  .accordionQ .icon {
+    margin: 0;
+  }
 }

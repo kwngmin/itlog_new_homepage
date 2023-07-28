@@ -1,7 +1,8 @@
 main {
   width: 100%;
-  height: 40vh;
-  max-height: 43.2rem;
+  /* height: 40vh; */
+  /* max-height: 40rem; */
+  height: 20rem;
   position: relative;
   background: url("../../img/company1.jpg") no-repeat;
   background-size: cover;
