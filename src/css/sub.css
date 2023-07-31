@@ -7,7 +7,7 @@ main {
   background: url("../../img/gate1.jpg") no-repeat;
   background-size: cover;
   /* background-position: right 60%; */
-  background-position: top;
+  background-position: right 10% top 20%;
 }
 #cctv main {
   background: url("../../img/cctv1.jpg") no-repeat;
@@ -17,7 +17,8 @@ main {
 #towercrane main {
   background: url("../../img/crane1.jpg") no-repeat;
   background-size: cover;
-  background-position: center 44%;
+  /* background-position: center 44%; */
+  background-position: 100% 0%;
 }
 #sensor main {
   background: url("../../img/sensor1.jpg") no-repeat;
@@ -72,6 +73,9 @@ main {
   }
 }
 @media screen and (max-width: 1023px) {
+  .main-text {
+    width: calc(100% - 4rem);
+  }
   .main-text h1 {
     font-size: 3rem;
   }
@@ -80,8 +84,17 @@ main {
   }
 }
 @media screen and (max-width: 767px) {
+  /* main {
+    height: 16rem;
+  } */
+  #gate main {
+    background: url("../../img/gate1.jpg") no-repeat;
+    background-size: cover;
+    /* background-position: right 60%; */
+    background-position: right 10% top 80%;
+  }
   .main-text {
-    width: calc(100% - 4rem);
+    width: calc(100% - 2rem);
   }
 }
 /* 키포인트 */
@@ -125,11 +138,11 @@ main {
   width: 14rem;
 }
 .keyPoint-img {
-  width: 8rem;
+  width: 7rem;
   /* background-color: white; */
   background-color: rgb(248, 250, 252);
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 1.25rem;
   flex-shrink: 0;
 }
 .keyPoint-img img {
