@@ -23,29 +23,17 @@ let handCount = true;
 
 // 스크롤 하면 실행
 window.addEventListener("scroll", () => {
+  if (window && window.scrollY === 0) {
+    hammerCount = true;
+    ideaCount = true;
+    handCount = true;
+  }
   if (window && window.scrollY > 100) {
     document.getElementById("header").classList.remove("header-active");
-    scrollHeader();
     scrollTop();
-  } else {
-    document.getElementById("header").classList.add("header-active");
   }
-
-  // 메리트 카운트 시작
-  // const hexList = document.querySelectorAll(".hex");
-  // if (count) {
-  //   hexList.forEach((el, idx) => {
-  //     if (el.classList.contains("aos-animate")) {
-  //       const countList = document.querySelectorAll(".merit-count h1 span");
-  //       countList[idx] &&
-  //         counter(
-  //           countList[idx],
-  //           countList[idx].getAttribute("data-count"),
-  //           idx,
-  //           countList[idx].getAttribute("data-time")
-  //         );
-  //     }
-  //   });
+  // } else {
+  //   document.getElementById("header").classList.add("header-active");
   // }
 
   // 메리트 카운트 시작
