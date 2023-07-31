@@ -1,288 +1,407 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IT-LOG</title>
-    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
     <!-- [슬라이드 라이브러리 CSS] -->
-    <link rel="stylesheet" href="./aos-master/dist/aos.css">
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
     <!-- [텍스트 애니메이션 라이브러리 CSS] -->
-    <link rel="stylesheet" href="./simplelineicons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="./aos-master/dist/aos.css" />
     <!-- [아이콘 라이브러리 CSS] -->
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./simplelineicons/css/simple-line-icons.css" />
     <!-- [기본 CSS] -->
-    <link rel="stylesheet" href="./src/css/consulting.css">
+    <link rel="stylesheet" href="./src/css/style.css" />
     <!-- [고객서비스 견적의뢰 CSS] -->
-    <script src="./src/js/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="./src/css/consulting.css" />
+    <!-- google icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <!-- [벤더프리픽스] -->
-</head>
+    <script src="./src/js/prefixfree.min.js"></script>
+  </head>
 
-<body>
-
+  <body>
     <div id="sideNav" class="show1024">
-        <div class="sideNav-container">
-            <div id="sideNavClose" onclick="closeNav()">&times;</div>
-            <ul class="sideNav-menu">
-                <li class="accordion">회사소개<span class="icon icon-arrow-right"></span></li>
-                <ul class="accordion-menu">
-                    <li><a href="./introduce.html">인사말</a></li>
-                    <li><a href="./history.html">기업연혁</a></li>
-                    <li><a href="./vision.html">기업이념</a></li>
-                    <!-- <li><a href="./certification.html">인증</a></li> -->
-                    <li><a href="./way.html">오시는길</a></li>
-                </ul>
-                <li class="accordion">통합IoT솔루션<span class="icon icon-arrow-right"></span></li>
-                <ul class="accordion-menu">
-                    <li><a href="./IoT.html">통합IoT솔루션</a></li>
-                </ul>
-                <li class="accordion">제품소개<span class="icon icon-arrow-right"></span></li>
-                <ul class="accordion-menu">
-                    <li><a href="./gate.html">출입통제시스템</a></li>
-                    <li><a href="./cctv.html">안전관리CCTV</a></li>
-                    <li><a href="./towercrane.html">T/C통합안전</a></li>
-                    <li><a href="./sensor.html">환경센서</a></li>
-                    <li><a href="./broadcast.html">방송시스템</a></li>
-                </ul>
-                <li class="accordion">고객서비스<span class="icon icon-arrow-right"></span></li>
-                <ul class="accordion-menu">
-                    <li><a href="./consulting.html">견적의뢰</a></li>
-                    <li class="hide1024"><a href="http://helpu.kr/itlog/" target="_blank">원격지원</a></li>
-                </ul>
-            </ul>
-            <!-- <div class="sideNav-footer">
+      <div class="sideNav-container">
+        <div id="sideNavClose" onclick="closeNav()">&times;</div>
+        <ul class="sideNav-menu">
+          <li class="accordion">
+            회사소개<span class="icon icon-arrow-right"></span>
+          </li>
+          <ul class="accordion-menu">
+            <li><a href="./introduce.html">인사말</a></li>
+            <li><a href="./history.html">기업연혁</a></li>
+            <li><a href="./vision.html">기업이념</a></li>
+            <!-- <li><a href="./certification.html">인증</a></li> -->
+            <li><a href="./way.html">오시는길</a></li>
+          </ul>
+          <li class="accordion">
+            통합IoT솔루션<span class="icon icon-arrow-right"></span>
+          </li>
+          <ul class="accordion-menu">
+            <li><a href="./IoT.html">통합IoT솔루션</a></li>
+          </ul>
+          <li class="accordion">
+            제품소개<span class="icon icon-arrow-right"></span>
+          </li>
+          <ul class="accordion-menu">
+            <li><a href="./gate.html">출입통제시스템</a></li>
+            <li><a href="./cctv.html">안전관리CCTV</a></li>
+            <li><a href="./towercrane.html">T/C통합안전</a></li>
+            <li><a href="./sensor.html">환경센서</a></li>
+            <li><a href="./broadcast.html">방송시스템</a></li>
+          </ul>
+          <li class="accordion">
+            고객서비스<span class="icon icon-arrow-right"></span>
+          </li>
+          <ul class="accordion-menu">
+            <li><a href="./consulting.html">견적의뢰</a></li>
+            <li class="hide1024">
+              <a href="http://helpu.kr/itlog/" target="_blank">원격지원</a>
+            </li>
+          </ul>
+        </ul>
+        <!-- <div class="sideNav-footer">
                 <a><img src="./img/logo/blog.png" alt=""></a>
                 <a><img src="./img/logo/kakao.png" alt=""></a>
             </div> -->
-        </div>
+      </div>
     </div>
 
     <div id="consulting" class="wrapper">
-        <div id="sideNavOpenFilter" class="light-filter"></div>
-        <header id="header">
-            <div class="header-container">
-                <div id="headerLogo"><a href="./index.html"></a></div>
-                <div id="headerNav">
-                    <div class="header-title">
-                        <a>회사소개</a> 
-                    </div>
-                    <div class="header-title">
-                        <a>통합IoT솔루션</a> 
-                    </div>
-                    <div class="header-title">
-                        <a>제품소개</a> 
-                    </div>
-                    <div class="header-title">
-                        <a>고객서비스</a> 
-                    </div>
-                </div>
-                <div id="sideNavOpen" class="show1024" onclick="openNav()"><span class="icon icon-menu"></span></div>
-                <div id="language">
-                    <!-- <p class="red">KOR</p>
+      <div id="sideNavOpenFilter" class="light-filter"></div>
+      <header id="header">
+        <div class="header-container">
+          <div id="headerLogo"><a href="./index.html"></a></div>
+          <div id="headerNav">
+            <div class="header-title">
+              <a>회사소개</a>
+            </div>
+            <div class="header-title">
+              <a>통합IoT솔루션</a>
+            </div>
+            <div class="header-title">
+              <a>제품소개</a>
+            </div>
+            <div class="header-title">
+              <a>고객서비스</a>
+            </div>
+          </div>
+          <div id="sideNavOpen" class="show1024" onclick="openNav()">
+            <span class="icon icon-menu"></span>
+          </div>
+          <div id="language">
+            <!-- <p class="red">KOR</p>
                     <p>ENG</p> -->
-                </div>
+          </div>
+        </div>
+        <div class="header-sub">
+          <div class="no-list"></div>
+          <div class="header-subList">
+            <div class="header-subTitle">
+              <div>
+                <a href="./introduce.html">인사말</a>
+                <a href="./history.html">기업연혁</a>
+                <a href="./vision.html">기업이념</a>
+                <!-- <a href="./certification.html">인증</a> -->
+                <a href="./way.html">오시는길</a>
+              </div>
             </div>
-            <div class="header-sub">
-                <div class="no-list"></div>
-                <div class="header-subList">
-                    <div class="header-subTitle">
-                        <div>
-                            <a href="./introduce.html">인사말</a>
-                            <a href="./history.html">기업연혁</a>
-                            <a href="./vision.html">기업이념</a>
-                            <!-- <a href="./certification.html">인증</a> -->
-                            <a href="./way.html">오시는길</a>
-                        </div>
-                    </div>
-                    <div class="header-subTitle">
-                        <div>
-                            <a href="./IoT.html">통합IoT솔루션</a>
-                        </div>
-                    </div>
-                    <div class="header-subTitle">
-                        <div>
-                            <a href="./gate.html">출입통제시스템</a>
-                            <a href="./cctv.html">안전관리CCTV</a>
-                            <a href="./towercrane.html">T/C통합안전</a>
-                            <a href="./sensor.html">환경센서</a>
-                            <a href="./broadcast.html">방송시스템</a>
-                        </div>
-                    </div>
-                    <div class="header-subTitle">
-                        <div>
-                            <a href="./consulting.html">견적의뢰</a>
-                            <a href="http://helpu.kr/itlog/" target="_blank">원격지원</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="no-list"></div>
+            <div class="header-subTitle">
+              <div>
+                <a href="./IoT.html">통합IoT솔루션</a>
+              </div>
             </div>
-        </header>
-
-        <main>
-            <div class="dark-filter"></div>
-            <div class="main-text">
-                <h2>견적의뢰</h2>
+            <div class="header-subTitle">
+              <div>
+                <a href="./gate.html">출입통제시스템</a>
+                <a href="./cctv.html">안전관리CCTV</a>
+                <a href="./towercrane.html">T/C통합안전</a>
+                <a href="./sensor.html">환경센서</a>
+                <a href="./broadcast.html">방송시스템</a>
+              </div>
             </div>
-        </main>
+            <div class="header-subTitle">
+              <div>
+                <a href="./consulting.html">견적의뢰</a>
+                <a href="http://helpu.kr/itlog/" target="_blank">원격지원</a>
+              </div>
+            </div>
+          </div>
+          <div class="no-list"></div>
+        </div>
+      </header>
 
-        <section>
-            <article class="consulting">
+      <main>
+        <div class="dark-filter"></div>
+        <div class="main-text">
+          <h2>견적의뢰</h2>
+        </div>
+      </main>
 
-                <div class="consulting-agree">
-                    <h5 class="agree-title">개인정보 수집 및 이용 안내</h5>
+      <section>
+        <article class="consulting">
+          <div class="consulting-agree">
+            <h5 class="agree-title">개인정보 수집 및 이용 안내</h5>
 
-                    <div class="agree-text">
-                        <p class="title">[개인정보의 수집 및 이용 목적]</p>
-                        <p>가. 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산 컨텐츠 제공, 특정 맞춤 서비스 제공, 물품배송 또는 청구서 등 발송, 본인인증,
-                            구매 및 요금 결제, 요금추심</p>
-                        <p>나. 회원관리 회원제 서비스 이용 및 제한적 본인 확인제에 따른 본인확인, 개인식별, 불량회원의 부정 이용방지와 비인가 사용방지, 가입의사 확인, 가입
-                            및 가입횟수 제한, 분쟁 조정을 위한 기록보존, 불만처리 등 민원처리, 고지사항 전달</p>
-                        <p>다. 신규 서비스 개발 및 마케팅·광고에의 활용 신규 서비스 개발 및 맞춤 서비스 제공, 통계학적 특성에 따른 서비스 제공 및 광고 게재, 서비스의
-                            유효성 확인, 이벤트 및 광고성 정보 제공 및 참여기회 제공, 접속빈도 파악, 회원의 서비스 이용에 대한 통계</p>
+            <div class="agree-text">
+              <p class="title">[개인정보의 수집 및 이용 목적]</p>
+              <p>
+                가. 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산
+                컨텐츠 제공, 특정 맞춤 서비스 제공, 물품배송 또는 청구서 등
+                발송, 본인인증, 구매 및 요금 결제, 요금추심
+              </p>
+              <p>
+                나. 회원관리 회원제 서비스 이용 및 제한적 본인 확인제에 따른
+                본인확인, 개인식별, 불량회원의 부정 이용방지와 비인가 사용방지,
+                가입의사 확인, 가입 및 가입횟수 제한, 분쟁 조정을 위한 기록보존,
+                불만처리 등 민원처리, 고지사항 전달
+              </p>
+              <p>
+                다. 신규 서비스 개발 및 마케팅·광고에의 활용 신규 서비스 개발 및
+                맞춤 서비스 제공, 통계학적 특성에 따른 서비스 제공 및 광고 게재,
+                서비스의 유효성 확인, 이벤트 및 광고성 정보 제공 및 참여기회
+                제공, 접속빈도 파악, 회원의 서비스 이용에 대한 통계
+              </p>
 
-                        <p class="title">[개인정보 수집 항목]</p>
-                        <p>가. 회사는 원활한 고객상담, 각종 서비스의 제공을 위해 상담 의뢰시 아래와 같은 개인정보를 수집하고 있습니다.</p>
-                        <small>- 필수항목 : 성명, 이메일 주소, 연락처</small>
-                        <small>- 선택사항 : 회사(소속)</small>
+              <p class="title">[개인정보 수집 항목]</p>
+              <p>
+                가. 회사는 원활한 고객상담, 각종 서비스의 제공을 위해 상담
+                의뢰시 아래와 같은 개인정보를 수집하고 있습니다.
+              </p>
+              <small>- 필수항목 : 성명, 이메일 주소, 연락처</small>
+              <small>- 선택사항 : 회사(소속)</small>
 
-                        <p>나. 서비스 이용과정에서 아래와 같은 정보들이 자동으로 생성되어 수집될 수 있습니다.</p>
-                        <small>- IP Address, 쿠키, 방문 일시, 접속경로, 서비스 이용 기록, 불량 이용 기록</small>
+              <p>
+                나. 서비스 이용과정에서 아래와 같은 정보들이 자동으로 생성되어
+                수집될 수 있습니다.
+              </p>
+              <small
+                >- IP Address, 쿠키, 방문 일시, 접속경로, 서비스 이용 기록, 불량
+                이용 기록</small
+              >
 
-                        <p>다. 부가 서비스 및 맞춤식 서비스 이용 과정에서 해당 서비스의 이용자에 한해서만 추가 정보들이 수집될 수 있습니다.</p>
+              <p>
+                다. 부가 서비스 및 맞춤식 서비스 이용 과정에서 해당 서비스의
+                이용자에 한해서만 추가 정보들이 수집될 수 있습니다.
+              </p>
 
-                        <p class="title">[개인정보 보유 및 이용 기간]</p>
-                        <p>이용자의 개인정보는 원칙적으로 개인정보의 수집 및 이용목적이 달성되면 지체 없이 파기합니다. 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안
-                            보존합니다.</p>
+              <p class="title">[개인정보 보유 및 이용 기간]</p>
+              <p>
+                이용자의 개인정보는 원칙적으로 개인정보의 수집 및 이용목적이
+                달성되면 지체 없이 파기합니다. 단, 다음의 정보에 대해서는 아래의
+                이유로 명시한 기간 동안 보존합니다.
+              </p>
 
-                        <p>가. 회사 내부 방침에 의한 정보보유 사유</p>
-                        <small>- 부정이용기록 (이유 : 부정 이용 방지, 기간 : 1년)</small>
+              <p>가. 회사 내부 방침에 의한 정보보유 사유</p>
+              <small>- 부정이용기록 (이유 : 부정 이용 방지, 기간 : 1년)</small>
 
-                        <p>나. 관련법령에 의한 정보보유 사유</p>
-                        <p>상법, 전자상거래 등에서의 소비자보호에 관한 법률 등 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 관계법령에서 정한 일정한 기간 동안
-                            회원정보를 보관합니다. 이 경우 회사는 보관하는 정보를 그 보관의 목적으로만 이용하며 보존기간은 아래와 같습니다.</p>
-                        <small>- 방문에 관한 기록 (이유 : 통신비밀보호법, 기간 : 3개월)</small>
-                        <small>- 본인확인에 관한 기록 (이유 : 정보통신망 이용촉진 및 정보보호 등에 관한 법률, 기간 : 6개월)</small>
-                        <small>- 소비자의 불만 또는 분쟁처리에 관한 기록 (이유 : 전자상거래 등에서의 소비자보호에 관한 법률, 기간 : 3년)</small>
-                        <small>- 계약 또는 청약철회 등에 관한 기록 (이유 : 전자상거래 등에서의 소비자보호에 관한 법률, 기간 : 5년)</small>
-                        <small>- 대금결제 및 재화 등의 공급에 관한 기록 (이유 : 전자상거래 등에서의 소비자보호에 관한 법률, 기간 : 5년)</small>
-                    </div>
+              <p>나. 관련법령에 의한 정보보유 사유</p>
+              <p>
+                상법, 전자상거래 등에서의 소비자보호에 관한 법률 등 관계법령의
+                규정에 의하여 보존할 필요가 있는 경우 회사는 관계법령에서 정한
+                일정한 기간 동안 회원정보를 보관합니다. 이 경우 회사는 보관하는
+                정보를 그 보관의 목적으로만 이용하며 보존기간은 아래와 같습니다.
+              </p>
+              <small
+                >- 방문에 관한 기록 (이유 : 통신비밀보호법, 기간 : 3개월)</small
+              >
+              <small
+                >- 본인확인에 관한 기록 (이유 : 정보통신망 이용촉진 및 정보보호
+                등에 관한 법률, 기간 : 6개월)</small
+              >
+              <small
+                >- 소비자의 불만 또는 분쟁처리에 관한 기록 (이유 : 전자상거래
+                등에서의 소비자보호에 관한 법률, 기간 : 3년)</small
+              >
+              <small
+                >- 계약 또는 청약철회 등에 관한 기록 (이유 : 전자상거래 등에서의
+                소비자보호에 관한 법률, 기간 : 5년)</small
+              >
+              <small
+                >- 대금결제 및 재화 등의 공급에 관한 기록 (이유 : 전자상거래
+                등에서의 소비자보호에 관한 법률, 기간 : 5년)</small
+              >
+            </div>
 
-                    <div class="flex-center" style="padding-top:2rem">
-                        <svg id="agreeArrow" class="arrows" width="40px" height="40px" viewBox="0 0 40 40">
-                            <path class="a1" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M0.5,3.1L20,23.9
-                            L39.5,3.1"/>
-                            <path class="a2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M0.5,16.1L20,36.899
-                            L39.5,16.1"/>
-                        </svg>
-                    </div>
+            <div class="flex-center" style="padding-top: 2rem">
+              <svg
+                id="agreeArrow"
+                class="arrows"
+                width="40px"
+                height="40px"
+                viewBox="0 0 40 40"
+              >
+                <path
+                  class="a1"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-miterlimit="10"
+                  d="M0.5,3.1L20,23.9
+                            L39.5,3.1"
+                />
+                <path
+                  class="a2"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-miterlimit="10"
+                  d="M0.5,16.1L20,36.899
+                            L39.5,16.1"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="consulting-contents">
+            <div class="consulting-title flex-end">
+              '<span class="red">*</span>' 표시는 필수 입력항목 입니다
+            </div>
+            <div class="contactUs-contents">
+              <div class="form-group">
+                <label>성명<span class="red">*</span></label>
+                <input id="name" name="name" type="text" class="space-text" />
+              </div>
+              <div class="form-group">
+                <label>회사(소속)</label>
+                <input id="company" name="company" type="text" />
+              </div>
+              <div class="form-group">
+                <label>이메일<span class="red">*</span></label>
+                <input id="email" name="email" type="text" class="space-text" />
+              </div>
+              <div class="form-group">
+                <label>연락처<span class="red">*</span></label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="text"
+                  class="phone-text"
+                  maxlength="13"
+                />
+              </div>
+              <div class="form-group">
+                <label>의뢰분야<span class="red">*</span></label>
+                <div class="form-checkgroup">
+                  <div class="flex-basic">
+                    <input
+                      type="checkbox"
+                      id="check1"
+                      name="product-check"
+                    /><label for="check1">통합IoT솔루션</label>
+                  </div>
+                  <div class="flex-basic">
+                    <input
+                      type="checkbox"
+                      id="check1"
+                      name="product-check"
+                    /><label for="check1">CCTV/웹카메라</label>
+                  </div>
+                  <div class="flex-basic">
+                    <input
+                      type="checkbox"
+                      id="check2"
+                      name="product-check"
+                    /><label for="check2">출입통제</label>
+                  </div>
+                  <div class="flex-basic">
+                    <input
+                      type="checkbox"
+                      id="check3"
+                      name="product-check"
+                    /><label for="check3">T/C통합안전</label>
+                  </div>
+                  <div class="flex-basic">
+                    <input
+                      type="checkbox"
+                      id="check4"
+                      name="product-check"
+                    /><label for="check4">방송시스템</label>
+                  </div>
+                  <div class="flex-basic">
+                    <input
+                      type="checkbox"
+                      id="check5"
+                      name="product-check"
+                    /><label for="check5">풍속계/환경센서</label>
+                  </div>
                 </div>
-
-                <div class="consulting-contents">
-                    <div class="consulting-title flex-end">
-                        '<span class="red">*</span>' 표시는 필수 입력항목 입니다
-                    </div>
-                    <div class="contactUs-contents">
-                        <div class="form-group">
-                            <label>성명<span class="red">*</span></label>
-                            <input id="name" name="name" type="text" class="space-text"/>
-                        </div>
-                        <div class="form-group">
-                            <label>회사(소속)</label>
-                            <input id="company" name="company" type="text" />
-                        </div>
-                        <div class="form-group">
-                            <label>이메일<span class="red">*</span></label>
-                            <input id="email" name="email" type="text" class="space-text"/>
-                        </div>
-                        <div class="form-group">
-                            <label>연락처<span class="red">*</span></label>
-                            <input id="phone" name="phone" type="text" class="phone-text" maxlength="13"/>
-                        </div>
-                        <div class="form-group">
-                            <label>의뢰분야<span class="red">*</span></label>
-                            <div class="form-checkgroup">
-                                <div class="flex-basic">
-                                    <input type="checkbox" id="check1" name="product-check" /><label for="check1">통합IoT솔루션</label>
-                                </div>
-                                <div class="flex-basic">
-                                    <input type="checkbox" id="check1" name="product-check" /><label for="check1">CCTV/웹카메라</label>
-                                </div>
-                                <div class="flex-basic">
-                                    <input type="checkbox" id="check2" name="product-check" /><label for="check2">출입통제</label>
-                                </div>
-                                <div class="flex-basic">
-                                    <input type="checkbox" id="check3" name="product-check" /><label for="check3">T/C통합안전</label>
-                                </div>
-                                <div class="flex-basic">
-                                    <input type="checkbox" id="check4" name="product-check" /><label for="check4">방송시스템</label>
-                                </div>
-                                <div class="flex-basic">
-                                    <input type="checkbox" id="check5" name="product-check" /><label for="check5">풍속계/환경센서</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>상담내용<span class="red">*</span></label>
-                            <textarea id="consulting-text" type="text"></textarea>
-                        </div>
-                        <div class="agree-check">
-                            <div class="flex-center">
-                                <p>개인정보 수집 및 이용 안내 내용에 대하여 동의합니다</p>
-                                <input id="agree-check" name="agree-check" type="checkbox" />
-                            </div>
-                        </div>
-                        <div class="flex-center">
-                            <button id="consulting-submit" type="button" class="col-150">신청하기</button>
-                        </div>
-                    </div>
+              </div>
+              <div class="form-group">
+                <label>상담내용<span class="red">*</span></label>
+                <textarea id="consulting-text" type="text"></textarea>
+              </div>
+              <div class="agree-check">
+                <div class="flex-center">
+                  <p>개인정보 수집 및 이용 안내 내용에 대하여 동의합니다</p>
+                  <input id="agree-check" name="agree-check" type="checkbox" />
                 </div>
-            </article>
-        </section>
+              </div>
+              <div class="flex-center">
+                <button id="consulting-submit" type="button" class="col-150">
+                  신청하기
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
 
-        <footer>
-            <div class="footer-container">
-                <div class="footer-text">
-                    <h5>(주)아이티로그</h5>
-                    <!-- <img src="./img/logo/itlog.svg" alt=""> -->
-                    <div>
-                        <p>ADDRESS : 서울특별시 구로구 디지털로33길 28  <br class="show768">우림이비즈센터1차 308호 (우:08377)</p>
-                        <p>TEL : 02-859-2064 <span class="hide768">|</span><br class="show768"> FAX : 02-859-2065 <span class="hide768">|</span><br class="show768"> EMAIL : ok@it-log.co.kr</p>
-                        <p>Copyright ⓒ2023 ITLOG CO., LTD. All Rights Reserved.</p>
-                    </div>
-                </div>
-                <div class="footer-contact">
-                    <!-- <div class="flex-flex">
+      <footer>
+        <div class="footer-container">
+          <div class="footer-text">
+            <h5>(주)아이티로그</h5>
+            <!-- <img src="./img/logo/itlog.svg" alt=""> -->
+            <div>
+              <p>
+                ADDRESS : 서울특별시 구로구 디지털로33길 28
+                <br class="show768" />우림이비즈센터1차 308호 (우:08377)
+              </p>
+              <p>
+                TEL : 02-859-2064 <span class="hide768">|</span
+                ><br class="show768" />
+                FAX : 02-859-2065 <span class="hide768">|</span
+                ><br class="show768" />
+                EMAIL : ok@it-log.co.kr
+              </p>
+              <p>Copyright ⓒ2023 ITLOG CO., LTD. All Rights Reserved.</p>
+            </div>
+          </div>
+          <div class="footer-contact">
+            <!-- <div class="flex-flex">
                         <a><img src="./img/logo/blog.png" alt=""></a>
                         <a><img src="./img/logo/kakao.png" alt=""></a>
                     </div> -->
-                    <button type="button"><a href="./consulting.html">견적의뢰</a></button>
-                </div>
-            </div>
-        </footer>
-
-        <div id="topButton">
-            <span class="icon icon-arrow-up"></span>
+            <button type="button">
+              <a href="./consulting.html">견적의뢰</a>
+            </button>
+          </div>
         </div>
+      </footer>
+
+      <div id="topButton">
+        <span class="icon icon-arrow-up"></span>
+      </div>
     </div>
+  </body>
 
-</body>
-
-<script src="./swiper/swiper-bundle.min.js"></script>
-<!-- [슬라이드 라이브러리 JS] -->
-<script src="./aos-master/dist/aos.js"></script>
-<!-- [텍스트 애니메이션 라이브러리 JS] -->
-<script type="text/javascript" src="./src/js/index.js"></script>
-<!-- [기본 JS] -->
-<script type="text/javascript" src="./src/js/consulting.js"></script>
-<!-- [고객서비스 견적의뢰 JS] -->
-<script>
+  <script src="./swiper/swiper-bundle.min.js"></script>
+  <!-- [슬라이드 라이브러리 JS] -->
+  <script src="./aos-master/dist/aos.js"></script>
+  <!-- [텍스트 애니메이션 라이브러리 JS] -->
+  <script type="text/javascript" src="./src/js/index.js"></script>
+  <!-- [기본 JS] -->
+  <script type="text/javascript" src="./src/js/consulting.js"></script>
+  <!-- [고객서비스 견적의뢰 JS] -->
+  <script>
     // AOS 사용전 초기화 선언
     AOS.init({
-        duration: 1000,
+      duration: 1000,
     });
-</script>
-
+  </script>
 </html>

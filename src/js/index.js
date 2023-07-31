@@ -87,16 +87,18 @@ document.getElementById("header").addEventListener("mouseover", (event) => {
     document.getElementById("header").className = "mega-active";
 });
 document.getElementById("header").addEventListener("mouseout", (event) => {
-  if (window.scrollY > 100) {
-    document.getElementById("header").classList.remove("mega-active");
-  } else {
-    if (window.location.pathname === "/index.html") {
-      document.getElementById("header").className = "header-active";
-    } else {
-      document.getElementById("header").classList.remove("mega-active");
-    }
-  }
+  document.getElementById("header").classList.remove("mega-active");
 });
+
+// if (window.scrollY > 100) {
+//   document.getElementById("header").classList.remove("mega-active");
+// } else {
+//   if (window.location.pathname === "/index.html") {
+//     document.getElementById("header").className = "header-active";
+//   } else {
+//     document.getElementById("header").classList.remove("mega-active");
+//   }
+// }
 let megaNav = document.querySelectorAll(".header-title");
 let megaList = document.querySelectorAll(".header-subList >div");
 for (let i = 0; i < megaNav.length; i++) {

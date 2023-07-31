@@ -1,425 +1,514 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IT-LOG</title>
-    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
     <!-- [슬라이드 라이브러리 CSS] -->
-    <link rel="stylesheet" href="./aos-master/dist/aos.css">
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
     <!-- [텍스트 애니메이션 라이브러리 CSS] -->
-    <link rel="stylesheet" href="./simplelineicons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="./aos-master/dist/aos.css" />
     <!-- [아이콘 라이브러리 CSS] -->
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./simplelineicons/css/simple-line-icons.css" />
     <!-- [기본 CSS] -->
-    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/style.css" />
     <!-- [메인페이지 CSS] -->
-    <script src="./src/js/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <!-- google icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <!-- [벤더프리픽스] -->
-</head>
+    <script src="./src/js/prefixfree.min.js"></script>
+  </head>
 
-<body>
-
+  <body>
     <div id="sideNav" class="show1024">
-        <div class="sideNav-container">
-            <div id="sideNavClose" onclick="closeNav()">&times;</div>
-            <ul class="sideNav-menu">
-                <li class="accordion">회사소개<span class="icon icon-arrow-right"></span></li>
-                <ul class="accordion-menu">
-                    <li><a href="./introduce.html">인사말</a></li>
-                    <li><a href="./history.html">기업연혁</a></li>
-                    <li><a href="./vision.html">기업이념</a></li>
-                    <!-- <li><a href="./certification.html">인증</a></li> -->
-                    <li><a href="./way.html">오시는길</a></li>
-                </ul>
-                <li class="accordion">통합IoT솔루션<span class="icon icon-arrow-right"></span></li>
-                <ul class="accordion-menu">
-                    <li><a href="./IoT.html">통합IoT솔루션</a></li>
-                </ul>
-                <li class="accordion">제품소개<span class="icon icon-arrow-right"></span></li>
-                <ul class="accordion-menu">
-                    <li><a href="./gate.html">출입통제시스템</a></li>
-                    <li><a href="./cctv.html">안전관리CCTV</a></li>
-                    <li><a href="./towercrane.html">T/C통합안전</a></li>
-                    <li><a href="./sensor.html">환경센서</a></li>
-                    <li><a href="./broadcast.html">방송시스템</a></li>
-                </ul>
-                <li class="accordion">고객서비스<span class="icon icon-arrow-right"></span></li>
-                <ul class="accordion-menu">
-                    <li><a href="./consulting.html">견적의뢰</a></li>
-                    <li class="hide1024"><a href="http://helpu.kr/itlog/" target="_blank">원격지원</a></li>
-                </ul>
-            </ul>
-            <!-- <div class="sideNav-footer">
+      <div class="sideNav-container">
+        <div id="sideNavClose" onclick="closeNav()">&times;</div>
+        <ul class="sideNav-menu">
+          <li class="accordion">
+            회사소개<span class="icon icon-arrow-right"></span>
+          </li>
+          <ul class="accordion-menu">
+            <li><a href="./introduce.html">인사말</a></li>
+            <li><a href="./history.html">기업연혁</a></li>
+            <li><a href="./vision.html">기업이념</a></li>
+            <!-- <li><a href="./certification.html">인증</a></li> -->
+            <li><a href="./way.html">오시는길</a></li>
+          </ul>
+          <li class="accordion">
+            통합IoT솔루션<span class="icon icon-arrow-right"></span>
+          </li>
+          <ul class="accordion-menu">
+            <li><a href="./IoT.html">통합IoT솔루션</a></li>
+          </ul>
+          <li class="accordion">
+            제품소개<span class="icon icon-arrow-right"></span>
+          </li>
+          <ul class="accordion-menu">
+            <li><a href="./gate.html">출입통제시스템</a></li>
+            <li><a href="./cctv.html">안전관리CCTV</a></li>
+            <li><a href="./towercrane.html">T/C통합안전</a></li>
+            <li><a href="./sensor.html">환경센서</a></li>
+            <li><a href="./broadcast.html">방송시스템</a></li>
+          </ul>
+          <li class="accordion">
+            고객서비스<span class="icon icon-arrow-right"></span>
+          </li>
+          <ul class="accordion-menu">
+            <li><a href="./consulting.html">견적의뢰</a></li>
+            <li class="hide1024">
+              <a href="http://helpu.kr/itlog/" target="_blank">원격지원</a>
+            </li>
+          </ul>
+        </ul>
+        <!-- <div class="sideNav-footer">
                 <a><img src="./img/logo/blog.png" alt=""></a>
                 <a><img src="./img/logo/kakao.png" alt=""></a>
             </div> -->
-        </div>
+      </div>
     </div>
 
     <div class="wrapper">
-        <div id="sideNavOpenFilter" class="light-filter"></div>
-        <header id="header">
-            <div class="header-container">
-                <div id="headerLogo"><a href="./index.html"></a></div>
-                <div id="headerNav">
-                    <div class="header-title">
-                        <a>회사소개</a> 
-                    </div>
-                    <div class="header-title">
-                        <a>통합IoT솔루션</a> 
-                    </div>
-                    <div class="header-title">
-                        <a>제품소개</a> 
-                    </div>
-                    <div class="header-title">
-                        <a>고객서비스</a> 
-                    </div>
-                </div>
-                <div id="sideNavOpen" class="show1024" onclick="openNav()"><span class="icon icon-menu"></span></div>
-                <div id="language">
-                    <!-- <p class="red">KOR</p>
+      <div id="sideNavOpenFilter" class="light-filter"></div>
+      <header id="header">
+        <div class="header-container">
+          <div id="headerLogo"><a href="./index.html"></a></div>
+          <div id="headerNav">
+            <div class="header-title">
+              <a>회사소개</a>
+            </div>
+            <div class="header-title">
+              <a>통합IoT솔루션</a>
+            </div>
+            <div class="header-title">
+              <a>제품소개</a>
+            </div>
+            <div class="header-title">
+              <a>고객서비스</a>
+            </div>
+          </div>
+          <div id="sideNavOpen" class="show1024" onclick="openNav()">
+            <span class="icon icon-menu"></span>
+          </div>
+          <div id="language">
+            <!-- <p class="red">KOR</p>
                     <p>ENG</p> -->
-                </div>
+          </div>
+        </div>
+        <div class="header-sub">
+          <div class="no-list"></div>
+          <div class="header-subList">
+            <div class="header-subTitle">
+              <div>
+                <a href="./introduce.html">인사말</a>
+                <a href="./history.html">기업연혁</a>
+                <a href="./vision.html">기업이념</a>
+                <!-- <a href="./certification.html">인증</a> -->
+                <a href="./way.html">오시는길</a>
+              </div>
             </div>
-            <div class="header-sub">
-                <div class="no-list"></div>
-                <div class="header-subList">
-                    <div class="header-subTitle">
-                        <div>
-                            <a href="./introduce.html">인사말</a>
-                            <a href="./history.html">기업연혁</a>
-                            <a href="./vision.html">기업이념</a>
-                            <!-- <a href="./certification.html">인증</a> -->
-                            <a href="./way.html">오시는길</a>
-                        </div>
-                    </div>
-                    <div class="header-subTitle">
-                        <div>
-                            <a href="./IoT.html">통합IoT솔루션</a>
-                        </div>
-                    </div>
-                    <div class="header-subTitle">
-                        <div>
-                            <a href="./gate.html">출입통제시스템</a>
-                            <a href="./cctv.html">안전관리CCTV</a>
-                            <a href="./towercrane.html">T/C통합안전</a>
-                            <a href="./sensor.html">환경센서</a>
-                            <a href="./broadcast.html">방송시스템</a>
-                        </div>
-                    </div>
-                    <div class="header-subTitle">
-                        <div>
-                            <a href="./consulting.html">견적의뢰</a>
-                            <a href="http://helpu.kr/itlog/" target="_blank">원격지원</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="no-list"></div>
+            <div class="header-subTitle">
+              <div>
+                <a href="./IoT.html">통합IoT솔루션</a>
+              </div>
             </div>
-        </header>
-
-        <main>
-            <div class="mainSwiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="slide-img img1" data-swiper-parallax-y="100%"></div>
-                        <div class="dark-filter"></div>
-                        <div class="slide-text">
-                            <h1>BIGDATA</h1>
-                            <h4>
-                                기술은 보고 베끼는 것이 아니라 기술 집약된 기록물을 오랜 기간 축적하여 빅데이터화하고 <br class="hide1024">
-                                기계학습을 통해 99.99%의 결과물에 도달하기 위한 정성과 노력의 가치입니다.
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide-img img2" data-swiper-parallax-y="100%"></div>
-                        <div class="dark-filter"></div>
-                        <div class="slide-text">
-                            <h1>AI <span>(인공지능)</span></h1>
-                            <h4>
-                                건설산업에서 인공지능은 안전성과 기술 혁신을 결합해 현장의 효율성과 안전성을 <br class="hide768">
-                                향상시키는 중요한 도구로 사용될 수 있으며, <br class="hide768">
-                                데이터 분석과 예측 모델을 통해 프로젝트 일정과 비용을 최적화할 수 있습니다.
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide-img img3" data-swiper-parallax-y="100%"></div>
-                        <div class="dark-filter"></div>
-                        <div class="slide-text">
-                            <h1>DEEP LEARNING</h1>
-                            <h4>회귀분석을 통하여 예측할 수 없는 안전사고까지도 추적할 수 있을 때까지 <br class="hide768">
-                                Deep Mining 과 Deep Learning의 가치를 높여 나갑니다.<br>
-                                가상 현실(VR)이나 증강 현실(AR) 기술과 결합하여 안전 교육 및 학습을 지원할 수 있습니다.
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide-img img4" data-swiper-parallax-y="100%"></div>
-                        <div class="dark-filter"></div>
-                        <div class="slide-text">
-                            <h1>SMART SAFETY</h1>
-                            <h4>우리의 안전하고 편리함을 만들어주는 모든 서비스와 기술에 대해 <br class="hide768">
-                                아이티로그는 기업의 비즈니스 혁신과 성장을 위해 오늘도 진심으로 고민합니다.
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
+            <div class="header-subTitle">
+              <div>
+                <a href="./gate.html">출입통제시스템</a>
+                <a href="./cctv.html">안전관리CCTV</a>
+                <a href="./towercrane.html">T/C통합안전</a>
+                <a href="./sensor.html">환경센서</a>
+                <a href="./broadcast.html">방송시스템</a>
+              </div>
             </div>
-        </main>
+            <div class="header-subTitle">
+              <div>
+                <a href="./consulting.html">견적의뢰</a>
+                <a href="http://helpu.kr/itlog/" target="_blank">원격지원</a>
+              </div>
+            </div>
+          </div>
+          <div class="no-list"></div>
+        </div>
+      </header>
 
+      <main>
+        <div class="mainSwiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide-img img1" data-swiper-parallax-y="100%"></div>
+              <div class="dark-filter"></div>
+              <div class="slide-text">
+                <h1>BIGDATA</h1>
+                <h4>
+                  기술은 보고 베끼는 것이 아니라 기술 집약된 기록물을 오랜 기간
+                  축적하여 빅데이터화하고 <br class="hide1024" />
+                  기계학습을 통해 99.99%의 결과물에 도달하기 위한 정성과 노력의
+                  가치입니다.
+                </h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-img img2" data-swiper-parallax-y="100%"></div>
+              <div class="dark-filter"></div>
+              <div class="slide-text">
+                <h1>AI <span>(인공지능)</span></h1>
+                <h4>
+                  건설산업에서 인공지능은 안전성과 기술 혁신을 결합해 현장의
+                  효율성과 안전성을 <br class="hide768" />
+                  향상시키는 중요한 도구로 사용될 수 있으며,
+                  <br class="hide768" />
+                  데이터 분석과 예측 모델을 통해 프로젝트 일정과 비용을 최적화할
+                  수 있습니다.
+                </h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-img img3" data-swiper-parallax-y="100%"></div>
+              <div class="dark-filter"></div>
+              <div class="slide-text">
+                <h1>DEEP LEARNING</h1>
+                <h4>
+                  회귀분석을 통하여 예측할 수 없는 안전사고까지도 추적할 수 있을
+                  때까지 <br class="hide768" />
+                  Deep Mining 과 Deep Learning의 가치를 높여 나갑니다.<br />
+                  가상 현실(VR)이나 증강 현실(AR) 기술과 결합하여 안전 교육 및
+                  학습을 지원할 수 있습니다.
+                </h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-img img4" data-swiper-parallax-y="100%"></div>
+              <div class="dark-filter"></div>
+              <div class="slide-text">
+                <h1>SMART SAFETY</h1>
+                <h4>
+                  우리의 안전하고 편리함을 만들어주는 모든 서비스와 기술에 대해
+                  <br class="hide768" />
+                  아이티로그는 기업의 비즈니스 혁신과 성장을 위해 오늘도
+                  진심으로 고민합니다.
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </main>
 
-        <section>
-
-            <article class="merit">
-                <div class="merit-container">
-                    <div class="merit-title">
-                        <h3 class="s-color" data-aos="fade-up">기술은 따라 할 수 있어도</h3>
-                        <h2 data-aos="fade-up" data-aos-delay="200">
-                            숙련된 기술자의 깊은 노하우는 <br class="hide1366" /><br class="show768" /> 경쟁의 산물입니다
-                        </h2>
-                    </div>
-                    <div class="merit-contents">
-                        <div class="wrap">
-                            <div class="hex" data-aos="flip-left" data-aos-delay="0">
-                                <div class="hex-inner">
-                                    <div class="hex-contents">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hex" data-aos="flip-left" data-aos-delay="50">
-                                <div class="hex-inner">
-                                    <div class="hex-contents">
-                                        <div class="merit-count">
-                                            <h1><span class="oswald" data-count=13 data-time=150>0</span>+</h1>
-                                            <h6>S/W · H/W<br>연구개발 경력</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hex" data-aos="flip-left" data-aos-delay="100">
-                                <div class="hex-inner">
-                                    <div class="hex-contents"></div>
-                                </div>
-                            </div>
-                            <div class="hex" data-aos="flip-left" data-aos-delay="200">
-                                <div class="hex-inner">
-                                    <div class="hex-contents">
-                                        <div class="merit-count">
-                                            <h1><span class="oswald" data-count=3000 data-time=20>0</span>+</h1>
-                                            <h6>설치·시공 횟수</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hex" data-aos="flip-left" data-aos-delay="250">
-                                <div class="hex-inner">
-                                    <div class="hex-contents"></div>
-                                </div>
-                            </div>
-                            <div class="hex" data-aos="flip-left" data-aos-delay="300">
-                                <div class="hex-inner">
-                                    <div class="hex-contents">
-                                        <div class="merit-count">
-                                            <h1><span class="oswald" data-count=62 data-time=30>0</span>+</h1>
-                                            <h6>공급 고객사</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <section>
+        <article class="merit">
+          <div class="merit-container">
+            <div class="merit-title">
+              <h3 class="s-color" data-aos="fade-up">
+                기술은 따라 할 수 있어도
+              </h3>
+              <h2 data-aos="fade-up" data-aos-delay="200">
+                숙련된 기술자의 깊은 노하우는 <br class="hide1366" /><br
+                  class="show768"
+                />
+                경쟁의 산물입니다
+              </h2>
+            </div>
+            <div class="merit-contents">
+              <div class="wrap">
+                <div class="hex" data-aos="flip-left" data-aos-delay="0">
+                  <div class="hex-inner">
+                    <div class="hex-contents"></div>
+                  </div>
                 </div>
-            </article>
-
-
-            <article class="product">
-                <div class="product-back"></div>
-                <div class="product-container">
-                    <div class="product-title">
-                        <h2 class="oswald" data-aos="fade-up">integrated <span class="oswald">IoT</span> Solution</h2>
-                        <p class="aos-delay" data-aos="fade-up" data-aos-delay="100">
-                            아이티로그는 오랜 경력으로 쌓아온 노하우로 <br>
-                            S/W 서비스, H/W 서비스, Web 서비스 <br class="hide1366"><br class="show768">
-                            그리고 높은 수준의 기술력과 전문성으로 <br class="hide1366"><br class="show768">
-                            통합 IoT 솔루션을 제공합니다.
-                        </p>
+                <div class="hex" data-aos="flip-left" data-aos-delay="50">
+                  <div class="hex-inner">
+                    <div class="hex-contents">
+                      <div class="merit-count">
+                        <h1>
+                          <span class="oswald" data-count="13" data-time="150"
+                            >0</span
+                          >+
+                        </h1>
+                        <h6>S/W · H/W<br />연구개발 경력</h6>
+                      </div>
                     </div>
-                    <div class="productSwiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="./img/gate1.jpg" alt="" style="object-position: right;">
-                                <div class="slide-text">
-                                    <small class="s-color">높은 보안성과 효율성</small>
-                                    <h4>출입 통제 시스템</h4>
-                                    <p>AI 얼굴인식을 통해 출입자 현황, 인원, 시간, 출입자 제한 등을 <br class="hide768">통합적으로 관리하는 시스템을 제공합니다.</p>
-                                </div>
-                                <div class="flex-center">
-                                    <button><a href="./gate.html">view more</a></button>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/cctv1.jpg" alt="">
-                                <div class="slide-text">
-                                    <small class="s-color">건설산업 환경에 맞는 최적화 솔루션</small>
-                                    <h4>안전 관리 CCTV</h4>
-                                    <p>현장 전체를 모니터링하여 근로자의 안전사고, 위험 요소 등을 <br class="hide768">신속하게 감지할 수 있는 시스템을 제공합니다.</p>
-                                </div>
-                                <div class="flex-center">
-                                    <button><a href="./cctv.html">view more</a></button>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/crane1.jpg" alt="">
-                                <div class="slide-text">
-                                    <small class="s-color">충돌/협착 위험 예측 및 경고</small>
-                                    <h4>T/C 통합안전</h4>
-                                    <p>현장에 구축된 타워크레인을 보다 쉽게 관리하며 원활한 작동과 근로자의 사고를 <br class="hide768">예방하는 시스템을 제공합니다.</p>
-                                </div>
-                                <div class="flex-center">
-                                    <button><a href="./towercrane.html">view more</a></button>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/sensor1.jpg" alt="">
-                                <div class="slide-text">
-                                    <small class="s-color">극한 환경에서도 뛰어난 성능</small>
-                                    <h4>환경 센서</h4>
-                                    <p>밀폐공간, 현장 내외부, 유해/폭발물 위험 저장소, 민원 장소 등에 설치하여 <br class="hide768">신속한 초기 대응 및 사고를 예방 시스템을 제공합니다.</p>
-                                </div>
-                                <div class="flex-center">
-                                    <button><a href="./sensor.html">view more</a></button>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/cast1.jpg" alt="">
-                                <div class="slide-text">
-                                    <small class="s-color">비상 상황 발생 시 신속한 대응</small>
-                                    <h4>방송 시스템</h4>
-                                    <p>장소와 거리의 제약을 최소화하여 <br class="hide768">경보 방송 및 일반 방송을 송출하는 시스템을 제공합니다.</p>
-                                </div>
-                                <div class="flex-center">
-                                    <button><a href="./broadcast.html">view more</a></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                    <div class="product-contents"></div>
+                  </div>
                 </div>
-            </article>
-
-
-            <article class="instance">
-                <div class="instance-container">
-                    <div class="instance-title">
-                        <h2 class="oswald">instance</h2>
-                    </div>
-                    <div class="instance-contents">
-                        <div class="instance-grid aos-delay" data-aos="fade-up" data-aos-delay="200">
-                            <div class="instance-box">
-                                <div class="instance-img">
-                                    <img src="./img/instance1.jpg" alt="" style="object-position:top">
-                                </div>
-                                <h6>LH주택공사/대전충남지역본부 현장 <br>통합 모니터링 시스템</h6>
-                            </div>
-                        </div>
-                        <div class="instance-grid aos-delay" data-aos="fade-up" data-aos-delay="400">
-                            <div class="instance-box">
-                                <div class="instance-img">
-                                    <img src="./img/instance2.jpg" alt="">
-                                </div>
-                                <h6>DL건설/성남복정 현장 <br>태양광 에너지 기반 돔 CCTV 설치</h6>
-                            </div>
-                        </div>
-                        <div class="instance-grid aos-delay" data-aos="fade-up" data-aos-delay="600">
-                            <div class="instance-box">
-                                <div class="instance-img">
-                                    <img src="./img/instance3.jpg" alt="">
-                                </div>
-                                <h6>경남도청 서부청사 <br>상부 출구 슬라이딩게이트</h6>
-                            </div>
-                        </div>
-                    </div>
+                <div class="hex" data-aos="flip-left" data-aos-delay="100">
+                  <div class="hex-inner">
+                    <div class="hex-contents"></div>
+                  </div>
                 </div>
-            </article>
-
-
-            <article class="partnership">
-                <div class="partnership-container">
-                    <div class="partnership-title">
-                        <h3 data-aos="fade-up" class="t-color"><span class="red">(주)아이티로그</span>는 
-                            <br class="show768" />고객만족 및 안전을 
-                            <br class="partnership-br"/>최우선 가치로 생각합니다
-                        </h3>
-                        <h2 data-aos="fade-up" data-aos-delay="200">'건설은 안전하게 
-                            <br class="partnership-br"/>안전은 스마트하게'
-                        </h2>
+                <div class="hex" data-aos="flip-left" data-aos-delay="200">
+                  <div class="hex-inner">
+                    <div class="hex-contents">
+                      <div class="merit-count">
+                        <h1>
+                          <span class="oswald" data-count="3000" data-time="20"
+                            >0</span
+                          >+
+                        </h1>
+                        <h6>설치·시공 횟수</h6>
+                      </div>
                     </div>
-                    <div class="light-filter"></div>
-                    <div class="partnership-image">
-                        <div class="partnership-slide"></div>
-                        <div class="partnership-slide"></div>
-                        <div class="partnership-slide"></div>
-                    </div>
+                  </div>
                 </div>
-            </article>
-
-        </section>
-
-
-        <footer>
-            <div class="footer-container">
-                <div class="footer-text">
-                    <h5>(주)아이티로그</h5>
-                    <!-- <img src="./img/logo/itlog.svg" alt=""> -->
-                    <div>
-                        <p>ADDRESS : 서울특별시 구로구 디지털로33길 28 <br class="show768">우림이비즈센터1차 308호 (우:08377)</p>
-                        <p>
-                            TEL : 02-859-2064 
-                            <span class="hide768">|</span><br class="show768"> 
-                            FAX : 02-859-2065
-                            <span class="hide768">|</span><br class="show768"> 
-                            EMAIL : ok@it-log.co.kr
-                        </p>
-                        <p>Copyright ⓒ2023 ITLOG CO., LTD. All Rights Reserved.</p>
-                    </div>
+                <div class="hex" data-aos="flip-left" data-aos-delay="250">
+                  <div class="hex-inner">
+                    <div class="hex-contents"></div>
+                  </div>
                 </div>
-                <div class="footer-contact">
-                    <!-- <div class="flex-flex">
+                <div class="hex" data-aos="flip-left" data-aos-delay="300">
+                  <div class="hex-inner">
+                    <div class="hex-contents">
+                      <div class="merit-count">
+                        <h1>
+                          <span class="oswald" data-count="62" data-time="30"
+                            >0</span
+                          >+
+                        </h1>
+                        <h6>공급 고객사</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-back"></div>
+          <div class="product-container">
+            <div class="product-title">
+              <h2 class="oswald" data-aos="fade-up">
+                integrated <span class="oswald">IoT</span> Solution
+              </h2>
+              <p class="aos-delay" data-aos="fade-up" data-aos-delay="100">
+                아이티로그는 오랜 경력으로 쌓아온 노하우로 <br />
+                S/W 서비스, H/W 서비스, Web 서비스 <br class="hide1366" /><br
+                  class="show768"
+                />
+                그리고 높은 수준의 기술력과 전문성으로
+                <br class="hide1366" /><br class="show768" />
+                통합 IoT 솔루션을 제공합니다.
+              </p>
+            </div>
+            <div class="productSwiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./img/gate1.jpg"
+                    alt=""
+                    style="object-position: right"
+                  />
+                  <div class="slide-text">
+                    <small class="s-color">높은 보안성과 효율성</small>
+                    <h4>출입 통제 시스템</h4>
+                    <p>
+                      AI 얼굴인식을 통해 출입자 현황, 인원, 시간, 출입자 제한
+                      등을 <br class="hide768" />통합적으로 관리하는 시스템을
+                      제공합니다.
+                    </p>
+                  </div>
+                  <div class="flex-center">
+                    <button><a href="./gate.html">view more</a></button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/cctv1.jpg" alt="" />
+                  <div class="slide-text">
+                    <small class="s-color"
+                      >건설산업 환경에 맞는 최적화 솔루션</small
+                    >
+                    <h4>안전 관리 CCTV</h4>
+                    <p>
+                      현장 전체를 모니터링하여 근로자의 안전사고, 위험 요소 등을
+                      <br class="hide768" />신속하게 감지할 수 있는 시스템을
+                      제공합니다.
+                    </p>
+                  </div>
+                  <div class="flex-center">
+                    <button><a href="./cctv.html">view more</a></button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/crane1.jpg" alt="" />
+                  <div class="slide-text">
+                    <small class="s-color">충돌/협착 위험 예측 및 경고</small>
+                    <h4>T/C 통합안전</h4>
+                    <p>
+                      현장에 구축된 타워크레인을 보다 쉽게 관리하며 원활한
+                      작동과 근로자의 사고를 <br class="hide768" />예방하는
+                      시스템을 제공합니다.
+                    </p>
+                  </div>
+                  <div class="flex-center">
+                    <button><a href="./towercrane.html">view more</a></button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/sensor1.jpg" alt="" />
+                  <div class="slide-text">
+                    <small class="s-color">극한 환경에서도 뛰어난 성능</small>
+                    <h4>환경 센서</h4>
+                    <p>
+                      밀폐공간, 현장 내외부, 유해/폭발물 위험 저장소, 민원 장소
+                      등에 설치하여 <br class="hide768" />신속한 초기 대응 및
+                      사고를 예방 시스템을 제공합니다.
+                    </p>
+                  </div>
+                  <div class="flex-center">
+                    <button><a href="./sensor.html">view more</a></button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/cast1.jpg" alt="" />
+                  <div class="slide-text">
+                    <small class="s-color">비상 상황 발생 시 신속한 대응</small>
+                    <h4>방송 시스템</h4>
+                    <p>
+                      장소와 거리의 제약을 최소화하여 <br class="hide768" />경보
+                      방송 및 일반 방송을 송출하는 시스템을 제공합니다.
+                    </p>
+                  </div>
+                  <div class="flex-center">
+                    <button><a href="./broadcast.html">view more</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="product-contents"></div>
+          </div>
+        </article>
+
+        <article class="instance">
+          <div class="instance-container">
+            <div class="instance-title">
+              <h2 class="oswald">instance</h2>
+            </div>
+            <div class="instance-contents">
+              <div
+                class="instance-grid aos-delay"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="instance-box">
+                  <div class="instance-img">
+                    <img
+                      src="./img/instance1.jpg"
+                      alt=""
+                      style="object-position: top"
+                    />
+                  </div>
+                  <h6>
+                    LH주택공사/대전충남지역본부 현장 <br />통합 모니터링 시스템
+                  </h6>
+                </div>
+              </div>
+              <div
+                class="instance-grid aos-delay"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <div class="instance-box">
+                  <div class="instance-img">
+                    <img src="./img/instance2.jpg" alt="" />
+                  </div>
+                  <h6>
+                    DL건설/성남복정 현장 <br />태양광 에너지 기반 돔 CCTV 설치
+                  </h6>
+                </div>
+              </div>
+              <div
+                class="instance-grid aos-delay"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                <div class="instance-box">
+                  <div class="instance-img">
+                    <img src="./img/instance3.jpg" alt="" />
+                  </div>
+                  <h6>경남도청 서부청사 <br />상부 출구 슬라이딩게이트</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="partnership">
+          <div class="partnership-container">
+            <div class="partnership-title">
+              <h3 data-aos="fade-up" class="t-color">
+                <span class="red">(주)아이티로그</span>는
+                <br class="show768" />고객만족 및 안전을
+                <br class="partnership-br" />최우선 가치로 생각합니다
+              </h3>
+              <h2 data-aos="fade-up" data-aos-delay="200">
+                '건설은 안전하게 <br class="partnership-br" />안전은 스마트하게'
+              </h2>
+            </div>
+            <div class="light-filter"></div>
+            <div class="partnership-image">
+              <div class="partnership-slide"></div>
+              <div class="partnership-slide"></div>
+              <div class="partnership-slide"></div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <footer>
+        <div class="footer-container">
+          <div class="footer-text">
+            <h5>(주)아이티로그</h5>
+            <!-- <img src="./img/logo/itlog.svg" alt=""> -->
+            <div>
+              <p>
+                ADDRESS : 서울특별시 구로구 디지털로33길 28
+                <br class="show768" />우림이비즈센터1차 308호 (우:08377)
+              </p>
+              <p>
+                TEL : 02-859-2064
+                <span class="hide768">|</span><br class="show768" />
+                FAX : 02-859-2065
+                <span class="hide768">|</span><br class="show768" />
+                EMAIL : ok@it-log.co.kr
+              </p>
+              <p>Copyright ⓒ2023 ITLOG CO., LTD. All Rights Reserved.</p>
+            </div>
+          </div>
+          <div class="footer-contact">
+            <!-- <div class="flex-flex">
                         <a><img src="./img/logo/blog.png" alt=""></a>
                         <a><img src="./img/logo/kakao.png" alt=""></a>
                     </div> -->
-                    <button type="button"><a href="./consulting.html">견적의뢰</a></button>
-                </div>
-            </div>
-        </footer>
-
-        <div id="topButton">
-            <span class="icon icon-arrow-up"></span>
+            <button type="button">
+              <a href="./consulting.html">견적의뢰</a>
+            </button>
+          </div>
         </div>
+      </footer>
+
+      <div id="topButton">
+        <span class="icon icon-arrow-up"></span>
+      </div>
     </div>
+  </body>
 
-</body>
-
-<script src="./swiper/swiper-bundle.min.js"></script>
-<!-- [슬라이드 라이브러리 JS] -->
-<script src="./aos-master/dist/aos.js"></script>
-<!-- [텍스트 애니메이션 라이브러리 JS] -->
-<script type="text/javascript" src="./src/js/index.js"></script>
-<!-- [기본 JS] -->
-<script type="text/javascript" src="./src/js/main.js"></script>
-<!-- [메인페이지 JS] -->
-<script>
+  <script src="./swiper/swiper-bundle.min.js"></script>
+  <!-- [슬라이드 라이브러리 JS] -->
+  <script src="./aos-master/dist/aos.js"></script>
+  <!-- [텍스트 애니메이션 라이브러리 JS] -->
+  <script type="text/javascript" src="./src/js/index.js"></script>
+  <!-- [기본 JS] -->
+  <script type="text/javascript" src="./src/js/main.js"></script>
+  <!-- [메인페이지 JS] -->
+  <script>
     // AOS 사용전 초기화 선언
     AOS.init({
-        duration: 1000,
+      duration: 1000,
     });
-</script>
-
+  </script>
 </html>

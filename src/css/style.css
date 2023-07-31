@@ -840,7 +840,7 @@ header {
   height: 100%;
   position: relative;
   border-bottom: 1px solid #ced6e0;
-  transition: height 0.5s ease;
+  /* transition: height 0.5s ease; */
 }
 
 #headerLogo {
@@ -864,8 +864,8 @@ header {
 }
 
 #headerNav {
-  width: 45%;
-  min-width: 600px;
+  /* width: 45%; */
+  /* min-width: 600px; */
   height: 100%;
   display: flex;
   align-items: center;
@@ -876,7 +876,7 @@ header {
 }
 
 .header-title {
-  width: 25%;
+  width: 12rem;
   text-align: center;
 }
 
@@ -908,6 +908,7 @@ header {
 header.mega-active {
   /* height: 9rem; */
   background-color: #fff;
+  /* background-color: #31456a; */
 }
 
 .mega-active .header-container {
@@ -930,21 +931,21 @@ header.mega-active {
 }
 
 .mega-active .header-sub .no-list {
-  width: 27.5%;
+  /* width: 20rem; */
   height: 100%;
   border-top: 2px solid #ced6e0;
 }
 
 .mega-active .header-subList {
-  width: 45%;
-  min-width: 600px;
+  /* width: 45%; */
+  /* min-width: 600px; */
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  /* justify-content: space-between; */
+  /* position: absolute; */
+  /* left: 50%;
+  transform: translateX(-50%); */
 }
 
 .mega-active .header-subList > :first-child {
@@ -952,19 +953,23 @@ header.mega-active {
 }
 
 .mega-active .header-subList > div {
-  width: 25%;
+  width: 100%;
   height: 100%;
   /* text-align: center; */
   border-top: 2px solid #ced6e0;
   /* border-right: 1px solid #ced6e0; */
-  padding: 1rem;
+  padding: 1rem 0;
   display: flex;
   justify-content: center;
 }
 
 .mega-active .header-subList .header-subTitle a {
-  display: block;
-  padding: 0.8rem;
+  width: 12rem;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 0 2rem;
+  height: 2.5rem;
   cursor: pointer;
   font-size: 1.125rem;
   font-weight: 500;
