@@ -302,16 +302,19 @@ main {
   position: relative;
   z-index: 400;
 }
-/* .square-contents button {
-  width: 80%;
-  max-width: 200px;
+/* .square-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
   border: 1px solid #fff;
   color: #fff;
   padding: 0;
   position: relative;
   z-index: 400;
-}
-.square-contents a {
+} */
+/* .square-btn {
   width: 100%;
   font-size: 1rem;
   color: #fff;
