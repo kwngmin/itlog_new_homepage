@@ -101,27 +101,38 @@ main {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
+  display: flex;
+  justify-content: center;
+  /* display: grid; */
+  /* grid-template-columns: repeat(4, 1fr); */
+  align-items: flex-start;
   gap: 6rem;
 }
 #cctv .keyPoint-contents {
-  max-width: 1000px;
-  grid-template-columns: repeat(3, 1fr);
+  /* max-width: 1000px; */
+  /* grid-template-columns: repeat(3, 1fr); */
 }
 .keyPoint-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
+.keyPoint-img {
+  width: 10rem;
+  background-color: #f1f2f6;
+  border-radius: 1rem;
+  padding: 2rem;
+}
 .keyPoint-img img {
-  height: 8rem;
+  width: 100%;
 }
 .keyPoint-box h5 {
   padding-top: 1rem;
 }
 .keyPoint-box p {
   /* height: 6rem; */
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   padding-top: 0.5rem;
   margin: 0 auto;
   color: rgba(0, 0, 0, 0.6);
@@ -135,18 +146,36 @@ main {
   #keyPoint {
     padding: 0 2rem;
   }
+  .keyPoint-title {
+    padding-bottom: 1rem;
+  }
   .keyPoint-contents {
     gap: 1rem;
+    flex-direction: column;
+  }
+  .keyPoint-box {
+    flex-direction: row;
+    text-align: left;
+  }
+  .keyPoint-box-text {
+    padding: 0 1rem;
+  }
+  .keyPoint-box h5 {
+    padding-top: 0;
+  }
+  .keyPoint-box p {
+    font-size: 1rem;
+    padding-top: 0.25rem;
   }
 }
 @media screen and (max-width: 767px) {
   #keyPoint {
     padding: 0 1rem;
+    margin: 8rem 0;
   }
-  .keyPoint-contents,
-  #cctv .keyPoint-contents {
-    max-width: 400px;
-    grid-template-columns: repeat(2, 1fr);
+  .keyPoint-img {
+    width: 7rem;
+    padding: 1.5rem;
   }
 }
 /* 제품상세소개 */
