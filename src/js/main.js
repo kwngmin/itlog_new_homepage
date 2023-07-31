@@ -17,6 +17,10 @@ window.addEventListener("resize", () => {
   // responsiveBullet();
 });
 
+let hammerCount = true;
+let ideaCount = true;
+let handCount = true;
+
 // 스크롤 하면 실행
 window.addEventListener("scroll", () => {
   if (window && window.scrollY > 100) {
@@ -43,23 +47,87 @@ window.addEventListener("scroll", () => {
   //     }
   //   });
   // }
+
   // 메리트 카운트 시작
   const numList = document.querySelectorAll(".knowhow-num");
-  if (count) {
+  if (hammerCount) {
+    const type = "hammer";
     numList.forEach((el, idx) => {
       if (el.classList.contains("aos-animate")) {
-        const countList = document.querySelectorAll("h2 span");
+        const countList = document.querySelectorAll("#hammer-num");
         countList[idx] &&
           counter(
             countList[idx],
             countList[idx].getAttribute("data-count"),
             idx,
-            countList[idx].getAttribute("data-time")
+            countList[idx].getAttribute("data-time"),
+            type
+          );
+      }
+    });
+  }
+  if (ideaCount) {
+    const type = "idea";
+    numList.forEach((el, idx) => {
+      if (el.classList.contains("aos-animate")) {
+        const countList = document.querySelectorAll("#idea-num");
+        countList[idx] &&
+          counter(
+            countList[idx],
+            countList[idx].getAttribute("data-count"),
+            idx,
+            countList[idx].getAttribute("data-time"),
+            type
+          );
+      }
+    });
+  }
+  if (handCount) {
+    const type = "hand";
+    numList.forEach((el, idx) => {
+      if (el.classList.contains("aos-animate")) {
+        const countList = document.querySelectorAll("#hand-num");
+        countList[idx] &&
+          counter(
+            countList[idx],
+            countList[idx].getAttribute("data-count"),
+            idx,
+            countList[idx].getAttribute("data-time"),
+            type
           );
       }
     });
   }
 });
+// 메리트 숫자 카운팅
+const counter = (el, data, idx, time, type) => {
+  // console.log(type);
+  if (type === "hammer") {
+    hammerCount = false;
+  }
+  if (type === "idea") {
+    ideaCount = false;
+  }
+  if (type === "hand") {
+    handCount = false;
+  }
+  let num = 0;
+  let counting = setInterval(function () {
+    if (num == data) {
+      clearInterval(counting);
+      return false;
+    }
+    if (data < 100) {
+      num += 1;
+    } else if (data > 100 && data < 500) {
+      num += 2;
+    } else {
+      num += 30;
+    }
+    el.innerHTML = new Intl.NumberFormat().format(num);
+  }, time);
+  idx === 2 ? (count = false) : null;
+};
 
 //메인 슬라이드
 const keyword = ["BIGDATA", "AI", "DEEP LEARNING", "SMART SAFETY"];
@@ -151,28 +219,6 @@ const responsiveBullet = () => {
     .forEach((el) => {
       el.style.width = `${100 / keyword.length - 1}%`;
     });
-};
-
-// 메리트 숫자 카운팅
-let count = true;
-const counter = (el, data, idx, time) => {
-  // console.log(idx);
-  let num = 0;
-  let counting = setInterval(function () {
-    if (num == data) {
-      clearInterval(counting);
-      return false;
-    }
-    if (data < 100) {
-      num += 1;
-    } else if (data > 100 && data < 500) {
-      num += 2;
-    } else {
-      num += 30;
-    }
-    el.innerHTML = new Intl.NumberFormat().format(num);
-  }, time);
-  idx === 2 ? (count = false) : null;
 };
 
 //제품 슬라이드
