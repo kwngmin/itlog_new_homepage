@@ -120,7 +120,7 @@ main {
 }
 .keyPoint-img {
   width: 10rem;
-  background-color: #f1f2f6;
+  background-color: rgb(248, 250, 252);
   border-radius: 1rem;
   padding: 2rem;
 }
@@ -147,7 +147,7 @@ main {
     padding: 0 2rem;
   }
   .keyPoint-title {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
   .keyPoint-contents {
     gap: 1rem;
@@ -172,6 +172,9 @@ main {
   #keyPoint {
     padding: 0 1rem;
     margin: 8rem 0;
+  }
+  .keyPoint-title {
+    padding-bottom: 2rem;
   }
   .keyPoint-img {
     width: 7rem;
@@ -212,7 +215,8 @@ main {
 }
 .subProduct-box {
   /* background-color: #939fb2; */
-  background-color: rgb(243, 244, 246);
+  /* background-color: rgb(243, 244, 246); */
+  background-color: rgb(248, 250, 252);
   overflow: hidden;
   border-radius: 2rem;
   display: flex;
@@ -226,6 +230,7 @@ main {
 .subProduct-img {
   overflow: hidden;
   height: 100%;
+  border-radius: 2rem;
   /* aspect-ratio: 4 / 3; */
   /* object-fit: contain; */
 }
