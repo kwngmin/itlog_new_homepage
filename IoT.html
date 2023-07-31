@@ -15,6 +15,10 @@
     <!-- [기본 CSS] -->
     <link rel="stylesheet" href="./src/css/IoT.css" />
     <!-- [통합IoT솔루션 CSS] -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <script src="./src/js/prefixfree.min.js"></script>
     <!-- [벤더프리픽스] -->
   </head>
@@ -135,13 +139,6 @@
         <div class="dark-filter"></div>
         <div class="main-text">
           <h2>통합IoT솔루션</h2>
-          <!-- <h2>통합 IoT 안전 관리 시스템</h2> -->
-          <!-- <h6>
-            아이티로그는 고객 맞춤 솔루션 PMS를 제공하여 효율적인 관리를
-            지원합니다.<br />
-            고객의 요구사항과 목표를 이해하고, 이를 기반으로 맞춤형 솔루션을
-            개발합니다.
-          </h6> -->
         </div>
       </main>
 
@@ -150,24 +147,13 @@
           <div class="keyPoint-container">
             <div class="keyPoint-title">
               <h2><span class="red">Key</span> Point</h2>
-              <!-- <h6>
-                통합 IoT 시스템은 건설 현장에서 <br class="show768" />
-                다양한 시스템 및 기기와의 통합을 지원합니다.<br />
-                관련 시스템과의 데이터 공유 및 협업이 가능해지며,
-                <br class="show1024" />
-                생성되는 데이터를 수집하고 분석하여
-                <br class="show768" />의사결정에 활용할 수 있습니다.<br />
-                또한 건설 현장 원격 모니터링을 통해 <br class="show1024" />
-                안전 관리, 작업의 품질, 생산성, 비용 등
-                <br class="show768" />다양한 측면을 평가하고 개선할 수 있습니다.
-              </h6> -->
-              <h5>
+              <h6>
                 통합 IoT 시스템은 건설 현장에서 다양한 시스템 및 기기와의 통합을
                 지원합니다. 관련 시스템과의 데이터 공유 및 협업이 가능해지며,
                 생성되는 데이터를 수집하고 분석하여 의사결정에 활용할 수
                 있습니다. 또한 건설 현장 원격 모니터링을 통해 안전 관리, 작업의
                 품질, 생산성, 비용 등 다양한 측면을 평가하고 개선할 수 있습니다.
-              </h5>
+              </h6>
             </div>
             <div class="keyPoint-contents">
               <div class="keyPoint-box" data-aos-delay="100">
@@ -223,7 +209,7 @@
 
         <article class="square">
           <div class="square-container">
-            <div class="square-contents">
+            <a type="button" href="./gate.html" class="square-contents">
               <div class="filter1"></div>
               <h4>출입 통제 시스템</h4>
               <div class="square-line"></div>
@@ -236,9 +222,9 @@
                   관리에 편리함을 제공합니다
                 </p>
               </div>
-              <button type="button"><a href="./gate.html">view more</a></button>
-            </div>
-            <div class="square-contents">
+              <!-- <button type="button"><a href="./gate.html">view more</a></button> -->
+            </a>
+            <a type="button" href="./cctv.html" class="square-contents">
               <div class="filter2"></div>
               <h4>안전 관리 CCTV</h4>
               <div class="square-line"></div>
@@ -251,9 +237,9 @@
                   있도록 도와줍니다
                 </p>
               </div>
-              <button type="button"><a href="./cctv.html">view more</a></button>
-            </div>
-            <div class="square-contents">
+              <!-- <button type="button"><a href="./cctv.html">view more</a></button> -->
+            </a>
+            <a type="button" href="./towercrane.html" class="square-contents">
               <div class="filter3"></div>
               <h4>T/C 통합안전</h4>
               <div class="square-line"></div>
@@ -265,11 +251,11 @@
                   피해를 예방하도록 도와줍니다
                 </p>
               </div>
-              <button type="button">
+              <!-- <button type="button">
                 <a href="./towercrane.html">view more</a>
-              </button>
-            </div>
-            <div class="square-contents">
+              </button> -->
+            </a>
+            <a type="button" href="./sensor.html" class="square-contents">
               <div class="filter4"></div>
               <h4>환경센서</h4>
               <div class="square-line"></div>
@@ -281,11 +267,11 @@
                   감지하여 개선에 필요한 조치를 취할 수 있도록 도와줍니다
                 </p>
               </div>
-              <button type="button">
-                <a href="./sensor.html">view more</a>
-              </button>
-            </div>
-            <div class="square-contents">
+              <!-- <button type="button">
+                <a href="./sensor.html">view more</a> -->
+              <!-- </button> -->
+            </a>
+            <a type="button" href="./broadcast.html" class="square-contents">
               <div class="filter5"></div>
               <h4>방송 시스템</h4>
               <div class="square-line"></div>
@@ -296,10 +282,10 @@
                   현장의 운영 관리를 원활하게 수행할 수 있도록 도와줍니다
                 </p>
               </div>
-              <button type="button">
+              <!-- <button type="button">
                 <a href="./broadcast.html">view more</a>
-              </button>
-            </div>
+              </button> -->
+            </a>
           </div>
         </article>
 
@@ -477,9 +463,13 @@
             </div>
             <div class="qna-contents">
               <h6 class="accordionQ">
-                모든 제품이 통합 IoT 솔루션에 들어가나요?<span
+                모든 제품이 통합 IoT 솔루션에 들어가나요?
+                <!-- <span
                   class="icon icon-arrow-right"
-                ></span>
+                ></span> -->
+                <span class="material-symbols-outlined icon">
+                  chevron_right
+                </span>
               </h6>
               <div class="accordionA">
                 <p class="text-lg">
@@ -488,9 +478,13 @@
                 </p>
               </div>
               <h6 class="accordionQ">
-                녹화된 CCTV 영상을 보고 싶어요<span
+                녹화된 CCTV 영상을 보고 싶어요
+                <span class="material-symbols-outlined icon">
+                  chevron_right
+                </span>
+                <!-- <span
                   class="icon icon-arrow-right"
-                ></span>
+                ></span> -->
               </h6>
               <div class="accordionA">
                 <p class="text-lg">
@@ -500,7 +494,11 @@
               </div>
               <h6 class="accordionQ">
                 타워 크레인 후크 하방 카메라 영상을 사무실에서 모니터링이
-                가능한가요?<span class="icon icon-arrow-right"></span>
+                가능한가요?
+                <span class="material-symbols-outlined icon">
+                  chevron_right
+                </span>
+                <!-- <span class="icon icon-arrow-right"></span> -->
               </h6>
               <div class="accordionA">
                 <p class="text-lg">
@@ -508,9 +506,13 @@
                 </p>
               </div>
               <h6 class="accordionQ">
-                이동형 CCTV의 구동 시간을 알고 싶어요!<span
+                이동형 CCTV의 구동 시간을 알고 싶어요!
+                <span class="material-symbols-outlined icon">
+                  chevron_right
+                </span>
+                <!-- <span
                   class="icon icon-arrow-right"
-                ></span>
+                ></span> -->
               </h6>
               <div class="accordionA">
                 <p class="text-lg">
@@ -520,9 +522,14 @@
                 </p>
               </div>
               <h6 class="accordionQ">
-                갑자기 연결이 되지 않아요!<span
+                갑자기 연결이 되지 않아요!
+                <span class="material-symbols-outlined icon">
+                  chevron_right
+                </span>
+
+                <!-- <span
                   class="icon icon-arrow-right"
-                ></span>
+                ></span> -->
               </h6>
               <div class="accordionA">
                 <p class="text-lg">
