@@ -222,11 +222,12 @@ main {
   .keyPoint-title {
     padding-bottom: 2rem;
   }
-  /* .keyPoint-box-text {
-    width: 100%;
-  } */
+  .keyPoint-box-text h5 {
+    font-size: 1.125rem;
+  }
   .keyPoint-box-text p {
     width: 100%;
+    padding: 0;
   }
 }
 /* 제품상세소개 */
