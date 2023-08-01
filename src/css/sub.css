@@ -214,6 +214,11 @@ main {
   .keyPoint-contents {
     padding: 1rem;
   }
+  .keyPoint-img {
+    background-color: white;
+    width: 5rem;
+    padding: 1rem;
+  }
   .keyPoint-title {
     padding-bottom: 2rem;
   }

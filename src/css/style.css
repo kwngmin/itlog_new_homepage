@@ -498,7 +498,7 @@ label {
 }
 
 .light-filter {
-  width: 100%;
+  width: 0;
   height: 100%;
   position: absolute;
   top: 0;
