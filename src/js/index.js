@@ -13,13 +13,24 @@ window.addEventListener("resize", () => {
 // 스크롤 하면 실행
 window.addEventListener("scroll", () => {});
 
+// 아이폰 height 구하기
+window.addEventListener("DOMContentLoaded", function (ev) {
+  const { innerHeight } = window;
+  document.documentElement.style.setProperty(
+    "--app-height",
+    `${innerHeight}px`
+  );
+});
+
 let scrollPosition = 0;
 // 모바일에서 네브 열기
+
 const openNav = () => {
   scrollPosition = window.pageYOffset;
   document.body.classList.add("scroll-stop");
   document.body.style.top = `-${scrollPosition}px`;
   document.getElementById("sideNavOpenFilter").style.width = "100%";
+  document.getElementById("mobileNav").style.height = "var(--app-height)";
   document.getElementById("mobileNav").style.display = "flex";
   document.getElementById("header").style.display = "none";
 };
