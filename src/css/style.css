@@ -1055,7 +1055,7 @@ header.mega-active {
   align-items: center;
   justify-content: center;
   z-index: 400;
-  transition: bottom 0.3s ease;
+  transition: bottom 1s ease;
   cursor: pointer;
   /* box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4); */
 }
