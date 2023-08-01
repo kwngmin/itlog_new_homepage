@@ -1057,7 +1057,7 @@ header.mega-active {
   z-index: 400;
   transition: bottom 0.3s ease;
   cursor: pointer;
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4);
+  /* box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4); */
 }
 
 #topButton span {
@@ -1082,12 +1082,13 @@ header.mega-active {
   justify-content: center;
   z-index: 400;
   cursor: pointer;
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4);
+  /* box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4); */
 }
 #mobileConsulting span {
   color: white;
   font-size: 1.125rem;
   margin-right: 1rem;
+  margin-left: 0.25rem;
 }
 #mobileConsulting img {
   /* height: 80%; */
