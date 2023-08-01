@@ -840,7 +840,21 @@ header {
   height: 100%;
   position: relative;
   border-bottom: 1px solid #ced6e0;
+  display: flex;
+  align-items: center;
+  padding: 0 4rem;
   /* transition: height 0.5s ease; */
+}
+.slogan {
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 2px solid #ced6e0;
+  border-radius: 2px;
+  color: #939fb2;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  letter-spacing: 0;
+  display: none;
 }
 
 #headerLogo {
@@ -851,9 +865,9 @@ header {
   background: url("../../img/logo/itlog.svg") no-repeat;
   background-size: contain;
   background-position: center center;
-  position: absolute;
-  bottom: 0;
-  left: 4rem;
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* left: 4rem; */
 }
 
 #headerLogo a {
@@ -985,7 +999,19 @@ header.mega-active {
   align-items: flex-end;
   justify-content: space-between;
 }
-
+@media screen and (max-width: 1023px) {
+  .header-container {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-container {
+    padding: 0 1rem;
+  }
+  .slogan {
+    display: flex;
+  }
+}
 #topButton {
   position: fixed;
   width: 4rem;
