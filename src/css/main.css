@@ -45,6 +45,7 @@ main .text-box .title {
   font-weight: 800;
   word-break: keep-all;
   line-height: 1.25;
+  letter-spacing: -0.1rem;
 }
 main .text-box .sub-title {
   margin-top: 1rem;
