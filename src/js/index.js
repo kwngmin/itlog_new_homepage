@@ -19,23 +19,18 @@ const openNav = () => {
   scrollPosition = window.pageYOffset;
   document.body.classList.add("scroll-stop");
   document.body.style.top = `-${scrollPosition}px`;
-  // document.getElementById("sideNavOpenFilter").style.width = "100%";
+  document.getElementById("sideNavOpenFilter").style.width = "100%";
   document.getElementById("mobileNav").style.display = "flex";
-  // document.getElementById("mobileNav-container").style.display = "flex";
-  // document.getElementById("sideNav").style.width = "300px";
   document.getElementById("header").style.display = "none";
-  // document.getElementsByClassName("wrapper").style.marginLeft = "300px";
 };
 // 모바일에서 네브 닫기
 const closeNav = () => {
   document.body.classList.remove("scroll-stop");
   document.body.style.removeProperty("top");
   window.scrollTo(0, scrollPosition);
-  // document.getElementById("sideNavOpenFilter").style.width = "0";
+  document.getElementById("sideNavOpenFilter").style.width = "0";
   document.getElementById("mobileNav").style.display = "none";
-  // document.getElementById("mobileNav-container").style.display = "none";
   document.getElementById("header").style.display = "flex";
-  // document.getElementsByClassName("wrapper").style.marginLeft = "0";
 };
 // 모바일 사이드네브 아코디언메뉴
 let accordion = document.querySelectorAll(".accordion");
