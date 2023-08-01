@@ -8,6 +8,10 @@ window.addEventListener("DOMContentLoaded", () => {
 // 사이즈 변경 되면 실행
 window.addEventListener("resize", () => {
   iWIdth = window.innerWidth;
+  // console.log(iWIdth);
+  if (iWIdth > 1024) {
+    closeNav();
+  }
 });
 
 // 스크롤 하면 실행
