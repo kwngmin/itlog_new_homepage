@@ -23,7 +23,7 @@ main .object-cover {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 2rem;
+  top: 0;
 }
 main .white-gradation {
   position: absolute;
