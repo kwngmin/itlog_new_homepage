@@ -847,11 +847,11 @@ header {
 }
 .slogan {
   margin-left: 1rem;
-  padding-left: 1rem;
+  padding-left: 0.75rem;
   border-left: 2px solid #ced6e0;
   border-radius: 2px;
   color: #939fb2;
-  line-height: 1.5;
+  line-height: 1.25;
   font-size: 0.875rem;
   letter-spacing: 0;
   display: none;
