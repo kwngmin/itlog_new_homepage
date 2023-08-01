@@ -20,7 +20,7 @@ const openNav = () => {
   document.body.classList.add("scroll-stop");
   document.body.style.top = `-${scrollPosition}px`;
   // document.getElementById("sideNavOpenFilter").style.width = "100%";
-  document.getElementById("mobileNav").style.display = "block";
+  document.getElementById("mobileNav").style.display = "flex";
   // document.getElementById("mobileNav-container").style.display = "flex";
   // document.getElementById("sideNav").style.width = "300px";
   document.getElementById("header").style.display = "none";

@@ -700,6 +700,7 @@ label {
 }
 #mobileNav {
   display: none;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -717,6 +718,7 @@ label {
   align-items: center;
   padding: 0 1rem;
   background-color: white;
+  flex-grow: 0;
 }
 #mobileNav .mobile-top-right {
   display: flex;
@@ -746,19 +748,20 @@ label {
   background-color: rgb(248, 250, 252);
 }
 #mobileNav-container {
-  padding: 2rem 1rem;
+  /* height: calc(100% - 144px); */
+  height: auto;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  /* overflow-y: auto; */
+  flex-grow: 1;
 }
 #mobileNav-container nav {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 2rem 0.5rem;
   margin: 1rem 0;
-}
-#mobileNav-container .mobileNav-group {
-  /* margin: 2rem 0; */
 }
 #mobileNav-container nav a {
   display: flex;
@@ -773,6 +776,7 @@ label {
   border-radius: 1.5rem;
   overflow: hidden;
   background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 #mobileNav-container nav a img {
   width: 100%;
@@ -783,29 +787,52 @@ label {
   text-align: center;
   line-height: 1.25;
 }
-#mobileNav-container .mobile-estimate {
+#mobileNav .mobile-line {
+  width: 100%;
+  height: 1px;
+  background-color: #ced6e0;
+}
+#mobileNav .mobile-bottom {
+  background-color: white;
+  height: 96px;
+  width: 100%;
+  padding: 1rem;
+  flex-grow: 0;
+}
+#mobileNav .mobile-estimate {
   width: 100%;
   height: 4rem;
-  margin: 2rem 0;
+  /* background-color: #ffeaeb; */
   background-color: #ee3a3d;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
   overflow: hidden;
   display: flex;
   align-items: center;
 }
-#mobileNav-container .mobile-estimate div {
-  width: 3rem;
-  height: 3rem;
-  padding: 0.25rem;
+#mobileNav .mobile-estimate div {
+  background-color: #ee3a3d;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#mobileNav-container .mobile-estimate div img {
-  width: 100%;
+#mobileNav .mobile-estimate div img {
+  height: 60%;
+  margin: 0;
 }
-#mobileNav-container .mobile-estimate span {
+
+#mobileNav .mobile-estimate span {
   color: white;
-  width: calc(100% - 6rem);
+  /* color: rgba(0, 0, 0, 0.8); */
+  /* color: #ee3a3d; */
+  width: calc(100% - 8rem);
   text-align: center;
   font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: -0.025rem;
 }
 /* 모바일버전 사이드 메뉴 */
 
@@ -1180,12 +1207,6 @@ header.mega-active {
   justify-content: center;
   z-index: 400;
   cursor: pointer;
-}
-#mobileConsulting span {
-  color: white;
-  font-size: 1.125rem;
-  margin-right: 1rem;
-  margin-left: 0.25rem;
 }
 #mobileConsulting img {
   height: 60%;
