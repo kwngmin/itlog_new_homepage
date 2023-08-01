@@ -1046,7 +1046,7 @@ header.mega-active {
   position: fixed;
   width: 4rem;
   height: 4rem;
-  bottom: -6rem;
+  bottom: 2rem;
   right: 2rem;
   background-color: rgba(0, 0, 0, 0.7);
   /* background-color: rgba(238, 58, 61, 1); */
@@ -1057,6 +1057,7 @@ header.mega-active {
   z-index: 400;
   transition: bottom 0.5s ease;
   cursor: pointer;
+  opacity: 0;
 }
 
 #topButton span {
@@ -1065,7 +1066,7 @@ header.mega-active {
 }
 
 #topButton.top-active {
-  bottom: 2rem;
+  opacity: 1;
 }
 #mobileConsulting {
   position: fixed;
@@ -1302,19 +1303,9 @@ footer {
   }
 
   #topButton {
-    /* width: 3rem;
-    height: 3rem; */
     right: 1rem;
     bottom: -4rem;
   }
-  #topButton span {
-    /* font-size: 1.5rem; */
-  }
-  #topButton.top-active {
-    bottom: 1rem;
-    font-size: 1.5rem;
-  }
-
   #topButton .icon {
     font-size: 1.5rem;
   }
