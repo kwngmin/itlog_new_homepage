@@ -1055,9 +1055,8 @@ header.mega-active {
   align-items: center;
   justify-content: center;
   z-index: 400;
-  transition: bottom 1s ease;
+  transition: bottom 0.5s ease;
   cursor: pointer;
-  /* box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4); */
 }
 
 #topButton span {
@@ -1303,13 +1302,13 @@ footer {
   }
 
   #topButton {
-    width: 3rem;
-    height: 3rem;
+    /* width: 3rem;
+    height: 3rem; */
     right: 1rem;
     bottom: -4rem;
   }
   #topButton span {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
   #topButton.top-active {
     bottom: 1rem;
