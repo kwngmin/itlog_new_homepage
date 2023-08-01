@@ -15,7 +15,12 @@ window.addEventListener("resize", () => {
 });
 
 // 스크롤 하면 실행
-window.addEventListener("scroll", () => {});
+window.addEventListener("scroll", () => {
+  if (window && window.scrollY > 100) {
+    document.getElementById("header").classList.remove("header-active");
+    scrollTop();
+  }
+});
 
 // 아이폰 height 구하기
 window.addEventListener("DOMContentLoaded", function (ev) {

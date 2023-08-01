@@ -25,50 +25,113 @@
   </head>
 
   <body>
-    <div id="sideNav" class="show1024">
-      <div class="sideNav-container">
-        <div id="sideNavClose" onclick="closeNav()">&times;</div>
-        <ul class="sideNav-menu">
-          <li class="accordion">
-            회사소개<span class="icon icon-arrow-right"></span>
-          </li>
-          <ul class="accordion-menu">
-            <li><a href="./introduce.html">인사말</a></li>
-            <li><a href="./history.html">기업연혁</a></li>
-            <li><a href="./vision.html">기업이념</a></li>
-            <!-- <li><a href="./certification.html">인증</a></li> -->
-            <li><a href="./way.html">오시는길</a></li>
-          </ul>
-          <li class="accordion">
-            통합IoT솔루션<span class="icon icon-arrow-right"></span>
-          </li>
-          <ul class="accordion-menu">
-            <li><a href="./IoT.html">통합IoT솔루션</a></li>
-          </ul>
-          <li class="accordion">
-            제품소개<span class="icon icon-arrow-right"></span>
-          </li>
-          <ul class="accordion-menu">
-            <li><a href="./gate.html">출입통제시스템</a></li>
-            <li><a href="./cctv.html">안전관리CCTV</a></li>
-            <li><a href="./towercrane.html">T/C통합안전</a></li>
-            <li><a href="./sensor.html">환경센서</a></li>
-            <li><a href="./broadcast.html">방송시스템</a></li>
-          </ul>
-          <li class="accordion">
-            고객서비스<span class="icon icon-arrow-right"></span>
-          </li>
-          <ul class="accordion-menu">
-            <li><a href="./consulting.html">견적의뢰</a></li>
-            <li class="hide1024">
-              <a href="http://helpu.kr/itlog/" target="_blank">원격지원</a>
-            </li>
-          </ul>
-        </ul>
-        <!-- <div class="sideNav-footer">
-                <a><img src="./img/logo/blog.png" alt=""></a>
-                <a><img src="./img/logo/kakao.png" alt=""></a>
-            </div> -->
+    <div id="topButton">
+      <span class="material-symbols-outlined"> vertical_align_top </span>
+      <!-- <span class="icon icon-arrow-up"></span> -->
+    </div>
+    <a id="mobileConsulting" href="./consulting.html">
+      <image
+        src="/img/icon/calculator.png"
+        alt="원격지원 아이콘"
+        width="{48}"
+        height="{48}"
+        class="help-center-icon"
+      />
+    </a>
+    <div id="mobileNav">
+      <div class="header-container">
+        <div class="header-group">
+          <div id="headerLogo">
+            <a href="./index.html"></a>
+          </div>
+        </div>
+        <div class="mobile-top-right">
+          <div class="close-description">메뉴닫기</div>
+          <div id="sideNavClose" onclick="closeNav()">
+            <span class="material-symbols-outlined icon"> close </span>
+          </div>
+        </div>
+      </div>
+      <div id="mobileNav-container">
+        <div class="mobileNav-group">
+          <span> <span>아이티로그</span> 회사소개 </span>
+          <nav>
+            <a href="./introduce.html"
+              ><div>
+                <img src="./img/icon/hi.png" alt="인사말" />
+              </div>
+              <p>인사말</p></a
+            >
+            <a href="./history.html"
+              ><div>
+                <img src="./img/icon/office-building.png" alt="기업연혁" />
+              </div>
+              <p>기업연혁</p></a
+            >
+            <a href="./vision.html"
+              ><div>
+                <img src="./img/icon/side-face.png" alt="기업이념" />
+              </div>
+              <p>기업이념</p></a
+            >
+            <a href="./way.html"
+              ><div>
+                <img src="./img/icon/location-pin.png" alt="오시는 길" />
+              </div>
+              <p>오시는 길</p></a
+            >
+          </nav>
+        </div>
+        <div class="mobileNav-group">
+          <span> <span>솔루션</span> 및 제품소개 </span>
+          <nav>
+            <a href="./IoT.html"
+              ><div>
+                <img src="./img/icon/iot.png" alt="통합IoT솔루션" />
+              </div>
+              <p>통합<br />IoT솔루션</p></a
+            >
+            <a href="./gate.html"
+              ><div>
+                <img src="./img/icon/barrier.png" alt="출입통제 시스템" />
+              </div>
+              <p>출입통제 시스템</p></a
+            >
+            <a href="./cctv.html"
+              ><div>
+                <img src="./img/icon/cctv.png" alt="안전관리 CCTV" />
+              </div>
+              <p>안전관리 CCTV</p></a
+            >
+            <a href="./towercrane.html"
+              ><div>
+                <img src="./img/icon/crane.png" alt="타워크레인 통합안전" />
+              </div>
+              <p>타워크레인 통합안전</p></a
+            >
+            <a href="./sensor.html"
+              ><div>
+                <img src="./img/icon/anemometer.png" alt="환경센서" />
+              </div>
+              <p>환경센서</p></a
+            >
+            <a href="./broadcast.html"
+              ><div>
+                <img src="./img/icon/promote.png" alt="방송시스템" />
+              </div>
+              <p>방송시스템</p></a
+            >
+          </nav>
+        </div>
+      </div>
+      <div class="mobile-line"></div>
+      <div class="mobile-bottom">
+        <a href="./consulting.html" class="mobile-estimate">
+          <div>
+            <img src="./img/icon/calculator.png" alt="" />
+          </div>
+          <span> 견적의뢰 </span>
+        </a>
       </div>
     </div>
 
@@ -202,10 +265,6 @@
           </div>
         </div>
       </footer>
-
-      <div id="topButton">
-        <span class="icon icon-arrow-up"></span>
-      </div>
     </div>
   </body>
 
