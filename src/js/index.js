@@ -13,18 +13,6 @@ window.addEventListener("resize", () => {
 // 스크롤 하면 실행
 window.addEventListener("scroll", () => {});
 
-// 헤더 스크롤 이벤트
-let prevScrollpos = window.pageYOffset;
-const scrollHeader = () => {
-  let currentScrollPos = window.pageYOffset;
-  // if (prevScrollpos > currentScrollPos) {
-  //   document.getElementById("header").style.top = "0";
-  // } else {
-  //   document.getElementById("header").style.top = "-8rem";
-  // }
-  prevScrollpos = currentScrollPos;
-};
-
 let scrollPosition = 0;
 // 모바일에서 네브 열기
 const openNav = () => {
@@ -68,7 +56,7 @@ accordion.forEach((el) => {
 
 // top버튼 이벤트
 const scrollTop = () => {
-  if (window.scrollY > 200) {
+  if (window.scrollY > 240) {
     document.getElementById("topButton").classList.add("top-active");
   } else {
     document.getElementById("topButton").classList.remove("top-active");

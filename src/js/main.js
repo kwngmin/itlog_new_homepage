@@ -1,8 +1,6 @@
 // 로드 후 실행
 window.addEventListener("DOMContentLoaded", () => {
   partnershipList();
-  responsiveSwiper();
-  responsiveBullet();
 
   if (window.scrollY > 100) {
     document.getElementById("header").classList.remove("header-active");
@@ -12,10 +10,7 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 // 사이즈 변경 되면 실행
-window.addEventListener("resize", () => {
-  // responsiveSwiper();
-  // responsiveBullet();
-});
+window.addEventListener("resize", () => {});
 
 let hammerCount = true;
 let ideaCount = true;
@@ -32,9 +27,6 @@ window.addEventListener("scroll", () => {
     document.getElementById("header").classList.remove("header-active");
     scrollTop();
   }
-  // } else {
-  //   document.getElementById("header").classList.add("header-active");
-  // }
 
   // 메리트 카운트 시작
   const numList = document.querySelectorAll(".knowhow-num");
@@ -89,7 +81,6 @@ window.addEventListener("scroll", () => {
 });
 // 메리트 숫자 카운팅
 const counter = (el, data, idx, time, type) => {
-  // console.log(type);
   if (type === "hammer") {
     hammerCount = false;
   }
@@ -117,107 +108,12 @@ const counter = (el, data, idx, time, type) => {
   idx === 2 ? (count = false) : null;
 };
 
-//메인 슬라이드
-const keyword = ["BIGDATA", "AI", "DEEP LEARNING", "SMART SAFETY"];
-let mainSwiper = new Swiper(".mainSwiper-container", {
-  pagination: {
-    el: ".mainSwiper-container .swiper-pagination",
-    clickable: true,
-    disableOnInteraction: false,
-    renderBullet: function (index, className) {
-      return (
-        '<span class="' +
-        className +
-        '"><small class="hide768">' +
-        keyword[index] +
-        "</small></span>"
-      );
-    },
-  },
-  loop: true,
-  speed: 600,
-  paginationClickable: true,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
-});
-
-const responsiveSwiper = () => {
-  if (iWIdth > 1023) {
-    mainSwiper.destroy();
-    mainSwiper = new Swiper(".mainSwiper-container", {
-      pagination: {
-        el: ".mainSwiper-container .swiper-pagination",
-        clickable: true,
-        disableOnInteraction: false,
-        renderBullet: function (index, className) {
-          return (
-            '<span class="' +
-            className +
-            '"><small class="hide768">' +
-            keyword[index] +
-            "</small></span>"
-          );
-        },
-      },
-      direction: "vertical",
-      effect: "slide",
-      parallax: true,
-      loop: true,
-      speed: 600,
-      paginationClickable: true,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
-    });
-  } else {
-    mainSwiper.destroy();
-    mainSwiper = new Swiper(".mainSwiper-container", {
-      pagination: {
-        el: ".mainSwiper-container .swiper-pagination",
-        clickable: true,
-        disableOnInteraction: false,
-        renderBullet: function (index, className) {
-          return (
-            '<span class="' +
-            className +
-            '"><small class="hide768">' +
-            keyword[index] +
-            "</small></span>"
-          );
-        },
-      },
-      loop: true,
-      speed: 600,
-      paginationClickable: true,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
-    });
-  }
-};
-
-// 메인페이지 불렛 사이즈 % 조정
-const responsiveBullet = () => {
-  document
-    .querySelectorAll(".mainSwiper-container .swiper-pagination-bullet")
-    .forEach((el) => {
-      el.style.width = `${100 / keyword.length - 1}%`;
-    });
-};
-
 //제품 슬라이드
 const swiper = new Swiper(".productSwiper-container", {
   slidesPerView: "auto",
   centeredSlides: true,
   spaceBetween: 12,
   rewind: true,
-  //   pagination-dynamic-bullets: true,
-  //   dynamicBullets: true,
-  //   loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
