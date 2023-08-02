@@ -103,13 +103,25 @@ main {
 .keyPoint-icon {
   width: 6rem;
   padding: 1.25rem;
-  background-color: #ee3a3d;
-  border-radius: 50%;
+  /* background-color: #ee3a3d; */
+  border-radius: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 1.5rem;
   flex-shrink: 0;
+}
+.keyPoint-icon.keypoint-icon-blue {
+  background-color: #e8f8ff;
+}
+.keyPoint-icon.keypoint-icon-green {
+  background-color: #e8ffe0;
+}
+.keyPoint-icon.keypoint-icon-red {
+  background-color: #fff0f6;
+}
+.keyPoint-icon.keypoint-icon-viloet {
+  background-color: #e9ecff;
 }
 .keyPoint-icon img {
   width: 100%;
