@@ -697,6 +697,12 @@ section article {
   .CardBox .text-xl {
     opacity: 0.8;
   }
+  .CardBox .cardbox-top .card-img .show768 {
+    display: flex;
+  }
+  .CardBox .cardbox-top .card-img .hide768 {
+    display: none;
+  }
 }
 /* 500px 미만 적용 */
 @media screen and (max-width: 499px) {
