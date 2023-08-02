@@ -1034,11 +1034,13 @@ header {
 }
 #desktopList-filter {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
+  height: calc(100vh - 72px);
   background-color: transparent;
+  /* background-color: #31456a; */
   position: absolute;
   left: 0;
-  top: 0;
+  top: 72px;
   z-index: 300;
   display: none;
 }
