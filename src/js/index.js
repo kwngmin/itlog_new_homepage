@@ -11,6 +11,7 @@ window.addEventListener("resize", () => {
   // console.log(iWIdth);
   if (iWIdth > 1024) {
     closeNav();
+    closeList();
   }
 });
 
@@ -32,8 +33,25 @@ window.addEventListener("DOMContentLoaded", function (ev) {
 });
 
 let scrollPosition = 0;
-// 모바일에서 네브 열기
 
+// 데스크톱에서 리스트 열기
+const openAboutCompany = () => {
+  document.getElementById("aboutProduct").style.display = "none";
+  document.getElementById("desktopList-filter").style.display = "flex";
+  document.getElementById("aboutCompany").style.display = "flex";
+};
+const openAboutProduct = () => {
+  document.getElementById("aboutCompany").style.display = "none";
+  document.getElementById("desktopList-filter").style.display = "flex";
+  document.getElementById("aboutProduct").style.display = "flex";
+};
+const closeList = () => {
+  document.getElementById("desktopList-filter").style.display = "none";
+  document.getElementById("aboutCompany").style.display = "none";
+  document.getElementById("aboutProduct").style.display = "none";
+};
+
+// 모바일에서 네브 열기
 const openNav = () => {
   scrollPosition = window.pageYOffset;
   document.body.classList.add("scroll-stop");
@@ -88,42 +106,33 @@ document.getElementById("topButton").addEventListener("click", (event) => {
 });
 
 // 메가메뉴 호버 이벤트
-document.getElementById("header").addEventListener("mouseover", (event) => {
-  if (iWIdth > 1023)
-    document.getElementById("header").className = "mega-active";
-});
-document.getElementById("header").addEventListener("mouseout", (event) => {
-  document.getElementById("header").classList.remove("mega-active");
-});
-
-// if (window.scrollY > 100) {
+// document.getElementById("header").addEventListener("mouseover", (event) => {
+//   if (iWIdth > 1023)
+//     document.getElementById("header").className = "mega-active";
+// });
+// document.getElementById("header").addEventListener("mouseout", (event) => {
 //   document.getElementById("header").classList.remove("mega-active");
-// } else {
-//   if (window.location.pathname === "/index.html") {
-//     document.getElementById("header").className = "header-active";
-//   } else {
-//     document.getElementById("header").classList.remove("mega-active");
-//   }
+// });
+
+// let megaNav = document.querySelectorAll(".header-title");
+// let megaList = document.querySelectorAll(".header-subList >div");
+// for (let i = 0; i < megaNav.length; i++) {
+//   megaNav[i].addEventListener("mouseover", function () {
+//     this.classList.add("red");
+//     megaList[i].style.borderTop = "2px solid #ee3a3d";
+//   });
+//   megaNav[i].addEventListener("mouseout", function () {
+//     this.classList.remove("red");
+//     megaList[i].style.borderTop = "2px solid #ced6e0";
+//   });
 // }
-let megaNav = document.querySelectorAll(".header-title");
-let megaList = document.querySelectorAll(".header-subList >div");
-for (let i = 0; i < megaNav.length; i++) {
-  megaNav[i].addEventListener("mouseover", function () {
-    this.classList.add("red");
-    megaList[i].style.borderTop = "2px solid #ee3a3d";
-  });
-  megaNav[i].addEventListener("mouseout", function () {
-    this.classList.remove("red");
-    megaList[i].style.borderTop = "2px solid #ced6e0";
-  });
-}
-for (let i = 0; i < megaList.length; i++) {
-  megaList[i].addEventListener("mouseover", function () {
-    megaNav[i].classList.add("red");
-    megaList[i].style.borderTop = "2px solid #ee3a3d";
-  });
-  megaList[i].addEventListener("mouseout", function () {
-    megaNav[i].classList.remove("red");
-    megaList[i].style.borderTop = "2px solid #ced6e0";
-  });
-}
+// for (let i = 0; i < megaList.length; i++) {
+//   megaList[i].addEventListener("mouseover", function () {
+//     megaNav[i].classList.add("red");
+//     megaList[i].style.borderTop = "2px solid #ee3a3d";
+//   });
+//   megaList[i].addEventListener("mouseout", function () {
+//     megaNav[i].classList.remove("red");
+//     megaList[i].style.borderTop = "2px solid #ced6e0";
+//   });
+// }
