@@ -45,6 +45,9 @@ section {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
 }
 
 .consulting-agree {
@@ -131,24 +134,38 @@ section {
   }
 }
 /* 입력 폼 */
+.consulting-contents {
+}
+.consulting-contents .consulting-description {
+  margin: 3rem auto;
+  text-align: center;
+}
+.contactUs-contents {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+}
 .contactUs-contents .form-group {
   display: flex;
   align-items: center;
-  padding-bottom: 2rem;
 }
-
 .contactUs-contents .form-group input:not([type="checkbox"]) {
-  width: calc(100% - 10rem);
+  flex-grow: 1;
 }
-
+.contactUs-contents .form-checkgroup {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem 2rem;
+}
 .contactUs-contents .form-group input[type="checkbox"] {
-  margin: 0.4rem 0;
+  margin-right: 0.5rem;
 }
-
 .contactUs-contents .form-group > label {
   width: 10rem;
-  white-space: nowrap;
-  font-weight: bold;
+  /* white-space: nowrap; */
+  font-weight: 500;
 }
 
 .contactUs-contents .form-group span.red {
@@ -162,9 +179,9 @@ section {
 }
 
 .contactUs-contents textarea {
-  width: calc(100% - 10rem);
   height: 8rem;
   resize: none;
+  flex-grow: 1;
 }
 
 .contactUs-contents .password-input {
@@ -177,7 +194,7 @@ section {
 }
 
 .agree-check {
-  padding-top: 2.5rem;
+  padding: 2rem 0;
 }
 
 .agree-check input[type="checkbox"] {
@@ -185,14 +202,43 @@ section {
 }
 
 .contactUs-contents button {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 @media screen and (max-width: 1365px) {
 }
 
 @media screen and (max-width: 1023px) {
+  .contactUs-contents .form-checkgroup {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem 2rem;
+  }
+  .agree-check {
+    padding: 1rem 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .contactUs-contents {
+    gap: 1rem;
+  }
+  .contactUs-contents .form-group {
+    flex-direction: column;
+  }
+  .contactUs-contents .form-group > label,
+  .contactUs-contents .form-group input:not([type="checkbox"]),
+  .contactUs-contents textarea {
+    width: 100%;
+  }
+  .contactUs-contents .form-checkgroup {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem 2rem;
+  }
+  .contactUs-contents .form-group > label {
+    margin: 0.75rem 0;
+  }
+  .agree-check {
+    padding: 0.5rem 0;
+  }
 }
