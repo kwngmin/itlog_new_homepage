@@ -1363,12 +1363,4 @@ h3.knowhow-description * {
   .hex:nth-of-type(6n + 3) {
     margin-left: 20%;
   }
-
-  footer {
-    padding: 10rem 2rem 4rem;
-  }
-
-  .footer-container {
-    display: block;
-  }
 }

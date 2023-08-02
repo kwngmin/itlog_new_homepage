@@ -50,7 +50,6 @@ const closeList = () => {
   document.getElementById("aboutCompany").style.display = "none";
   document.getElementById("aboutProduct").style.display = "none";
 };
-
 // 모바일에서 네브 열기
 const openNav = () => {
   const { innerHeight } = window;
@@ -75,26 +74,6 @@ const closeNav = () => {
   document.getElementById("mobileNav").style.display = "none";
   document.getElementById("header").style.display = "flex";
 };
-// 모바일 사이드네브 아코디언메뉴
-let accordion = document.querySelectorAll(".accordion");
-let accordionMenu = document.querySelectorAll(".accordion-menu");
-accordion.forEach((el) => {
-  el.addEventListener("click", function () {
-    if (this.classList.contains("active")) {
-      this.nextElementSibling.style.maxHeight = null;
-      this.classList.remove("active");
-    } else {
-      accordionMenu.forEach((list) => {
-        list.style.maxHeight = null;
-        list.previousElementSibling.classList.remove("active");
-      });
-      this.nextElementSibling.style.maxHeight =
-        this.nextElementSibling.scrollHeight + "px";
-      this.classList.add("active");
-    }
-  });
-});
-
 // top버튼 이벤트
 const scrollTop = () => {
   if (window.scrollY > 240) {
@@ -109,35 +88,3 @@ document.getElementById("topButton").addEventListener("click", (event) => {
     behavior: "smooth",
   });
 });
-
-// 메가메뉴 호버 이벤트
-// document.getElementById("header").addEventListener("mouseover", (event) => {
-//   if (iWIdth > 1023)
-//     document.getElementById("header").className = "mega-active";
-// });
-// document.getElementById("header").addEventListener("mouseout", (event) => {
-//   document.getElementById("header").classList.remove("mega-active");
-// });
-
-// let megaNav = document.querySelectorAll(".header-title");
-// let megaList = document.querySelectorAll(".header-subList >div");
-// for (let i = 0; i < megaNav.length; i++) {
-//   megaNav[i].addEventListener("mouseover", function () {
-//     this.classList.add("red");
-//     megaList[i].style.borderTop = "2px solid #ee3a3d";
-//   });
-//   megaNav[i].addEventListener("mouseout", function () {
-//     this.classList.remove("red");
-//     megaList[i].style.borderTop = "2px solid #ced6e0";
-//   });
-// }
-// for (let i = 0; i < megaList.length; i++) {
-//   megaList[i].addEventListener("mouseover", function () {
-//     megaNav[i].classList.add("red");
-//     megaList[i].style.borderTop = "2px solid #ee3a3d";
-//   });
-//   megaList[i].addEventListener("mouseout", function () {
-//     megaNav[i].classList.remove("red");
-//     megaList[i].style.borderTop = "2px solid #ced6e0";
-//   });
-// }

@@ -1224,106 +1224,87 @@ header.mega-active {
 }
 footer {
   width: 100%;
-  padding: 10rem 4rem 4rem;
+  padding: 4rem;
   background: #011936;
+}
+footer * {
+  color: white;
+  word-break: keep-all;
+  /* font-weight: 400; */
 }
 .footer-container {
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  flex-direction: column;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  gap: 4rem;
 }
-.footer-container .footer-text {
-  text-align: left;
+.footer-sitemap {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  /* margin-bottom: 2rem; */
 }
-.footer-text img {
-  width: 9rem;
-  margin-bottom: 0.6rem;
-}
-.footer-text h5,
-.footer-text p {
-  color: #f1f2f6;
-}
-.footer-text h5 {
-  padding-bottom: 1rem;
-}
-.footer-text p {
-  padding-bottom: 0.4rem;
-}
-.footer-text p:last-child {
-  color: rgba(241, 242, 246, 0.5);
-  padding-bottom: 0;
-}
-.footer-contact {
-  margin-top: 2rem;
+.footer-sitemap .footer-sitemap-group {
   display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
-.footer-contact img {
-  width: 3.6rem;
-  margin-right: 0.4rem;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-  display: block;
+.footer-sitemap .footer-sitemap-group span {
+  /* color: white; */
+  opacity: 0.4;
 }
-.footer-contact img:hover {
-  opacity: 0.7;
+.footer-sitemap .footer-sitemap-group a {
+  /* color: white; */
+  opacity: 0.8;
 }
-.footer-contact button {
-  border: 1px solid #ced6e0;
-  padding: 0;
+.footer-sitemap .footer-sitemap-group a:hover {
+  color: #ee3a3d;
+  opacity: 1;
 }
-.footer-contact button a {
-  color: #ced6e0;
-  padding: 1rem 3rem;
-  font-size: 1.3rem;
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
 }
-.footer-contact button:hover {
-  background-color: #f1f2f6;
+.footer-text .footer-text-box p:first-child {
+  opacity: 0.5;
 }
-.footer-contact button:hover a {
-  color: #011936;
+.footer-text .footer-text-box p:last-child {
+  opacity: 0.4;
+  font-weight: 300;
+}
+.footer-container p.copyright {
+  margin-bottom: 4rem;
+  opacity: 0.4;
+  letter-spacing: 0;
+  font-weight: 300;
+}
+.footer-container .help-center-lists * {
+  color: white;
+}
+.footer-container .help-center-lists div {
+  background-color: rgba(255, 255, 255, 0.125);
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 300;
+}
+.footer-container .help-center-lists li span,
+.footer-container .help-center-lists li a {
+  font-size: 1rem;
+}
+.footer-container .help-center-lists li .help-center-label {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+}
+.footer-container .help-center-lists li .help-center-link {
+  letter-spacing: 0;
+  opacity: 0.9;
+  font-weight: 300;
+  /* opacity: 1; */
 }
 /* 1366px 이하 */
 @media screen and (max-width: 1365px) {
-  /* body {
-    font-size: clamp(1.3rem, 1.3vw, 1.4rem);
-  }
-
-  h1 {
-    font-size: 3rem;
-    line-height: clamp(5.7rem, 5.7vw, 6.1rem);
-  } */
-  /* 
-  h2 {
-    font-size: clamp(3.1rem, 3.1vw, 3.5rem);
-  }
-
-  h3 {
-    font-size: clamp(2.3rem, 2.3vw, 2.5rem);
-  }
-
-  h4 {
-    font-size: clamp(1.8rem, 1.8vw, 2rem);
-  }
-
-  h5 {
-    font-size: clamp(1.6rem, 1.6vw, 1.8rem);
-  }
-
-  h6 {
-    font-size: clamp(1.4rem, 1.4vw, 1.6rem);
-  }
-
-  p {
-    font-size: clamp(1.3rem, 1.3vw, 1.4rem);
-  }
-
-  .sub-text {
-    font-size: clamp(1.3rem, 1.3vw, 1.4rem);
-  } */
-
   a,
   a:link,
   a:visited,
@@ -1334,16 +1315,13 @@ footer {
   textarea {
     /* font-size: clamp(1.3rem, 1.3vw, 1.4rem); */
   }
-
   .show1366 {
     display: initial;
   }
-
   .hide1366 {
     display: none;
   }
 }
-
 /* 1024px 이하  */
 @media screen and (max-width: 1023px) {
   .show1024 {
@@ -1359,34 +1337,15 @@ footer {
   #mobileConsulting {
     bottom: 1rem;
   }
+  footer {
+    padding: 4rem 2rem;
+  }
 }
-
 /* 768px 이하 */
 @media screen and (max-width: 767px) {
-  .show768 {
-    display: inline-block;
-  }
-
-  .hide768 {
-    display: none;
-  }
-
-  /* #sideNavOpen {
-    right: 2rem;
-  } */
-
   #language {
     right: 2rem;
   }
-
-  footer {
-    padding: 10rem 2rem 4rem;
-  }
-
-  .footer-container {
-    display: block;
-  }
-
   #topButton {
     right: 1rem;
     bottom: -4rem;
@@ -1395,11 +1354,19 @@ footer {
     bottom: 1rem;
     font-size: 1.5rem;
   }
-
   #topButton .icon {
     font-size: 1.5rem;
   }
   #mobileConsulting {
     bottom: 1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer {
+    padding: 2rem 1rem;
+  }
+  .footer-sitemap {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem 1rem;
   }
 }
