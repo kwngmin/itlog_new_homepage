@@ -1,222 +1,198 @@
 main {
-    width: 100%;
-    height: 40vh;
-    max-height: 43.2rem;
-    position: relative;
+  width: 100%;
+  height: 20rem;
+  position: relative;
 }
-
 #consulting main {
-    background: url('../../img/consulting1.jpg') no-repeat;
-    background-size: cover;
-    background-position: right 60%;
+  background: url("../../img/consulting1.jpg") no-repeat;
+  background-size: cover;
+  background-position: right 60%;
 }
-
 .main-text {
-    width: calc(100% - 8rem);
-    max-width: 1200px;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  width: calc(100% - 8rem);
+  max-width: 1200px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
 .main-text h2 {
-    opacity: 0;
-    color: #fff;
-    animation: maintextH2 0.6s 0.3s ease forwards;
+  opacity: 0;
+  color: #fff;
+  animation: maintextH2 0.6s 0.3s ease forwards;
 }
-
 @keyframes maintextH2 {
-    0% {
-        opacity: 0;
-        transform: translate(0, 8rem) rotate(10deg);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0, 0);
-    }
+  0% {
+    opacity: 0;
+    transform: translate(0, 8rem) rotate(10deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
-
-
+@media screen and (max-width: 767px) {
+  .main-text {
+    width: calc(100% - 2rem);
+  }
+}
 section {
-    padding: 10rem 4rem;
+  width: 100%;
+  padding: 0 4rem;
+  margin: 6rem 0;
 }
-
 .consulting {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .consulting-agree {
-    padding:3rem;
-    border:1px solid #ced6e0;
-    border-radius: 1rem;
-    height:25rem;
+  padding: 0;
+  border: 1px solid #ced6e0;
+  border-radius: 1rem;
+  height: 32rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
 }
 
 .agree-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    padding-bottom:2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  padding: 2rem 0;
+  flex-grow: 0;
 }
-
+.agree-text-container {
+  flex-grow: 1;
+  overflow: hidden;
+}
 .agree-text {
-    height:calc(100% - 8rem);
-    overflow: auto;
-    padding-right:2rem;
+  height: 100%;
+  overflow: auto;
+  padding: 0 4rem;
+  margin-bottom: 2rem;
 }
-
 .agree-text p {
-    padding: 0.3rem 0;
+  line-height: 1.65;
+  word-break: keep-all;
 }
-
 .agree-text .title {
-    padding: 3rem 0 0.5rem 0;
-    font-weight: 600;
+  line-height: 1.65;
+  font-weight: 600;
 }
-
-.agree-text >:first-child {
-    padding:0 0 0.5rem 0;
+.agree-text .title.terms-top-margin {
+  margin-top: 3rem;
 }
-
 .agree-text .sub-title {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
-
-.agree-text small {
-    padding-left: 1.4rem;
-    line-height: 1.6rem;
-    display: block;
+#spreadTerms {
+  font-weight: 500;
+  cursor: pointer;
+  background-color: white;
+  height: 4rem;
+  flex-shrink: 0;
 }
-
+#spreadTerms:hover {
+  background-color: rgb(236, 236, 236);
+}
 .consulting-title {
-    height: 6rem;
+  height: 6rem;
 }
-
-.arrows {
-    width:2rem;
-    height:2rem;
-    cursor: pointer;
+.terms-spread {
+  height: fit-content;
 }
-
-.arrows path {
-  stroke: #31456a;
-  fill: transparent;
-  stroke-width: 2px;  
-  animation: arrow 2s infinite;
-  -webkit-animation: arrow 2s infinite; 
+@media screen and (max-width: 1023px) {
+  section {
+    padding: 0 2rem;
+    margin: 4rem 0;
+  }
+  .agree-title {
+    padding: 1.75rem 0;
+  }
+  .agree-text {
+    padding: 0 2rem;
+  }
 }
-
-@keyframes arrow
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+@media screen and (max-width: 767px) {
+  section {
+    padding: 0 1rem;
+    margin: 2rem 0;
+  }
+  .agree-title {
+    padding: 1.5rem 0;
+  }
+  .agree-text {
+    padding: 0 1rem;
+  }
 }
-
-@-webkit-keyframes arrow /*Safari and Chrome*/
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
-}
-
-.arrows path.a1 {
-  animation-delay:-1s;
-  -webkit-animation-delay:-1s;
-}
-
-.arrows path.a2 {
-  animation-delay:-0.5s;
-  -webkit-animation-delay:-0.5s;
-}
-
-.arrow-clicked {
-    height:auto !important;
-}
-
-.arrow-clicked .arrows {
-    transform: rotate(180deg);
-}
-
+/* 입력 폼 */
 .contactUs-contents .form-group {
-    display: flex;
-    align-items: center;
-    padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
 }
 
-.contactUs-contents .form-group input:not([type=checkbox]) {
-    width: calc(100% - 10rem);
+.contactUs-contents .form-group input:not([type="checkbox"]) {
+  width: calc(100% - 10rem);
 }
 
-.contactUs-contents .form-group input[type=checkbox] {
-    margin: 0.4rem 0;
+.contactUs-contents .form-group input[type="checkbox"] {
+  margin: 0.4rem 0;
 }
 
-.contactUs-contents .form-group>label {
-    width: 10rem;
-    white-space: nowrap;
-    font-weight: bold;
+.contactUs-contents .form-group > label {
+  width: 10rem;
+  white-space: nowrap;
+  font-weight: bold;
 }
 
 .contactUs-contents .form-group span.red {
-    padding-left: 0.4rem;
+  padding-left: 0.4rem;
 }
 
 .contactUs-contents .form-checkgroup label {
-    padding-left: 0.4rem;
-    white-space: nowrap;
-    cursor: pointer;
+  padding-left: 0.4rem;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
 .contactUs-contents textarea {
-    width: calc(100% - 10rem);
-    height: 8rem;
-    resize: none;
+  width: calc(100% - 10rem);
+  height: 8rem;
+  resize: none;
 }
 
 .contactUs-contents .password-input {
-    position: relative;
+  position: relative;
 }
 
 .contactUs-contents .password-input span {
-    position: absolute;
-    right: 1rem;
+  position: absolute;
+  right: 1rem;
 }
 
 .agree-check {
-    padding-top: 2.5rem;
+  padding-top: 2.5rem;
 }
 
 .agree-check input[type="checkbox"] {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .contactUs-contents button {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 1365px) {
 }
 
 @media screen and (max-width: 1023px) {
-    .consulting-agree {
-        padding:2rem;
-    }
 }
 
 @media screen and (max-width: 767px) {
-        section {
-        padding:6rem 2rem;
-    }
-    
-    .consulting-agree {
-        height:20rem;
-    }
 }
