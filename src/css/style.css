@@ -719,13 +719,14 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 2rem;
   background-color: white;
   flex-grow: 0;
 }
 #mobileNav .mobileNav-group span {
   font-weight: 500;
   color: rgba(0, 0, 0, 0.8);
+  font-size: 1.125rem;
 }
 #mobileNav .mobileNav-group span span {
   color: #ee3a3d;
@@ -796,6 +797,11 @@ label {
   word-break: keep-all;
   text-align: center;
   line-height: 1.25;
+  font-size: 0.875rem;
+  font-weight: 500;
+  width: 4rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
 }
 #mobileNav .mobile-line {
   width: 100%;
@@ -855,16 +861,11 @@ label {
   background-color: #fff;
   z-index: 500;
 }
-
-/* .sideNav-container {
-  width: 100%;
-  height: 100%;
-  padding: 2rem;
-} */
-
-/* .sideNav-container * {
-  font-weight: 400;
-} */
+@media screen and (max-width: 767px) {
+  #mobileNav .header-container {
+    padding: 0 1rem;
+  }
+}
 .sideNav-menu {
   /* height: calc(100% - 10rem); */
   /* overflow-y: auto; */
@@ -1381,14 +1382,15 @@ footer {
   .show1024 {
     display: inline-block;
   }
-
   .hide1024 {
     display: none;
   }
-
   #headerNav,
   .header-sub {
     display: none !important;
+  }
+  #mobileConsulting {
+    bottom: 1rem;
   }
 }
 
