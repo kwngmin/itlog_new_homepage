@@ -1428,4 +1428,7 @@ footer * {
     flex-direction: column;
     gap: 0;
   }
+  .footer-worktime-time {
+    margin: 0 0.5rem;
+  }
 }
