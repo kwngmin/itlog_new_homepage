@@ -1335,6 +1335,15 @@ footer * {
   font-size: 1.125rem;
   margin-bottom: 1px;
 }
+.footer-worktime {
+  opacity: 0.4;
+  display: flex;
+  gap: 2rem;
+}
+.footer-worktime-time {
+  letter-spacing: 0;
+  font-weight: 300;
+}
 /* 1366px 이하 */
 @media screen and (max-width: 1365px) {
   a,
@@ -1414,5 +1423,9 @@ footer * {
   }
   .help-center-link {
     font-size: 1rem;
+  }
+  .footer-worktime {
+    flex-direction: column;
+    gap: 0;
   }
 }
