@@ -1276,7 +1276,7 @@ footer * {
   font-weight: 300;
 }
 .footer-container p.copyright {
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
   opacity: 0.4;
   letter-spacing: 0;
   font-weight: 300;
@@ -1405,6 +1405,9 @@ footer * {
   }
   .footer-text {
     gap: 2rem;
+  }
+  .footer-container p.copyright {
+    margin-bottom: 6rem;
   }
   .help-center-label {
     font-size: 1rem;
