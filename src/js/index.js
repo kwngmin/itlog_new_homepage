@@ -23,6 +23,15 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// 아이폰 height 구하기
+window.addEventListener("DOMContentLoaded", function (ev) {
+  const { innerHeight } = window;
+  document.documentElement.style.setProperty(
+    "--app-height",
+    `${innerHeight}px`
+  );
+});
+
 let scrollPosition = 0;
 
 // 데스크톱에서 리스트 열기
@@ -44,14 +53,6 @@ const closeList = () => {
 
 // 모바일에서 네브 열기
 const openNav = () => {
-  // 아이폰 height 구하기
-  window.addEventListener("DOMContentLoaded", function (ev) {
-    const { innerHeight } = window;
-    document.documentElement.style.setProperty(
-      "--app-height",
-      `${innerHeight}px`
-    );
-  });
   scrollPosition = window.pageYOffset;
   document.body.classList.add("scroll-stop");
   document.body.style.top = `-${scrollPosition}px`;
