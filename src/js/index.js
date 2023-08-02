@@ -53,6 +53,11 @@ const closeList = () => {
 
 // 모바일에서 네브 열기
 const openNav = () => {
+  const { innerHeight } = window;
+  document.documentElement.style.setProperty(
+    "--app-height",
+    `${innerHeight}px`
+  );
   scrollPosition = window.pageYOffset;
   document.body.classList.add("scroll-stop");
   document.body.style.top = `-${scrollPosition}px`;
