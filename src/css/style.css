@@ -763,14 +763,15 @@ label {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   /* overflow-y: auto; */
   flex-grow: 1;
 }
 #mobileNav-container nav {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 2rem 0.5rem;
+  /* gap: 2rem 0.5rem; */
+  gap: 2rem;
   margin: 1rem 0;
 }
 #mobileNav-container nav a {
@@ -865,17 +866,21 @@ label {
   #mobileNav .header-container {
     padding: 0 1rem;
   }
-  #mobileNav-container {
-    padding: 1.5rem 1rem;
-  }
-  #mobileNav-container nav a div {
+  /* #mobileNav-container nav a div {
     width: 5.5rem;
     height: 5.5rem;
   }
   #mobileNav-container nav a img {
     padding: 1.125rem;
-  }
+  } */
   @media screen and (max-width: 640px) {
+    #mobileNav-container {
+      padding: 1.5rem 1rem;
+      gap: 1rem;
+    }
+    #mobileNav-container nav {
+      gap: 2rem 0.5rem;
+    }
     #mobileNav-container nav a div {
       width: 4.5rem;
       height: 4.5rem;
