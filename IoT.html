@@ -144,63 +144,52 @@
       <div id="sideNavOpenFilter" class="light-filter"></div>
       <header id="header">
         <div class="header-container">
-          <div id="headerLogo"><a href="./index.html"></a></div>
-          <div id="headerNav">
-            <div class="header-title">
-              <a>회사소개</a>
+          <div class="header-group">
+            <div id="headerLogo">
+              <a href="./index.html"></a>
             </div>
-            <div class="header-title">
-              <a>통합IoT솔루션</a>
+            <div class="slogan">
+              For the intelligent
+              <br />
+              IT world!
             </div>
-            <div class="header-title">
-              <a>제품소개</a>
+          </div>
+          <div id="desktopNav">
+            <div class="desktop-btn" onclick="openAboutCompany()">
+              회사 소개
             </div>
-            <div class="header-title">
-              <a>고객서비스</a>
+            <a class="desktop-btn" href="./IoT.html">통합IoT솔루션</a>
+            <div class="desktop-btn" onclick="openAboutProduct()">
+              제품 소개
             </div>
+          </div>
+          <div id="desktopList-filter" onclick="closeList()"></div>
+          <div id="aboutCompany" class="desktopNavList">
+            <a href="./introduce.html">인사말</a>
+            <a href="./history.html">기업연혁</a>
+            <a href="./vision.html">기업이념</a>
+            <a href="./way.html">오시는 길</a>
+          </div>
+          <div id="aboutProduct" class="desktopNavList">
+            <a href="./gate.html">출입통제 시스템</a>
+            <a href="./cctv.html">안전관리 CCTV</a>
+            <a href="./towercrane.html">타워크레인 통합안전</a>
+            <a href="./sensor.html">환경센서</a>
+            <a href="./broadcast.html">방송시스템</a>
+          </div>
+          <div class="header-btns">
+            <a
+              href="http://helpu.kr/itlog/"
+              target="_blank"
+              class="header-btn black-back"
+              >원격지원</a
+            >
+            <a href="./consulting.html" class="header-btn red-back">견적의뢰</a>
           </div>
           <div id="sideNavOpen" class="show1024" onclick="openNav()">
-            <span class="icon icon-menu"></span>
+            <span class="material-symbols-outlined icon"> menu </span>
           </div>
-          <div id="language">
-            <!-- <p class="red">KOR</p>
-                    <p>ENG</p> -->
-          </div>
-        </div>
-        <div class="header-sub">
-          <div class="no-list"></div>
-          <div class="header-subList">
-            <div class="header-subTitle">
-              <div>
-                <a href="./introduce.html">인사말</a>
-                <a href="./history.html">기업연혁</a>
-                <a href="./vision.html">기업이념</a>
-                <!-- <a href="./certification.html">인증</a> -->
-                <a href="./way.html">오시는길</a>
-              </div>
-            </div>
-            <div class="header-subTitle">
-              <div>
-                <a href="./IoT.html">통합IoT솔루션</a>
-              </div>
-            </div>
-            <div class="header-subTitle">
-              <div>
-                <a href="./gate.html">출입통제시스템</a>
-                <a href="./cctv.html">안전관리CCTV</a>
-                <a href="./towercrane.html">T/C통합안전</a>
-                <a href="./sensor.html">환경센서</a>
-                <a href="./broadcast.html">방송시스템</a>
-              </div>
-            </div>
-            <div class="header-subTitle">
-              <div>
-                <a href="./consulting.html">견적의뢰</a>
-                <a href="http://helpu.kr/itlog/" target="_blank">원격지원</a>
-              </div>
-            </div>
-          </div>
-          <div class="no-list"></div>
+          <div id="language"></div>
         </div>
       </header>
 
