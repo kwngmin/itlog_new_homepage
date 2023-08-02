@@ -700,6 +700,7 @@ label {
 }
 #mobileNav {
   display: none;
+  /* display: flex; */
   flex-direction: column;
   width: 100%;
   height: 100vh;
@@ -759,9 +760,7 @@ label {
   background-color: rgb(248, 250, 252);
 }
 #mobileNav-container {
-  /* height: calc(100% - 144px); */
-  /* height: auto; */
-  padding: 2rem 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -782,8 +781,8 @@ label {
   gap: 0.5rem;
 }
 #mobileNav-container nav a div {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 1.5rem;
   overflow: hidden;
   background-color: white;
@@ -791,7 +790,7 @@ label {
 }
 #mobileNav-container nav a img {
   width: 100%;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 #mobileNav-container nav a p {
   word-break: keep-all;
@@ -799,7 +798,7 @@ label {
   line-height: 1.25;
   font-size: 0.875rem;
   font-weight: 500;
-  width: 4rem;
+  width: 100%;
   text-align: center;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -861,15 +860,25 @@ label {
   background-color: #fff;
   z-index: 500;
 }
+@media screen and (max-width: 1023px) {
+}
 @media screen and (max-width: 767px) {
   #mobileNav .header-container {
     padding: 0 1rem;
   }
-}
-.sideNav-menu {
-  /* height: calc(100% - 10rem); */
-  /* overflow-y: auto; */
-  /* padding-right: 2rem; */
+  #mobileNav-container {
+    padding: 1.5rem 1rem;
+  }
+  #mobileNav-container nav a div {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  #mobileNav-container nav a img {
+    padding: 1rem;
+  }
+  #mobileNav-container nav a p {
+    width: 4rem;
+  }
 }
 /* 
 .sideNav-menu > :first-child {
