@@ -786,7 +786,7 @@ label {
   border-radius: 1.5rem;
   overflow: hidden;
   background-color: white;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.025);
 }
 #mobileNav-container nav a img {
   width: 100%;
@@ -796,7 +796,6 @@ label {
   word-break: keep-all;
   text-align: center;
   line-height: 1.25;
-  font-size: 0.875rem;
   font-weight: 500;
   width: 100%;
   text-align: center;
@@ -876,9 +875,6 @@ label {
   #mobileNav-container nav a img {
     padding: 1.125rem;
   }
-  #mobileNav-container nav a p {
-    width: 4rem;
-  }
   @media screen and (max-width: 640px) {
     #mobileNav-container nav a div {
       width: 4.5rem;
@@ -886,6 +882,10 @@ label {
     }
     #mobileNav-container nav a img {
       padding: 1rem;
+    }
+    #mobileNav-container nav a p {
+      width: 4rem;
+      font-size: 0.875rem;
     }
   }
 }
