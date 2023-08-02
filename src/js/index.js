@@ -7,6 +7,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
 // 사이즈 변경 되면 실행
 window.addEventListener("resize", () => {
+  const { innerHeight } = window;
+  document.documentElement.style.setProperty(
+    "--app-height",
+    `${innerHeight}px`
+  );
   iWIdth = window.innerWidth;
   // console.log(iWIdth);
   if (iWIdth > 1024) {
@@ -52,11 +57,6 @@ const closeList = () => {
 };
 // 모바일에서 네브 열기
 const openNav = () => {
-  const { innerHeight } = window;
-  document.documentElement.style.setProperty(
-    "--app-height",
-    `${innerHeight}px`
-  );
   scrollPosition = window.pageYOffset;
   document.body.classList.add("scroll-stop");
   document.body.style.top = `-${scrollPosition}px`;
