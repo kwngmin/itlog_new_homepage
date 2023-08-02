@@ -39,7 +39,7 @@ main {
 section {
   width: 100%;
   padding: 0 4rem;
-  margin: 6rem 0;
+  margin: 4rem 0;
 }
 .consulting {
   width: 100%;
@@ -54,7 +54,8 @@ section {
   padding: 0;
   border: 1px solid #ced6e0;
   border-radius: 1rem;
-  height: 32rem;
+  height: 24rem;
+  /* height: 32rem; */
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -117,6 +118,9 @@ section {
   .agree-title {
     padding: 1.75rem 0;
   }
+  /* .consulting-agree {
+    height: 24rem;
+  } */
   .agree-text {
     padding: 2rem;
   }
