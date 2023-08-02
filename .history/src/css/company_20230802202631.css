@@ -55,7 +55,7 @@ section article {
   }
   section {
     padding: 0 1rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
   }
 }
 /* 인사말 */
@@ -533,7 +533,7 @@ section article {
   position: relative;
 }
 .vision-title {
-  padding: 6rem 0;
+  padding-bottom: 8rem;
   text-align: center;
 }
 .vision-title,
@@ -653,7 +653,7 @@ section article {
 }
 @media screen and (max-width: 1280px) {
   .vision-title {
-    padding: 2rem 0;
+    padding-bottom: 4rem;
   }
   .vision-svg,
   .card-circle {

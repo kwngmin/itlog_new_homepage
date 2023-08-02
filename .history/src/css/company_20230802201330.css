@@ -2,7 +2,7 @@ main {
   width: 100%;
   height: 20rem;
   position: relative;
-  background: url('../../img/company1.jpg') no-repeat;
+  background: url("../../img/company1.jpg") no-repeat;
   background-size: cover;
   background-position: right 60%;
 }
@@ -21,7 +21,7 @@ main {
 }
 section {
   padding: 0 4rem;
-  margin: 4rem 0;
+  margin: 4rem;
   position: relative;
 }
 section article {
@@ -45,8 +45,7 @@ section article {
     width: calc(100% - 4rem);
   }
   section {
-    padding: 0 2rem;
-    margin: 2rem 0;
+    padding: 6rem 2rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -54,8 +53,7 @@ section article {
     width: calc(100% - 2rem);
   }
   section {
-    padding: 0 1rem;
-    margin: 1rem 0;
+    padding: 4rem 1rem;
   }
 }
 /* 인사말 */
@@ -394,15 +392,15 @@ section article {
 /* 기업연혁 */
 .history-list {
   position: relative;
-  /* padding: 50px 0; */
+  padding: 50px 0;
 }
 .history-list:before {
-  content: '';
+  content: "";
   position: absolute;
   height: 100%;
 }
 .history-list:after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
@@ -481,7 +479,7 @@ section article {
 }
 .right-box .history-text li::before {
   position: absolute;
-  content: '•';
+  content: "•";
   margin: 2px 0.5rem;
   color: #ee3a3d;
   left: -20px;
@@ -489,7 +487,7 @@ section article {
 }
 .left-box .history-text li::after {
   position: absolute;
-  content: '•';
+  content: "•";
   margin: 0 0.5rem;
   color: #ee3a3d;
   right: -20px;
@@ -533,7 +531,7 @@ section article {
   position: relative;
 }
 .vision-title {
-  padding: 6rem 0;
+  padding-bottom: 8rem;
   text-align: center;
 }
 .vision-title,
@@ -653,7 +651,7 @@ section article {
 }
 @media screen and (max-width: 1280px) {
   .vision-title {
-    padding: 2rem 0;
+    padding-bottom: 4rem;
   }
   .vision-svg,
   .card-circle {
