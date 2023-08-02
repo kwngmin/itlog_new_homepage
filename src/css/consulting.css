@@ -241,4 +241,7 @@ section {
   .agree-check {
     padding: 0.5rem 0;
   }
+  #consulting-submit {
+    margin-bottom: 3rem;
+  }
 }
