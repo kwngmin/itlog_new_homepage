@@ -52,8 +52,12 @@ const closeAlertCopy = () => {
   document.getElementById("alert-copy").style.display = "none";
 };
 // 네이버 지도
+var map = new naver.maps.Map("map", mapOptions);
 var mapOptions = {
   center: new naver.maps.LatLng(37.3595704, 127.105399),
-  zoom: 10,
+  zoom: 15,
 };
-// var map = new naver.maps.Map("map", mapOptions);
+var marker = new naver.maps.Marker({
+  position: new naver.maps.LatLng(37.3595704, 127.105399),
+  map: map,
+});
