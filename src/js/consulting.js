@@ -10,7 +10,19 @@ window.addEventListener("scroll", () => {
     scrollTop();
   }
 });
-
+// 신청이 완료되었습니다 alert 없애기
+const closeAlertNotice = () => {
+  document.getElementById("alert-notice").style.display = "none";
+};
+// 신청이 완료되었습니다 alert 없애기
+const closeAlertComplete = () => {
+  // document.getElementById("alert-complete").style.display = "none";
+  location.href = "../../consulting.html";
+};
+// 신청이 완료되었습니다 alert 없애기
+const moveHome = () => {
+  location.href = "../../index.html";
+};
 let terms = document.getElementById("spreadTerms");
 terms.addEventListener("click", function () {
   if (document.getElementById("spreadTerms").innerText == "펼치기") {
@@ -24,11 +36,13 @@ terms.addEventListener("click", function () {
 });
 
 const space = /\s/gi;
-const phone = /[^0-9\-]/gi;
+const phone = /[^0-9]/gi;
+// const phone = /[^0-9\-]/gi;
 
 const emailPattern =
   /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
-const phonePattern = /01[016789]-[^0][0-9]{2,3}-[0-9]{3,4}/;
+const phonePattern = /01[016789][^0][0-9]{6,8}/;
+// const phonePattern = /01[016789]-[^0][0-9]{2,3}-[0-9]{3,4}/;
 
 let input = document.querySelectorAll(".consulting-contents input[type=text]");
 input.forEach((el) => {
@@ -47,7 +61,7 @@ input.forEach((el) => {
 });
 
 const send = document.getElementById("consulting-submit");
-send.addEventListener("click", function () {
+send.addEventListener("click", function (event) {
   event.preventDefault(); // prevent reload
 
   const name = document.getElementById("nameInput");
@@ -59,27 +73,7 @@ send.addEventListener("click", function () {
   let productCheck = [
     ...document.querySelectorAll('input[name="product-check"]:checked'),
   ];
-
-  if (name.value.length < 2) {
-    alert("성명을 2자 이상 입력하세요!");
-    name.select();
-    name.scrollIntoView(true);
-  } else if (!emailPattern.test(email.value)) {
-    alert("이메일을 다시 확인하세요!");
-    email.select();
-  } else if (!phonePattern.test(phone.value)) {
-    alert("연락처를 다시 확인하세요!");
-    phone.select();
-  } else if (productCheck === 0) {
-    alert("의뢰분야를 하나 이상 선택하세요!");
-  } else if (content.value.length < 10) {
-    alert("상담내용을 10자 이상 입력하세요!");
-    content.select();
-  } else if (!agreeCheck) {
-    alert("개인정보 수집 및 이용 안내 내용에 동의하세요!");
-  } else {
-    alert("신청했습니다!");
-  }
+  // 의뢰분야 나열하기
   let products = "";
   for (const el of productCheck) {
     if (products === "") {
@@ -99,15 +93,55 @@ send.addEventListener("click", function () {
   const serviceID = "service_4z61dki";
   const templateID = "template_iw6bwtl";
   const publicKey = "RMB0BR2O_InnNIHfC";
-  emailjs.send(serviceID, templateID, templateParams, publicKey).then(
-    function (response) {
-      console.log("SUCCESS!", response.status, response.text);
-      location.href = "../../consulting.html";
-    },
-    function (error) {
-      console.log("FAILED...", error);
-    }
-  );
+  // 폼 체크
+  if (name.value.length < 2) {
+    document.getElementById("alert-warning-content-text").innerHTML =
+      "이름을 2자 이상 입력하세요";
+    document.getElementById("alert-notice").style.display = "block";
+    name.focus();
+  } else if (!emailPattern.test(email.value)) {
+    document.getElementById("alert-warning-content-text").innerHTML =
+      "이메일을 다시 확인하세요";
+    document.getElementById("alert-notice").style.display = "block";
+    email.focus();
+  } else if (!phonePattern.test(phone.value)) {
+    document.getElementById("alert-warning-content-text").innerHTML =
+      "전화번호를 다시 확인하세요";
+    document.getElementById("alert-notice").style.display = "block";
+    phone.focus();
+  } else if (productCheck.length === 0) {
+    // alert("의뢰분야를 하나 이상 선택하세요");
+    document.getElementById("alert-warning-content-text").innerHTML =
+      "의뢰분야를 하나 이상 선택하세요";
+    document.getElementById("alert-notice").style.display = "block";
+    productCheck.focus();
+  } else if (content.value.length < 10) {
+    // alert("상담내용을 10자 이상 입력하세요");
+    document.getElementById("alert-warning-content-text").innerHTML =
+      "상담내용을 10자 이상 입력하세요";
+    document.getElementById("alert-notice").style.display = "block";
+    content.focus();
+  } else if (!agreeCheck) {
+    // alert("개인정보 수집 및 이용 안내 내용에 동의하세요");
+    document.getElementById("alert-warning-content-text").innerHTML =
+      "이용 약관에 동의하세요";
+    document.getElementById("alert-notice").style.display = "block";
+    agreeCheck.focus();
+  } else {
+    // alert("신청되었습니다!");
+    emailjs.send(serviceID, templateID, templateParams, publicKey).then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+        document.getElementById("alert-complete").style.display = "block";
+      },
+      function (error) {
+        console.log("FAILED...", error);
+      }
+    );
+  }
 });
 
-// .send("gmail", "template_GH8tn3us", templateParams)
+// const closeAlert = document.getElementById("alert-warning");
+// closeAlert.addEventListener("click", function (event) {
+//   document.getElementById("alert-Warning").style.display = "none";
+// });

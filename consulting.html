@@ -296,44 +296,59 @@
           </div>
 
           <div class="consulting-contents">
-            <div class="consulting-description">
+            <!-- <div class="consulting-description">
               '<span class="red">*</span>'(별) 표시는 필수 입력항목 입니다
-            </div>
+            </div> -->
             <div class="contactUs-contents">
               <div class="form-group">
-                <label>성명<span class="red">*</span></label>
+                <label>이름</label>
+                <!-- <label>이름<span class="red">*</span></label> -->
                 <input
                   id="nameInput"
                   name="name"
                   type="text"
                   class="space-text"
+                  placeholder="2자 이상 입력해 주세요"
                 />
               </div>
               <div class="form-group">
-                <label>회사(소속)</label>
-                <input id="company" name="company" type="text" />
+                <label
+                  >소속
+                  <span style="color: rgba(0, 0, 0, 0.4)">(선택)</span></label
+                >
+                <input
+                  id="company"
+                  name="company"
+                  type="text"
+                  placeholder="회사명 또는 소속된 단체 등을 입력해 주세요"
+                />
               </div>
               <div class="form-group">
-                <label>이메일<span class="red">*</span></label>
+                <label>이메일</label>
+                <!-- <label>이메일<span class="red">*</span></label> -->
                 <input
                   id="emailInput"
                   name="email"
                   type="text"
                   class="space-text"
+                  placeholder="형식에 맞게 입력해 주세요"
                 />
               </div>
               <div class="form-group">
-                <label>연락처<span class="red">*</span></label>
+                <label>전화번호</label>
+                <!-- <label>전화번호<span class="red">*</span></label> -->
                 <input
                   id="phoneInput"
                   name="phone"
                   type="text"
                   class="phone-text"
-                  maxlength="13"
+                  maxlength="11"
+                  placeholder="숫자만 입력해 주세요"
                 />
               </div>
               <div class="form-group">
-                <label>의뢰분야<span class="red">*</span></label>
+                <label>의뢰분야</label>
+                <!-- <label>의뢰분야<span class="red">*</span></label> -->
                 <div class="form-checkgroup">
                   <div class="flex-basic">
                     <input
@@ -380,8 +395,13 @@
                 </div>
               </div>
               <div class="form-group">
-                <label>상담내용<span class="red">*</span></label>
-                <textarea id="consulting-text" type="text"></textarea>
+                <label>상담내용</label>
+                <!-- <label>상담내용<span class="red">*</span></label> -->
+                <textarea
+                  id="consulting-text"
+                  type="text"
+                  placeholder="10자 이상 입력해 주세요"
+                ></textarea>
               </div>
               <div class="agree-check">
                 <div class="flex-center">
@@ -397,6 +417,25 @@
             </div>
           </div>
         </article>
+        <div id="alert-notice" onclick="closeAlertNotice()">
+          <!-- <div id="alert-warning" onclick="closeAlertWarning()"> -->
+          <div class="alert-warning-content">
+            <span id="alert-warning-content-text">경고문구</span>
+            <div>확인</div>
+          </div>
+        </div>
+        <div id="alert-complete" onclick="closeAlertComplete()">
+          <div class="alert-complete-content">
+            <div class="alert-icon">
+              <img src="/img/icon/sent.png" alt="" />
+            </div>
+            <span>신청이 완료되었습니다.</span>
+            <div class="alert-complete-content-btns">
+              <div>닫기</div>
+              <div class="homebtn" onclick="moveHome()">홈으로</div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <footer>

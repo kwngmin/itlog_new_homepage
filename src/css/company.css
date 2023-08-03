@@ -900,7 +900,7 @@ section article {
   width: 100%;
 }
 #alert-copy {
-  display: none;
+  /* display: none; */
   position: fixed;
   top: 0;
   left: 0;
@@ -910,36 +910,44 @@ section article {
   background-color: transparent;
 }
 #alert-copy .alert-copy-content {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 16rem;
-  padding: 0 1rem;
-  height: 6rem;
+  width: 22rem;
+  padding: 0.75rem;
   border-radius: 0.5rem;
-  /* text-align: center; */
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  align-items: flex-end;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   user-select: none;
+  backdrop-filter: blur(20px);
 }
 #alert-copy .alert-copy-content span {
-  font-weight: 300;
-  color: white;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
   width: 100%;
+  font-size: 1.125rem;
+  text-align: center;
+  margin: 2rem 0;
 }
 #alert-copy .alert-copy-content div {
-  color: white;
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 0.25rem 0.75rem;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0 1.25rem;
   border-radius: 0.25rem;
   cursor: pointer;
-  font-weight: 300;
-  font-size: 0.875rem;
+  font-weight: 400;
+  font-size: 1rem;
+  width: 100%;
+  height: 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 1023px) {
   .way-container {
