@@ -849,6 +849,21 @@ section article {
 .address p {
   margin: 0.5rem 0;
   color: rgba(0, 0, 0, 0.7);
+  /* display: flex;
+  align-items: center; */
+}
+.copy-btn {
+  /* background-color: rgba(0, 0, 0, 0.05); */
+  padding: 0.25rem 0.75rem 0.25rem 0.625rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  user-select: none;
+  font-weight: 500;
+  /* margin: 0 0.5rem; */
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1rem;
+  word-break: keep-all;
 }
 .public-transport-subway {
   width: 100%;
@@ -892,26 +907,4 @@ section article {
   .public-transport-subway {
     flex-direction: column;
   }
-}
-
-.way-text {
-  padding-top: 3rem;
-}
-.way-text .flex-basic {
-  padding-bottom: 1rem;
-}
-.way-text .icon {
-  margin-right: 2rem;
-  color: #5bc3ed;
-  font-size: 2rem;
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-  border: 1px solid #5bc3ed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.way-text h6 {
-  width: calc(100% - 7rem);
 }
