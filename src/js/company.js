@@ -45,7 +45,12 @@ const copyAddress = () => {
   // textarea 제거
   document.body.removeChild(textArea);
   console.log(address);
-  alert("주소가 복사되었습니다.");
+  // 주소가 복사되었습니다 alert 띄우기
+  document.getElementById("alert-copy").style.display = "block";
+};
+// 주소가 복사되었습니다 alert 없애기
+const closeAlertCopy = () => {
+  document.getElementById("alert-copy").style.display = "none";
 };
 // 네이버 지도
 var mapOptions = {
