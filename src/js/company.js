@@ -44,7 +44,6 @@ const copyAddress = () => {
   document.execCommand("copy");
   // textarea 제거
   document.body.removeChild(textArea);
-  console.log(address);
   // 주소가 복사되었습니다 alert 띄우기
   document.getElementById("alert-copy").style.display = "block";
 };
