@@ -942,6 +942,9 @@ section article {
   font-size: 0.875rem;
 }
 @media screen and (max-width: 1023px) {
+  .way-container {
+    gap: 3rem;
+  }
   .naver-map {
     height: 320px;
   }
@@ -952,5 +955,8 @@ section article {
   }
   .public-transport-subway {
     flex-direction: column;
+  }
+  .subway-station {
+    margin: 0.75rem 0;
   }
 }

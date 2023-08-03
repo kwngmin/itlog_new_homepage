@@ -302,7 +302,12 @@
             <div class="contactUs-contents">
               <div class="form-group">
                 <label>성명<span class="red">*</span></label>
-                <input id="name" name="name" type="text" class="space-text" />
+                <input
+                  id="nameInput"
+                  name="name"
+                  type="text"
+                  class="space-text"
+                />
               </div>
               <div class="form-group">
                 <label>회사(소속)</label>
@@ -310,12 +315,17 @@
               </div>
               <div class="form-group">
                 <label>이메일<span class="red">*</span></label>
-                <input id="email" name="email" type="text" class="space-text" />
+                <input
+                  id="emailInput"
+                  name="email"
+                  type="text"
+                  class="space-text"
+                />
               </div>
               <div class="form-group">
                 <label>연락처<span class="red">*</span></label>
                 <input
-                  id="phone"
+                  id="phoneInput"
                   name="phone"
                   type="text"
                   class="phone-text"
@@ -328,44 +338,44 @@
                   <div class="flex-basic">
                     <input
                       type="checkbox"
-                      id="check1"
+                      id="통합IoT솔루션"
                       name="product-check"
-                    /><label for="check1">통합IoT솔루션</label>
+                    /><label for="통합IoT솔루션">통합IoT솔루션</label>
                   </div>
                   <div class="flex-basic">
                     <input
                       type="checkbox"
-                      id="check2"
+                      id="CCTV/웹카메라"
                       name="product-check"
-                    /><label for="check2">CCTV/웹카메라</label>
+                    /><label for="CCTV/웹카메라">CCTV/웹카메라</label>
                   </div>
                   <div class="flex-basic">
                     <input
                       type="checkbox"
-                      id="check3"
+                      id="출입통제"
                       name="product-check"
-                    /><label for="check3">출입통제</label>
+                    /><label for="출입통제">출입통제</label>
                   </div>
                   <div class="flex-basic">
                     <input
                       type="checkbox"
-                      id="check4"
+                      id="T/C통합안전"
                       name="product-check"
-                    /><label for="check4">T/C통합안전</label>
+                    /><label for="T/C통합안전">T/C통합안전</label>
                   </div>
                   <div class="flex-basic">
                     <input
                       type="checkbox"
-                      id="check5"
+                      id="방송시스템"
                       name="product-check"
-                    /><label for="check5">방송시스템</label>
+                    /><label for="방송시스템">방송시스템</label>
                   </div>
                   <div class="flex-basic">
                     <input
                       type="checkbox"
-                      id="check6"
+                      id="풍속계/환경센서"
                       name="product-check"
-                    /><label for="check6">풍속계/환경센서</label>
+                    /><label for="풍속계/환경센서">풍속계/환경센서</label>
                   </div>
                 </div>
               </div>
@@ -470,18 +480,27 @@
     </div>
   </body>
 
-  <script src="./swiper/swiper-bundle.min.js"></script>
   <!-- [슬라이드 라이브러리 JS] -->
-  <script src="./aos-master/dist/aos.js"></script>
+  <script src="./swiper/swiper-bundle.min.js"></script>
   <!-- [텍스트 애니메이션 라이브러리 JS] -->
-  <script type="text/javascript" src="./src/js/index.js"></script>
+  <script src="./aos-master/dist/aos.js"></script>
   <!-- [기본 JS] -->
-  <script type="text/javascript" src="./src/js/consulting.js"></script>
+  <script type="text/javascript" src="./src/js/index.js"></script>
   <!-- [고객서비스 견적의뢰 JS] -->
+  <script type="text/javascript" src="./src/js/consulting.js"></script>
+  // AOS 사용전 초기화 선언
   <script>
-    // AOS 사용전 초기화 선언
     AOS.init({
       duration: 1000,
     });
+  </script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("RMB0BR2O_InnNIHfC");
+    })();
   </script>
 </html>

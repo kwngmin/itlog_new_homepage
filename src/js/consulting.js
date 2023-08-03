@@ -48,34 +48,66 @@ input.forEach((el) => {
 
 const send = document.getElementById("consulting-submit");
 send.addEventListener("click", function () {
-  const nameInput = document.getElementById("name");
-  const emailInput = document.getElementById("email");
-  const phoneInput = document.getElementById("phone");
-  const textInput = document.getElementById("consulting-text");
-  const agreeCheck = document.getElementById("agree-check").checked;
-  let productCheck = document.querySelectorAll(
-    'input[name="product-check"]:checked'
-  ).length;
+  event.preventDefault(); // prevent reload
 
-  if (nameInput.value.length < 2) {
+  const name = document.getElementById("nameInput");
+  const email = document.getElementById("emailInput");
+  const phone = document.getElementById("phoneInput");
+  const company = document.getElementById("company");
+  const content = document.getElementById("consulting-text");
+  const agreeCheck = document.getElementById("agree-check").checked;
+  let productCheck = [
+    ...document.querySelectorAll('input[name="product-check"]:checked'),
+  ];
+
+  if (name.value.length < 2) {
     alert("성명을 2자 이상 입력하세요!");
-    nameInput.select();
-    nameInput.scrollIntoView(true);
-  } else if (!emailPattern.test(emailInput.value)) {
+    name.select();
+    name.scrollIntoView(true);
+  } else if (!emailPattern.test(email.value)) {
     alert("이메일을 다시 확인하세요!");
-    emailInput.select();
-  } else if (!phonePattern.test(phoneInput.value)) {
+    email.select();
+  } else if (!phonePattern.test(phone.value)) {
     alert("연락처를 다시 확인하세요!");
-    phoneInput.select();
+    phone.select();
   } else if (productCheck === 0) {
     alert("의뢰분야를 하나 이상 선택하세요!");
-  } else if (textInput.value.length < 10) {
+  } else if (content.value.length < 10) {
     alert("상담내용을 10자 이상 입력하세요!");
-    textInput.select();
+    content.select();
   } else if (!agreeCheck) {
     alert("개인정보 수집 및 이용 안내 내용에 동의하세요!");
   } else {
     alert("신청했습니다!");
-    location.href = "../../index.html";
   }
+  let products = "";
+  for (const el of productCheck) {
+    if (products === "") {
+      products += el.id;
+    } else {
+      products += `, ${el.id}`;
+    }
+  }
+  let templateParams = {
+    name: name.value,
+    email: email.value,
+    phone: phone.value,
+    message: content.value,
+    company: company.value,
+    products,
+  };
+  const serviceID = "service_4z61dki";
+  const templateID = "template_iw6bwtl";
+  const publicKey = "RMB0BR2O_InnNIHfC";
+  emailjs.send(serviceID, templateID, templateParams, publicKey).then(
+    function (response) {
+      console.log("SUCCESS!", response.status, response.text);
+      location.href = "../../consulting.html";
+    },
+    function (error) {
+      console.log("FAILED...", error);
+    }
+  );
 });
+
+// .send("gmail", "template_GH8tn3us", templateParams)
