@@ -52,12 +52,52 @@ const closeAlertCopy = () => {
   document.getElementById("alert-copy").style.display = "none";
 };
 // 네이버 지도
-var map = new naver.maps.Map("map", mapOptions);
-var mapOptions = {
-  center: new naver.maps.LatLng(37.3595704, 127.105399),
-  zoom: 15,
-};
-var marker = new naver.maps.Marker({
-  position: new naver.maps.LatLng(37.3595704, 127.105399),
-  map: map,
+// naver.maps.Service.geocode(
+//   { query: "디지털로33길 28" },
+//   function (status, response) {
+//     if (status === naver.maps.Service.Status.ERROR) {
+//       return alert("Something wrong!");
+//     }
+//     console.log(response);
+//     // 성공 시의 response 처리
+//   }
+// );
+// var map = new naver.maps.Map("map", mapOptions);
+// var mapOptions = {
+//   center: new naver.maps.LatLng(37.3595704, 127.105399),
+//   zoom: 15,
+// };
+// var marker = new naver.maps.Marker({
+//   position: new naver.maps.LatLng(37.3595704, 127.105399),
+//   map: map,
+// });
+var HOME_PATH = window.HOME_PATH || ".";
+var position = new naver.maps.LatLng(37.486742, 126.8954755);
+// var position = new naver.maps.LatLng(37.3849483, 127.1229117);
+
+var map = new naver.maps.Map("map", {
+  center: position,
+  zoom: 16,
+  zoomControl: true,
+  zoomControlOptions: {
+    style: naver.maps.ZoomControlStyle.SMALL,
+    position: naver.maps.Position.TOP_RIGHT,
+  },
 });
+
+var markerOptions = {
+  position: new naver.maps.LatLng(37.486742, 126.8954755),
+  map: map,
+  // position: position.destinationPoint(90, 15),
+  // map: map,
+  // icon: {
+  //   url: HOME_PATH + "/img/logo/dar.png",
+  //   // url: HOME_PATH + "/img/logo/itlog.svg",
+  //   size: new naver.maps.Size(50, 52),
+  //   // size: new naver.maps.Size(120, 52),
+  //   origin: new naver.maps.Point(0, 0),
+  //   anchor: new naver.maps.Point(25, 26),
+  // },
+};
+
+var marker = new naver.maps.Marker(markerOptions);

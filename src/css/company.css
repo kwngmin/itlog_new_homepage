@@ -941,7 +941,15 @@ section article {
   font-weight: 300;
   font-size: 0.875rem;
 }
+@media screen and (max-width: 1023px) {
+  .naver-map {
+    height: 320px;
+  }
+}
 @media screen and (max-width: 767px) {
+  .naver-map {
+    height: 240px;
+  }
   .public-transport-subway {
     flex-direction: column;
   }
