@@ -7,6 +7,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
 // 사이즈 변경 되면 실행
 window.addEventListener("resize", () => {
+  // iOS height 구하기
+  // 회전으로 랜드스케이프 모드 변경시
+  // 모바일 메뉴의 height 값 틀어지는거 보완
   const { innerHeight } = window;
   document.documentElement.style.setProperty(
     "--app-height",
@@ -28,7 +31,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// 아이폰 height 구하기
+// iOS height 구하기
 window.addEventListener("DOMContentLoaded", function (ev) {
   const { innerHeight } = window;
   document.documentElement.style.setProperty(
