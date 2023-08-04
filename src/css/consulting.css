@@ -31,6 +31,15 @@ main {
     transform: translate(0, 0);
   }
 }
+@media screen and (max-width: 1023px) {
+  main {
+    height: 16rem;
+  }
+  .main-text {
+    top: 64%;
+    width: calc(100% - 4rem);
+  }
+}
 @media screen and (max-width: 767px) {
   .main-text {
     width: calc(100% - 2rem);
