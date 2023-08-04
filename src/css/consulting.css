@@ -122,7 +122,7 @@ section {
 @media screen and (max-width: 1023px) {
   section {
     padding: 0 2rem;
-    margin: 4rem 0;
+    margin: 2rem 0;
   }
   .agree-title {
     padding: 1.75rem 0;
@@ -134,7 +134,10 @@ section {
 @media screen and (max-width: 767px) {
   section {
     padding: 0 1rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
+  }
+  .consulting-agree {
+    height: 20rem;
   }
   .agree-title {
     padding: 1.5rem 0;
@@ -207,6 +210,9 @@ section {
 .contactUs-contents button {
   /* margin-top: 2rem; */
 }
+#consulting-submit {
+  margin-bottom: 4rem;
+}
 @media screen and (max-width: 1365px) {
 }
 @media screen and (max-width: 1023px) {
@@ -241,9 +247,6 @@ section {
   /* .agree-check {
     padding: 1rem 0;
   } */
-  #consulting-submit {
-    margin-bottom: 3rem;
-  }
 }
 #alert-notice,
 #alert-loading,
