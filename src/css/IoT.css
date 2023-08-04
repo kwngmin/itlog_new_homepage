@@ -275,7 +275,7 @@ main {
   color: #fff;
   transition: opacity 0.3s ease;
   position: relative;
-  z-index: 400;
+  z-index: 300;
 }
 .square-line {
   width: 100%;
@@ -285,7 +285,7 @@ main {
   opacity: 0.3;
   transition: opacity 0.3s ease;
   position: relative;
-  z-index: 400;
+  z-index: 300;
 }
 .square-text {
   width: 100%;
@@ -293,7 +293,7 @@ main {
   flex-grow: 1;
   transition: opacity 0.3s ease;
   position: relative;
-  z-index: 400;
+  z-index: 300;
 }
 .square-text .text-lg {
   color: #fff;
@@ -312,7 +312,7 @@ main {
   transition-delay: 100ms;
   transition: opacity 0.2s 0.5s ease, transform 0.5s 0.5s ease;
   position: relative;
-  z-index: 400;
+  z-index: 300;
 }
 /* .square-btn {
   display: flex;
@@ -324,7 +324,7 @@ main {
   color: #fff;
   padding: 0;
   position: relative;
-  z-index: 400;
+  z-index: 300;
 } */
 /* .square-btn {
   width: 100%;
