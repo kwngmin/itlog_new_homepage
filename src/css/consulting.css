@@ -232,7 +232,8 @@ section {
   .contactUs-contents .form-checkgroup {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem 2rem;
+    /* gap: 1rem 2rem; */
+    gap: 1.25rem 2rem;
   }
   .contactUs-contents .form-group > label {
     margin: 0.75rem 0;
