@@ -602,8 +602,8 @@ h3.knowhow-description * {
     display: none;
   }
   .productSwiper-container .swiper-pagination .swiper-pagination-bullet {
-    height: 12px;
-    width: 12px;
+    height: 8px;
+    width: 8px;
     padding: 0;
   }
   .product {
