@@ -128,14 +128,20 @@ send.addEventListener("click", function (event) {
     document.getElementById("alert-notice").style.display = "block";
     agreeCheck.focus();
   } else {
+    document.getElementById("alert-loading").style.display = "block";
     // alert("신청되었습니다!");
     emailjs.send(serviceID, templateID, templateParams, publicKey).then(
       function (response) {
         console.log("SUCCESS!", response.status, response.text);
+        document.getElementById("alert-loading").style.display = "none";
         document.getElementById("alert-complete").style.display = "block";
       },
       function (error) {
         console.log("FAILED...", error);
+        document.getElementById("alert-loading").style.display = "none";
+        document.getElementById("alert-warning-content-text").innerHTML =
+          "요청에 실패하였습니다. 대표번호로 문의주시기 바랍니다.";
+        document.getElementById("alert-notice").style.display = "block";
       }
     );
   }
