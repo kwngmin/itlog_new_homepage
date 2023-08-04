@@ -70,7 +70,6 @@ section {
   width: 100%;
   overflow: hidden;
 }
-
 .agree-title {
   display: flex;
   align-items: center;
@@ -138,11 +137,8 @@ section {
     padding: 0 1rem;
     margin: 1rem 0;
   }
-  /* .consulting-agree {
-    height: 20rem;
-  } */
   .agree-title {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
   }
   .agree-text {
     padding: 2rem 1rem;
