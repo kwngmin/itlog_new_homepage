@@ -515,6 +515,9 @@ section article {
   right: -20px;
   top: 0;
 }
+.mobile-left-padding {
+  word-break: keep-all;
+}
 @media screen and (max-width: 767px) {
   .history-box {
     width: 100%;
@@ -548,6 +551,7 @@ section article {
   .history-mon {
     padding: 0;
     font-size: 1rem;
+    width: 1.75rem;
   }
   .history-text li {
     font-size: 1rem;
@@ -555,6 +559,9 @@ section article {
   }
   .history-text li::before {
     padding-left: 1rem;
+  }
+  .mobile-left-padding {
+    padding-left: 2.25rem;
   }
 }
 /* 기업이념 */
