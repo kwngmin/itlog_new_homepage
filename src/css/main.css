@@ -94,6 +94,9 @@ main .text-box .sub-title strong {
   main .text-box {
     padding-bottom: 2rem;
   }
+  main .text-box .title {
+    width: 100%;
+  }
   main .text-box .sub-title {
     font-size: 1.25rem;
     max-width: 28rem;
