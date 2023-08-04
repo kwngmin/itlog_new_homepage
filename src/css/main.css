@@ -591,8 +591,9 @@ h3.knowhow-description * {
 }
 @media screen and (max-width: 767px) {
   .productSwiper-container .swiper-pagination {
-    padding: 0 1.75rem;
+    padding: 0 1.5rem;
     height: 2rem;
+    justify-content: center;
   }
   .productSwiper-container
     .swiper-pagination
@@ -601,10 +602,9 @@ h3.knowhow-description * {
     display: none;
   }
   .productSwiper-container .swiper-pagination .swiper-pagination-bullet {
-    height: 8px;
-    /* border-radius: 1rem; */
-    flex-grow: 1;
-    /* background-color: #ee3a3d; */
+    height: 12px;
+    width: 12px;
+    padding: 0;
   }
   .product {
     padding: 0;
@@ -675,7 +675,6 @@ h3.knowhow-description * {
   } */
 }
 /* 솔루션 */
-
 .solution {
   width: 100%;
   padding: 0 4rem;
@@ -907,7 +906,6 @@ h3.knowhow-description * {
   .solution-sensor {
     flex-direction: row;
   }
-
   .solution-icon {
     width: 5rem;
     padding: 1.25rem;
@@ -929,15 +927,12 @@ h3.knowhow-description * {
     width: 70%;
   }
 }
-
 /* 시공사례 */
-
 .instance {
   width: 100%;
   padding: 0 4rem;
   margin: 12rem 0;
 }
-
 .instance-container {
   display: flex;
   flex-direction: column;
@@ -945,14 +940,12 @@ h3.knowhow-description * {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .instance-contents {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
-
 .instance-logo {
   height: 4rem;
   display: flex;
@@ -963,7 +956,6 @@ h3.knowhow-description * {
   margin: 0 auto;
   height: fit-content;
 }
-
 .instance-grid .instance-box {
   width: 100%;
   height: 100%;
@@ -972,44 +964,36 @@ h3.knowhow-description * {
   gap: 1rem;
   /* filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15)); */
 }
-
 .instance-box .instance-img {
   width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: 0.75rem;
 }
-
 .instance-box .instance-img img {
   width: 100%;
   height: 100%;
 }
-
 .instance-box .instance-title {
   font-weight: 500;
 }
-
 .instance-box .instance-text-box .instance-text {
   display: flex;
   align-items: center;
   margin-top: 0.25rem;
 }
-
 .instance-box .instance-text-box .instance-client {
   font-weight: 500;
 }
-
 .instance-box .instance-text-box .instance-location {
   color: rgb(0 0 0 / 0.7);
 }
-
 .instance-box .instance-text-box .instance-text .instance-seperator {
   border-left: 2px solid lightgray;
   height: 1rem;
   margin: 0 0.5rem;
   margin-top: 1px;
 }
-
 .instance-box .instance-text {
   margin-top: 0.125rem;
   margin-bottom: 1rem;
@@ -1019,7 +1003,6 @@ h3.knowhow-description * {
   text-overflow: ellipsis;
   overflow-y: hidden;
 }
-
 @media screen and (max-width: 1023px) {
   .instance-contents {
     grid-template-columns: repeat(2, 3fr);
@@ -1043,9 +1026,7 @@ h3.knowhow-description * {
     grid-template-columns: repeat(1, 3fr);
   }
 }
-
 /* 고객센터 */
-
 .help-center {
   width: 100%;
   padding: 0 4rem;
