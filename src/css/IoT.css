@@ -691,9 +691,16 @@ main {
   .pmsSwiper-container .swiper-slide-active p {
     padding-top: 1rem;
   }
+  .pmsSwiper-container .swiper-slide {
+    padding: 2rem 1.5rem;
+  }
 }
 /* 768px 미만 적용 */
 @media screen and (max-width: 767px) {
+  .pms-container {
+    /* height: 40rem; */
+    padding: 4rem 0;
+  }
   .pms-text {
     padding: 0 1rem 2rem;
   }
