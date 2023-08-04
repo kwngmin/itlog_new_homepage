@@ -52,6 +52,10 @@ section article {
     padding: 0 2rem;
     margin: 2rem 0;
   }
+  section#history-section {
+    padding: 0 2rem;
+    margin: 4rem 0;
+  }
 }
 @media screen and (max-width: 767px) {
   .main-text {
@@ -61,24 +65,23 @@ section article {
     padding: 0 1rem;
     margin: 1rem 0;
   }
+  section#history-section {
+    padding: 0 2rem;
+    margin: 4rem 0;
+  }
 }
 /* 인사말 */
 .introduce-container {
   position: relative;
 }
 .introduce-container * {
-  padding-bottom: 1rem;
-}
-.introduce-container h5 {
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.7);
-  line-height: 1.5;
-}
-.introduce-container h4 {
-  padding-top: 4rem;
+  padding-bottom: 0.5rem;
 }
 .introduce-container p {
   color: rgba(0, 0, 0, 0.7);
+}
+.introduce-container p:nth-child(2) {
+  margin-bottom: 2.5rem;
 }
 .introduce-svg {
   display: flex;
@@ -90,7 +93,7 @@ section article {
 }
 .introduceSVG-container {
   position: relative;
-  width: 28rem;
+  width: 20rem;
 }
 .company-svg {
   -webkit-animation: croquis 4s ease-in-out 2s 1 forwards;
@@ -99,16 +102,23 @@ section article {
   filter: alpha(opacity=100);
 }
 @media screen and (max-width: 1023px) {
+  .introduce-container h4:nth-child(1) {
+    margin-top: 2rem;
+  }
   .introduceSVG-container {
     width: 20rem;
   }
 }
 @media screen and (max-width: 767px) {
+  .introduce-container h4:nth-child(1) {
+    margin-top: 2.5rem;
+  }
   .introduce-svg {
     justify-content: center;
   }
   .introduceSVG-container {
-    margin-top: 4rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
   }
 }
 @-webkit-keyframes croquis {
@@ -355,9 +365,11 @@ section article {
   /* padding-top: 20rem; */
 }
 .management-box {
-  padding-bottom: 5rem;
   display: flex;
   justify-content: space-between;
+}
+.management-box:nth-child(1) {
+  padding-bottom: 4rem;
 }
 .management-box h4 {
   width: 25%;
@@ -698,7 +710,7 @@ section article {
     margin: 0 auto;
     background: #ee3a3d;
     border-radius: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
   .cardbox-top,
   .card-text {
@@ -727,10 +739,11 @@ section article {
 }
 /* 기업이념-조직도 */
 .chart-container {
-  padding-top: 8rem;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
 }
 .chart-container h2 {
-  padding-bottom: 4rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 .chart-grid {
@@ -815,10 +828,7 @@ section article {
     height: 5rem;
   }
   .chart-container {
-    padding-top: 10rem;
-  }
-  .chart-container h2 {
-    padding-bottom: 4rem;
+    margin-top: 4rem;
   }
   .chart-text h6 {
     font-size: 0.875rem;
@@ -873,6 +883,9 @@ section article {
   color: rgba(0, 0, 0, 0.7);
   font-size: 1rem;
   word-break: keep-all;
+}
+.public-transport {
+  margin-bottom: 2rem;
 }
 .public-transport-subway {
   width: 100%;
