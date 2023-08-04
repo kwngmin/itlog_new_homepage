@@ -526,6 +526,7 @@ section article {
   }
   .history-mon {
     padding: 0;
+    font-size: 1rem;
   }
   .history-text li {
     font-size: 1rem;
