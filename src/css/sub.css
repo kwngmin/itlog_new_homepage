@@ -167,9 +167,11 @@ main {
 @media screen and (max-width: 1023px) {
   #keyPoint {
     padding: 0 2rem;
+    margin: 3rem 0;
   }
   .keyPoint-title {
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
+    display: none;
   }
   .keyPoint-contents {
     gap: 1rem;
@@ -206,7 +208,7 @@ main {
 @media screen and (max-width: 767px) {
   #keyPoint {
     padding: 0 1rem;
-    margin: 8rem 0;
+    margin: 2rem 0;
   }
   .keyPoint-box {
     width: 100%;
@@ -218,9 +220,6 @@ main {
     background-color: white;
     width: 5rem;
     padding: 1rem;
-  }
-  .keyPoint-title {
-    padding-bottom: 2rem;
   }
   .keyPoint-box-text h5 {
     font-size: 1.125rem;

@@ -133,7 +133,7 @@ main {
   padding-bottom: 0.25rem;
   font-weight: 700;
 }
-.keyPoint-text .text-xl {
+.keyPoint-text .text-lg {
   line-height: 1.25;
   color: rgba(0, 0, 0, 0.7);
 }
@@ -141,10 +141,19 @@ main {
 @media screen and (max-width: 1023px) {
   .key-point {
     padding: 0 2rem;
-    margin: 4rem 0;
+    margin: 3rem 0;
+  }
+  .keyPoint-container {
+    gap: 4rem;
   }
   .keyPoint-title {
-    width: 90%;
+    width: 100%;
+  }
+  .keyPoint-title h2 {
+    display: none;
+  }
+  .keyPoint-title h6 {
+    text-align: left;
   }
   .keyPoint-contents {
     grid-template-columns: repeat(1, 5fr);
@@ -162,18 +171,19 @@ main {
 @media screen and (max-width: 767px) {
   .key-point {
     padding: 0 1rem;
+    margin: 2rem 0;
   }
   .keyPoint-title h5 {
     line-height: 1.65;
   }
   .keyPoint-container {
-    gap: 6rem;
+    gap: 3rem;
   }
-  .keyPoint-title {
+  /* .keyPoint-title {
     width: 100%;
-  }
+  } */
   .keyPoint-icon {
-    width: 4.5rem;
+    width: 5.5rem;
     padding: 1rem;
     margin-right: 1rem;
   }
