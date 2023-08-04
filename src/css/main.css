@@ -41,11 +41,21 @@ main .text-box {
   word-break: keep-all;
   /* background-color: skyblue; */
 }
+.over-1200 {
+  display: block;
+}
+.under-1200 {
+  display: none;
+}
 main .text-box .title {
   font-weight: 800;
   word-break: keep-all;
   line-height: 1.25;
   letter-spacing: -0.1rem;
+  width: 90%;
+}
+main .text-box .br1200 {
+  display: none;
 }
 main .text-box .sub-title {
   margin-top: 1rem;
@@ -53,10 +63,21 @@ main .text-box .sub-title {
   line-height: 1.5;
   max-width: 40rem;
 }
+main .text-box .title span {
+  word-break: keep-all;
+}
 main .text-box .sub-title strong {
   color: red;
 }
 @media screen and (max-width: 1365px) {
+}
+@media screen and (max-width: 1199px) {
+  .over-1200 {
+    display: none;
+  }
+  .under-1200 {
+    display: block;
+  }
 }
 @media screen and (max-width: 1023px) {
   /* main .text-box h1.title {
@@ -70,15 +91,21 @@ main .text-box .sub-title strong {
   main {
     padding: 5rem 1rem 10rem;
   }
+  main .text-box {
+    padding-bottom: 2rem;
+  }
   main .text-box .sub-title {
     font-size: 1.25rem;
     max-width: 28rem;
   }
 }
 @media screen and (max-width: 640px) {
-  main .text-box h1.title {
-    font-size: 2.5rem;
+  main .text-box {
+    padding-bottom: 4rem;
   }
+  /* main .text-box h1.title {
+    font-size: 2.5rem;
+  } */
 }
 /* 노하우 */
 .knowhow {
