@@ -76,7 +76,7 @@ section {
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  padding: 1.25rem 0;
+  padding: 1rem 0;
   flex-grow: 0;
 }
 .agree-text-container {
@@ -109,7 +109,7 @@ section {
   font-weight: 500;
   cursor: pointer;
   background-color: white;
-  height: 4rem;
+  height: 3.5rem;
   flex-shrink: 0;
 }
 #spreadTerms:hover {
