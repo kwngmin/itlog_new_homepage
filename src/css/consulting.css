@@ -162,12 +162,13 @@ section {
 }
 .contactUs-contents .form-group input:not([type="checkbox"]) {
   flex-grow: 1;
+  /* background-color: aqua; */
 }
 .contactUs-contents .form-checkgroup {
   flex-grow: 1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0.5rem 2rem;
+  gap: 1rem 2rem;
 }
 .contactUs-contents .form-group input[type="checkbox"] {
   margin-right: 0.5rem;
@@ -181,7 +182,7 @@ section {
   padding-left: 0.4rem;
 }
 .contactUs-contents .form-checkgroup label {
-  padding-left: 0.4rem;
+  /* padding-left: 0.4rem; */
   white-space: nowrap;
   cursor: pointer;
 }
@@ -211,7 +212,6 @@ section {
 @media screen and (max-width: 1023px) {
   .contactUs-contents .form-checkgroup {
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem 2rem;
   }
   .agree-check {
     padding: 1rem 0;

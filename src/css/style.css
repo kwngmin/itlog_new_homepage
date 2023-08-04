@@ -198,29 +198,31 @@ button {
 input,
 select {
   filter: none;
-  height: 4rem;
+  height: 3.5rem;
   padding: 0 1rem;
-  font-size: clamp(1.4rem, 1.4vw, 1.6rem);
+  font-size: 1.125rem;
+  color: rgba(0, 0, 0, 0.8);
   background-color: #f1f2f6;
-  border: 1px solid #31456a;
-  border-radius: 0.4rem;
+  border: none;
+  /* box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2); */
+  border-radius: 0.5rem;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
-
 input[type="checkbox"] {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   padding: 0;
-  border-radius: 0.2rem;
+  border-radius: 0.25rem;
   color: #f1f2f6;
-  font-weight: bold;
-  font-size: 1.2rem;
+  font-weight: 500;
+  font-size: 1.125rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
 }
 
 input[type="checkbox"]::before {
@@ -235,8 +237,10 @@ input[type="checkbox"]:hover {
 }
 
 input[type="checkbox"]:checked {
-  background-color: #31456a;
+  /* background-color: #31456a; */
+  background-color: #ee3a3d;
   color: #f1f2f6;
+  box-shadow: none;
 }
 
 input[type="checkbox"]:checked::before {
@@ -262,7 +266,9 @@ input[type="radio"]:checked {
 
 input:not([type="checkbox"], [type="radio"]):focus,
 select:focus {
-  border: 1px solid #31456a;
+  /* border: 1px solid #31456a; */
+  /* box-shadow: 0 0 0 2px #ee3a3d; */
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -297,22 +303,22 @@ input:-webkit-autofill:active {
 }
 
 input::-webkit-input-placeholder {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #939fb2;
 }
 
 input:-ms-input-placeholder {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #939fb2;
 }
 
 textarea::-webkit-input-placeholder {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #939fb2;
 }
 
 textarea:-ms-input-placeholder {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #939fb2;
 }
 
@@ -322,17 +328,26 @@ select::-ms-expand {
 
 textarea {
   filter: none;
-  height: 3.6rem;
+  height: 4.5rem;
   padding: 1rem;
-  font-size: clamp(1.4rem, 1.4vw, 1.6rem);
+  font-size: 1.125rem;
   background-color: #f1f2f6;
-  border: 1px solid #31456a;
+  /* border: 1px solid #31456a; */
+  border: none;
   border-radius: 0.4rem;
   transition: all 0.3s ease;
 }
+textarea:focus {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.4);
+}
 
 label {
-  font-size: clamp(1.2rem, 1.2vw, 1.3rem);
+  font-size: 1.125rem;
+  /* font-size: clamp(1.2rem, 1.2vw, 1.3rem); */
+}
+.form-checkgroup label {
+  font-size: 1rem;
+  /* font-size: clamp(1.2rem, 1.2vw, 1.3rem); */
 }
 
 ::-webkit-scrollbar {
