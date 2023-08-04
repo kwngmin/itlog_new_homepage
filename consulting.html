@@ -417,21 +417,21 @@
             </div>
           </div>
         </article>
-        <div id="alert-notice" onclick="closeAlertNotice()">
+        <div id="alert-notice">
           <!-- <div id="alert-warning" onclick="closeAlertWarning()"> -->
           <div class="alert-warning-content">
             <span id="alert-warning-content-text">경고문구</span>
-            <div>확인</div>
+            <div onclick="closeAlertNotice()">확인</div>
           </div>
         </div>
-        <div id="alert-complete" onclick="closeAlertComplete()">
+        <div id="alert-complete">
           <div class="alert-complete-content">
             <div class="alert-icon">
               <img src="/img/icon/sent.png" alt="" />
             </div>
             <span>신청이 완료되었습니다.</span>
             <div class="alert-complete-content-btns">
-              <div>닫기</div>
+              <div onclick="closeAlertComplete()">닫기</div>
               <div class="homebtn" onclick="moveHome()">홈으로</div>
             </div>
           </div>
