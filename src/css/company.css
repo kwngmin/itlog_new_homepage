@@ -900,7 +900,7 @@ section article {
   width: 100%;
 }
 #alert-copy {
-  /* display: none; */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
