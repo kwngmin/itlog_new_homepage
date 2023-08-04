@@ -376,13 +376,12 @@ h3.knowhow-description * {
   background-position: center center;
 }
 
-/* 제품 */
+/* 통합IoT솔루션 */
 .product {
   width: 100%;
   padding: 0;
 }
 .productSwiper-container {
-  /* background-color: rgb(245, 245, 245); */
   background-image: linear-gradient(
     145deg,
     rgb(241, 245, 249),
@@ -390,13 +389,10 @@ h3.knowhow-description * {
   );
   width: 100%;
   max-width: 1200px;
-  /* height: 63rem; */
   overflow: hidden;
   border-radius: 2rem;
   padding: 4rem 0;
   margin: 0 auto;
-
-  /* margin-top: 3rem; */
   position: relative;
 }
 .product-title {
@@ -449,7 +445,7 @@ h3.knowhow-description * {
 }
 .productSwiper-container .swiper-slide .swiper-graphic-deep {
   position: absolute;
-  right: -14%;
+  right: -16%;
   top: 56%;
   transform: translateY(-50%);
   height: 120%;
@@ -566,6 +562,9 @@ h3.knowhow-description * {
   .productSwiper-container {
     width: 100%;
   }
+  .productSwiper-container .swiper-slide .swiper-graphic-data {
+    right: -30%;
+  }
   .productSwiper-container .swiper-slide .swiper-graphic-face {
     right: -20%;
     height: 180%;
@@ -644,13 +643,27 @@ h3.knowhow-description * {
   }
   .productSwiper-container .swiper-slide .swiper-graphic-data {
     top: -10%;
+    left: 0%;
   }
   .productSwiper-container .swiper-slide .swiper-graphic-deep {
     top: 30%;
+    left: -8%;
     height: 100%;
   }
+  .productSwiper-container .swiper-slide .black-filter {
+    display: none;
+    position: absolute;
+    /* background-color: aqua; */
+    background-image: linear-gradient(to bottom, transparent, black);
+    width: 100%;
+    height: 40%;
+    top: 50%;
+  }
   .productSwiper-container .swiper-slide .swiper-graphic-face {
-    top: 30%;
+    /* bottom: 0; */
+    top: 18%;
+    scale: 90%;
+    left: -16%;
   }
 }
 @media screen and (max-width: 640px) {
@@ -663,6 +676,9 @@ h3.knowhow-description * {
   .productSwiper-container .swiper-slide .swiper-graphic-deep {
     top: 30%;
     height: 100%;
+  }
+  .productSwiper-container .swiper-slide .black-filter {
+    display: block;
   }
   .productSwiper-container .swiper-slide .swiper-graphic-face {
     right: -50%;
