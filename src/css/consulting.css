@@ -213,9 +213,9 @@ section {
   .contactUs-contents .form-checkgroup {
     grid-template-columns: repeat(3, 1fr);
   }
-  .agree-check {
+  /* .agree-check {
     padding: 1rem 0;
-  }
+  } */
 }
 @media screen and (max-width: 767px) {
   .contactUs-contents {
@@ -238,9 +238,9 @@ section {
   .contactUs-contents .form-group > label {
     margin: 0.75rem 0;
   }
-  .agree-check {
-    padding: 0.5rem 0;
-  }
+  /* .agree-check {
+    padding: 1rem 0;
+  } */
   #consulting-submit {
     margin-bottom: 3rem;
   }
