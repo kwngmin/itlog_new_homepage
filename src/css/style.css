@@ -31,7 +31,14 @@ html {
 *::after {
   box-sizing: border-box;
 }
-
+::-moz-selection {
+  background: #ee3a3d;
+  color: #fff;
+}
+::selection {
+  background: #ee3a3d;
+  color: #fff;
+}
 body {
   width: 100%;
   height: 100vh;
