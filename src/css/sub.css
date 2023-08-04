@@ -178,7 +178,7 @@ main {
 @media screen and (max-width: 767px) {
   #keyPoint {
     padding: 0 1rem;
-    margin: 1rem 0;
+    margin: 4rem 0;
   }
   .keyPoint-contents {
     gap: 1rem;
@@ -198,9 +198,9 @@ main {
   .keyPoint-box-text {
     padding: 0 1.25rem;
   }
-  .keyPoint-title {
+  /* .keyPoint-title {
     display: none;
-  }
+  } */
   .keyPoint-box-text h5 {
     font-size: 1.125rem;
   }
@@ -306,6 +306,7 @@ main {
 @media screen and (max-width: 767px) {
   #subProduct {
     padding: 0 1rem;
+    margin: 4rem 0;
   }
   .subProduct-contents {
     gap: 4rem;
@@ -348,7 +349,7 @@ main {
 #effect {
   width: 100%;
   padding: 0 4rem;
-  margin: 8rem 0;
+  margin: 6rem 0;
 }
 .effect-container {
   width: 100%;
@@ -459,6 +460,7 @@ main {
 @media screen and (max-width: 767px) {
   #effect {
     padding: 0 1rem;
+    margin: 4rem 0;
   }
   .effect-contents {
     /* max-width: 500px; */

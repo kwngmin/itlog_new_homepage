@@ -82,7 +82,7 @@ main {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 8rem;
+  gap: 6rem;
   align-items: center;
 }
 .keyPoint-title {
@@ -97,7 +97,7 @@ main {
   row-gap: 4rem;
 }
 .keyPoint-title h2 {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   letter-spacing: -0.1rem;
 }
 .keyPoint-box {
@@ -108,7 +108,7 @@ main {
   width: 6rem;
   padding: 1.25rem;
   /* background-color: #ee3a3d; */
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,16 +145,13 @@ main {
 @media screen and (max-width: 1023px) {
   .key-point {
     padding: 0 2rem;
-    margin: 3rem 0;
+    margin: 5rem 0;
   }
   .keyPoint-container {
     gap: 4rem;
   }
   .keyPoint-title {
-    width: 100%;
-  }
-  .keyPoint-title h2 {
-    display: none;
+    width: 90%;
   }
   .keyPoint-title h6 {
     text-align: left;
@@ -175,7 +172,7 @@ main {
 @media screen and (max-width: 767px) {
   .key-point {
     padding: 0 1rem;
-    margin: 2rem 0;
+    margin: 4rem 0;
   }
   .keyPoint-title h5 {
     line-height: 1.65;
@@ -183,9 +180,6 @@ main {
   .keyPoint-container {
     gap: 3rem;
   }
-  /* .keyPoint-title {
-    width: 100%;
-  } */
   .keyPoint-icon {
     width: 5.5rem;
     padding: 1rem;
@@ -712,7 +706,8 @@ main {
 /* 자주묻는질문 */
 .QnA {
   width: 100%;
-  padding: 14rem 4rem;
+  padding: 0 4rem;
+  margin: 6rem 4rem;
 }
 .qna-container {
   width: 100%;
@@ -771,7 +766,8 @@ main {
 @media screen and (max-width: 1023px) {
   .QnA {
     width: 100%;
-    padding: 6rem 2rem;
+    padding: 0 2rem;
+    margin: 5rem 0;
   }
   .qna-container {
     display: block;
@@ -791,7 +787,8 @@ main {
 /* 768px 미만 적용 */
 @media screen and (max-width: 767px) {
   .QnA {
-    padding: 4rem 1rem;
+    padding: 0 1rem;
+    margin: 4rem 0;
   }
   .accordionQ .icon {
     margin: 0;
