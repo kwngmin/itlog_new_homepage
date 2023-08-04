@@ -2,6 +2,14 @@
   border-bottom: 1px solid transparent;
   /* border-bottom: 100px solid red; */
 }
+::-moz-selection {
+  background: #ee3a3d;
+  color: #fff;
+}
+::selection {
+  background: #ee3a3d;
+  color: #fff;
+}
 body {
   display: flex;
   flex-direction: column;
