@@ -14,7 +14,7 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.main-text h2 {
+.main-text h4 {
   opacity: 0;
   color: #fff;
   animation: maintextH1 0.6s 0.3s ease forwards;
@@ -50,6 +50,12 @@ main {
 }
 /* 1024px 미만 적용 */
 @media screen and (max-width: 1023px) {
+  main {
+    height: 16rem;
+  }
+  .main-text {
+    top: 63%;
+  }
   .main-text {
     width: calc(100% - 4rem);
   }
@@ -62,6 +68,12 @@ main {
 }
 /* 768px 미만 적용 */
 @media screen and (max-width: 767px) {
+  main {
+    height: 12rem;
+  }
+  .main-text {
+    top: 67%;
+  }
   .main-text {
     width: calc(100% - 2rem);
   }
