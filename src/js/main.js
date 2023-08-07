@@ -110,7 +110,7 @@ const swiper = new Swiper(".productSwiper-container", {
   rewind: true,
   pagination: {
     el: ".swiper-pagination",
-    // clickable: true,
+    clickable: true,
     renderBullet: function (index, swiperBtn) {
       const list = ["BigData", "Deep Learning", "Ai", "Smart Safety"];
       return (

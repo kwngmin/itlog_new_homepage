@@ -376,6 +376,15 @@ h3.knowhow-description * {
   display: flex;
   align-items: center;
 }
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin-left: 0;
+  margin-right: 0.5rem;
+  letter-spacing: 0;
+  width: fit-content;
+  flex-shrink: 0;
+}
 .productSwiper-container .swiper-pagination .swiper-pagination-bullet {
   width: fit-content;
   height: 2.5rem;
@@ -449,32 +458,21 @@ h3.knowhow-description * {
   }
 }
 @media screen and (max-width: 767px) {
-  .productSwiper-container div.swiper-pagination {
+  .productSwiper-container .swiper-pagination {
     padding: 0 1.5rem;
     height: 2rem;
     justify-content: center;
   }
-  /* .productSwiper-container .swiper-pagination .swiper-pagination-bullet {
-    height: 10px;
-    width: 10px;
-    padding: 0;
-  } */
   .productSwiper-container
     .swiper-pagination
     .swiper-pagination-bullet
     .pagination-btn {
     display: none;
   }
-  .productSwiper-container .swiper-pagination span.swiper-pagination-bullet {
+  .productSwiper-container .swiper-pagination .swiper-pagination-bullet {
     height: 10px;
     width: 10px;
     padding: 0;
-    background-color: rgb(254, 226, 226);
-  }
-  .productSwiper-container
-    .swiper-pagination
-    span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: #ee3a3d;
   }
   .product {
     padding: 0;
