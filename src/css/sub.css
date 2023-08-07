@@ -264,12 +264,15 @@ main {
   overflow: hidden;
   height: 100%;
   border-radius: 2rem;
-  /* aspect-ratio: 4 / 3; */
-  /* object-fit: contain; */
 }
 .subProduct-img img {
   width: 100%;
   height: 100%;
+}
+.subProduct-img.moving-camera img {
+  width: 170%;
+  height: 100%;
+  object-position: right 160px top 0;
 }
 .subProduct-text {
   padding: 2rem 4rem;
