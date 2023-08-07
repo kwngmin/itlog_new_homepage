@@ -103,45 +103,39 @@ const counter = (el, data, idx, time, type) => {
   idx === 2 ? (count = false) : null;
 };
 //제품 슬라이드
-setTimeout(function () {
-  const swiper = new Swiper(
-    ".productSwiper-container",
-    {
-      slidesPerView: "auto",
-      centeredSlides: true,
-      spaceBetween: 12,
-      rewind: true,
-      pagination: {
-        el: ".swiper-pagination",
-        // clickable: true,
-        renderBullet: function (index, swiperBtn) {
-          const list = ["BigData", "Deep Learning", "Ai", "Smart Safety"];
-          return (
-            '<span class="' +
-            swiperBtn +
-            '"><span class="pagination-btn">' +
-            list[index] +
-            "</span></span>"
-          );
-        },
-      },
-      breakpoints: {
-        // 화면의 넓이가 768px 이상일 때
-        768: {
-          spaceBetween: 16,
-        },
-        1024: {
-          spaceBetween: 24,
-        },
-      },
-      speed: 400,
-      // autoplay: {
-      //   delay: 6000,
-      //   disableOnInteraction: false,
-      // },
+const swiper = new Swiper(".productSwiper-container", {
+  slidesPerView: "auto",
+  centeredSlides: true,
+  spaceBetween: 12,
+  rewind: true,
+  pagination: {
+    el: ".swiper-pagination",
+    // clickable: true,
+    renderBullet: function (index, swiperBtn) {
+      const list = ["BigData", "Deep Learning", "Ai", "Smart Safety"];
+      return (
+        '<span class="' +
+        swiperBtn +
+        '"><span class="pagination-btn">' +
+        list[index] +
+        "</span></span>"
+      );
     },
-    100
-  );
+  },
+  breakpoints: {
+    // 화면의 넓이가 768px 이상일 때
+    768: {
+      spaceBetween: 16,
+    },
+    1024: {
+      spaceBetween: 24,
+    },
+  },
+  speed: 400,
+  // autoplay: {
+  //   delay: 6000,
+  //   disableOnInteraction: false,
+  // },
 });
 // 건설사 이미지 셋팅
 const partnership = [
