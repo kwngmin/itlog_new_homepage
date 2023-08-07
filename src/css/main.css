@@ -449,28 +449,31 @@ h3.knowhow-description * {
   }
 }
 @media screen and (max-width: 767px) {
-  .productSwiper-container .swiper-pagination {
+  .productSwiper-container div.swiper-pagination {
     padding: 0 1.5rem;
     height: 2rem;
     justify-content: center;
   }
-  .productSwiper-container .swiper-pagination .swiper-pagination-bullet {
+  /* .productSwiper-container .swiper-pagination .swiper-pagination-bullet {
     height: 10px;
     width: 10px;
     padding: 0;
-  }
+  } */
   .productSwiper-container
     .swiper-pagination
     .swiper-pagination-bullet
     .pagination-btn {
     display: none;
   }
-  .productSwiper-container .swiper-pagination .swiper-pagination-bullet {
+  .productSwiper-container .swiper-pagination span.swiper-pagination-bullet {
+    height: 10px;
+    width: 10px;
+    padding: 0;
     background-color: rgb(254, 226, 226);
   }
   .productSwiper-container
     .swiper-pagination
-    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: #ee3a3d;
   }
   .product {
