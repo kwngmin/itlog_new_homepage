@@ -156,7 +156,12 @@ main {
   word-break: keep-all;
   margin: 0 auto;
   color: rgba(0, 0, 0, 0.6);
-  /* width: 20rem; */
+}
+.keyPoint-box-text-p-padding-sm {
+  padding: 0 0.5rem;
+}
+.keyPoint-box-text-p-padding-lg {
+  padding: 0 1.5rem;
 }
 @media screen and (max-width: 1365px) {
 }
@@ -172,6 +177,7 @@ main {
     background-color: white;
     padding: 1.25rem;
   }
+
   .keyPoint-box h5 {
     padding-top: 0;
   }
@@ -204,13 +210,17 @@ main {
     width: 100%;
   }
   .keyPoint-box-text {
-    padding: 0 1.25rem;
+    padding-left: 1.25rem;
+    padding-right: 2rem;
   }
   .keyPoint-box-text h5 {
     font-size: 1.125rem;
   }
   .keyPoint-box-text p {
     width: 100%;
+    padding: 0;
+  }
+  .keyPoint-box-text-p-padding-sm {
     padding: 0;
   }
 }
@@ -552,5 +562,19 @@ main {
 @media screen and (max-width: 767px) {
   #procedure {
     display: none;
+  }
+}
+.over-767 {
+  display: block;
+}
+.under-767 {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .over-767 {
+    display: none;
+  }
+  .under-767 {
+    display: block;
   }
 }
