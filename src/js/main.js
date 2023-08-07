@@ -131,7 +131,7 @@ const swiper = new Swiper(".productSwiper-container", {
       spaceBetween: 24,
     },
   },
-  // speed: 400,
+  speed: 400,
   // autoplay: {
   //   delay: 6000,
   //   disableOnInteraction: false,

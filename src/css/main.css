@@ -369,21 +369,15 @@ h3.knowhow-description * {
 }
 .productSwiper-container .swiper-pagination {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
+  width: calc(100% - 8rem);
   bottom: 0;
   height: 4rem;
-  padding: 0 4rem;
+  /* padding: 0 4rem; */
+  margin: 0 4rem;
   display: flex;
   align-items: center;
-}
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet {
-  margin-left: 0;
-  margin-right: 0.5rem;
-  letter-spacing: 0;
-  width: fit-content;
-  flex-shrink: 0;
+  background-color: #34d399;
 }
 .productSwiper-container .swiper-pagination .swiper-pagination-bullet {
   width: fit-content;
@@ -397,6 +391,7 @@ h3.knowhow-description * {
   align-items: center;
   opacity: 1;
   font-weight: 500;
+  flex-shrink: 0;
 }
 .productSwiper-container
   .swiper-pagination
