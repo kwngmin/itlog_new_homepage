@@ -1,10 +1,8 @@
 let iWIdth;
-
 // 로드 후 실행
 window.addEventListener("DOMContentLoaded", () => {
   iWIdth = window.innerWidth;
 });
-
 // 사이즈 변경 되면 실행
 window.addEventListener("resize", () => {
   // iOS height 구하기
@@ -16,13 +14,11 @@ window.addEventListener("resize", () => {
     `${innerHeight}px`
   );
   iWIdth = window.innerWidth;
-  // console.log(iWIdth);
   if (iWIdth > 1024) {
     closeNav();
     closeList();
   }
 });
-
 // 스크롤 하면 실행
 window.addEventListener("scroll", () => {
   if (window && window.scrollY > 100) {
@@ -30,7 +26,6 @@ window.addEventListener("scroll", () => {
     scrollTop();
   }
 });
-
 // iOS height 구하기
 window.addEventListener("DOMContentLoaded", function (ev) {
   const { innerHeight } = window;
@@ -39,10 +34,8 @@ window.addEventListener("DOMContentLoaded", function (ev) {
     `${innerHeight}px`
   );
 });
-
 let scrollPosition = 0;
-
-// 데스크톱에서 리스트 열기
+// 데스크톱에서 리스트 열고 닫기
 const openAboutCompany = () => {
   document.getElementById("aboutProduct").style.display = "none";
   document.getElementById("desktopList-filter").style.display = "flex";

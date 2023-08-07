@@ -1,21 +1,17 @@
 // 로드 후 실행
 window.addEventListener("DOMContentLoaded", () => {
   partnershipList();
-
   if (window.scrollY > 100) {
     document.getElementById("header").classList.remove("header-active");
   } else {
     document.getElementById("header").classList.add("header-active");
   }
 });
-
 // 사이즈 변경 되면 실행
 window.addEventListener("resize", () => {});
-
 let hammerCount = true;
 let ideaCount = true;
 let handCount = true;
-
 // 스크롤 하면 실행
 window.addEventListener("scroll", () => {
   if (window && window.scrollY === 0) {
@@ -27,8 +23,7 @@ window.addEventListener("scroll", () => {
     document.getElementById("header").classList.remove("header-active");
     scrollTop();
   }
-
-  // 메리트 카운트 시작
+  // 노하우 카운트 시작
   const numList = document.querySelectorAll(".knowhow-num");
   if (hammerCount) {
     const type = "hammer";
@@ -79,7 +74,7 @@ window.addEventListener("scroll", () => {
     });
   }
 });
-// 메리트 숫자 카운팅
+// 노하우 숫자 카운팅
 const counter = (el, data, idx, time, type) => {
   if (type === "hammer") {
     hammerCount = false;
@@ -107,7 +102,6 @@ const counter = (el, data, idx, time, type) => {
   }, time);
   idx === 2 ? (count = false) : null;
 };
-
 //제품 슬라이드
 const swiper = new Swiper(".productSwiper-container", {
   slidesPerView: "auto",
@@ -143,7 +137,6 @@ const swiper = new Swiper(".productSwiper-container", {
   //   disableOnInteraction: false,
   // },
 });
-
 // 건설사 이미지 셋팅
 const partnership = [
   "dar",
@@ -157,7 +150,6 @@ const partnership = [
 ];
 const partnershipList = () => {
   const list = document.querySelectorAll(".partnership-slide");
-
   for (let i = 0; i < list.length; i++) {
     partnership.forEach((item) => {
       const image = document.createElement("div");
