@@ -478,17 +478,18 @@ h3.knowhow-description * {
 .productSwiper-container .swiper-slide .swiper-graphic-deep {
   position: absolute;
   right: -16%;
-  top: 56%;
+  top: 50%;
   transform: translateY(-50%);
   height: 120%;
 }
 .productSwiper-container .swiper-slide .swiper-graphic-face {
   position: absolute;
-  mix-blend-mode: lighten;
+  /* mix-blend-mode: lighten; */
   right: -16%;
   top: 50%;
   transform: translateY(-50%);
   height: 200%;
+  z-index: 500;
 }
 .productSwiper-container .swiper-slide .swiper-graphic-business {
   position: absolute;
@@ -507,7 +508,7 @@ h3.knowhow-description * {
   width: 100%;
   display: flex;
   flex-direction: column;
-  z-index: 100;
+  z-index: 700;
 }
 .productSwiper-container .slide-text h6 {
   font-weight: 600;
@@ -577,6 +578,9 @@ h3.knowhow-description * {
   .pagination-btn {
   color: white;
 }
+.productSwiper-container .swiper-slide .black-filter {
+  display: none;
+}
 @media screen and (max-width: 1365px) {
   .product {
     padding: 6rem 4rem;
@@ -613,7 +617,7 @@ h3.knowhow-description * {
     right: -40%;
   }
   .productSwiper-container .swiper-slide .swiper-graphic-deep {
-    right: -24%;
+    right: -28%;
   }
   .productSwiper-container .swiper-slide .swiper-graphic-face {
     right: -28%;
@@ -673,36 +677,32 @@ h3.knowhow-description * {
     font-size: 1rem;
     width: 100%;
   }
-  .productSwiper-container .swiper-slide .swiper-graphic-data {
-    top: -10%;
-    left: 0%;
-  }
   .productSwiper-container .swiper-slide .swiper-graphic-deep {
-    top: 30%;
-    left: -8%;
+    top: 32%;
+    right: -20%;
+    transform: translate(50% 50%);
     height: 100%;
   }
   .productSwiper-container .swiper-slide .black-filter {
-    display: none;
     position: absolute;
-    /* background-color: aqua; */
-    background-image: linear-gradient(to bottom, transparent, black);
+    display: block;
+    background-image: linear-gradient(to bottom, transparent 0, black 50%);
     width: 100%;
     height: 40%;
     top: 50%;
+    z-index: 600;
   }
   .productSwiper-container .swiper-slide .swiper-graphic-face {
-    /* bottom: 0; */
     top: 18%;
     scale: 90%;
-    left: -16%;
+    /* right: -48%; */
   }
 }
 @media screen and (max-width: 640px) {
   .productSwiper-container .swiper-slide {
     height: 24rem;
   }
-  .productSwiper-container .swiper-slide .swiper-graphic-data {
+  /* .productSwiper-container .swiper-slide .swiper-graphic-data {
     height: 160%;
   }
   .productSwiper-container .swiper-slide .swiper-graphic-deep {
@@ -714,6 +714,32 @@ h3.knowhow-description * {
   }
   .productSwiper-container .swiper-slide .swiper-graphic-face {
     right: -50%;
+  } */
+
+  .productSwiper-container .swiper-slide .swiper-graphic-data {
+    top: -10%;
+    left: 0%;
+  }
+  .productSwiper-container .swiper-slide .swiper-graphic-deep {
+    top: 24%;
+    right: -60%;
+    transform: translate(50% 50%);
+    height: 100%;
+  }
+  .productSwiper-container .swiper-slide .black-filter {
+    /* display: none; */
+    position: absolute;
+    display: block;
+    background-image: linear-gradient(to bottom, transparent 0, black 50%);
+    width: 100%;
+    height: 40%;
+    top: 50%;
+    z-index: 600;
+  }
+  .productSwiper-container .swiper-slide .swiper-graphic-face {
+    top: 18%;
+    scale: 90%;
+    right: -48%;
   }
 }
 /* 솔루션 */
@@ -1097,15 +1123,11 @@ h3.knowhow-description * {
     margin: 0 auto;
   }
 }
-
 @media screen and (max-width: 767px) {
   .instance {
     padding: 0 1rem;
     margin: 8rem 0;
   }
-  /* .instance-box .instance-img {
-    aspect-ratio: 2 / 1;
-  } */
 }
 @media screen and (max-width: 640px) {
   .instance-contents {
@@ -1182,14 +1204,11 @@ h3.knowhow-description * {
     margin: 8rem 0;
   }
 }
-
 /* 건설사 */
-
 .partnership {
   width: 100%;
   position: relative;
 }
-
 .light-gradation-filter {
   height: 60%;
   width: 100%;
@@ -1198,7 +1217,6 @@ h3.knowhow-description * {
   z-index: 50;
   background-image: linear-gradient(to top, transparent, white);
 }
-
 .partnership-container {
   width: 100%;
   height: 24rem;
@@ -1207,12 +1225,10 @@ h3.knowhow-description * {
   /* padding-top: 6rem; */
   padding: 6rem 4rem 0;
 }
-
 .partnership-container::before {
   content: "";
   background: url("../../img/ship1.jpg") no-repeat;
   background-position: center;
-  /* background-attachment: fixed; */
   background-size: cover;
   opacity: 0.3;
   position: absolute;
@@ -1221,7 +1237,6 @@ h3.knowhow-description * {
   right: 0px;
   bottom: 0px;
 }
-
 .partnership-container .partnership-title {
   width: 100%;
   max-width: 1200px;
@@ -1230,53 +1245,44 @@ h3.knowhow-description * {
   z-index: 100;
   position: relative;
 }
-
 .partnership-title h3 {
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.7);
   word-break: keep-all;
 }
-
 .partnership-container .light-filter {
   height: 8rem;
   /* height: 100%; */
   top: initial;
   bottom: 0;
 }
-
 .partnership-image {
   display: flex;
   position: absolute;
   bottom: 0;
   height: 8rem;
 }
-
 .partnership-container .partnership-slide {
   display: flex;
   justify-content: center;
   align-items: center;
   animation: loop 50s linear infinite;
 }
-
 .partnership-container:hover > .partnership-slide {
   animation-play-state: paused;
 }
-
 .partnership-slide .slide-image {
   width: 12rem;
   margin: 2rem;
   transition: transform 0.3s ease;
 }
-
 .partnership-slide .slide-image:hover {
   transform: scale(1.1);
 }
-
 .partnership-slide .slide-image > img {
   width: 100%;
   height: 100%;
 }
-
 @media screen and (max-width: 767px) {
   .partnership-container {
     height: 20rem;
@@ -1287,13 +1293,11 @@ h3.knowhow-description * {
     /* text-align: left; */
   }
 }
-
 @keyframes loop {
   100% {
     transform: translateX(-100%);
   }
 }
-
 @-webkit-keyframes loop {
   100% {
     transform: translateX(-100%);
@@ -1302,73 +1306,4 @@ h3.knowhow-description * {
 
 .partnership-br {
   display: none;
-}
-
-@media screen and (max-width: 1365px) {
-  .merit-container {
-    display: block;
-  }
-
-  .merit-title {
-    position: initial;
-    padding-bottom: 4rem;
-    text-align: center;
-    width: fit-content;
-    margin: 0 auto;
-  }
-
-  .merit-contents {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-
-  .merit-count h6 {
-    padding-top: 1rem;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .merit {
-    padding: 14rem 4rem 20rem;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .merit {
-    padding: 10rem 2rem 16rem;
-  }
-
-  .merit::before {
-    background-position: 72% center;
-  }
-
-  .merit-contents {
-    max-width: 600px;
-  }
-
-  .merit-title {
-    width: initial;
-    text-align: left;
-  }
-
-  .merit-title h3 {
-    font-size: min(6vw, 3rem);
-  }
-
-  .merit-title h2 {
-    font-size: min(7vw, 4rem);
-  }
-
-  .hex {
-    width: 40%;
-  }
-
-  .hex:nth-of-type(6n + 4) {
-    margin-left: 0%;
-  }
-
-  .hex:nth-of-type(6n + 3) {
-    margin-left: 20%;
-  }
 }
