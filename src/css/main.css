@@ -376,15 +376,13 @@ h3.knowhow-description * {
   display: flex;
   align-items: center;
 }
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet {
+/* .productSwiper-container .swiper-pagination .swiper-pagination-bullet {
   margin-left: 0;
   margin-right: 0.5rem;
   letter-spacing: 0;
   width: fit-content;
   flex-shrink: 0;
-}
+} */
 .productSwiper-container .swiper-pagination .swiper-pagination-bullet {
   width: fit-content;
   height: 2.5rem;
