@@ -422,14 +422,14 @@ section article {
 .history-box {
   clear: both;
   width: 50%;
-  padding-right: 4rem;
+  padding-right: 3rem;
   padding-left: 0;
   position: relative;
   margin-bottom: 4rem;
 }
 .history-box.right-box {
   float: right;
-  padding-left: 4rem;
+  padding-left: 3rem;
   padding-right: 0;
 }
 .history-box.left-box {
@@ -523,6 +523,14 @@ section article {
   color: #ee3a3d;
   right: -20px;
   top: 0;
+}
+@media screen and (max-width: 1023px) {
+  .history-mon {
+    font-size: 1.125rem;
+  }
+  .history-text li {
+    font-size: 1.125rem;
+  }
 }
 @media screen and (max-width: 767px) {
   .history-box {
