@@ -131,11 +131,11 @@ const swiper = new Swiper(".productSwiper-container", {
       spaceBetween: 24,
     },
   },
-  // speed: 400,
-  // autoplay: {
-  //   delay: 6000,
-  //   disableOnInteraction: false,
-  // },
+  speed: 400,
+  autoplay: {
+    delay: 12000,
+    disableOnInteraction: false,
+  },
 });
 // 건설사 이미지 셋팅
 const partnership = [
