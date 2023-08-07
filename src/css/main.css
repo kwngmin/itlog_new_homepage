@@ -376,9 +376,10 @@ h3.knowhow-description * {
   display: flex;
   align-items: center;
 }
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.productSwiper-container .swiper-pagination .swiper-pagination-bullet {
+  /* .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet {
+  .swiper-pagination-bullet { */
   margin-left: 0;
   margin-right: 0.5rem;
   letter-spacing: 0;
@@ -458,17 +459,15 @@ h3.knowhow-description * {
   }
 }
 @media screen and (max-width: 767px) {
-  .productSwiper-container .swiper-pagination {
+  .swiper-pagination {
     padding: 0 1.5rem;
     height: 2rem;
     justify-content: center;
   }
-  .productSwiper-container
-    .swiper-pagination
-    .swiper-pagination-bullet
-    .pagination-btn {
+  .swiper-pagination .swiper-pagination-bullet .pagination-btn {
     display: none;
   }
+  /* .swiper-pagination .swiper-pagination-bullet { */
   .productSwiper-container .swiper-pagination .swiper-pagination-bullet {
     height: 10px;
     width: 10px;
