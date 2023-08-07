@@ -1,31 +1,17 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
-/* @import url(https://fonts.googleapis.com/css2?family=Material + Symbols + Outlined); */
-/* @import url(
-  https://fonts.googleapis.com/css2?family=Material + Symbols + Outlined:opsz,
-  wght,
-  FILL,
-  GRAD@20..48,
-  100.7,
-  0.1,
-  -50.2
-); */
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css);
-
 html {
   width: 100%;
 }
-
 * {
   margin: 0;
   padding: 0;
   outline: none;
-  /* font-family: "Roboto", "nanumsquare", sans-serif; */
   font-family: "Spoqa Han Sans Neo", "sans-serif", "serif", "standard";
   letter-spacing: -0.05rem;
   color: #011936;
   word-break: break-all;
 }
-
 *,
 *::before,
 *::after {
@@ -45,17 +31,13 @@ body {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  /* font-size: clamp(1.4rem, 1.4vw, 1.6rem); */
 }
 h1 {
   font-family: "NanumSquare", sans-serif;
   font-weight: 800;
-  font-size: 4rem;
-  /* font-size: 3.75rem; */
+  /* font-size: 4rem; */
+  font-size: 3.75rem;
   line-height: 1.25;
-  /* line-height: 1; */
-  /* font-size: clamp(5.6rem, 5.6vw, 6rem); */
-  /* line-height: clamp(6.2rem, 6.2vw, 6.6rem); */
   text-transform: capitalize;
   word-break: keep-all;
 }
@@ -65,9 +47,6 @@ h2 {
   font-size: 3rem;
   line-height: 1.25;
   word-break: keep-all;
-  /* line-height: 1rem; */
-  /* line-height: 2.5rem; */
-  /* font-size: clamp(3.6rem, 3.6vw, 4rem); */
   text-transform: capitalize;
 }
 h3 {
@@ -78,7 +57,6 @@ h3 {
   word-break: keep-all;
 }
 h4 {
-  /* font-family: "NanumSquareNeo"; */
   font-size: 1.875rem;
   line-height: 1.25;
   font-weight: 500;
@@ -118,7 +96,7 @@ h6 {
   h1 {
     /* font-size: 3.25rem; */
     /* font-size: 3rem; */
-    font-size: 3.75rem;
+    font-size: 3.5rem;
   }
   h2 {
     font-size: 2.25rem;
@@ -171,9 +149,7 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  /* font-size: clamp(1.4rem, 1.4vw, 1.6rem); */
   text-decoration: none;
-  /* color: #011936; */
 }
 img {
   object-fit: cover;
@@ -209,7 +185,6 @@ button {
   font-size: clamp(1.2rem, 1.2vw, 1.3rem);
   font-weight: 100;
 }
-
 input,
 select {
   filter: none;
@@ -239,29 +214,24 @@ input[type="checkbox"] {
   justify-content: center;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
 }
-
 input[type="checkbox"]::before {
   content: "✓";
   overflow: hidden;
   transform: scale(0);
   line-height: 0.7;
 }
-
 input[type="checkbox"]:hover {
   border-color: #011936;
 }
-
 input[type="checkbox"]:checked {
   /* background-color: #31456a; */
   background-color: #ee3a3d;
   color: #f1f2f6;
   box-shadow: none;
 }
-
 input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
-
 input[type="radio"] {
   width: 15px;
   height: 15px;
@@ -270,35 +240,27 @@ input[type="radio"] {
   cursor: pointer;
   transition: all 0.1s ease;
 }
-
 input[type="radio"]:hover {
   border-color: #011936;
 }
-
 input[type="radio"]:checked {
   border: 3px solid #31456a;
 }
-
 input:not([type="checkbox"], [type="radio"]):focus,
 select:focus {
-  /* border: 1px solid #31456a; */
-  /* box-shadow: 0 0 0 2px #ee3a3d; */
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.4);
 }
-
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-out-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
-
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 input[type="number"] {
   -moz-appearance: textfield;
 }
