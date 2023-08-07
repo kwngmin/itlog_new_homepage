@@ -275,8 +275,8 @@ h3.knowhow-description * {
 }
 
 .merit::before {
-  content: "";
-  background-image: url("../../img/merit-background.jpg");
+  content: '';
+  background-image: url('../../img/merit-background.jpg');
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -339,7 +339,7 @@ h3.knowhow-description * {
 }
 
 .hex:after {
-  content: "";
+  content: '';
   display: block;
   padding-bottom: 86.6%;
 }
@@ -391,19 +391,19 @@ h3.knowhow-description * {
 }
 
 .wrap > :nth-child(1) .hex-contents {
-  background: url("../../img/merit1.jpg") no-repeat;
+  background: url('../../img/merit1.jpg') no-repeat;
   background-size: cover;
   background-position: center top;
 }
 
 .wrap > :nth-child(3) .hex-contents {
-  background: url("../../img/merit2.jpg") no-repeat;
+  background: url('../../img/merit2.jpg') no-repeat;
   background-size: cover;
   background-position: center top;
 }
 
 .wrap > :nth-child(5) .hex-contents {
-  background: url("../../img/merit3.jpg") no-repeat;
+  background: url('../../img/merit3.jpg') no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -949,6 +949,9 @@ h3.knowhow-description * {
     padding: 1.125rem;
     border-radius: 1.5rem;
   }
+  .solution-background-sensor-copy {
+    object-position: top 38% right 0;
+  }
 }
 @media screen and (max-width: 640px) {
   .solution-container {
@@ -1206,8 +1209,8 @@ h3.knowhow-description * {
 }
 
 .partnership-container::before {
-  content: "";
-  background: url("../../img/ship1.jpg") no-repeat;
+  content: '';
+  background: url('../../img/ship1.jpg') no-repeat;
   background-position: center;
   /* background-attachment: fixed; */
   background-size: cover;

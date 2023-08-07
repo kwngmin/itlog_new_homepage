@@ -67,6 +67,7 @@ section article {
   }
   section#history-section {
     padding: 0 1rem;
+    padding: 0 1rem;
     margin: 4rem 0;
   }
 }
@@ -425,7 +426,7 @@ section article {
   padding-right: 3rem;
   padding-left: 0;
   position: relative;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .history-box.right-box {
   float: right;
@@ -538,6 +539,14 @@ section article {
   }
   .history-line {
     display: none;
+  }
+  .history-box {
+    /* margin-bottom: 4rem; */
+    margin-bottom: 2rem;
+  }
+  .history-box:last-child {
+    /* margin-bottom: 4rem; */
+    margin-bottom: 0;
   }
   .history-box.right-box {
     padding-left: 0;
