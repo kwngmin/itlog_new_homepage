@@ -570,12 +570,14 @@ section article {
     padding-right: 0;
   }
   .history-text li::before {
-    /* padding-left: 1rem; */
     padding-left: 1rem;
     margin: 0 0.5rem;
   }
   .right-box .history-text li::before {
     margin: 0 0.5rem;
+  }
+  .history-text-mobile-padding {
+    padding-right: 1.5rem;
   }
 }
 /* 기업이념 */
