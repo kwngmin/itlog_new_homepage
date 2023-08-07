@@ -465,6 +465,14 @@ h3.knowhow-description * {
     .pagination-btn {
     display: none;
   }
+  .productSwiper-container .swiper-pagination .swiper-pagination-bullet {
+    background-color: rgb(254, 226, 226);
+  }
+  .productSwiper-container
+    .swiper-pagination
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #ee3a3d;
+  }
   .product {
     padding: 0;
   }
