@@ -369,12 +369,12 @@ h3.knowhow-description * {
 }
 .productSwiper-container .swiper-pagination {
   position: relative;
-  /* width: 100%; */
-  width: calc(100% - 8rem);
+  width: 100%;
+  /* width: calc(100% - 8rem); */
   bottom: 0;
   height: 4rem;
-  /* padding: 0 4rem; */
-  margin: 0 4rem;
+  padding: 0 4rem;
+  /* margin: 0 4rem; */
   display: flex;
   align-items: center;
   background-color: #34d399;
