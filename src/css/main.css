@@ -949,6 +949,9 @@ h3.knowhow-description * {
     padding: 1.125rem;
     border-radius: 1.5rem;
   }
+  .solution-background-sensor-copy {
+    object-position: top 38% right 0;
+  }
 }
 @media screen and (max-width: 640px) {
   .solution-container {
@@ -1299,4 +1302,73 @@ h3.knowhow-description * {
 
 .partnership-br {
   display: none;
+}
+
+@media screen and (max-width: 1365px) {
+  .merit-container {
+    display: block;
+  }
+
+  .merit-title {
+    position: initial;
+    padding-bottom: 4rem;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .merit-contents {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .merit-count h6 {
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .merit {
+    padding: 14rem 4rem 20rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .merit {
+    padding: 10rem 2rem 16rem;
+  }
+
+  .merit::before {
+    background-position: 72% center;
+  }
+
+  .merit-contents {
+    max-width: 600px;
+  }
+
+  .merit-title {
+    width: initial;
+    text-align: left;
+  }
+
+  .merit-title h3 {
+    font-size: min(6vw, 3rem);
+  }
+
+  .merit-title h2 {
+    font-size: min(7vw, 4rem);
+  }
+
+  .hex {
+    width: 40%;
+  }
+
+  .hex:nth-of-type(6n + 4) {
+    margin-left: 0%;
+  }
+
+  .hex:nth-of-type(6n + 3) {
+    margin-left: 20%;
+  }
 }
