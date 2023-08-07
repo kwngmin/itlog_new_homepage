@@ -110,7 +110,7 @@ const swiper = new Swiper(".productSwiper-container", {
   rewind: true,
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
+    // clickable: true,
     renderBullet: function (index, swiperBtn) {
       const list = ["BigData", "Deep Learning", "Ai", "Smart Safety"];
       return (
@@ -132,10 +132,10 @@ const swiper = new Swiper(".productSwiper-container", {
     },
   },
   speed: 400,
-  autoplay: {
-    delay: 12000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 6000,
+  //   disableOnInteraction: false,
+  // },
 });
 // 건설사 이미지 셋팅
 const partnership = [
