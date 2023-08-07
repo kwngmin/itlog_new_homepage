@@ -1,5 +1,6 @@
 .header-active .header-container {
   border-bottom: 1px solid transparent;
+  /* border-bottom: 100px solid red; */
 }
 body {
   display: flex;
@@ -11,6 +12,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: white; */
   padding: 7rem 4rem 14rem;
   overflow: hidden;
   width: 100%;
@@ -37,7 +39,7 @@ main .text-box {
   margin: 0 auto;
   z-index: 10;
   word-break: keep-all;
-  margin-top: 6rem;
+  /* background-color: skyblue; */
 }
 .over-1200 {
   display: block;
@@ -70,9 +72,6 @@ main .text-box .sub-title strong {
 @media screen and (max-width: 1365px) {
 }
 @media screen and (max-width: 1199px) {
-  main .text-box {
-    margin-top: 2rem;
-  }
   .over-1200 {
     display: none;
   }
@@ -81,6 +80,9 @@ main .text-box .sub-title strong {
   }
 }
 @media screen and (max-width: 1023px) {
+  /* main .text-box h1.title {
+    font-size: 3rem;
+  } */
   main .text-box .sub-title {
     width: 32rem;
   }
@@ -91,7 +93,6 @@ main .text-box .sub-title strong {
   }
   main .text-box {
     padding-bottom: 2rem;
-    margin-top: 0;
   }
   main .text-box .title {
     width: 100%;
@@ -105,6 +106,9 @@ main .text-box .sub-title strong {
   main .text-box {
     padding-bottom: 4rem;
   }
+  /* main .text-box h1.title {
+    font-size: 2.5rem;
+  } */
 }
 /* 노하우 */
 .knowhow {
@@ -119,6 +123,7 @@ main .text-box .sub-title strong {
   max-width: 1200px;
   margin: 0 auto;
   gap: 1rem;
+  /* background-color: #a9d0ff; */
 }
 h3.knowhow-description {
   line-height: 1.25;
@@ -147,6 +152,8 @@ h3.knowhow-description * {
 .knowhow-img img {
   height: 100%;
   width: 100%;
+  /* width: 100%;
+  height: auto; */
 }
 .knowhow-num {
   display: flex;
@@ -176,6 +183,7 @@ h3.knowhow-description * {
 .knowhow-num h2 span {
   color: white;
   margin-right: 0.125rem;
+  /* margin-left: 1rem; */
   margin-left: 0.5rem;
 }
 .knowhow-num p {
@@ -243,6 +251,7 @@ h3.knowhow-description * {
     font-size: 2rem;
   }
   h3.knowhow-description {
+    /* font-size: 1.5rem; */
     width: 90%;
   }
   .knowhow-img,
@@ -250,6 +259,155 @@ h3.knowhow-description * {
     aspect-ratio: 1/1;
   }
 }
+/* 
+.knowhow-contents {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+} */
+
+/* merit(카운트) */
+.merit {
+  width: 100%;
+  padding: 20rem 4rem 26rem;
+  position: relative;
+}
+
+.merit::before {
+  content: '';
+  background-image: url('../../img/merit-background.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  opacity: 0.2;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.merit-container {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.merit-title {
+  position: absolute;
+  right: 0;
+}
+
+.merit-title h3 {
+  font-size: clamp(2rem, 2vw, 3rem);
+  padding-bottom: 1rem;
+  white-space: nowrap;
+}
+
+.merit-title h2 {
+  font-size: clamp(2.7rem, 2.7vw, 3.7rem);
+  white-space: nowrap;
+  font-weight: 800;
+}
+
+.merit-contents {
+  width: 70%;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hex {
+  width: 28.5%;
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  transition-property: transform, opacity !important;
+}
+
+.hex.aos-animate {
+  opacity: 1;
+}
+
+.hex:nth-of-type(6n + 4) {
+  margin-left: 14.2%;
+}
+
+.hex:after {
+  content: '';
+  display: block;
+  padding-bottom: 86.6%;
+}
+
+.hex-inner {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  margin: 1%;
+  padding-bottom: 112.9%;
+  overflow: hidden;
+  visibility: hidden;
+  transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
+}
+
+.hex-contents {
+  position: absolute;
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
+  background: #ee3a3d;
+}
+
+.merit-count {
+  text-align: center;
+}
+
+.merit-count h1 {
+  color: #fff;
+  font-size: clamp(4rem, 4vw, 6rem);
+  line-height: clamp(4rem, 4vw, 6rem);
+  white-space: nowrap;
+}
+
+.merit-count h1 span {
+  color: #fff;
+  padding-right: 0.4rem;
+}
+
+.merit-count h6 {
+  color: #fff;
+  padding-top: clamp(0.5rem, 0.6vw, 1rem);
+  white-space: nowrap;
+}
+
+.wrap > :nth-child(1) .hex-contents {
+  background: url('../../img/merit1.jpg') no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.wrap > :nth-child(3) .hex-contents {
+  background: url('../../img/merit2.jpg') no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.wrap > :nth-child(5) .hex-contents {
+  background: url('../../img/merit3.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 /* 통합IoT솔루션 */
 .product {
   width: 100%;
@@ -273,10 +431,12 @@ h3.knowhow-description * {
   padding: 0 4rem;
   margin-bottom: 2rem;
   width: 100%;
+  /* padding: 0 4rem; */
 }
 .product-title h2 {
   letter-spacing: -0.1rem;
   margin-bottom: 0.5rem;
+  /* line-height: 5rem; */
   word-break: keep-all;
 }
 .product-title h2 span,
@@ -360,12 +520,14 @@ h3.knowhow-description * {
 .productSwiper-container .slide-text p {
   font-weight: 400;
   letter-spacing: -0.025rem;
+  /* margin-bottom: 2rem; */
   font-size: 1.125rem;
   width: 60%;
   word-break: keep-all;
   line-height: 1.65;
   color: white;
   opacity: 0.9;
+  /* line-height: 1.65; */
 }
 .productSwiper-container .swiper-pagination {
   position: relative;
@@ -375,6 +537,7 @@ h3.knowhow-description * {
   padding: 0 4rem;
   display: flex;
   align-items: center;
+  /* background-color: #ee3a3d; */
 }
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
@@ -529,6 +692,7 @@ h3.knowhow-description * {
     top: 50%;
   }
   .productSwiper-container .swiper-slide .swiper-graphic-face {
+    /* bottom: 0; */
     top: 18%;
     scale: 90%;
     left: -16%;
@@ -558,6 +722,7 @@ h3.knowhow-description * {
   padding: 0 4rem;
   margin: 12rem 0;
 }
+
 .solution-container {
   display: flex;
   align-items: center;
@@ -710,6 +875,9 @@ h3.knowhow-description * {
 }
 .solution-icon {
   display: flex;
+  /* width: 6rem;
+  padding: 1.25rem;
+  border-radius: 2rem; */
   width: 7rem;
   padding: 1.5rem;
   border-radius: 2rem;
@@ -723,9 +891,11 @@ h3.knowhow-description * {
 }
 @media screen and (max-width: 1023px) {
   .solution-text-box-left {
+    /* width: 60%; */
     margin-right: 2rem;
   }
   .solution-text-box-right {
+    /* width: 60%; */
     margin-left: 2rem;
   }
   .solution-graphic {
@@ -765,6 +935,7 @@ h3.knowhow-description * {
     margin: 8rem 0;
   }
   .solution-text-box-left {
+    /* width: 50%; */
     margin-right: 2rem;
   }
   .solution-text-box-right {
@@ -822,6 +993,7 @@ h3.knowhow-description * {
   }
   .solution-background-gate {
     width: 46%;
+    /* width: 70%; */
   }
   .solution-background-cctv {
     width: 70%;
@@ -925,11 +1097,15 @@ h3.knowhow-description * {
     margin: 0 auto;
   }
 }
+
 @media screen and (max-width: 767px) {
   .instance {
     padding: 0 1rem;
     margin: 8rem 0;
   }
+  /* .instance-box .instance-img {
+    aspect-ratio: 2 / 1;
+  } */
 }
 @media screen and (max-width: 640px) {
   .instance-contents {
@@ -941,10 +1117,12 @@ h3.knowhow-description * {
   width: 100%;
   padding: 0 4rem;
   margin: 4rem 0;
+  /* background-color: antiquewhite; */
 }
 .help-center-container {
   display: flex;
   flex-direction: column;
+  /* background-color: cadetblue; */
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -967,6 +1145,7 @@ h3.knowhow-description * {
 }
 .help-center-buttons {
   display: flex;
+  /* max-width: 1000px; */
   gap: 1rem;
   margin: 2rem 0;
   font-size: 1.5rem;
@@ -1003,11 +1182,14 @@ h3.knowhow-description * {
     margin: 8rem 0;
   }
 }
+
 /* 건설사 */
+
 .partnership {
   width: 100%;
   position: relative;
 }
+
 .light-gradation-filter {
   height: 60%;
   width: 100%;
@@ -1016,17 +1198,21 @@ h3.knowhow-description * {
   z-index: 50;
   background-image: linear-gradient(to top, transparent, white);
 }
+
 .partnership-container {
   width: 100%;
   height: 24rem;
   position: relative;
   overflow: hidden;
+  /* padding-top: 6rem; */
   padding: 6rem 4rem 0;
 }
+
 .partnership-container::before {
-  content: "";
-  background: url("../../img/ship1.jpg") no-repeat;
+  content: '';
+  background: url('../../img/ship1.jpg') no-repeat;
   background-position: center;
+  /* background-attachment: fixed; */
   background-size: cover;
   opacity: 0.3;
   position: absolute;
@@ -1035,50 +1221,62 @@ h3.knowhow-description * {
   right: 0px;
   bottom: 0px;
 }
+
 .partnership-container .partnership-title {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  /* text-align: center; */
   z-index: 100;
   position: relative;
 }
+
 .partnership-title h3 {
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.7);
   word-break: keep-all;
 }
+
 .partnership-container .light-filter {
   height: 8rem;
+  /* height: 100%; */
   top: initial;
   bottom: 0;
 }
+
 .partnership-image {
   display: flex;
   position: absolute;
   bottom: 0;
   height: 8rem;
 }
+
 .partnership-container .partnership-slide {
   display: flex;
   justify-content: center;
   align-items: center;
   animation: loop 50s linear infinite;
 }
+
 .partnership-container:hover > .partnership-slide {
   animation-play-state: paused;
 }
+
 .partnership-slide .slide-image {
   width: 12rem;
   margin: 2rem;
   transition: transform 0.3s ease;
 }
+
 .partnership-slide .slide-image:hover {
   transform: scale(1.1);
 }
+
 .partnership-slide .slide-image > img {
   width: 100%;
   height: 100%;
 }
+
 @media screen and (max-width: 767px) {
   .partnership-container {
     height: 20rem;
@@ -1086,18 +1284,91 @@ h3.knowhow-description * {
   }
   .partnership-title h3 {
     font-size: 1.5rem;
+    /* text-align: left; */
   }
 }
+
 @keyframes loop {
   100% {
     transform: translateX(-100%);
   }
 }
+
 @-webkit-keyframes loop {
   100% {
     transform: translateX(-100%);
   }
 }
+
 .partnership-br {
   display: none;
+}
+
+@media screen and (max-width: 1365px) {
+  .merit-container {
+    display: block;
+  }
+
+  .merit-title {
+    position: initial;
+    padding-bottom: 4rem;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .merit-contents {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .merit-count h6 {
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .merit {
+    padding: 14rem 4rem 20rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .merit {
+    padding: 10rem 2rem 16rem;
+  }
+
+  .merit::before {
+    background-position: 72% center;
+  }
+
+  .merit-contents {
+    max-width: 600px;
+  }
+
+  .merit-title {
+    width: initial;
+    text-align: left;
+  }
+
+  .merit-title h3 {
+    font-size: min(6vw, 3rem);
+  }
+
+  .merit-title h2 {
+    font-size: min(7vw, 4rem);
+  }
+
+  .hex {
+    width: 40%;
+  }
+
+  .hex:nth-of-type(6n + 4) {
+    margin-left: 0%;
+  }
+
+  .hex:nth-of-type(6n + 3) {
+    margin-left: 20%;
+  }
 }
