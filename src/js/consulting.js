@@ -42,7 +42,6 @@ const phone = /[^0-9]/gi;
 const emailPattern =
   /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
 const phonePattern = /^0(\d{1,2})(\d{3,4})(\d{4})$/;
-// const phonePattern = /^0([^0][0-9]{1})([0-9]{0,1})([0-9]{3,4})([0-9]{4})/;
 // const phonePattern = /01[016789][^0][0-9]{6,8}/;
 // const phonePattern = /01[016789]-[^0][0-9]{2,3}-[0-9]{3,4}/;
 
