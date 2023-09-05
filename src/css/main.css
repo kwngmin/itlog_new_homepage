@@ -149,11 +149,29 @@ h3.knowhow-description * {
   border-radius: 0.75rem;
   z-index: -9999;
 }
-.knowhow-img img {
-  height: 100%;
-  width: 100%;
-  /* width: 100%;
-  height: auto; */
+.knowhow-img.knowhow1 img {
+  height: 140%;
+  width: 140%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-53%, -50%);
+}
+.knowhow-img.knowhow2 img {
+  height: 160%;
+  width: 160%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-45%, -30%);
+}
+.knowhow-img.knowhow3 img {
+  height: 160%;
+  width: 160%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-55%, -55%);
 }
 .knowhow-num {
   display: flex;

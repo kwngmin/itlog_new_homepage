@@ -236,9 +236,11 @@ main {
   background-position: center;
 }
 .square-container > :nth-child(4) {
-  background: url("../../img/square4.jpg") no-repeat;
+  background: url("../../img/sensor1.jpg") no-repeat;
+  /* background: url("../../img/square4.jpg") no-repeat; */
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
+  background-position: top 50% left 45%;
 }
 .square-container > :nth-child(5) {
   background: url("../../img/square5.jpg") no-repeat;
