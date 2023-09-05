@@ -158,12 +158,13 @@ h3.knowhow-description * {
   transform: translate(-53%, -50%);
 }
 .knowhow-img.knowhow2 img {
-  height: 160%;
-  width: 160%;
+  height: 200%;
+  width: 200%;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-45%, -30%);
+  left: 55%;
+  top: 40%;
+  transform: translate(-45%, -30%) rotate(10deg);
+  /* transform: ; */
 }
 .knowhow-img.knowhow3 img {
   height: 160%;
