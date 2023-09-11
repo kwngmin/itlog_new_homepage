@@ -150,30 +150,46 @@ h3.knowhow-description * {
   z-index: -9999;
 }
 .knowhow-img.knowhow1 img {
+  height: 160%;
+  width: 160%;
+  object-position: left -4rem top -12rem;
+}
+/* .knowhow-img.knowhow1 img {
   height: 140%;
   width: 140%;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-53%, -50%);
-}
+} */
 .knowhow-img.knowhow2 img {
+  /* height: 120%;
+  width: 120%; */
+  scale: 1.2;
+  transform: rotate(353deg);
+  object-position: bottom 0 left 0rem;
+}
+/* .knowhow-img.knowhow2 img {
   height: 200%;
   width: 200%;
   position: absolute;
   left: 55%;
   top: 40%;
   transform: translate(-45%, -30%) rotate(10deg);
-  /* transform: ; */
-}
+} */
 .knowhow-img.knowhow3 img {
+  height: 100%;
+  width: 100%;
+  object-position: bottom -1rem left 0;
+}
+/* .knowhow-img.knowhow3 img {
   height: 160%;
   width: 160%;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-55%, -55%);
-}
+} */
 .knowhow-num {
   display: flex;
   flex-direction: column;
