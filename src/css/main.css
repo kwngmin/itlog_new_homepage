@@ -150,9 +150,9 @@ h3.knowhow-description * {
   z-index: -9999;
 }
 .knowhow-img.knowhow1 img {
-  height: 160%;
-  width: 160%;
-  object-position: left -4rem top -12rem;
+  height: 140%;
+  width: 140%;
+  object-position: left -1rem top -11rem;
 }
 /* .knowhow-img.knowhow1 img {
   height: 140%;
