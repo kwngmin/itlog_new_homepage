@@ -630,9 +630,9 @@ h3.knowhow-description * {
   .product {
     padding: 6rem 4rem;
   }
-  .product-title h6 {
+  /* .product-title h6 {
     width: 90%;
-  }
+  } */
   .product-container {
     display: block;
   }
