@@ -167,7 +167,11 @@ h3.knowhow-description * {
   width: 120%;
   /* scale: 1.2;
   transform: rotate(353deg); */
-  object-position: bottom 0 left -4rem;
+  /* object-position: bottom 0 left -4rem; */
+  transform: scale(1.2);
+  position: absolute;
+  top: 10%;
+  left: 10%;
 }
 /* .knowhow-img.knowhow2 img {
   height: 200%;
@@ -279,6 +283,12 @@ h3.knowhow-description * {
   }
   .knowhow-hide {
     display: none;
+  }
+  .knowhow-img.knowhow2 img {
+    object-position: left top;
+    left: 4%;
+    top: 4%;
+    height: 100%;
   }
 }
 @media screen and (max-width: 640px) {
