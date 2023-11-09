@@ -501,7 +501,7 @@ h3.knowhow-description * {
   word-break: keep-all;
 }
 .product-title h6 {
-  width: 80%;
+  width: 100%;
   line-height: 1.5;
   color: rgb(0 0 0 / 0.6);
   word-break: keep-all;
@@ -659,7 +659,7 @@ h3.knowhow-description * {
 }
 @media screen and (max-width: 1023px) {
   .product-title h6 {
-    width: 100%;
+    width: 80%;
   }
   .productSwiper-container .slide-text {
     left: 3rem;
