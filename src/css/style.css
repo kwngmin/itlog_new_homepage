@@ -1,5 +1,6 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css);
+
 html {
   width: 100%;
 }
@@ -31,6 +32,10 @@ body {
   background-color: #fff;
   display: flex;
   flex-direction: column;
+
+  height: 100vh;
+  height: -webkit-fill-available;
+  height: fill-available;
 }
 h1 {
   font-family: "NanumSquare", sans-serif;
