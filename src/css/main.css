@@ -284,6 +284,9 @@ h3.knowhow-description * {
   .knowhow-hide {
     display: none;
   }
+  .knowhow-img.knowhow1 img {
+    object-position: left -1rem top -8rem;
+  }
   .knowhow-img.knowhow2 img {
     object-position: left top;
     left: 8%;
@@ -302,6 +305,9 @@ h3.knowhow-description * {
   .knowhow-img,
   .knowhow-num {
     aspect-ratio: 1/1;
+  }
+  .knowhow-img.knowhow1 img {
+    object-position: left -1rem top -4rem;
   }
 }
 /* 
