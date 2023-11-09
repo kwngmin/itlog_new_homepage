@@ -3,6 +3,12 @@ let iWIdth;
 // 로드 후 실행
 window.addEventListener("DOMContentLoaded", () => {
   iWIdth = window.innerWidth;
+  const { innerHeight } = window;
+  // ios height 설정
+  document.documentElement.style.setProperty(
+    "--app-height",
+    `${innerHeight}px`
+  );
 });
 
 // 사이즈 변경 되면 실행
