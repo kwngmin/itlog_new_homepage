@@ -813,6 +813,9 @@ label {
   width: 100%;
   padding: 1rem;
   flex-grow: 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
 #mobileNav .mobile-estimate {
   width: 100%;
