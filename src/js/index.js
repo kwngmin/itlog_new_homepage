@@ -4,11 +4,12 @@ let iWIdth;
 window.addEventListener("DOMContentLoaded", () => {
   iWIdth = window.innerWidth;
   const { innerHeight } = window;
-  // ios height 설정
-  document.documentElement.style.setProperty(
-    "--app-height",
-    `${innerHeight - 20}px`
-  );
+
+  // ios height
+  // document.documentElement.style.setProperty(
+  //   "--app-height",
+  //   `${innerHeight}px`
+  // );
 });
 
 // 사이즈 변경 되면 실행
@@ -16,12 +17,12 @@ window.addEventListener("resize", () => {
   // iOS height 구하기
   // 회전으로 랜드스케이프 모드 변경시
   // 모바일 메뉴의 height 값 틀어지는거 보완
-  const { innerHeight } = window;
-  document.documentElement.style.setProperty(
-    "--app-height",
-    `${innerHeight - 20}px`
-  );
-  iWIdth = window.innerWidth;
+  // const { innerHeight } = window;
+  // document.documentElement.style.setProperty(
+  //   "--app-height",
+  //   `${innerHeight}px`
+  // );
+  // iWIdth = window.innerWidth;
   // console.log(iWIdth);
   if (iWIdth > 1024) {
     closeNav();
