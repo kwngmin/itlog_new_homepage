@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // ios height 설정
   document.documentElement.style.setProperty(
     "--app-height",
-    `${innerHeight}px`
+    `${innerHeight - 20}px`
   );
 });
 
@@ -19,7 +19,7 @@ window.addEventListener("resize", () => {
   const { innerHeight } = window;
   document.documentElement.style.setProperty(
     "--app-height",
-    `${innerHeight}px`
+    `${innerHeight - 20}px`
   );
   iWIdth = window.innerWidth;
   // console.log(iWIdth);
