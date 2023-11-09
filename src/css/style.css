@@ -869,8 +869,8 @@ label {
 }
 @media screen and (max-width: 640px) {
   #mobileNav-container {
-    padding: 1.5rem 1rem;
-    gap: 1rem;
+    padding: 1rem;
+    gap: 0.5rem;
   }
   #mobileNav-container nav {
     gap: 1.25rem 0.5rem;
