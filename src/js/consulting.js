@@ -91,9 +91,9 @@ send.addEventListener("click", function (event) {
     company: company.value,
     products,
   };
-  const serviceID = "service_4z61dki";
+  const serviceID = "service_mqg1wg2";
   const templateID = "template_iw6bwtl";
-  const publicKey = "RMB0BR2O_InnNIHfC";
+  const publicKey = "1Pl6YIElqobTs-wGz";
   // 폼 체크
   if (name.value.length < 2) {
     document.getElementById("alert-warning-content-text").innerHTML =
