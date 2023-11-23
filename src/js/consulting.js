@@ -92,7 +92,7 @@ send.addEventListener("click", function (event) {
     products,
   };
   const serviceID = "service_mqg1wg2";
-  const templateID = "template_iw6bwtl";
+  const templateID = "template_t7jrui9";
   const publicKey = "1Pl6YIElqobTs-wGz";
   // 폼 체크
   if (name.value.length < 2) {
